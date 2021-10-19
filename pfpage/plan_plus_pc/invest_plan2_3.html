@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="./css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+	<div id="body" class="body-custom">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo4.png" alt="">
+				투자설계
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="./invest_plan1_1.html" >포트폴리오 리밸런싱</a>
+				</li>
+				<li class="green">
+					<a href="#" class="on">신규상품 추가</a>
+					<ul>
+						<li class="green"><a href="./invest_plan2_1.html">금융자산가 신규추가</a></li>
+						<li class="green"><a href="./invest_plan2_2.html">연금자산 신규추가</a></li>
+						<li class="green"><a class="on" href="#">조정후 자산배분</a></li>
+
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar ">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar ">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="invest_plan-bar on">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content invest_plan2_3">
+				<h4 class="table-title">신규상품 추가</h4>
+				<ul class="customer-input-btns2 ">
+					<li >
+						<a  href="./invest_plan2_1.html">금융자산신규추가</a>
+					</li>
+					<li >
+						<a href="./invest_plan2_2.html">연금자산신규추가</a>
+					</li>
+					<li class="on">
+						<a href="#">조정후자산배분</a>
+					</li>
+				</ul>
+				<div class="slide-box">
+					<div id="slides">
+						<div class="slide-contents">
+							<div class="left-box">
+								<div class="content-title">▶ 조정 전 금융자산 자산배분</div>
+								<div class="content-box">
+									<ul>
+										<li class="risk_low"><p>52%</p><span>단기/예적금</span></li>
+										<li class="risk_low"><p>17%</p><span>채권자산</span></li>
+										<li><p>0%</p><span>대안자산</span></li>
+										<li class="risk_high"><p>14%</p><span>주식자산</span></li>
+										<li class="risk_high"><p>17%</p><span>실물자산</span></li>
+									</ul>
+									<div class="result_bar">
+										<div class="bar">
+											<p class="low"></p>
+											<p class="high"></p>
+										</div>
+										<div class="result">
+											<p class="low_result">저위험자산 <span>52</span>%</p>
+											<p class="high_result">고위험자산 <span>41</span>%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right-box">
+								<div class="content-title">▶ 조정 후 금융자산 자산배분</div>
+								<div class="content-box">
+									<ul>
+										<li class="risk_low"><p>52%</p><span>단기/예적금</span></li>
+										<li class="risk_low"><p>17%</p><span>채권자산</span></li>
+										<li><p>0%</p><span>대안자산</span></li>
+										<li class="risk_high"><p>14%</p><span>주식자산</span></li>
+										<li class="risk_high"><p>17%</p><span>실물자산</span></li>
+									</ul>
+									<div class="result_bar">
+										<div class="bar">
+											<p class="low"></p>
+											<p class="high"></p>
+										</div>
+										<div class="result">
+											<p class="low_result">저위험자산 <span>52</span>%</p>
+											<p class="high_result">고위험자산 <span>41</span>%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide-contents">
+							<div class="table-wrap">
+								<table class="basic-table">
+									<colgroup>
+										<col style="width:14%">
+										<col style="width:11%">
+										<col style="width:11%">
+										<col style="width:10%">
+										<col style="width:16%">
+										<col style="width:6%">
+										<col style="width:10%">
+										<col style="width:16%">
+										<col style="width:6%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="tc">위험구분</th>
+											<th colspan="2" class="tc">자산군</th>
+											<th class="tc" colspan="3">조정 전 자산배분</th>
+											<th class="tc" colspan="3">조정 후 자산 배분</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="5" class="tc">저위험<br>자산</td>
+											<td rowspan="2">단기/예적금</td>
+
+											<td>단기자금</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar1 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc"></td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar1 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">31%</td>
+										</tr>
+										<tr>
+											<td>예적금</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar2 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">65%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar2 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">85%</td>
+
+										</tr>
+										<tr>
+											<td rowspan="3">채권자산</td>
+											<td>국내채권</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar3 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">9%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar3 barstat lowrisk bdr_n" ><p></p></td>
+											<td class="tc">10%</td>
+										</tr>
+										<tr>
+											<td>신흥국채권</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar4 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">9%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar4 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">38%</td>
+
+										</tr>
+										<tr>
+											<td>선진국채권</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar5 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">57%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar5 barstat lowrisk bdr_n"><p></p></td>
+											<td class="tc">72%</td>
+
+										</tr>
+										<tr>
+											<td rowspan="4" class="tc">고위험<br>자산</td>
+											<td rowspan="3">주식자산</td>
+											<td>국내주식</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar1 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">11%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar1 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">95%</td>
+
+										</tr>
+										<tr>
+											<td>신흥국주식</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar2 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">9%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar2 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">5%</td>
+
+										</tr>
+										<tr>
+											<td>선진국주식</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar3 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">9%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar3 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">5%</td>
+										</tr>
+										<tr>
+											<td>실물자산</td>
+											<td>실물자산</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar4 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">42%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar4 barstat highrisk bdr_n"><p></p></td>
+											<td class="tc">58%</td>
+										</tr>
+										<tr>
+											<td class="tc">중위험 자산</td>
+											<td>대안자산</td>
+											<td>대안자산</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="high_bar1 barstat middlerisk bdr_n"><p></p></td>
+											<td class="tc">5%</td>
+											<td class="bdr_n tc">0000만원</td>
+											<td class="middle_bar1 barstat middlerisk bdr_n"><p></p></td>
+											<td class="tc">5%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.slides.js"></script>
+	<script src="./js/d3.v3.min.js"></script>
+	<script src="./js/c3.js"></script>
+	<script src="./js/custom_donut.js"></script>
+	<script src="./js/script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(function(){
+			$("#slides").slidesjs({
+					width: 1200,
+					height: 560
+			});
+		});
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+
+
+
+		$(window).on('load',function(){
+			horizonBarAnimate3(".left-box")
+			horizonBarAnimate3(".right-box")
+		});
+		function invest_planActive(){
+		  var active = $(".slidesjs-pagination li a.active").parent("li").index()
+		  if(active == 1 ){
+		    setTimeout(function(){
+					horizonBarAnimate2(".highrisk")
+					horizonBarAnimate2(".middlerisk")
+					horizonBarAnimate2(".lowrisk")
+		    },350);
+
+		  }
+		}
+		$(function(){
+			$(".slidesjs-pagination li a").click(function(){
+				invest_planActive()
+			});
+		});
+		$(function(){
+			$(".slidesjs-navigation").click(function(){
+				invest_planActive()
+			});
+		});
+	</script>
+</body>
+</html>

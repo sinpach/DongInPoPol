@@ -1,0 +1,484 @@
+#gnb {
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background: #7d71a5;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  overflow: auto;
+}
+#gnb .nav_wrap{
+  width: 100%;
+}
+
+#gnb h1{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0px;
+}
+#gnb h1 a{
+  color: #fff;
+  font-weight: 900;
+}
+#alert_wrap{
+  margin-bottom: 10px;
+}
+#alert_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#alert_wrap h4{
+  color:#fff;
+}
+ .alert{
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert a{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2px;
+}
+.alert a i,
+.alert a span {
+  color: #333;
+}
+#sibebar {
+  
+ width: 100%;
+ box-shadow: 2px 4px 7px rgba(0,0,0, 0.5);
+}
+
+#container {
+  position: fixed;
+  width: calc(100% - 240px);
+  top: 0px;
+  left:240px;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+#con_top{
+  padding: 10px;
+}
+
+
+#sibebar .vmenu>a{
+  font-size: 14px;
+}
+#sibebar .vmenu a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#sibebar .vmenu ul li a{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+#sibebar .vmenu ul li a.active{
+  background-color: #ad81e4;
+  background-image: -moz-linear-gradient(top, #ad81e4 0, #7d51b6 100%);
+  background-image: linear-gradient(top, #ad81e4, #7d51b6);
+  background-image: -webkit-linear-gradient(top, #ad81e4, #7d51b6);
+  background-image: -o-linear-gradient(top, #ad81e4 0, #7d51b6 100%);
+  background-image: -ms-linear-gradient(top, #ad81e4 0, #7d51b6 100%);
+  color: #fff;
+  border: 1px solid #a281cc;
+  cursor: default;
+  font-weight: bold;
+}
+#sibebar .vmenu ul li a.title {
+   font-weight: bold;
+   cursor:default
+}
+#iframe_wrap{
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+#iframe_wrap>li{
+  display: none;
+  width: 100%;
+  transform: scale(.4);
+  margin-top: 0;
+  height: 220%;
+  margin-top: -570px;
+}
+#iframe_wrap>li.active{
+  display: block;
+}
+#iframe_wrap li iframe{
+  width: 100%;
+  height: 100%;
+  margin:  0 auto;
+  background:none;
+  
+}
+.jui #content {
+  margin: 0;
+}
+.iframe_jui {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+/* .jui custom */
+.jui .vmenu>:last-child,.jui .vmenu>:first-child{
+  border-radius: 0px !important;
+}
+.jui .vmenu,
+.jui .vmenu>*{
+  display: block;
+}
+.jui .vmenu a{
+
+  color: #333;
+  background-color: #fff;
+  background-image: -ms-linear-gradient(top, #fff 0, #f7f7f7 100%);
+}
+
+.jui .vmenu .drop_menu>li{
+  padding: 6px 10px;
+  font-weight: 400;
+}
+.jui .vmenu>.submenu {
+  padding: 0px;
+  display: none;
+}
+.jui .vmenu>.submenu.active{
+  color: #333;
+  display: block;
+}
+.jui .vmenu>.submenu>li,
+.jui .vmenu>.submenu>li>.submenu>li {
+   padding: 6px 0px;
+}
+.jui .vmenu>.submenu>li>a{
+  padding: 0px 20px;
+}
+.jui .vmenu>.submenu>li>.submenu{
+  color: #333;
+}
+.jui .vmenu>.submenu>li>.submenu>li>a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 35px;
+}
+
+
+.jui .vmenu>.title>.icon-arrow1 {
+  transition: transform .3s;
+}
+.jui .vmenu>.title.active>.icon-arrow1{
+  transform: rotate(180deg);
+  transition: transform .3s;
+}
+.jui #container .tab>li{
+  position: relative;
+}
+.jui #container .tab>li a{
+  height: 34px;
+  padding: 10px 15px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.jui .vmenu>.submenu>li:hover:not(.active){
+  background:none;
+}
+
+
+
+
+#con_top .tab>li button.tab_close{
+  position: absolute;
+  top:2px;
+  right:5px;
+  z-index: 10;
+}
+#con_top .tab>li button.tab_close span{
+  font-size: 10px;
+}
+.jui .tab li> button.tab_close:focus span,
+.jui .tab li> button.tab_close:hover span {
+  font-weight: 900;
+}
+#con_top .tab li:first-child .tab_close {
+  display: none;
+}
+.jui .table>thead th{
+  border-radius: 0px !important;
+}
+#content{
+  width: 100%;
+  height: calc(100% - 40px)
+  
+}
+.swiper-container{
+  padding: 0px 40px;
+}
+
+.swiper-slide{
+  width: auto;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next{
+   left: 0px;
+   right: auto;
+   background: #fff;
+   width: 33px;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 0px;
+  left: auto;
+   background: #fff;
+   width: 33px;
+}
+.jui .pill, .jui .tab{
+  padding: 0px 0px;
+  padding-left: 5px;
+  
+}
+
+:root {
+  --swiper-theme-color: rebeccapurple;
+}
+
+
+/* .jui table{
+  font-size: 10px !important;
+} */
+.jui table >thead>tr>th{
+  padding: 4px !important;
+  vertical-align: middle;
+}
+.jui table>tbody>tr>td{
+  padding: 3px !important;
+  vertical-align: middle;
+  
+}
+
+.jui table.table>tbody>tr>td {
+  height:29px;
+}
+.page-title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  margin-top: 10px;
+}
+.page-title h2{
+font-size: 28px;
+margin-bottom: 0;
+color: #8772bf;
+font-weight: 500;
+
+
+}
+.page-title .navbar {
+  display: inline-block;
+  width: auto;
+  height: 30px;
+}
+.page-title .navbar .inline{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.page-title .navbar .inline *{
+  display: block;
+}
+.page-title .navbar span{
+  margin-left: 5px;
+}
+.page-title .navbar i:first-child{
+  margin-right: -3px;
+}
+.page-title .navbar span:last-child{
+  color: #8772bf;
+  font-weight: 500;
+}
+.content-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  padding: 10px 0px;
+}
+
+.table-bottom-wrap{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.count-wrap {
+  position: absolute;
+  left:0px;
+  top:10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.total_cnt{
+  margin-left: 8px;
+  font-size: 12px;
+}
+.total_cnt span{
+  font-weight: bold;
+  color: #8772bf
+}
+.paging-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  margin-top: 10px;
+  min-width: 450px;
+}
+.jui .paging-wrap .paging {
+  width: calc(100% - 80px);
+  margin: 0 10px;
+}
+.window .head .title{
+  font-size: 14px;
+  font-weight: bold;
+  color: #8772bf
+}
+.jui .window>.body {
+  padding: 10px;
+}
+.window .content-head{
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+   padding-bottom: 5px;
+}
+.window .body .content-head:not(:first-child){
+  margin-top: 20px;
+}
+.window .content-head h4 {
+  display: block;
+}
+.jui .table.horizontal th {
+  
+  text-align: left;
+  padding: 3px !important;
+  border: 0px solid #eee ;
+}
+.jui .table.horizontal.th-right th{
+  text-align: right;
+}
+.jui .table.horizontal td {
+  border: 0px solid #eee ;
+}
+.jui .table.input-table input{
+  width: 100%;
+}
+.flex-s{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.flex-b {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.flex-c {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.flex-a{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.jui .chk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jui .chk input[type=checkbox]+.icon-checkbox{
+  color: #AB7CFF;
+}
+.jui .chk input[type=checkbox]+i{
+  cursor: pointer;
+  font-size: 16px;
+}
+.jui .chk input[type=checkbox]+.icon-checkbox2 {
+  color: #b5b5b5;
+}
+
+
+.jui .datepicker{
+  height: auto;
+  position: absolute;
+  display: none;
+  z-index: 99999;
+}
+.jui .datepicker.on{
+  display: block;
+}
+.jui .msgbox,
+.jui .window {
+  display: none;
+}
+
+
+.jui .btn.btn-del {
+  border: 1px solid #f46363;
+  background-color: #b65151;
+  background-image: -webkit-linear-gradient(top, #b65151 0, #f46363 100%);
+  color:#fff;
+  opacity: .8;
+}
+.jui .btn.btn-del:hover{
+  opacity: 1;
+}
+.btn-right-p{
+  position: absolute;
+  right:0;
+}
+.jui .btn{
+  margin:  0 5px;
+}
+
+.test iframe body{
+  background: #000;
+}
+.jui .alert .btn.normal{
+  padding: 0;
+  text-align: center;
+  width: 54px;
+  margin: 2px;
+}

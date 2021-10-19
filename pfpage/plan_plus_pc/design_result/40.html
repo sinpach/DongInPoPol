@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page40">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[8-2 설계 전 금융자산 자산배분 분석]
+			</h1>
+			<div class="explain">
+				고객님의 총자산에서 금융자산이 차지하는 비중은 <span>14%</span>이며, 이중 <span>20%</span>가 고위험자산에 투자되고 있습니다.
+			</div>
+			<h2 class="page_title c2">08  | 투자설계</h2>
+			<div class="content">
+				<div class="topCon">
+					<div class="leftCon">
+						<div class="con_title">
+							금융자산 자산군별 투자비중
+						</div>
+						<div class="conBox">
+							<ul>
+								<li class="item1 blue">
+									<p>
+										<span>52%</span><br/>
+										단기/예적금
+									</p>
+								</li>
+								<li class="item2 blue">
+									<p>
+										<span>17%</span><br/>
+										채권자산
+									</p>
+								</li>
+								<li class="item3 gray">
+									<p>
+										<span>0%</span><br/>
+										대인자산
+									</p>
+								</li>
+								<li class="item4 pur">
+									<p>
+										<span>14%</span><br/>
+										금융자산
+									</p>
+								</li>
+								<li class="item5 pur">
+									<p>
+										<span>17%</span><br/>
+										실물자산
+									</p>
+								</li>
+							</ul>
+							<table class="result-table conBox_table">
+								<tbody>
+									<tr>
+										<td style="padding:0;">
+											<div class="result-bar">
+												<div class="result-ready" >
+													<div class="text">
+														저위험자산 <span>52%</span>
+													</div>
+												</div>
+												<div class="result-shortage">
+													<div class="text">
+														고위험자산 <span>41%</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="rightCon">
+						<div class="table-box">
+							<div class="con_title">
+								조정 후 금융자산 포트폴리오
+							</div>
+							<table class="page_table3">
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:10%;">
+									<col style="width:15%;">
+									<col style="width:15%;">
+									<col style="width:10%;">
+									<col style="">
+									<col style="width:10%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="2" >위험구분</th>
+										<th colspan="2">자산군</th>
+										<th colspan="2">평가금액</th>
+										<th class="brn">비중</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th rowspan="5">저위험자산</th>
+										<th rowspan="5">52%</th>
+										<td>단기/예적금</td>
+										<td>단기자금</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar"></span>
+										</td>
+										<td class="brn percent">5%</td>
+									</tr>
+									<tr>
+										<td rowspan="4">채권자산</td>
+										<td>예적금</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar"></span>
+										</td>
+										<td class="brn percent">5%</td>
+									</tr>
+									<tr>
+										<td>국내채권</td>
+										<td class="brn"></td>
+										<td class="bln barstat">
+											<span class="bar"></span>
+										</td>
+										<td class="brn percent">-</td>
+									</tr>
+									<tr>
+										<td>신흥국채권</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar"></span>
+										</td>
+										<td class="brn percent">10%</td>
+									</tr>
+									<tr>
+										<td>선진국채권</td>
+										<td class="brn"></td>
+										<td class="bln barstat">
+											<span class="bar"></span>
+										</td>
+										<td class="brn percent">-</td>
+									</tr>
+									<tr>
+										<th rowspan="4">고위험자산</th>
+										<th rowspan="4">52%</th>
+										<td rowspan="3">주식자산</td>
+										<td>국내주식</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar pur"></span>
+										</td>
+										<td class="brn percent">5%</td>
+									</tr>
+									<tr>
+										<td>신흥국주식</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar pur"></span>
+										</td>
+										<td class="brn percent">5%</td>
+									</tr>
+									<tr>
+										<td>선진국주식</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar pur"></span>
+										</td>
+										<td class="brn percent">-</td>
+									</tr>
+									<tr>
+										<td>실물자산</td>
+										<td>실물자산</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar pur"></span>
+										</td>
+										<td class="brn percent">10%</td>
+									</tr>
+									<tr>
+										<th>중위험자산</th>
+										<th>17%</th>
+										<td>대안자산</td>
+										<td>대안자산</td>
+										<td class="brn">0000만원</td>
+										<td class="bln barstat">
+											<span class="bar gray"></span>
+										</td>
+										<td class="brn percent">10%</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="7">| 금융자산 합계 15,000만원</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="info_box"></div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+		function horizonBar(box){
+			var bar = $(box +">.bar")
+			var percent = new Array();
+			var percentText = new Array();
+			for (var i = 0; i < bar.length; i++) {
+				percent.push($(bar[i]).parent().parent('tr').children(".percent").text())
+				percentText.push(100 - parseFloat(percent[i]))
+			}
+			$.each(bar,function(i) {
+				$(this).animate({right:percentText[i]+"%"});
+			});
+		}
+
+		$(window).on('load',function(){
+			horizonBar(".barstat");
+			/*
+			var bar1 = $(".result-ready")
+			var bar2 = $(".result-shortage")
+			var text = $(".result-table .result-percent")
+			var percent = new Array();
+			var percentText = new Array();
+			for (var i = 0; i < bar1.length; i++) {
+				percent.push($(text[i]).children("span").text())
+				percentText.push(100 - parseFloat(percent[i]))
+			}
+			$.each(bar1,function(i) {
+				$(this).animate({width:percent[i]+"%"});
+			});
+			$.each(bar2,function(i) {
+				$(this).animate({width:percentText[i]+"%"});
+			});
+			console.log(percent)
+			*/
+
+		});
+
+		$(function(){
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page19">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-6 은퇴 후 현금흐름(Cash Flow) 설계_(3) 설계 후 예상 은퇴 CF 분석]
+			</h1>
+			<div class="explain">
+				은퇴 CF 설계 후 매년 부족 또는 초과 현금흐름을 보여줍니다
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="table-title-wrap">
+						<span class="excel-table-title">연금개시상품</span>
+						<span class="excel-table-title">연금개시상품 외 금융상품</span>
+					</div>
+					<div class="basic-table_wrap1 mCustomScrollbar light" data-mcs-theme="minimal-dark">
+
+						<table class="excel-table">
+							<colgroup>
+								<col style="width:60px">
+								<col style="width:100px">
+								<col style="width:115px">
+								<col style="width:115px">
+								<col style="width:115px">
+								<col style="width:95px">
+								<col style="width:55px">
+								<col style="width:65px">
+								<col style="width:55px">
+								<col style="width:65px">
+								<col style="width:55px">
+								<col style="width:65px">
+								<col style="width:100px">
+								<col style="width:100px">
+							</colgroup>
+							<thead>
+								<tr class="bg-thead">
+									<th class="tc">고객나이</th>
+									<th class=""></th>
+									<th  class="tc">푸르덴셜<br>평생소득연금</th>
+									<th  class="tc"></th>
+									<th class="bd-right tc"></th>
+									<th></th>
+									<th  class="tc" colspan="2">미래에셋<br>배당프리미엄펀드</th>
+									<th colspan="2"  class="tc"></th>
+									<th colspan="2" class="bd-right tc"></th>
+									<th  class="tc">초과 현금흐름<br>(만원)</th>
+									<th  class="tc">부족 현금흐름<br>(만원)</th>
+								</tr>
+								<tr class="bg-body">
+									<th rowspan="4"></th>
+								</tr>
+								<tr class="bg-body">
+									<th class="tl">투자원금</th>
+									<td>30,000만원</td>
+									<td>50,000만원</td>
+									<td class="bd-right">30,000만원</td>
+									<th class="tl">투자원금</th>
+									<td colspan="2">2,000만원</td>
+									<td colspan="2">2,000만원</td>
+									<td colspan="2" class="bd-right" >2,000만원</td>
+									<td colspan="2"></td>
+
+
+								</tr>
+								<tr class="bg-body">
+									<th class="tl">연금개시/지급기간</th>
+									<td>60세/종신</td>
+									<td>60세/종신</td>
+									<td class="bd-right">60세/종신</td>
+									<th class="tl">기대수익률</th>
+									<td colspan="2">6%</td>
+									<td colspan="2">6%</td>
+									<td colspan="2" class="bd-right">6%</td>
+									<td colspan="2"></td>
+
+								</tr>
+								<tr class="bg-body">
+									<th class="tl">연간 연금수령액</th>
+									<td>1,200만원</td>
+									<td>1,200만원</td>
+									<td class="bd-right">1,200만원</td>
+									<th class="tl">과세</th>
+									<td colspan="2">15.4%</td>
+									<td colspan="2">15.4%</td>
+									<td colspan="2" class="bd-right">15.4%</td>
+									<td colspan="2" ></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th class="bg-body tc">60세</th>
+									<th   class="tc" rowspan="99">연간 <br>연금수령액을 <br>자동계산하여<br>보여줍니다. <br>(만원)</th>
+									<td>1,200</td>
+									<td>1,200</td>
+									<td class="bd-right">1,200</td>
+									<th   class="tc" rowspan="99">연간 인출금액을<br>직접 입력합니다. <br>(만원)</th>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body">0000</td>
+									<td class="bg-body">0000</td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">61세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">62세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">63세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">64세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">65세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">66세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">67세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">68세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">69세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">70세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">71세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">72세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">73세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">74세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">75세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">76세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">77세</th>
+									<td>1,200</td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td>1,200</td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">78세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">79세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">80세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">81세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">82세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">83세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">84세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+								<tr>
+									<th class="bg-body tc">85세</th>
+									<td></td>
+									<td></td>
+									<td class="bd-right"></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td></td>
+									<td class="p_0"></td>
+									<td class="bd-right"></td>
+									<td class="bg-body"></td>
+									<td class="bg-body"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+
+				page18_Barstacked('#chartbar1');
+		});
+
+	</script>
+</body>
+</html>

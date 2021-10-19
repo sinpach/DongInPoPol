@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>menu</title>
+	<link rel="stylesheet" href="inc/css/font/nanumbarungothic.css" />
+	<link rel="stylesheet" href="inc/css/common.css" />
+	<link rel="stylesheet" href="inc/css/menu.css" />
+	<script src="inc/js/jquery-1.11.2.js"></script>
+	<script src="inc/js/body.js"></script>
+	<script src="inc/js/menu.js"></script>
+	<script type="text/javascript">
+		var menuFrame ;
+		var menus;
+		var menuBtn;
+		$(document).ready(function (){
+			menus = $("#menus");
+			menuBtn = $("#menuBtn");
+			menuFrame = $(parent.document).find("#menuFrame");
+			var pageNum = $(parent.document).find("#contentFrame").attr('src').split('.')[0];
+			init_call(pageNum);
+			function init_call (pageNum) {
+				menu_init(pageNum);
+			}
+
+			$("#menuBtn button").on('click',function  (e) {
+				e.preventDefault();
+				if($(this).hasClass('in')){
+					$(this).removeClass('in');
+					menuFrame.animate({top:'-112px'},500,function(){
+						menus.hide();
+						$(this).css({width:999});
+					});
+				}else{
+					$(this).addClass('in');
+					menus.show();
+					menuFrame.css({width:999}).animate({top:'0px'},500,function(){
+
+					});
+				}
+
+			});
+			menus.find('button').on('click',function  (e) {
+				e.preventDefault();
+				menuClose ();
+				if ($(this).attr('page')!="") {
+					var page= $(this).attr('page')+'.html';
+					$(parent.document).find("#contentFrame").attr('src',page);
+				}
+			});
+			menus.find('button:last').on('keydown',function  (e) {
+				if (e.keyCode==9 && !event.shiftKey) {
+					menuClose();
+				}
+			});
+			$("#menuBtn button").on('keydown',function  (e) {
+				if (e.keyCode==9 && event.shiftKey && $(this).hasClass('in') ) {
+					menuClose();
+				}
+			});
+		});
+		function menu_init (pageNum) {
+			$("#menus").find('li').removeClass('on');
+			var target =$("#menus").find('> ul > li > ul > li > button[page='+pageNum+']').parent();
+			if (target.length==0) {
+				var _pageNum=pageReturn(parseInt(pageNum));
+				menu_init(_pageNum);
+				return;
+			}
+			target.addClass('on').parent().parent().addClass('on');
+		}
+		function menuClose () {
+			if($("#menuBtn button").hasClass('in')){
+				menuFrame.contents().find('#menuBtn button').removeClass('in');
+				//menuBtn.removeClass('in');
+				menuFrame.animate({top:'-112px'},500,function(){
+					menus.hide();
+					$(this).css({width:999});
+				});
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="gnbWrap">
+
+		<div id="menus">
+			<ul>
+				<li>
+					<button page="01">들어가기</button>
+					<ul>
+						<li><button page="01">시작하기</button></li>
+						<li><button page="02">사전학습</button></li>
+						<li class="dn"><button page="03">사전학습</button></li>
+						<li><button page="04">학습목표</button></li>
+					</ul>
+				</li>
+				<li>
+					<button page="05">학습하기</button>
+					<ul>
+						<li>
+							<button page="05">
+								1. 가족생활 주기의 의의
+							</button>
+						</li>
+						<li>
+							<button page="06">
+								<span>★쉬어가기</span>
+							</button>
+						</li>
+						<li>
+							<button page="07">
+								2. 가족생활 주기의 발달과제
+							</button>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button page="08">마무리하기</button>
+					<ul>
+						<li><button page="08">점검하기</button></li>
+						<li><button page="09">정리학습</button></li>
+						<li><button page="10">나가기</button></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="menuBtn">
+			<button title="메뉴 버튼"></button>
+		</div>
+	</div>
+
+</body>
+</html>

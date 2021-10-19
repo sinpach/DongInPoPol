@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page29">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[6-4 주요 진단금 보장현황_고객]
+			</h1>
+			<div class="explain">
+				나윤석님의 생애기간에 걸친 주요진단금 보장금액을 보여줍니다.
+			</div>
+			<h2 class="page_title c2">06  | 보장설계</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="con_title">
+						기간별 주요 진단금 보장 금액
+					</div>
+					<div id="chartbar1" class="chart">
+
+					</div>
+					<div class="chart_legend">
+						<ul>
+							<li><span></span>급성심근경색</li>
+							<li><span></span>뇌출혈</li>
+							<li><span></span>일반암</li>
+							<li><span></span>중대한암</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-box">
+					<div class="sub_title">
+						(단위:만원)
+					</div>
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:15%">
+							<col style="">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+
+						</colgroup>
+						<thead>
+							<tr>
+								<th>진단금 구분</th>
+								<th></th>
+								<th>45세</th>
+								<th>50세</th>
+								<th>55세</th>
+								<th>60세</th>
+								<th>70세</th>
+								<th>80세</th>
+								<th>90세</th>
+								<th>100세</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3">암</td>
+								<td class="bold">중대한암</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">일반암</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">소액암</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td rowspan="3">뇌혈관</td>
+								<td class="bold">중대한 뇌출혈</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">뇌출혈</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">뇌졸증</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td rowspan="3">심장</td>
+								<td class="bold">중대한급성심근경색</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">급성심근경색</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="bold">허혈성심장질환</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+						</tbody>
+
+					</table>
+
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+
+				page29_Barstacked('#chartbar1');
+		});
+
+	</script>
+</body>
+</html>

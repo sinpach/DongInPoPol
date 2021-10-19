@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="./css/jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+</head>
+<body>
+	<div id="body">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo.png" alt="">
+				고객관리
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a  href="./finance_page1_1.html">고객 기본정보</a>
+				</li>
+				<li class="green">
+					<a  class="on" href="./finance_page1_2.html">상담일지</a>
+				</li>
+
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar on">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="./edu-plan1_1.html" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!-- 01-23 settings-bar 팝업추가 시작 -->
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+							<!-- 01-23 settings-bar 팝업추가 끝 -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content finance_page2">
+				<h4 class="table-title">고객정보</h4>
+				<div class="table-box">
+					<div class="customer-input-btns">
+						<a href="./finance_page1_1.html" >고객 기본정보</a>
+						<a href="#" class="on">상담일지</a>
+					</div>
+					<div class="basic-table_wrap1 mCustomScrollbar light" data-mcs-theme="minimal-dark">
+
+						<div class="top-table">
+							<div class="btnwrap">
+								<a href="#" class="btn">
+									<span>확인</span>
+								</a>
+								<a href="#" class="btn">
+									<span><img src="images/common/icon4.png" alt="">추가</span>
+								</a>
+								<a href="#" class="btn">
+									<span><img src="images/common/icon2.png" alt="">삭제</span>
+								</a>
+								<a href="#" class="btn">
+									<span><img src="images/common/icon3.png" alt="">엑셀다운</span>
+								</a>
+
+							</div>
+							<table class="basic-table">
+								<caption>상담일지</caption>
+								<colgroup>
+									<col style="width:4%">
+									<col style="width:10%">
+									<col style="width:17%">
+									<col style="width:12%">
+									<col style="width:8%">
+									<col style="width:17%">
+									<col style="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="tc">
+											<input type="checkbox" value="">
+										</th>
+										<th>상담차수</th>
+										<th class="tc">상담일시</th>
+										<th>상담단계</th>
+										<th class="tc">상담내용</th>
+										<th class="tc">다음상담일정</th>
+										<th class="tc">상담자료 업로드</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tc r">
+											<input type="checkbox" value="">
+										</td>
+										<td>1차</td>
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<td>
+											<select class="blan" name="advice" id="">
+												<option value="">단계선택</option>
+												<option value="">초회상담(OP)</option>
+												<option value="">초회상담(OP)</option>
+											</select>
+										</td>
+										<!-- 01-31 상담내용 popup start -->
+										<td class="tc advice_pop_wrap">
+											<a href="#" class="advice_btn">
+												<img src="images/common/icon-report.png" alt="">
+											</a>
+											<div class="advice_pop">
+												<a href="#" class="advice_pop-close"></a>
+												<p class="advice_pop-title">
+													<span class="title">상담내용</span>
+												</p>
+												<div class="textarea-wrapper">
+													<textarea class="advice_textarea" maxlength="200"></textarea>
+													<div class="textarea-clone"></div>
+												</div>
+												<a href="#" class="btn_refresh">새로쓰기</a>
+												<a href="#" class="btn_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 01-31 상담내용 popup end -->
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<!-- 02-07 파일업로드 start -->
+										<td class="tc up-load_wrap ">
+											<a href="#"  class="up-load">
+												<img src="images/common/up-load-icon.png" alt="">
+											</a>
+											<div class="up-load_pop">
+												<a href="#" class="up-load-close"></a>
+												<p class="up-load-title">
+													<span class="title">상담파일</span>
+												</p>
+												<input type="file">
+												<a href="#" class="up-load_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 02-07 파일업로드 end -->
+									</tr>
+									<tr>
+										<td class="tc r">
+											<input type="checkbox" value="">
+										</td>
+										<td>1차</td>
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<td>
+											<select class="blan" name="advice" id="">
+												<option value="">단계선택</option>
+												<option value="">초회상담(OP)</option>
+												<option value="">초회상담(OP)</option>
+											</select>
+										</td>
+										<!-- 01-31 상담내용 popup start -->
+										<td class="tc advice_pop_wrap">
+											<a href="#" class="advice_btn">
+												<img src="images/common/icon-report.png" alt="">
+											</a>
+											<div class="advice_pop">
+												<a href="#" class="advice_pop-close"></a>
+												<p class="advice_pop-title">
+													<span class="title">상담내용</span>
+												</p>
+												<div class="textarea-wrapper">
+													<textarea class="advice_textarea" maxlength="200"></textarea>
+													<div class="textarea-clone"></div>
+												</div>
+												<a href="#" class="btn_refresh">새로쓰기</a>
+												<a href="#" class="btn_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 01-31 상담내용 popup enf -->
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<!-- 02-07 파일업로드 start -->
+										<td class="tc up-load_wrap ">
+											<a href="#"  class="up-load">
+												<img src="images/common/up-load-icon.png" alt="">
+											</a>
+											<div class="up-load_pop">
+												<a href="#" class="up-load-close"></a>
+												<p class="up-load-title">
+													<span class="title">상담파일</span>
+												</p>
+												<input type="file">
+												<a href="#" class="up-load_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 02-07 파일업로드 end -->
+									</tr>
+									<tr>
+										<td class="tc r">
+											<input type="checkbox" value="">
+										</td>
+										<td>1차</td>
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<td>
+											<select class="blan" name="advice" id="">
+												<option value="">단계선택</option>
+												<option value="">초회상담(OP)</option>
+												<option value="">초회상담(OP)</option>
+											</select>
+										</td>
+										<!-- 01-31 상담내용 popup start -->
+										<td class="tc advice_pop_wrap">
+											<a href="#" class="advice_btn">
+												<img src="images/common/icon-report.png" alt="">
+											</a>
+											<div class="advice_pop">
+												<a href="#" class="advice_pop-close"></a>
+												<p class="advice_pop-title">
+													<span class="title">상담내용</span>
+												</p>
+												<div class="textarea-wrapper">
+													<textarea class="advice_textarea" maxlength="200"></textarea>
+													<div class="textarea-clone"></div>
+												</div>
+												<a href="#" class="btn_refresh">새로쓰기</a>
+												<a href="#" class="btn_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 01-31 상담내용 popup enf -->
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<!-- 02-07 파일업로드 start -->
+										<td class="tc up-load_wrap ">
+											<a href="#"  class="up-load">
+												<img src="images/common/up-load-icon.png" alt="">
+											</a>
+											<div class="up-load_pop">
+												<a href="#" class="up-load-close"></a>
+												<p class="up-load-title">
+													<span class="title">상담파일</span>
+												</p>
+												<input type="file">
+												<a href="#" class="up-load_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 02-07 파일업로드 end -->
+									</tr>
+									<tr>
+										<td class="tc r">
+											<input type="checkbox" value="">
+										</td>
+										<td>1차</td>
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<td>
+											<select class="blan" name="advice" id="">
+												<option value="">단계선택</option>
+												<option value="">초회상담(OP)</option>
+												<option value="">초회상담(OP)</option>
+											</select>
+										</td>
+										<!-- 01-31 상담내용 popup start -->
+										<td class="tc advice_pop_wrap">
+											<a href="#" class="advice_btn">
+												<img src="images/common/icon-report.png" alt="">
+											</a>
+											<div class="advice_pop">
+												<a href="#" class="advice_pop-close"></a>
+												<p class="advice_pop-title">
+													<span class="title">상담내용</span>
+												</p>
+												<div class="textarea-wrapper">
+													<textarea class="advice_textarea" maxlength="200"></textarea>
+													<div class="textarea-clone"></div>
+												</div>
+												<a href="#" class="btn_refresh">새로쓰기</a>
+												<a href="#" class="btn_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 01-31 상담내용 popup enf -->
+										<!-- 01-31 달력 추가 start -->
+										<td class="tc datepicker">
+											<input type="text" id="" class="date">
+										</td>
+										<!-- 01-31 달력 추가 end -->
+										<!-- 02-07 파일업로드 start -->
+										<td class="tc up-load_wrap ">
+											<a href="#"  class="up-load">
+												<img src="images/common/up-load-icon.png" alt="">
+											</a>
+											<div class="up-load_pop">
+												<a href="#" class="up-load-close"></a>
+												<p class="up-load-title">
+													<span class="title">상담파일</span>
+												</p>
+												<input type="file">
+												<a href="#" class="up-load_submit">등록</a>
+
+											</div>
+										</td>
+										<!-- 02-07 파일업로드 end -->
+									</tr>
+									<tr>
+										<td colspan="7"></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagenation">
+								<a href="#" class="prev"></a>
+								<ul>
+									<li><a href="#" class="btn on">1</a></li>
+									<li><a href="#" class="btn">2</a></li>
+									<li><a href="#" class="btn">3</a></li>
+								</ul>
+								<a href="#" class="next"></a>
+								<div class="cb"></div>
+							</div>
+						</div>
+
+						<div class="bottom-table">
+							<div class="btnwrap">
+								<a href="#" class="btn">
+									<span><img src="images/common/icon2.png" alt="">삭제</span>
+								</a>
+								<a href="#" class="btn">
+									<span><img src="images/common/icon3.png" alt="">다운로드</span>
+								</a>
+
+							</div>
+							<table class="basic-table">
+								<caption>상담자료</caption>
+								<col style="width:4%">
+								<col style="width:10%">
+								<col style="width:23%">
+								<col style="width:">
+								<thead>
+									<tr>
+										<th class="tc">
+											<input type="checkbox" value="">
+										</th>
+										<th>상담차수</th>
+										<th>상담단계</th>
+										<th>자료</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tc">
+											<input type="checkbox" value="">
+										</td>
+										<td>1차</td>
+										<td>초회상담(OP)</td>
+										<td>고객 상담시트</td>
+									</tr>
+									<tr>
+										<td class="tc">
+											<input type="checkbox" value="">
+										</td>
+										<td>2차</td>
+										<td>초회상담(OP)</td>
+										<td>고객 상담시트</td>
+									</tr>
+									<tr>
+										<td class="tc">
+											<input type="checkbox" value="">
+										</td>
+										<td>3차</td>
+										<td>초회상담(OP)</td>
+										<td>고객 상담시트</td>
+									</tr>
+									<tr>
+										<td colspan="4"></td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagenation">
+								<a href="#" class="prev"></a>
+								<ul>
+									<li><a href="#" class="btn on">1</a></li>
+									<li><a href="#" class="btn">2</a></li>
+									<li><a href="#" class="btn">3</a></li>
+								</ul>
+								<a href="#" class="next"></a>
+								<div class="cb"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <script src="./js/jquery.mCustomScrollbar.js"></script> --><!-- 01-31 상담내용 popup 삭제 -->
+	<script src="./js/script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script><!-- 01-31 상담내용 popup 추가-->
+	<script src="./js/jquery-ui.min.js"></script>
+	<script>
+	//<!-- 01-31 달력 추가 start -->
+	$(function() {
+		$( ".date" ).datepicker({
+				 showButtonPanel: true,
+				 closeText: '닫기',
+				 dateFormat: "yymmdd"
+		});
+	});
+	//<!-- 01-31 달력 추가 end -->
+	//<!-- 01-31 상담내용 popup start -->
+	(function($){
+			$(window).on("load",function(){
+
+				var textareaLineHeight=parseInt($(".textarea-wrapper textarea").css("line-height"));
+
+				$(".textarea-wrapper").mCustomScrollbar({
+					scrollInertia:0,
+					theme:"dark-3",
+					advanced:{autoScrollOnFocus:false},
+					mouseWheel:{disableOver:["select","option","keygen","datalist",""]},
+					keyboard:{enable:false},
+					snapAmount:textareaLineHeight
+				});
+
+				var textarea=$(".textarea-wrapper textarea"),textareaWrapper=$(".textarea-wrapper"),textareaClone=$(".textarea-wrapper .textarea-clone");
+
+				textarea.bind("keyup keydown",function(e){
+        			var $this=$(this),textareaContent=$this.val(),clength=textareaContent.length,cursorPosition=textarea.getCursorPosition();
+					textareaContent="<span>"+textareaContent.substr(0,cursorPosition)+"</span>"+textareaContent.substr(cursorPosition,textareaContent.length);
+					textareaContent=textareaContent.replace(/\n/g,"<br />");
+        			textareaClone.html(textareaContent+"<br />");
+        			$this.css("height",textareaClone.height());
+					var textareaCloneSpan=textareaClone.children("span"),textareaCloneSpanOffset=0,
+						viewLimitBottom=(parseInt(textareaClone.css("min-height")))-textareaCloneSpanOffset,viewLimitTop=textareaCloneSpanOffset,
+						viewRatio=Math.round(textareaCloneSpan.height()+textareaWrapper.find(".mCSB_container").position().top);
+					if(viewRatio>viewLimitBottom || viewRatio<viewLimitTop){
+						if((textareaCloneSpan.height()-textareaCloneSpanOffset)>0){
+							textareaWrapper.mCustomScrollbar("scrollTo",textareaCloneSpan.height()-textareaCloneSpanOffset-textareaLineHeight);
+						}else{
+							textareaWrapper.mCustomScrollbar("scrollTo","top");
+						}
+					}
+    			});
+
+    			$.fn.getCursorPosition=function(){
+        			var el=$(this).get(0),pos=0;
+        			if("selectionStart" in el){
+            			pos=el.selectionStart;
+        			}else if("selection" in document){
+            			el.focus();
+            			var sel=document.selection.createRange(),selLength=document.selection.createRange().text.length;
+            			sel.moveStart("character",-el.value.length);
+            			pos=sel.text.length-selLength;
+        			}
+        			return pos;
+    			}
+
+			});
+		})(jQuery);
+	var advice_pop = $('.advice_pop');
+	$(function(){
+		//advice_pop.hide();
+		$('.advice_btn').click(function(){
+			$(".advice_pop_wrap .advice_pop").fadeOut(); /*02-06 수정*/
+			$(this).siblings(".advice_pop").fadeIn();
+		});
+		$('.advice_pop-close').click(function(){
+			$(this).parents(".advice_pop").fadeOut();
+		});
+	});
+
+	//<!-- 01-31 상담내용 popup end -->
+		$(function(){
+			$('a').click(function(e){
+			});
+		});
+		//01-23 settings-bar 팝업 시작
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+		//01-23 settings-bar 팝업 끝
+		//<!-- 02-07 파일업로드 start -->
+		$(function(){
+			$('.up-load').click(function(){
+				$(".up-load_wrap .up-load_pop").fadeOut();
+				$(this).siblings(".up-load_pop").fadeIn();
+			});
+			$('.up-load-close').click(function(){
+				$(this).parents(".up-load_pop").fadeOut();
+			});
+		});
+		//<!-- 02-07 파일업로드 end -->
+	</script>
+</body>
+</html>

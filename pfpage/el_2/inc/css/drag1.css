@@ -1,0 +1,24 @@
+#container.drag1{background:url("../../img/content/drag1/d_bg.png") 0 0 no-repeat;}
+
+.drag_wrap{position:absolute;top:10px;left:45px;width:920px;height:496px;padding:38px 50px;}
+.drag_wrap p{font-size: 20px;}
+
+.drag_items{width: 100%;border: 1px dashed #f3671b;margin-top: 12px;height: 76px;white-space:nowrap;line-height: 1;}
+.drag_items .drag_item{position:absolute;font-size:22px;padding:7px 15px;text-align:center;color:#fff;background-color:#f3671b;cursor:pointer;}
+.drag_items .drag_item1{top:93px;left:70px;}
+.drag_items .drag_item2{top:93px;left:260px;}
+.drag_items .drag_item3{top:93px;left:410px;}
+.drag_items .drag_item4{top:93px;left:540px;}
+.drag_items .drag_item5{top:93px;left:710px;}
+.drag_item1,.dragin1{}
+.drag_item2,.dragin2{}
+.drag_item3,.dragin3{}
+
+.drag_con{margin-top:50px;font-size:21px;line-height:33px;}
+.drag_con > ul > li{padding-left:25px;margin-bottom: 15px;background:url("../../img/content/drag1/d_bullet.png") 0 8px no-repeat;}
+.drag_con > ul > li > div,
+.drag_con > ul > li > p{display:inline-block;}
+.drag_con > ul > li > div.num{vertical-align:top;color:#186793}
+.dragin{display:inline-block;margin-top:-3px;color:#fff;vertical-align:middle;text-align:center;border:2px solid #f3671b;background-color:#fff;padding:5px;height: 36px;width: 170px;padding: 0;}
+.dragin.complete{border:2px solid transparent;text-indent:0;background:none;color:#333;width: auto;font-weight: bold;}
+.dragin_blind{position:absolute;top:190px;width:90%;height:340px;}

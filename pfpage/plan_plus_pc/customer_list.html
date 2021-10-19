@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+
+</head>
+<body>
+
+	<div id="body" class="">
+		<div id="left">
+			<div class="left">
+				<div class="logo">
+					<span class="ir">PlanPlus</span>
+				</div>
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo.png" alt="">
+				고객관리
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a class="on" href="./customer_list.html">고객관리리스트</a>
+				</li>
+				<li class="green">
+					<a href="./customer_input1.html">고객등록</a>
+				</li>
+				<li class="green">
+					<a href="./customer_group.html">고객그룹관리</a>
+				</li>
+				<li class="green">
+					<a href="calendar.html">상담캘린더</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<!-- 01-19 추가 시작  -->
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<!-- 01-19 추가 끝  -->
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer ">
+					<a href="./customer_list.html" class="on">
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content customer-list">
+				<div class="searchwrap">
+					<span class="search-icon"><img src="images/common/search-icon.png" alt=""></span>
+					<input class="search-input basic" type="text" placeholder="고객명 검색">
+					<input class="search-input basic" type="text" placeholder="고객명 검색">
+					<select class="search-select date basic">
+						<option selected>기간</option>
+						<option value="">1년</option>
+						<option value="">1개월</option>
+						<option value="">1주일</option>
+						<option value="">오늘</option>
+					</select>
+					<select class="search-select group basic">
+						<option selected>그룹</option>
+						<option value="">기본그룹</option>
+						<option value="">가족</option>
+						<option value="">직장</option>
+					</select>
+					<a href="#" class="search-btn"><img src="images/common/search-btn.png" alt=""></a>
+					<div class="cb"></div>
+				</div>
+
+				<div class="table-box">
+					<h4 class="table-title">전체 그룹 ｜ <span class="st">전체고객 <span class="st">0000</span>명</span></h4>
+					<div class="btnwrap">
+						<a href="#" class="btn group_transfer">
+							<span><img src="images/common/icon1.png" alt="">그룹이동</span>
+						</a>
+						<a href="#" class="btn">
+							<span><img src="images/common/icon2.png" alt="">삭제</span>
+						</a>
+
+						<a href="#" class="btn">
+							<span><img src="images/common/icon3.png" alt="">엑셀다운</span>
+						</a>
+						<a href="#" class="btn">
+							<span><img src="images/common/icon4.png" alt="">고객등록</span>
+						</a>
+					</div>
+					<table class="basic-table hover striped">
+						<thead>
+							<tr>
+								<th class="tc">
+									<input type="checkbox" value="">
+								</th>
+								<th>No.</th>
+								<th>고객명</th>
+								<th>근무처명</th>
+								<th>생년월일</th>
+								<th>수정일</th>
+								<th>그룹</th>
+								<th class="tc">전화번호</th>
+								<th class="tc"><span class="sf">설계결과</span></th>
+								<th class="tc"><span class="sf">재무설계</span></th>
+								<th class="tc"><span class="sf">상담일지</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>10</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report disable">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor disable">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar disable">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>9</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>8</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>7</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>6</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr class="na">
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>5</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr class="na">
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>4</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr class="na">
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>3</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr class="na">
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>2</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+							<tr class="na">
+								<td class="tc">
+									<input type="checkbox" value="">
+								</td>
+								<td>1</td>
+								<td>박세O</td>
+								<td>(주)런인베스트 대표</td>
+								<td>1977-06-18</td>
+								<td>2014년 6월 14일</td>
+								<td>기본그룹</td>
+								<td class="tc">010-0000-0000</td>
+								<td class="tc">
+									<a href="#" class="icon report">
+										<img src="images/common/icon-report.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon monitor">
+										<img src="images/common/icon-monitor.png" alt="">
+									</a>
+								</td>
+								<td class="tc">
+									<a href="#" class="icon calendar">
+										<img src="images/common/icon-calendar.png" alt="">
+									</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+					<div class="pagenation">
+						<a href="#" class="prev"></a>
+						<ul>
+							<li><a href="#" class="btn on">1</a></li>
+							<li><a href="#" class="btn">2</a></li>
+							<li><a href="#" class="btn">3</a></li>
+							<li><a href="#" class="btn">4</a></li>
+							<li><a href="#" class="btn">5</a></li>
+							<li><a href="#" class="btn">6</a></li>
+							<li><a href="#" class="btn">7</a></li>
+							<li><a href="#" class="btn">8</a></li>
+							<li><a href="#" class="btn">9</a></li>
+							<li><a href="#" class="btn">10</a></li>
+						</ul>
+						<a href="#" class="next"></a>
+						<div class="cb"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 01-19 추가 시작 --><!--01-25 수정 Start -->
+	<div class="popbg add_pop">
+		<div class="plan-popup">
+			<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+			<p class="popup-title">
+				<span class="title ">그룹이동 </span>
+			</p>
+			<div class="popup-con-scroll" >
+				<table class="popup-con">
+					<tbody>
+						<tr>
+							<td><a href="#" class="">기본그룹</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">푸르덴셜</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">런인베스트</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">런인베스트</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 01-19 추가 끝 --><!--01-25 수정 end -->
+	
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src='./js/script.js'></script><!-- 01-19 추가  -->
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+
+		//<!-- 01-19 추가 시작 -->
+		var $popup = $('.popbg .plan-popup');
+		$(function(){
+			$popup.parent('.popbg').hide();
+			$(document).on('click','.group_transfer',function(e){
+					$popup.parent('.popbg').fadeIn();
+				});
+			$(document).on('click','.plan-popup-close',function(e){
+				e.preventDefault();
+				$(this).parents('.popbg').fadeOut();
+			});
+			$(document).on('click','.add_pop .plan-popup .popup-con td a',function(e){
+				$popup.parent('.popbg').fadeOut();
+			});
+
+		});
+		//<!-- 01-19 추가 끝 -->
+		//<!--01-25 수정 Start -->
+		$(".popup-con-scroll").mCustomScrollbar({
+			autoHideScrollbar:false,
+			theme:"light",
+			scrollbarPosition:"outside"
+		});
+		//<!--01-25 수정 end -->
+		$(function(){
+			$('a').click(function(e){
+			});
+		});
+
+	</script>
+</body>
+</html>

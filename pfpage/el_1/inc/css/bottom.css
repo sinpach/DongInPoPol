@@ -1,0 +1,728 @@
+@charset "utf-8";
+
+#bottom{
+	width: 1000px;
+	height: 39px;
+	position:absolute;
+	bottom:0px;
+	left: 50%;
+	margin-left: -500px;
+	z-index: 999;
+	background:#3d4342 url('../../img/bottom/control_bg.png') 0 0 no-repeat;
+}
+
+#bottom .logo{
+    float: left;
+    width: 80px;
+    height: 100%;
+	background:url("../../img/bottom/logo.png") no-repeat 4px 6px;
+}
+#bottom .rateGroup button{background:none !important;}
+#bottom>div{
+	float: left;
+}
+#bottom>div:nth-child(1){
+	float: none;
+}
+#bottom button{cursor:pointer;background: none;}
+#bottom .soundGroup{
+	position:relative;
+	float:left;
+	z-index: 10;
+	padding-left: 2px;
+}
+
+#bottom .videoGroup{
+	position:relative;
+	float:left;
+	z-index: 10;
+	padding-left: 5px;
+}
+#bottom .videoGroup .btn, #bottom .soundGroup .btn, #bottom .wordGroup .btn,#bottom .menuGroup .btn{
+	width: 30px;
+	height: 36px;
+	float: left;
+}
+
+#bottom .videoGroup .btn button ,
+#bottom .soundGroup .btn button,
+#bottom .wordGroup .btn button,
+#bottom .menuGroup .btn button  {
+	width: 100%;
+	height: 100%;
+}
+
+#bottom.nf .videoGroup .btn{
+	margin-left: 0px;
+}
+
+#bottom.nf .videoGroup .btn.fullBtn{
+	display: none;
+}
+
+#bottom .videoGroup .btn.noteBtn button.note{
+	background: url('../../img/bottom/note_n.png') 50% 50% no-repeat;
+}
+#bottom .videoGroup .btn.noteBtn button.note:hover,
+#bottom .videoGroup .btn.noteBtn button.note.on{
+	background: url('../../img/bottom/note_o.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.playBtn button.play{
+	background: url('../../img/bottom/play_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.playBtn button.play:hover,
+#bottom .videoGroup .btn.playBtn button.play.on{
+	background: url('../../img/bottom/play_o.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.pauseBtn button.pause{
+	background: url('../../img/bottom/pause_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.pauseBtn button.pause:hover,
+#bottom .videoGroup .btn.pauseBtn button.pause.on{
+	background: url('../../img/bottom/pause_o.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.fullBtn button.full{
+	background: url('../../img/bottom/full_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.fullBtn button.full:hover,
+#bottom .videoGroup .btn.fullBtn button.full.on{
+	background: url('../../img/bottom/full_o.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.stopBtn button.stop{
+	background: url('../../img/bottom/stop_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.stopBtn button.stop:hover,
+#bottom .videoGroup .btn.stopBtn button.stop.on{
+	background: url('../../img/bottom/stop_o.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.shortBtn button.short{
+	background: url('../../img/bottom/kbd_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.shortBtn button.short:hover,
+#bottom .videoGroup .btn.shortBtn button.short.on{
+	background: url('../../img/bottom/kbd_o.png') 0 50% no-repeat;
+}
+
+#bottom .soundGroup .btn.soundBtn button.sound{
+	background: url('../../img/bottom/sound_n.png') 50% 50% no-repeat;
+}
+
+#bottom .soundGroup .btn.soundBtn button.mute{
+	background: url('../../img/bottom/mute_n.png') 50% 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.stopBtn button.stop{
+	background: url('../../img/bottom/stop_n.png') 0 50% no-repeat;
+}
+
+#bottom .videoGroup .btn.stopBtn button.stop:hover,
+#bottom .videoGroup .btn.stopBtn button.stop.on{
+	background: url('../../img/bottom/stop_o.png') 0 50% no-repeat;
+}
+
+#bottom .soundGroup .soundbar{
+	float: left;
+	height: 39px;
+	padding-left: 5px;
+	padding-right: 8px;
+}
+
+#bottom .soundGroup .soundbar .volume{
+	margin-top: 10px;
+	position:relative;
+	cursor:pointer;
+	float: left;
+	width:50px;
+	height: 16px;
+	background: #fff;
+}
+#bottom .soundGroup .soundbar .volume .volume_bg{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 11;
+	background: url('../../img/bottom/volline_bg.png') 0 50% no-repeat;
+}
+
+#bottom .soundGroup .soundbar .volume .volumeBar{
+	display: block;
+position: absolute;
+top: 0px;
+left: 0;
+margin-left: 0px;
+background-color: #8fd413;
+z-index: 10;
+height: 16px;
+}
+
+#bottom .soundGroup .soundbar .volume .p_circle{
+	position:absolute;
+	right:-9px;
+	bottom:-9px;
+	background:url("../../img/bottom/jog1.png") no-repeat;
+	width:17px;
+	height:17px;
+	z-index: 15;
+}
+
+#bottom .helpGroup{
+	position: absolute;
+	height: 35px;
+	top: 0;
+	left: 720px;
+}
+
+#bottom .helpGroup .help{
+	float: left;
+	height: 35px;
+	margin-left: 1px;
+}
+
+#bottom .helpGroup .help button {
+	height: 100%;
+}
+
+#bottom .helpGroup .help button.helpicon1{
+	width: 26px;
+	background: url('../../img/bottom/help_n.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon1:hover{
+	width: 26px;
+	background: url('../../img/bottom/help_o.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon2{
+	width: 29px;
+	background: url('../../img/bottom/help2_n.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon2:hover{
+	width: 29px;
+	background: url('../../img/bottom/help2_o.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon3{
+	width: 26px;
+	background: url('../../img/bottom/script_n.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon3:hover{
+	width: 26px;
+	background: url('../../img/bottom/script_o.png') 0 0 no-repeat;
+}
+
+/*  */
+#bottom .helpGroup .help button.helpicon3.disable{
+	width: 26px;
+	background: url('../../img/bottom/script_d.png') 0 0 no-repeat;
+	cursor:default;
+}
+
+#bottom .helpGroup .help button.helpicon3.disable:hover{
+	background: url('../../img/bottom/script_d.png') 0 0 no-repeat;
+	cursor:default;
+}
+
+#bottom .helpGroup .help button.helpicon3.on{
+	width: 26px;
+	background: url('../../img/bottom/script_o.png') 0 0 no-repeat;
+}
+/*  */
+
+#bottom .helpGroup .help button.helpicon4{
+	width: 31px;
+	background: url('../../img/bottom/key_n.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.helpicon4:hover{
+	width: 31px;
+	background: url('../../img/bottom/key_o.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.fullScreen{
+	width: 26px;
+	background: url('../../img/bottom/videoFull_n.png') 0 0 no-repeat;
+}
+
+#bottom .helpGroup .help button.fullScreen:hover{
+	width: 26px;
+	background: url('../../img/bottom/videoFull_o.png') 0 0 no-repeat;
+}
+
+#bottom .pageGroup{
+	width: 73px;
+	float: left;
+	padding-left: 6px;
+	text-align: center;
+}
+
+#bottom .pageGroup div{
+	float: left;
+}
+
+#bottom .pageGroup .prevPage,
+#bottom .pageGroup .nextPage{
+	width: 30px;
+	height: 52px;
+	position: absolute;
+	float: none;
+	top:-345px;
+}
+
+#bottom .pageGroup .prevPage{left:-1px;}
+#bottom .pageGroup .nextPage{right:0px;}
+
+#bottom .pageGroup .totalPageNum,
+#bottom .pageGroup .currentPageNum{
+    font-size: 16px;
+    color: #fff;
+    width: 30px;
+    height: 35px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 2px;
+}
+#bottom .pageGroup .totalPageNum{
+	width: 20px;
+}
+
+#bottom .pageGroup .currentPageNum{
+	color: #8fd413;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#bottom .pageGroup .pagebar{
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	width: 10px;
+	line-height: 34px;
+	margin-top: 3px;
+}
+#bottom .pageGroup .currentPageNum.hover{
+	color: #fff;
+}
+
+#bottom .pageGroup .totalPageNum.hover{
+	color: #c5c5c5;
+}
+
+#bottom .pageGroup div button{
+	opacity: 0.6;
+}
+
+#bottom .pageGroup div button:hover{
+	opacity: 1.0;
+}
+
+#bottom .pageGroup div.prevPage button.prevPageBtn.first,
+#bottom .pageGroup div.nextPage button.nextPageBtn.last
+{
+	cursor: default;
+}
+
+#bottom .pageGroup div.prevPage button.prevPageBtn.first,
+#bottom .pageGroup div.prevPage button.prevPageBtn.first:hover{
+	background: url('../../img/bottom/prev_dis.png') 0 0 no-repeat;
+	opacity: 0.6;
+}
+
+#bottom .pageGroup div.nextPage button.nextPageBtn{
+	background: url('../../img/bottom/next_n.png') 0 0 no-repeat;
+}
+
+#bottom .pageGroup div.nextPage button.nextPageBtn:hover{
+	background: url('../../img/bottom/next_o.png') 0 0 no-repeat;
+}
+
+#bottom .pageGroup div.nextPage button.nextPageBtn.last,
+#bottom .pageGroup div.nextPage button.nextPageBtn.last:hover{
+	background: url('../../img/bottom/next_dis.png') 0 0 no-repeat;
+	opacity: 0.6;
+}
+
+#bottom .pageGroup div.prevPage button,
+#bottom .pageGroup div.nextPage button{
+	width: 100%;
+	height: 100%;
+	}
+
+#bottom .pageGroup div.prevPage button.prevPageBtn{
+
+	background: url('../../img/bottom/prev_n.png') 0 49% no-repeat;
+}
+
+#bottom .pageGroup div.prevPage button.prevPageBtn:hover{
+	background: url('../../img/bottom/prev_o.png') 0 49% no-repeat;
+}
+
+#bottom .pageGroup div.nextPage button.nextPageBtn{
+	background: url('../../img/bottom/next_n.png') 0 49% no-repeat;
+}
+
+#bottom .pageGroup div.nextPage button.nextPageBtn:hover{
+	background: url('../../img/bottom/next_o.png') 0 49% no-repeat;
+}
+
+#bottom .rateGroup{
+	float: left;
+	padding-left: 2px;
+}
+
+#bottom .rateGroup ul{
+	height: 35px;
+}
+
+#bottom .rateGroup ul li{
+	float: left;
+	border-left: 1px solid #888;
+	margin-top: 13px;
+	padding: 0 5px;
+}
+
+#bottom .rateGroup ul li:first-child{
+	border-left:none;
+}
+
+#bottom .rateGroup ul li button{
+	font-size: 14px;
+	display: block;
+	color: #888;
+	line-height: 14px;
+}
+
+#bottom .rateGroup ul li button:hover,
+#bottom .rateGroup ul li button.on{
+	color: #8fd413;
+}
+
+#bottom .progressGroup{
+	box-sizing:border-box;
+	float:left;
+	top: 0;
+	height:35px;
+	padding-left: 0px;
+}
+
+#bottom .progressGroup div{
+	float: left;
+	margin-left: 10px;
+}
+
+#bottom .progressGroup div:first-child{
+	margin-left: 0;
+}
+
+#bottom .progressGroup .progress{
+	width: 100%;
+	height: 12px;
+	position: absolute;
+	top:-12px;
+	left:0px;
+	background: #1d2339;
+	z-index: 19;
+}
+
+#bottom .progressGroup .progress .progress-bar{
+	-webkit-transition: width 0s ease;
+	-o-transition: width 0s ease;
+	transition: width 0s ease;
+	position:relative;
+	float: left;
+	width: 0%;
+	height: 10px;
+	background:#8fd413;
+	cursor:pointer;
+	margin-top: 1px;
+}
+#bottom .progressGroup .progress .progress-bar .p_circle{
+	position: absolute;
+    right: -9px;
+    bottom: -4px;
+    width: 20px;
+    height: 15px;
+}
+
+#bottom .progressGroup .time{color:#c0c0c0;margin-left: 5px;height:39px;}
+#bottom .progressGroup .time span{
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    line-height: 40px;
+    height: 35px;
+    color: #c0c0c0;
+}
+
+#bottom .progressGroup .time span.currentTime{
+	color: #8fd413;
+}
+
+#bottom .nextClick{
+	position: absolute;
+    right: 10px;
+    width: 67px;
+    height: 77px;
+    top: -420px;
+    background: url('../../img/bottom/nextClick.png') 0 0px no-repeat;
+}
+
+#bottom .nextClick.end{
+	background: url('../../img/bottom/nextPage_en.png') 0 0px no-repeat;
+}
+
+#bottom .progressGroup .marker{
+	position: absolute;
+	width: 18px;
+	height: 12px;
+	background: url('../../img/bottom/playbar_marker.png') 0 0px no-repeat;
+	margin: 0;
+	top: 6px;
+}
+
+#bottom .progressGroup .marker button{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#display{
+    position: absolute;
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    left: 0;
+    bottom: 51px;
+    padding: 5px 40px;
+    background-color: rgba( 0, 0, 0, 0.7);
+    height: 55px;
+    z-index: 99;
+}
+#bottom #dis_close_btn{
+	position:absolute;top:-57px;right:10px;width:21px;height:21px;
+	background:url("../../img/content/pop_close.png") no-repeat;z-index:100;
+}
+#bottom .playBtn,#bottom .stopBtn{
+	display:none;
+}
+.search{
+	float: left;
+	width: 135px;
+	overflow: hidden;
+	padding: 7px 8px;
+}
+.search input{
+	float: left;
+	width: 80px;
+	height: 22px;
+	background: #fff;
+	border-radius: 3px;
+	padding-left: 5px;
+	margin-top: 1px;
+}
+#bottom  .search .search_btn{
+	display: block;
+	float: left;
+	width: 39px;
+	height: 24px;
+	background:url("../../img/bottom/search.png") 0 0 no-repeat;
+}
+.learningmap{
+	float: left;
+	width: 40px;
+	height: 39px;
+}
+#bottom .learningmap .learning{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/learning.png") 6px  9px no-repeat;
+}
+#bottom .shortBtn{
+	width: 40px;
+	height: 39px;
+}
+#bottom .shortBtn .short{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/short.png") 6px  10px no-repeat;
+}
+#bottom .introduction{
+	width: 40px;
+	height: 39px;
+}
+#bottom .introduction .introductionBtn{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/introduction.png") 13px  9px no-repeat;
+}
+#bottom .purpose{
+	width: 40px;
+	height: 39px;
+}
+#bottom .purpose .purposeBtn{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/purpose.png") 10px  9px no-repeat;
+}
+#bottom .quality{
+	width: 40px;
+	height: 39px;
+}
+#bottom .quality .qualityBtn{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 19px;
+	color: #fff;
+
+}
+#bottom .boolmark{
+	width: 40px;
+	height: 39px;
+}
+#bottom .boolmark .boolmarkBtn{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/boolmark.png") 13px  11px no-repeat;
+}
+
+#bottom .download{
+	width: 40px;
+	height: 39px;
+}
+#bottom .download .downloadBtn{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/download.png") 10px  9px no-repeat;
+}
+
+#bottom .full{
+	width: 40px;
+	height: 39px;
+}
+#bottom .full .fullBtn{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/full.png") 12px  13px no-repeat;
+}
+
+#bottom .full .fullBtn.disable{
+	o
+}
+
+
+#bottom .noteBtn .note{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/note_n.png") 50% 55% no-repeat;
+}
+
+#bottom .videoGroup .btn.resetBtn {
+	width: 30px;
+	height: 34px;
+	float: left;
+}
+#bottom .resetBtn .reset{
+	width: 100%;
+	height: 100%;
+	background:url("../../img/bottom/reset.png") 50% 55% no-repeat;
+}
+#bottom .learningmap .learning:hover{
+	background: url(../../img/bottom/learning_on.png) 6px 7px no-repeat;
+}
+#bottom .shortBtn .short:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/short_on.png) 6px 9px no-repeat;
+}
+#bottom .introduction .introductionBtn:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/introduction_on.png) 13px 9px no-repeat;
+}
+#bottom .purpose .purposeBtn:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/purpose_on.png) 10px 9px no-repeat;
+}
+#bottom .quality .qualityBtn:hover {
+
+    color: #8fd413;
+}
+#bottom .boolmark .boolmarkBtn:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/boolmark_on.png) 13px 11px no-repeat;
+}
+#bottom .download .downloadBtn:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/download_on.png) 10px 10px no-repeat;
+}
+#bottom .resetBtn .reset:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/reset_on.png) 50% 55% no-repeat;
+}
+#bottom .noteBtn .note:hover {
+    width: 100%;
+    height: 100%;
+    background: url(../../img/bottom/note_n_on.png) 50% 55% no-repeat;
+}
+
+#bottom .boolmark .boolmarkBtn.disable,
+#bottom .boolmark .boolmarkBtn.disable:hover{
+	background:url("../../img/bottom/boolmark_dis.png") 13px  11px no-repeat;
+
+}
+
+#bottom .quality .qualityBtn.disable,
+#bottom .quality .qualityBtn.disable:hover {
+    color: #888;
+}
+
+#bottom .download .downloadBtn.disable,
+#bottom .download .downloadBtn.disable:hover{
+	background:url("../../img/bottom/download_dis.png") 10px 10px no-repeat;
+}
+
+#bottom .noteBtn .note.disable,
+#bottom .noteBtn .notedisable:hover {
+    background: url("../../img/bottom/note_n_dis.png") 50% 55% no-repeat;
+}
+
+#bottom .disable{
+	cursor: default;
+	position: relative;
+	opacity: 0.5;
+}
+
+#bottom .fullBtn.disable{
+	opacity: 0.2;
+}
+#bottom .dis.download::after,#bottom .dis.boolmark::after,#bottom .dis.quality::after{
+	content: "";
+	width: 40px;
+	height: 39px;
+	position: absolute;
+	top:0;
+	bottom:0;
+
+}

@@ -1,0 +1,233 @@
+/* page5 */
+
+.db .sync{display:block !important;}
+.sync{font-size:22px;color:#333;}
+/* tab2 */
+.tab2 .sync{width:1008px;height:648px;top:-77px;left:0px;}
+.tab2 .sync3{background:url("../../img/content/study2/tab2/03.png") no-repeat;padding:304px 90px;}
+
+ul.bl_dim{margin-top:30px;margin-left:15px;}
+ul.bl_dim li{background:url("../../img/content/bullet.png") no-repeat 0 9px;padding-left: 20px;
+    line-height: 32px;
+    font-size: 23px !important;margin-bottom:5px;}
+/* tab3 */
+.tab3 .sync{width:1008px;height:648px;top:-77px;left:0px;}
+.tab3 .sync3{background:url("../../img/content/study2/tab3/03.png") no-repeat;padding:308px 90px;}
+
+/* tab4 */
+.tab4 .sync{width:1008px;height:648px;top:-77px;left:0px;}
+.tab4 .sync3{background:url("../../img/content/study2/tab4/03.png") no-repeat;padding:203px 90px;}
+.tab4 .sync6{background:url("../../img/content/study2/tab4/06.png") no-repeat;padding:453px 90px;}
+
+/* tab5 */
+.tab5 > .sync{top:-77px;left:0px;}
+ul.bl_dim_yellow{margin-top:30px;margin-left:15px;}
+ul.bl_dim_yellow li{
+	position:relative !important;background:url("../../img/content/bl_dim_yellow.png") no-repeat 0 9px;padding-left: 20px;
+    line-height: 32px;
+    font-size: 23px !important;margin-bottom:5px;
+}
+
+.tab5 .sync1{top:40px;left:50px;}
+.tab5 .sync5{
+	top: 260px;left: 87px;width: 560px;height: 80px;font-size: 22px;background: url("../../img/content/study2/tab5/01.png") no-repeat;
+    padding-left: 92px;padding-top: 10px;line-height: 30px;color:#438E00 !important;
+}
+.tab5 .sync6{top:339px;left:190px;width:430px;height:148px;background:url("../../img/content/study2/tab5/02.png") no-repeat;}
+.tab5 .sync6 > ul{margin-top:30px;margin-left:20px;}
+.tab5 .sync6 > ul > li{margin-bottom:25px;font-size:22px;color:#666;}
+
+/* tab6 dolbal */
+/* .tab7 */
+.tab7 > .sync{top:-77px;left:0px;}
+.tab7 > .sync1{
+	width:1008px;height:648px;background:url("../../img/content/study2/tab7/01.png") no-repeat;
+	padding-top:160px;padding-left:128px;
+}
+ul.bl_dim_green{margin-top:30px;margin-left:15px;}
+ul.bl_dim_green > li{
+	position:relative !important;background:url("../../img/content/bl_dim_green.png") no-repeat 0 9px;padding-left: 20px;
+    line-height: 32px;
+    font-size: 22px !important;margin-bottom:5px;
+}
+ul.bl_arrow_yellow > li{
+	position:relative !important;background:url("../../img/content/bl_arrow_yellow.png") no-repeat 0 5px;padding-left: 25px;
+    line-height: 32px;
+    font-size: 22px !important;margin-bottom:5px;
+}
+
+/* tab8 */
+.tab8 > .sync{top:-77px;left:0px;}
+
+.tab8 > .sync2{
+	background:url("../../img/content/study2/tab8/02.png") no-repeat;width:1008px;height:648px;
+	padding-top: 244px;
+    padding-left: 100px;
+    padding-right: 365px;
+    text-align: center;
+}
+.tab8 > .sync3{top:240px;left:340px;}
+.tab8 > .sync4{
+	background:url("../../img/content/study2/tab8/03.png") no-repeat;width:1008px;height:648px;
+	padding-top: 365px;
+    padding-left: 100px;
+    padding-right: 363px;
+    text-align: center;
+}
+.tab8 > .sync5{top:361px;left:340px;}
+.tab8 > .sync6{
+	background:url("../../img/content/study2/tab8/04.png") no-repeat;width:1008px;height:648px;
+	padding-top: 486px;
+    padding-left: 100px;
+    padding-right: 365px;
+    text-align: center;
+}
+.tab8 .click_area{
+	position:absolute;top:470px;left:87px;width:571px;height:108px;cursor:pointer;
+	background:#fff url("../../img/content/study2/tab8/click.png") no-repeat;
+	-webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px;
+	z-index:10;
+
+}
+/* tab9 */
+.tab9 > .sync1{
+	top:-77px;left:0px;
+	width:1008px;height:648px;background:url("../../img/content/study2/tab9/01.png") no-repeat;
+	padding-top:209px;padding-left:128px;
+}
+.fc_green{color:#68B474;font-weight:bold;}
+
+
+
+/* tab10 */
+.tab10{background:url("../../img/content/study2/tab10/01.png") no-repeat 0 -77px;height:537px;}
+.ready_ul{position:absolute;top:59px;left:63px;}
+.ready_ul > li{margin-bottom:1px;}
+.ready_ul > li > button{width:202px;height:54px;background:url("../../img/content/study2/tab10/btn1_n.png") no-repeat;overflow:hidden;text-indent:-9999px;}
+.ready_ul > li:nth-child(1) > button{background-image:url("../../img/content/study2/tab10/btn1_n.png")}
+.ready_ul > li:nth-child(2) > button{background-image:url("../../img/content/study2/tab10/btn2_n.png")}
+.ready_ul > li:nth-child(3) > button{background-image:url("../../img/content/study2/tab10/btn3_n.png")}
+.ready_ul > li:nth-child(4) > button{background-image:url("../../img/content/study2/tab10/btn4_n.png")}
+.ready_ul > li:nth-child(5) > button{background-image:url("../../img/content/study2/tab10/btn5_n.png")}
+.ready_ul > li:nth-child(6) > button{background-image:url("../../img/content/study2/tab10/btn6_n.png")}
+.ready_ul > li:nth-child(7) > button{background-image:url("../../img/content/study2/tab10/btn7_n.png")}
+.ready_ul > li:nth-child(8) > button{background-image:url("../../img/content/study2/tab10/btn8_n.png")}
+
+.ready_ul > li:nth-child(1).on > button,.ready_ul > li:nth-child(1) > button:hover{background-image:url("../../img/content/study2/tab10/btn1_o.png")}
+.ready_ul > li:nth-child(2).on > button,.ready_ul > li:nth-child(2) > button:hover{background-image:url("../../img/content/study2/tab10/btn2_o.png")}
+.ready_ul > li:nth-child(3).on > button,.ready_ul > li:nth-child(3) > button:hover{background-image:url("../../img/content/study2/tab10/btn3_o.png")}
+.ready_ul > li:nth-child(4).on > button,.ready_ul > li:nth-child(4) > button:hover{background-image:url("../../img/content/study2/tab10/btn4_o.png")}
+.ready_ul > li:nth-child(5).on > button,.ready_ul > li:nth-child(5) > button:hover{background-image:url("../../img/content/study2/tab10/btn5_o.png")}
+.ready_ul > li:nth-child(6).on > button,.ready_ul > li:nth-child(6) > button:hover{background-image:url("../../img/content/study2/tab10/btn6_o.png")}
+.ready_ul > li:nth-child(7).on > button,.ready_ul > li:nth-child(7) > button:hover{background-image:url("../../img/content/study2/tab10/btn7_o.png")}
+.ready_ul > li:nth-child(8).on > button,.ready_ul > li:nth-child(8) > button:hover{background-image:url("../../img/content/study2/tab10/btn8_o.png")}
+
+
+.ready_ul > li > ul{display:none;position:absolute;left:202px;top:0px;width:390px;height:430px;font-size:22px;}
+.ready_ul > li:nth-child(1) > ul{padding-top:70px}
+.ready_ul > li:nth-child(2) > ul{padding-top:120px}
+.ready_ul > li:nth-child(3) > ul{padding-top:100px}
+.ready_ul > li:nth-child(4) > ul{padding-top:90px}
+.ready_ul > li:nth-child(5) > ul{padding-top:140px}
+.ready_ul > li:nth-child(6) > ul{padding-top:120px}
+.ready_ul > li:nth-child(7) > ul{padding-top:110px}
+.ready_ul > li:nth-child(8) > ul{padding-top:70px}
+.ready_ul > li.on > ul{display:block;}
+
+ul.bl_arrow_blue > li{
+	position:relative !important;background:url("../../img/content/bl_arrow_blue.png") no-repeat 0 5px;padding-left: 25px;
+    line-height: 32px;
+    font-size: 22px !important;margin-bottom:5px;
+}
+.ybg{width:295px;height:43px;background:url("../../img/content/study2/tab10/box.png") no-repeat;padding-top:6px;text-align:center;}
+.ex{background:url("../../img/content/study2/tab10/ex.png") no-repeat;padding-left:50px;padding-top:5px;}
+li.nob{background:none !important;}
+
+/* tab11 */
+.skill_ul{position:absolute;top:50px;left:63px;}
+.skill_ul > li{float:left;}
+.skill_ul > li > button{width:186px;height:111px;background:url("../../img/content/study2/tab11_1/btn1_n.png") no-repeat;overflow:hidden;text-indent:-9999px;}
+.skill_ul > li:nth-child(1) > button{background-image:url("../../img/content/study2/tab11_1/btn1_n.png")}
+.skill_ul > li:nth-child(2) > button{background-image:url("../../img/content/study2/tab11_1/btn2_n.png")}
+.skill_ul > li:nth-child(3) > button{background-image:url("../../img/content/study2/tab11_1/btn3_n.png")}
+.skill_ul > li:nth-child(1).on > button,.skill_ul > li:nth-child(1) > button:hover{background-image:url("../../img/content/study2/tab11_1/btn1_o.png")}
+.skill_ul > li:nth-child(2).on > button,.skill_ul > li:nth-child(2) > button:hover{background-image:url("../../img/content/study2/tab11_1/btn2_o.png")}
+.skill_ul > li:nth-child(3).on > button,.skill_ul > li:nth-child(3) > button:hover{background-image:url("../../img/content/study2/tab11_1/btn3_o.png")}
+
+.skill_ul > li > ul{display:none;position:absolute;left:-10px;top:71px;width:576px;height:385px;font-size:22px;border:2px solid #ccc;
+-webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;background-color:#fff;}
+.skill_ul > li > ul > li{padding:20px;}
+.skill_ul > li.on > ul{display:block;}
+.ybox{padding:8px 10px;font-size:22px;background-color:#FFF1BD;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.fc_org{color:#FF9900}
+.skil_qes{width:531px;height:73px;background:url("../../img/content/study2/tab11_2/01.png") no-repeat 0 3px;padding-top:13px;padding-left:135px; margin-bottom:10px;}
+
+.tab11 .ex1{position:absolute;width:536px;height:62px;background:url("../../img/content/study2/tab11_2/02_1.png") no-repeat;
+padding-top:21px;padding-left:78px;color:#fff;}
+.tab11 .ex1 > .click_area{position:absolute;top:13px;left:79px;width:441px;height:40px;background:#60B20F url("../../img/content/study2/tab11_2/02_2.png") no-repeat 180px 50%;}
+
+.bl_num{}
+.bl_num > li{padding-left:30px;line-height:34px;background:url("../../img/content/study2/tab11_2/num1.png") no-repeat;margin-bottom:0px;}
+.bl_num > li:nth-child(1){background-image:url("../../img/content/study2/tab11_2/num1.png")}
+.bl_num > li:nth-child(2){background-image:url("../../img/content/study2/tab11_2/num2.png")}
+.bl_num > li:nth-child(3){background-image:url("../../img/content/study2/tab11_2/num3.png")}
+.bl_num > li:nth-child(4){background-image:url("../../img/content/study2/tab11_2/num4.png")}
+.bl_num > li:nth-child(5){background-image:url("../../img/content/study2/tab11_2/num5.png")}
+.bl_num > li:nth-child(6){background-image:url("../../img/content/study2/tab11_2/num6.png")}
+
+
+/* dolbal */
+.dolbal .sync{top:80px;left:40px;}
+.dolbal .bg{
+	color: #344772;width: 914px;	height: 336px;
+	background: url("../../img/content/study2/dolbal/textbox.png") 0 0 no-repeat;
+	box-sizing: border-box;padding: 40px 20px 0 300px;line-height: 40px;
+	font-size:24px;
+}
+
+.dolbal .bg .blank{
+	width: 30px;height: 30px;border: 2px solid #B1DCE2;border-radius: 5px;vertical-align: middle;margin-top: -5px;line-height:29px;text-align:center;color:#fff;font-size:0px;
+}
+.dolbal .bg .blank.on{
+	color:#000;font-size:21px;
+}
+.dolbal .blank_wrap{float:left;}
+
+.dolbal input{
+	font-family: "Nanum Barun Gothic";font-size: 20px;position: absolute;top: 253px;left: 579px;height: 40px;width: 302px;
+	vertical-align: middle;text-align: center;border-radius: 10px;
+}
+
+.dolbal .confirmBtn{
+	display: block;	width: 103px;
+	height: 41px;background: url("../../img/content/study2/dolbal/btn_n.png") 0 0 no-repeat;
+	margin: -10px 450px;;
+}
+.dolbal .nextPageBtn{
+	display: block;	width: 163px;
+	height: 41px;background: url("../../img/content/study2/dolbal/con_n.png") 0 0 no-repeat;
+	margin: -10px 430px;;display: none;
+}
+.dolbal .confirmBtn:hover{	background: url("../../img/content/study2/dolbal/btn_o.png") 0 0 no-repeat;}
+.dolbal .nextPageBtn:hover{background: url("../../img/content/study2/dolbal/con_o.png") 0 0 no-repeat;}
+
+
+/* study2 싱크 애니메이션 */
+/* 공통애니 */
+.tab .sync.fin{animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1}
+.tab .sync.fdown{animation:fadeInDown 1.5s 1;-webkit-animation:fadeInDown 1.5s 1}
+.tab .sync.fup{animation:fadeInUp 1.5s 1;-webkit-animation:fadeInUp 1.5s 1}
+.tab .sync.fleft{animation:fadeInLeft 1.5s 1;-webkit-animation:fadeInLeft 1.5s 1}
+/* //공통애니 끝 */
+.tab .sync{animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1}
+
+.tab1 .sync1{top: -77px;left: 0px; animation:bounceIn 1.5s 1;-webkit-animation:bounceIn 1.5s 1;}
+.tab1 .sync2{top: 162px;left: 529px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+
+.tab2 .sync1{animation:fadeInLeft 1.5s 1;-webkit-animation:fadeInLeft 1.5s 1;z-index:2;}
+.tab2 .sync2{animation:fadeInLeft 1.5s 1;-webkit-animation:fadeInLeft 1.5s 1;}
+
+
+.tab3 .sync1{animation:fadeInLeft 1.5s 1;-webkit-animation:fadeInLeft 1.5s 1;z-index:2;}
+.tab3 .sync2{animation:fadeInLeft 1.5s 1;-webkit-animation:fadeInLeft 1.5s 1;}
+

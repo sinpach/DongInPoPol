@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="./css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+	<div id="body" class="body-custom design_result">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<p class="name">
+					<span>박세라</span><span>님 재무설계 보고서</span>
+				</p>
+
+			</div>
+			<ul class="left-menu">
+				<li class="green nav1" >
+					<a href="#" data-tab="01"  data-num="01">1. 고객 재무정보</a>
+					<ul>
+						<li class="green"><a href="#" data-num="01"><span>1-1.</span> <span>고객 가족정보</span></a></li>
+						<li class="green"><a href="#" data-num="02" ><span>1-2.</span> <span>고객 재무목표</span></a></li>
+						<li class="green"><a href="#" data-num="03" ><span>1-3-1.</span> <span>보유 자산·부채 현황_금융자산</span></a></li>
+						<li class="green"><a href="#" data-num="04" ><span>1-3-2.</span> <span>보유 자산·부채 현황_연금자산</span></a></li>
+						<li class="green"><a href="#" data-num="05" ><span>1-3-3.</span> <span>보유 자산·부채 현황_부동산자산</span></a></li>
+					</ul>
+				</li>
+				<li class="green nav1" >
+					<a href="#" data-tab="02" data-num="06">2. 재무상태 분석</a>
+					<ul>
+						<li class="green"><a href="#" data-num="06"><span>2-1.</span> <span>자산·부채 분석</span></a></li>
+						<li class="green"><a href="#" data-num="07"><span>2-2.</span> <span>월간 현금흐름 분석</span></a></li>
+						<li class="green"><a href="#" data-num="08"><span>2-3.</span> <span>연간 현금흐름 분석</span></a></li>
+						<li class="green"><a href="#" data-num="09"><span>2-4.</span> <span>가계 재무지표 분석</span></a></li>
+						<li class="green"><a href="#" data-num="10"><span>2-5.</span> <span>재무지표 분석 가이드라인</span></a></li>
+						<li class="green"><a href="#" data-num="11"><span>2-6.</span> <span>생애현금흐름 및 생애순자산 분석</span></a></li>
+					</ul>
+				</li>
+				<li class="green nav1" >
+					<a href="#" data-tab="03" data-num="12">3. 은퇴자금 설계</a>
+					<ul>
+						<li class="green"><a href="#" data-num="12"><span>3-1.</span> <span>은퇴 준비자금</span></a></li>
+						<li class="green"><a href="#" data-num="13"><span>3-1-1.</span> <span>연금자산 연금개시 예상 스케쥴</span></a></li>
+						<li class="green"><a href="#" data-num="14"><span>3-2.</span> <span>은퇴필요자금 및 부족자금</span></a></li>
+						<li class="green"><a href="#" data-num="15"><span>3-3.</span> <span>은퇴자금 감소추이</span></a></li>
+						<li class="green"><a href="#" data-num="16"><span>3-4.</span> <span>은퇴자금 필요 저축액</span></a></li>
+						<li class="green"><a href="#" data-num="17"><span>3-5.</span> <span>설계 전 예상 은퇴 CF분석</span></a></li>
+						<li class="green"><a href="#" data-num="18"><span>3-6.</span> <span>설계 후 예상 은퇴 CF분석</span></a></li>
+						<li class="green"><a href="#" data-num="19"><span>3-7.</span> <span>설계 후 예상 은퇴 CF분석 상세</span></a></li>
+					</ul>
+				</li>
+				<li class="green nav1">
+					<a href="#" data-tab="04" data-num="20">4. 교육자금 설계</a>
+					<ul>
+						<li class="green"><a href="#" data-num="20"><span>4-1.</span> <span>자녀교육 필요자금</span></a></li>
+						<li class="green"><a href="#" data-num="21"><span>4-2.</span> <span>자녀별 교육자금 세부 목표</span></a></li>
+						<li class="green"><a href="#" data-num="22"><span>4-3.</span> <span>자녀별 연간 필요 교육비</span></a></li>
+						<li class="green"><a href="#" data-num="23"><span>4-4.</span> <span>자녀교육 필요저축액</span></a></li>
+
+					</ul>
+				</li>
+				<li class="green nav1">
+					<a href="#" data-tab="05" data-num="24">5. 목적자금 설계</a>
+					<ul>
+						<li class="green"><a href="#"  data-num="24"><span>5-1.</span> <span>목적자금 분석</span></a></li>
+						<li class="green"><a href="#"  data-num="25"><span>5-2.</span> <span>목적자금 분석</span></a></li>
+					</ul>
+				</li>
+				<li class="green nav1">
+					<a href="#" data-tab="06" data-num="26">6. 보장설계</a>
+					<ul>
+						<li class="green"><a href="#"  data-num="26"><span>6-1.</span> <span>보장성보험 보유계약 현황</span></a></li>
+						<li class="green"><a href="#"  data-num="27"><span>6-2.</span> <span>사망보장 현황_고객</span></a></li>
+						<li class="green"><a href="#"  data-num="28"><span>6-3.</span> <span>사망보장 필요자금 분석_고객</span></a></li>
+						<li class="green"><a href="#"  data-num="29"><span>6-4.</span> <span>주요 진단금 보장현황_고객</span></a></li>
+						<li class="green"><a href="#"  data-num="30"><span>6-5.</span> <span>후유장해·수술·입원·실비 보장현황_고객</span></a></li>
+						<li class="green"><a href="#"  data-num="31"><span>6-6.</span> <span>건강보장현황 종합분석_고객</span></a></li>
+						<li class="green"><a href="#"  data-num="32"><span>6-7.</span> <span>사망보장 현황_배우자</span></a></li>
+						<li class="green"><a href="#"  data-num="33"><span>6-8.</span> <span>사망보장 필요자금 분석_배우자</span></a></li>
+						<li class="green"><a href="#"  data-num="34"><span>6-9.</span> <span>주요 진단금 보장현황_배우자</span></a></li>
+						<li class="green"><a href="#"  data-num="35"><span>6-10.</span> <span>후유장해·수술·입원·실비 보장현황_배우자</span></a></li>
+						<li class="green"><a href="#"  data-num="36"><span>6-11.</span> <span>건강보장현황 종합분석_배우자</span></a></li>
+
+					</ul>
+				</li>
+				<li class="green nav1">
+					<a href="#" data-tab="07" data-num="37">7. 부채설계</a>
+					<ul>
+						<li class="green"><a href="#"  data-num="37"><span>7-1.</span> <span>부채현황분석</span></a></li>
+						<li class="green"><a href="#"  data-num="38"><span>7-2.</span> <span>부채상환분석</span></a></li>
+					</ul>
+				</li>
+				<li class="green nav1">
+					<a href="#" data-tab="08" data-num="39">8. 투자설계</a>
+					<ul>
+						<li class="green"><a href="#"  data-num="39"><span>8-1.</span> <span>고객 투자성향을 고려한 모델 <br>포트폴리오 예시</span></a></li>
+						<li class="green"><a href="#"  data-num="40"><span>8-2.</span> <span>설계 전 금융자산 자산배분 분석</span></a></li>
+						<li class="green"><a href="#"  data-num="41"><span>8-3.</span> <span>조정 후 금융자산 포트폴리오</span></a></li>
+						<li class="green"><a href="#"  data-num="42"><span>8-4.</span> <span>조정 후 연금자산 포트폴리오</span></a></li>
+						<li class="green"><a href="#"  data-num="43"><span>8-5.</span> <span>매도 상품 리스트</span></a></li>
+						<li class="green"><a href="#"  data-num="44"><span>8-6.</span> <span>조정 전·후 금융자산 자산배분 비교</span></a></li>
+						<li class="green"><a href="#"  data-num="45"><span>8-7.</span> <span>조정 전·후 총자산 자산배분 비교</span></a></li>
+					</ul>
+				</li>
+			</ul>
+			<button class="print_btn">
+				보고서 인쇄하기
+			</button>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" >
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+				<li class="plan">
+					<a href="#" class="on">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content invest_plan2_3">
+				<ul class="tab_nav">
+					<li><a href="#" data-tab="01" data-num="01">고객 재무정보</a></li>
+					<li><a href="#" data-tab="02" data-num="06">재무상태 분석</a></li>
+					<li><a href="#" data-tab="03" data-num="12">은퇴자금 설계</a></li>
+					<li><a href="#" data-tab="04" data-num="20">교육자금 설계</a></li>
+					<li><a href="#" data-tab="05" data-num="24">목적자금 설계</a></li>
+					<li><a href="#" data-tab="06" data-num="26">보장설계</a></li>
+					<li><a href="#" data-tab="07" data-num="37">부채설계</a></li>
+					<li><a href="#" data-tab="08" data-num="39">투자설계</a></li>
+				</ul>
+				<div class="iframe_content">
+					<iframe id="iframe" src="./design_result/01.html"></iframe>
+					<button class="i_prev">이전</button>
+					<button class="i_next">다음</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.slides.js"></script>
+	<script src="./js/d3.v3.min.js"></script>
+	<script src="./js/c3.js"></script>
+	<script src="./js/custom_donut.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+	<script>
+		var totalPageNum = $(".left-menu a[data-num]").last().attr('data-num')
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+</head>
+<body>
+	<div id="body">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo.png" alt="">
+				고객관리
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a  href="./customer_list.html">고객관리리스트</a>
+				</li>
+				<li class="green">
+					<a href="./customer_input1.html">고객등록</a>
+				</li>
+				<li class="green">
+					<a class="on" href="./customer_group.html">고객그룹관리</a>
+				</li>
+				<li class="green">
+					<a href="calendar.html">상담캘린더</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<!-- 01-19 추가 시작  -->
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<!-- 01-19 추가 끝  -->
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" class="on">
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content customer_group">
+				<div class="table-box">
+					<h4 class="table-title">고객그룹관리 ｜ <span class="st">전체고객 <span class="st">0000</span>명</span> <span class="st">고객그룹 수 <span class="st">00</span>개</span></h4>
+
+					<div class="btnwrap">
+						<a href="#" class="btn group_add">
+							<span><img src="images/common/icon4.png" alt="">추가</span>
+						</a>
+
+					</div>
+					<table class="basic-table">
+						<colgroup>
+							<col width="40%"/>
+							<col width="10%"/>
+							<col width="20%"/>
+							<col width="30%"/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>그룹명</th>
+								<th class="tc">인원</th>
+								<th class="tc">등록일</th>
+								<th ></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td >
+									기본그룹
+								</td>
+								<td class="tc">
+									84
+								</td class="tc">
+								<td  class="tc">
+									2017-01-03
+								</td>
+								<td class="t_a_r">
+									<div class="t_btn_wrap">
+										<a href="#" class="t_btn change">
+											<span>수정</span>
+										</a>
+										<a href="#" class="t_btn del">
+											<span>삭제</span>
+										</a>
+										<a href="#" class="t_btn down">
+											<span>엑셀다운</span>
+										</a>
+
+										<!-- 01-19  수정팝업 추가 시작-->
+										<div class="correct_pop ">
+											<a href="#" class="correct_pop-close"></a>
+											<p class="correct_pop-title">
+												<span class="title ">그룹명 수정</span>
+											</p>
+											<input type="text" class="table-input">
+											<a href="#" class="btn_submit">수정하기</a>
+										</div>
+										<!-- 01-19  수정팝업 추가 끝-->
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td >
+									푸르덴셜
+								</td>
+								<td class="tc">
+									60
+								</td class="tc">
+								<td  class="tc">
+									2017-01-03
+								</td>
+								<td class="t_a_r">
+									<div class="t_btn_wrap">
+										<a href="#" class="t_btn change">
+											<span>수정</span>
+										</a>
+										<a href="#" class="t_btn del">
+											<span>삭제</span>
+										</a>
+										<a href="#" class="t_btn down">
+											<span>엑셀다운</span>
+										</a>
+										<!-- 01-19  수정팝업 추가 시작-->
+										<div class="correct_pop ">
+											<a href="#" class="correct_pop-close"></a>
+											<p class="correct_pop-title">
+												<span class="title ">그룹명 수정</span>
+											</p>
+											<input type="text" class="table-input">
+											<a href="#" class="btn_submit">수정하기</a>
+										</div>
+										<!-- 01-19  수정팝업 추가 끝-->
+									</div>
+
+								</td>
+							</tr>
+							<tr>
+								<td >
+									런인베스트
+								</td>
+								<td class="tc">
+									20
+								</td class="tc">
+								<td  class="tc">
+									2017-01-03
+								</td>
+								<td class="t_a_r">
+									<div class="t_btn_wrap">
+										<a href="#" class="t_btn change">
+											<span>수정</span>
+										</a>
+										<a href="#" class="t_btn del">
+											<span>삭제</span>
+										</a>
+										<a href="#" class="t_btn down">
+											<span>엑셀다운</span>
+										</a>
+										<!-- 01-19  수정팝업 추가 시작-->
+										<div class="correct_pop ">
+											<a href="#" class="correct_pop-close"></a>
+											<p class="correct_pop-title">
+												<span class="title ">그룹명 수정</span>
+											</p>
+											<input type="text" class="table-input">
+											<a href="#" class="btn_submit">수정하기</a>
+										</div>
+										<!-- 01-19  수정팝업 추가 끝-->
+
+									</div>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table_bottom">
+						<select name="group_set" id="">
+							<option value="">그룹설정</option>
+							<option value="1">기본그룹</option>
+							<option value="1">푸르덴셜</option>
+							<option value="1">런인베스트</option>
+						</select>
+					</div>
+					<!-- <div class="pagenation">
+						<a href="#" class="prev"></a>
+						<ul>
+							<li><a href="#" class="btn on">1</a></li>
+							<li><a href="#" class="btn">2</a></li>
+							<li><a href="#" class="btn">3</a></li>
+							<li><a href="#" class="btn">4</a></li>
+							<li><a href="#" class="btn">5</a></li>
+							<li><a href="#" class="btn">6</a></li>
+							<li><a href="#" class="btn">7</a></li>
+							<li><a href="#" class="btn">8</a></li>
+							<li><a href="#" class="btn">9</a></li>
+							<li><a href="#" class="btn">10</a></li>
+						</ul>
+						<a href="#" class="next"></a>
+						<div class="cb"></div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 01-19 추가 시작 -->
+	<div class="popbg customer_group add_pop">
+		<div class="plan-popup ">
+			<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+			<p class="popup-title">
+				<span class="title ">그룹추가</span>
+			</p>
+			<input type="text" class="table-input">
+			<a href="#" class="btn_submit">추가하기</a>
+
+		</div>
+	</div>
+	<div class="correct_pop_bg"></div><!-- 01-19  수정팝업 추가-->
+	<!-- 01-19 추가 끝-->
+	
+
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src='./js/script.js'></script><!-- 01-19 추가  -->
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+	//<!-- 01-19 추가 시작 -->
+		var $popup = $('.popbg .plan-popup');
+		$(function(){
+			$popup.parent('.popbg').hide();
+			$(document).on('click','.group_add',function(e){
+					$popup.parent('.popbg').fadeIn();
+				});
+			$(document).on('click','.plan-popup-close',function(e){
+				e.preventDefault();
+				$(this).parents('.popbg').fadeOut();
+			});
+		//<!-- 01-19 추가 끝-->
+
+		//<!-- 01-19  수정팝업 추가 시작-->
+
+		var $correct_pop = $('.correct_pop');
+		var $correct_pop_bg = $('.correct_pop_bg');
+		$(function(){
+			$correct_pop_bg.hide();
+			$correct_pop.hide();
+			$(document).on('click','.change',function(e){
+				$(this).siblings(".correct_pop").fadeIn();
+				$correct_pop_bg.show();
+			});
+			$(document).on('click','.correct_pop-close',function(e){
+				$(this).parents(".correct_pop").fadeOut();
+				$correct_pop_bg.hide();
+			});
+			$(document).on('click','.correct_pop_bg',function(e){
+				$(".correct_pop").fadeOut();
+				$correct_pop_bg.hide();
+			});
+
+		});
+		//<!-- 01-19  수정팝업 추가 끝-->
+		//	$(document).on('click','.btn_submit',function(e){
+		//		$popup.parent('.popbg').fadeOut();
+		//	});
+
+		});
+		$(function(){
+			$('a').click(function(e){
+			});
+		});
+	</script>
+</body>
+</html>

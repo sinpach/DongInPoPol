@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* intro */
+.intro_area{position:absolute;top:0px;left:0px;width:1008px;height:613px;}
+.intro_area .sync{display:none;position:absolute;top:0px;left:0px;z-index:1;}
+
+.intro_area .chasi{font-size: 22px;display: inline-block;margin-top: 3px}
+.intro_area .chasinum{color:#0A5B46;font-weight: bold;}
+.intro_area .chasititle{color:#208E72;}
+
+
+.intro .sync1{animation:fadeIn 2s 1;-webkit-animation:fadeIn 2s 1;}

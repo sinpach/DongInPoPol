@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+		.c3-chart-arc text{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page31">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[6-11 건강보장현황 종합분석_배우자]
+			</h1>
+			<div class="explain">
+				주요 건강보장에 대한 권장 가이드라인과 비교하여 부족한 보장금액을 보여줍니다.
+			</div>
+			<h2 class="page_title c2">06  | 보장설계</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="con_title">
+						주요 진단금 부족 보장금액
+					</div>
+					<div class="donut_wrap">
+						<div id="donutChart1" class="donut-chart sm">
+						</div>
+						<div id="donutChart2" class="donut-chart sm">
+						</div>
+						<div id="donutChart3" class="donut-chart sm">
+						</div>
+					</div>
+
+					<div class="table-box">
+						<div class="sub_title">
+							(단위:만원)
+						</div>
+						<table class="page_table2">
+							<colgroup>
+								<col style="width:8%">
+								<col style="width:8%">
+								<col style="width:12%">
+								<col style="width:10%">
+								<col style="width:11%">
+								<col style="width:11%">
+								<col style="width:11%">
+								<col style="width:">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="2" class="tc">구분</th>
+									<th class="tc">구분</th>
+									<th colspan="2" class="tc">부족액</th>
+									<th>보장금액</th>
+									<th>권장수준</th>
+									<th class="tc">가이드라인</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="5" class="b">진단금</td>
+									<td rowspan="2" class="b tc">암</td>
+									<td class="b tl">중대한암</td>
+									<td rowspan="2" class="td_shortage"><span class="shortage">부족</span></td>
+									<td rowspan="2" class="">6,628만원</td>
+									<td class="">-</td>
+									<td rowspan="2" class="">8628만원</td>
+									<td rowspan="2" class="">평균 암 치료비 3828만원<br>(+)평균 치료기간 6개월치 소득</td>
+								</tr>
+								<tr>
+									<td class="b">일반암</td>
+									<td class="bdr_n">2,000만원</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="b tc">뇌혈관</td>
+									<td class="b border_bn">뇌출혈</td>
+									<td rowspan="2" class="td_shortage"><span class="shortage">부족</span></td>
+									<td class="">2,100만원</td>
+									<td class="">5,000만원</td>
+									<td class="">7,100만원</td>
+									<td rowspan="2" class="">평균 뇌혈관 치료비 3828만원<br>(+)평균 치료기간 6개월치 소득</td>
+								</tr>
+								<tr>
+									<td class="b  ">뇌졸중</td>
+									<td class="">7,100만원</td>
+									<td class="">5,000만원</td>
+									<td class="bdr_n">7,100만원</td>
+								</tr>
+								<tr>
+									<td class="b tc">심장</td>
+									<td class="b  ">급성심근경색</td>
+									<td class="td_shortage"><span class="shortage">부족</span></td>
+									<td class="">4,300만원</td>
+									<td class="">5,000만원</td>
+									<td class="">9,300만원</td>
+									<td class="">평균 심근경색 치료비 3828만원<br>(+)평균 치료기간 6개월치 소득</td>
+								</tr>
+								<tr>
+									<td class="b">수술</td>
+									<td colspan="2" class="b padding_l">일반수술</td>
+									<td class="td_shortage"><span class="shortage">부족</span></td>
+									<td class="">300만원</td>
+									<td class="">-</td>
+									<td class="">300만원</td>
+									<td rowspan="2" class="">생명보험 수술준(입원)특약<br>보험사별 계약당 최대 가입금액 기준</td>
+								</tr>
+								<tr>
+									<td class="b">입원</td>
+									<td colspan="2" class="b padding_l">일반입원</td>
+									<td class="td_shortage"><span class="shortage">부족</span></td>
+									<td class="">2만원</td>
+									<td class="">3만원</td>
+									<td class="bdr_n">5만원</td>
+								</tr>
+								<tr class="bdrs_tr">
+									<td rowspan="3" class="b">실비</td>
+									<td colspan="2" class="b padding_l ">입원</td>
+									<td class="td_shortage"><span class="shortage">부족</span></td>
+									<td class="">-</td>
+									<td class="">5,000만원</td>
+									<td class="">5,000만원</td>
+									<td class="">실손보험 가입 한도 기준</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="b padding_l">통원</td>
+									<td><span class="optimum">적정</span></td>
+									<td class="">5만원</td>
+									<td class="">25만원</td>
+									<td class="">30만원</td>
+									<td class="">실손보험 가입 한도 기준</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="b padding_l">약재</td>
+									<td><span class="optimum">적정</span></td>
+									<td class="">-</td>
+									<td class="">5만원</td>
+									<td class="">5만원</td>
+									<td class="">실손보험 가입 한도 기준</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+				donutChart_page31('#donutChart1','#00aced',['암','부족보장금액'],100,"11,428");
+				donutChart_page31('#donutChart2','#00aced',['뇌혈관','부족보장금액'],40,2.0);
+				donutChart_page31('#donutChart3','#00aced',['급성심근경색','부족보장금액'],60,9.9);
+		});
+
+	</script>
+</body>
+</html>

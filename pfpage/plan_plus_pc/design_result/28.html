@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+	.c3-chart-arc text {
+		display: none;
+	}
+	/*page28*/
+	.page28 .left-con{
+		width: 30%;
+		float: left;
+	}
+
+	.page28 .right-con{
+		width: 70%;
+		float: left;
+		border: 1px solid #ccc;
+	}
+
+	.page28 .left-con .top-con{
+		width: 95%;
+		border: 1px solid #ccc;
+		height: 280px;
+	}
+
+	.page28 .left-con .top-con .con-title{
+		background: url(../images/result/con_title_gray.png) 0 0 no-repeat;
+		color: #231f20;
+		width: 100%;
+		font-size:16px;
+		padding:5px 20px;
+		font-weight: bold;
+		margin-bottom: 60px;
+	}
+
+	.page28 .page-table{
+		width: 80%;
+		margin: auto;
+		border-collapse: collapse;
+	}
+
+	.page28 .page-table tr th,
+	.page28 .page-table tr td{
+		padding: 7px 12px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.page28 .page-table tr th{
+		text-align: left;
+	}
+
+	.page28 .page-table tr td{
+		text-align: right;
+	}
+
+	.page28 .left-con .bottom-con{
+		border: 4px solid #2b388f;
+		width: 95%;
+		margin-top: 10px;
+		height: 340px;
+	}
+
+	.page28 .left-con .bottom-con .con-title{
+		background: url(../images/result/con_title_m.png) 0 0 no-repeat;
+		color: #fff100;
+		width: 100%;
+		font-size:16px;
+		padding:5px 20px;
+		font-weight: bold;
+	}
+
+	.page28 .right-con .top-con .con-title{
+		background: url(../images/result/con_title_gray.png) 0 0 no-repeat;
+		color: #231f20;
+		width: 100%;
+		font-size:16px;
+		padding:5px 20px;
+		font-weight: bold;
+	}
+	.page28 .page-table.green{
+		color:#00988f;
+	}
+	.page28 .page-table.blue{
+		color:#2b388f;
+	}
+	.page28 .stat{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 25px;
+		line-height: 70px;
+		margin: 30px auto;
+	}
+	.page28 .stat.lack{
+		color: #fff;
+		background: #f6921e;
+	}
+
+	.page28 .right-con .top-con{
+		border-bottom:1px solid #ccc;
+		height: 330px;;
+	}
+
+	.page28 .right-con .lbox,
+	.page28 .right-con .rbox{
+		float: left;
+		width: 50%;
+	}
+
+	.page28 .right-con .rbox{
+		border-left: 1px solid #ccc;
+		background: #f1f1f2;
+		height: 300px;
+	}
+
+	.page28 .content-stitle{
+		padding: 20px 40px;
+		font-weight: bold;
+	}
+
+	.page28 .graphbox{
+		width: 100%;
+		height: 250px;
+
+	}
+
+	.page28 .graphwrap{
+		position: relative;
+	}
+
+	.page28 .graphwrap p.grt{
+		position: absolute;
+		font-size: 20px;
+		font-weight: bold;
+		color:#fff;
+		top: 200px;
+		left: 160px;
+	}
+
+	.page28 .graphwrap table{
+		position: absolute;
+		width: 240px;
+		top: 110px;
+		left: 490px;
+	}
+
+	.page28 .c3-circles circle{
+		opacity: 0 !important;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page28">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[6-3 사망보장 필요자금 분석_고객]
+			</h1>
+			<div class="explain">
+				나윤석님이 추가로 준비해야하는 사망보장 필요자금은 <span>7.9억원</span>입니다.
+			</div>
+			<h2 class="page_title c2">06  | 보장설계</h2>
+			<div class="content">
+				<div class="left-con">
+					<div class="top-con">
+						<div class="con-title">사망 보장 준비자금</div>
+						<table class="page-table">
+							<tr>
+								<th>현재시점 순자산</th>
+								<td>9.0억원</td>
+							</tr>
+							<tr>
+								<th>사망보험금(일반사망)</th>
+								<td>2.0억원</td>
+							</tr>
+						</table>
+						<table class="page-table ma_t_40 ma_b_40 green">
+							<tr>
+								<th class="b_d_t_0">▷ 사망보장 준비자금</th>
+								<td class="b_d_t_0 f_s_20 f_w_bold">11.0억원</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bottom-con">
+						<div class="con-title">부족 보장금액</div>
+						<div class="stat lack">부족</div>
+						<table class="page-table">
+							<tr>
+								<th>▶ 사망보장 필요자금</th>
+								<td>18.9억원</td>
+							</tr>
+							<tr>
+								<th>▷ 사망보장 준비자금</th>
+								<td >11.0억원</td>
+							</tr>
+						</table>
+						<table class="page-table ma_t_40 ma_b_40 blue">
+							<tr>
+								<th class="b_d_t_0">● 부족 보장금액</th>
+								<td class="b_d_t_0 f_s_20 f_w_bold">7.9억원</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="right-con">
+					<div class="top-con">
+						<div class="con-title">사망 보장 필요자금</div>
+						<div class="con-content graphwrap">
+							<p class="content-stitle">① 고객의 인적자산(Human Capital)</p>
+							<div class="graphbox"></div>
+							<p class="grt">Human Capital</p>
+							<table class="page-table ma_t_20 black">
+								<tr>
+									<th class="b_d_t_0">고객의 인적자산</th>
+									<td class="b_d_t_0 f_s_20 f_w_bold">18.9억원</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="bottom-con">
+						<div class="lbox">
+							<p class="content-stitle">② 고객 부재시 최소 필요자금<span class="sm">(현재시점)</span></p>
+							<table class="page-table ma_t_10">
+								<tr>
+									<td class="tal">부채잔액</td>
+									<td>9.0억원</td>
+								</tr>
+								<tr>
+									<td class="tal">자녀교육비</td>
+									<td>1.0억원</td>
+								</tr>
+								<tr>
+									<td class="tal">은퇴전 생활비</td>
+									<td>9.0억원</td>
+								</tr>
+								<tr>
+									<td class="tal">은퇴후 생활비</td>
+									<td>1.0억원</td>
+								</tr>
+								<tr>
+									<td class="tal">기타 필요자금</td>
+									<td>1.0억원</td>
+								</tr>
+							</table>
+							<table class="page-table ma_t_20 black">
+								<tr>
+									<th class="b_d_t_0">● 부족 보방금액</th>
+									<td class="b_d_t_0 f_s_20 f_w_bold">7.9억원</td>
+								</tr>
+							</table>
+						</div>
+						<div class="rbox">
+							<p class="content-stitle">③ 사망보장 필요자금 제안_max(①,②)</p>
+							<table class="page-table" style="margin-top: 40px;">
+								<tr>
+									<td class="tal f_w_bold">①고객의 인적자산</td>
+									<td>18.9억원</td>
+								</tr>
+								<tr>
+									<td class="tal f_w_bold">②고객 부재시 최소 필요자금</td>
+									<td class="f_w_bold">13.4억원</td>
+								</tr>
+							</table>
+							<table class="page-table ma_t_40 ma_b_40 green">
+								<tr>
+									<th class="b_d_t_0">▶ 사망보장 필요자금</th>
+									<td class="b_d_t_0 f_s_20 f_w_bold">18.9억원</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+
+	$(window).on('load',function(){
+		page28('.graphbox');
+		setTimeout(function() {
+			//$(".page15 .chart-wrap .chart_legend3").fadeIn();
+		}, 1400)
+	});
+		$(function(){
+			var parentiframe = window.parent.document.getElementById('iframe');
+			var parentiframeSrc = parentiframe.getAttribute("src");
+			var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+			$(".currentPageNum").text(parentiframeNum)
+			$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

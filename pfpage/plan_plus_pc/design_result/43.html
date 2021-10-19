@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page43">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[8-5 매도 상품 리스트]
+			</h1>
+			<div class="explain">
+				조정 후 매도해야할 금융자산은 <span>3,000만원</span> 연금자산은 <span>2,000만원</span>입니다.
+			</div>
+			<h2 class="page_title c2">08  | 투자설계</h2>
+			<div class="content">
+
+				<div class="table-box top">
+					<div class="con_title">
+						금융자산 매도 상품
+					</div>
+					<div class="table-wrap">
+						<div class="left-box">
+							<table class="page_table2">
+								<thead>
+									<tr>
+										<th>자산</th>
+										<th>상품명</th>
+										<th>조정 전 평가금액</th>
+										<th>조정전 월 적립액</th>
+										<th>조정여부</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>단기자금</td>
+										<td>(무)수호천사종신보험</td>
+										<td>00만원</td>
+										<td>00만원</td>
+										<td>유지</td>
+									</tr>
+									<tr>
+										<td>해외채권</td>
+										<td>(무)수호천사종신보험</td>
+										<td>00만원</td>
+										<td>00만원</td>
+										<td>확대</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right-box">
+							<table class="page_table">
+								<tr>
+									<td><img src="../images/result/p43_icon1.png" alt=""></td>
+								</tr>
+								<tr>
+									<td>금융자산 매도금액 합계</td>
+								</tr>
+								<tr>
+									<td><span>3,000</span>만원</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="table-box bottom">
+					<div class="con_title">
+						연금자산 매도 상품
+					</div>
+					<div class="table-wrap">
+						<div class="left-box">
+							<table class="page_table2">
+								<thead>
+									<tr>
+										<th>자산</th>
+										<th>상품명</th>
+										<th>조정 전 평가금액</th>
+										<th>조정전 월 적립액</th>
+										<th>조정여부</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>연금보험</td>
+										<td>(무)수호천사종신보험</td>
+										<td>00만원</td>
+										<td>00만원</td>
+										<td>매도</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right-box">
+							<table class="page_table">
+								<tr>
+									<td><img src="../images/result/p43_icon1.png" alt=""></td>
+								</tr>
+								<tr>
+									<td>연금자산 매도금액 합계</td>
+								</tr>
+								<tr>
+									<td><span>2,000</span>만원</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+
+
+	</script>
+</body>
+</html>

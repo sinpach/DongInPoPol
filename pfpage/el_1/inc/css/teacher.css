@@ -1,0 +1,5 @@
+@charset "utf-8";
+.teacher{position:absolute;top:280px;left:680px;width:160px;height:260px;z-index:100}
+.teacher1{position:absolute;top:0px;left:0px;background:url("../../img/content/teacher/c0001.png") no-repeat;width:160px;height:260px;}
+.teacher2{position:absolute;top:0px;left:0px;background:url("../../img/content/teacher/c0002.png") no-repeat;width:160px;height:260px;}
+

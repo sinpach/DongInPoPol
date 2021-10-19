@@ -1,0 +1,181 @@
+
+/* page3 */
+#container.page3{
+	    background: url(../../img/content/page03_bg.png) no-repeat;
+}
+.page3 .textbox_a{
+	width: 700px;
+	height: 100px;
+	font-size: 30px;
+	color: #333;
+	text-align: left;
+}
+
+#container.page3 .wrap .textbox_b{
+	width: 745px;
+	font-size: 19px;
+	color: #fff;
+	line-height: 36px;
+}
+.page3 .textbox_b span{
+	display: block;
+	width: 100% ;
+	text-align: right;
+	color: #fff;
+}
+
+
+
+
+
+
+#container.page4{
+	background: url(../../img/content/page04_bg.png) no-repeat;
+}
+.page4 .wrap ul>li{
+	overflow: hidden;
+}
+.page4 .wrap ul>li>span{
+	display: block;
+	float: left;
+	text-align: left;
+	font-size: 19px;
+	color: #333;
+	line-height: 30px;
+}
+.page4 .wrap ul>li>span:first-child{
+	width: 7%;
+}
+.page4 .wrap ul>li>span:last-child{
+	width: 86%;
+}
+.page4 .textbox_a,.page4 .textbox_b,.page4 .keyword{
+	position: absolute;
+}
+.page4 .textbox_a{
+	width: 455px;
+	background: url(../../img/content/page3/textbox_con.png) no-repeat;
+}
+.page4 .textbox_a ul{
+	margin-top: 52px;
+	margin-left: 32px;
+}
+
+.page4 .textbox_b{
+	width: 455px;
+	background: url(../../img/content/page3/textbox_sub.png) no-repeat;
+}
+.page4 .textbox_b ul{
+	margin-top: 52px;
+	margin-left: 32px;
+}
+
+.page4 .keyword{
+	width: 580px;
+	height: 135px;
+	background: url(../../img/content/page3/keyword.png) no-repeat;
+}
+.page4 .keyword ul{
+	margin-top: 58px;
+	overflow: hidden;
+	padding-left: 80px;
+}
+.page4 .keyword ul li{
+	float: left;
+	margin-right: 50px;
+	position: relative;
+	font-size: 21px;
+	color: #333;
+	width: 183px;
+	height: 46px;
+	text-align: center;
+	line-height: 45px;
+	background: #fff;
+	border: 2px solid #f3671b;
+}
+.page4 .keyword ul li p{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	background: #f3671b;
+	cursor: pointer;
+}
+.page4 .keyword ul li p:after{
+	content:"";
+	position: absolute;
+	width: 31px;
+	height: 32px;
+	top:12%;
+	left:40%;
+	background: url('../../img/content/page3/touch.png')  no-repeat;
+	animation: touch 1.5s infinite;
+}
+
+
+
+#container.ganji1{
+	    background: url('../../img/content/ganji_bg.png') no-repeat;
+}
+#container.ganji1 .textbox_a,#container.ganji1 .textbox_b{
+	position: absolute;
+}
+.ganji1 .textbox_a{top: 98px;left: 7px; }
+/* page2,4 싱크 애니메이션 */
+.page3 .sync2{top: 74px;left: 108px; animation:fadeInLeft 1.5s 1;}
+.page3 .sync1{top: 140px;left: 108px; animation:fadeInLeft 1.5s 1;}
+.page4 .sync2{top: 45px;right: -28px; animation:fadeInRight 1.5s 1;}
+.page4 .sync1{top: 160px;left: 80px; animation:fadeInLeft 1.5s 1;}
+.page4 .sync3{top: 380px;left: 80px; animation:fadeIn 1.5s 1;}
+.ganji1 .sync2{top: 100px;right: 126px; animation:fadeInRight 1.5s 1;}
+
+
+
+
+.videoPage.videoPage07 #video{
+	margin-top: 62px;
+}
+.videoPage07 .top_bar{
+	position: absolute;
+	top:90px;
+	left:0px;
+	width: 999px;
+	height: 27px;
+	z-index: 20;
+	background: url('../../img/content/topbar_s.png') 0 0 no-repeat;
+	background-size:100% 100%;
+}
+.videoPage07 .top_bar li{
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 27px;
+	text-align: center;
+	width: 98px;
+	color:#aaa;
+	background: url('../../img/content/topbar_s.png') 0 0 no-repeat;
+	background-size:100% 100%;
+	cursor: pointer;
+	transition: width 0.5s;
+	white-space: nowrap;
+	float: left;
+}
+
+.videoPage07 .top_bar li.on{
+	color: #aeff1e;
+	width: 607px;
+	padding-left: 20px;
+	background: url('../../img/content/topbar_l.png') 0 0 no-repeat;
+	cursor: default;
+	text-align: left;
+}
+
+.videoPage07 .top_bar li .txt{
+	display: none;
+}
+
+.videoPage07 .top_bar li.on .txt{
+	display: inline-block;
+	color: #aeff1e;
+
+}

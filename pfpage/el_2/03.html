@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title></title>
+	<link rel="stylesheet" href="inc/css/font/nanumbarungothic.css" />
+	<link rel="stylesheet" href="inc/css/common.css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
+	<link rel="stylesheet" href="inc/css/body.css" />
+	<link rel="stylesheet" href="inc/css/bottom.css" />
+	<link rel="stylesheet" href="inc/css/animate.css" />
+	<link rel="stylesheet" href="inc/css/quiz.css" />
+	<link rel="stylesheet" href="inc/css/mobile.css" />
+
+	<script src="inc/js/jquery-1.11.2.js"></script>
+	<script src="inc/js/script.js"></script>
+	<script src="inc/js/body.js"></script>
+	<script src="inc/js/bottom.js"></script>
+	<script src="inc/js/quiz.js"></script>
+	<script type="text/javascript">
+	var trackDisplay="off";
+	$(document).ready(function (){
+		var video = $('#video');
+		video.on('timeupdate', function() {
+			var currentPos = parseInt(video[0].currentTime);
+			setList(currentPos);
+		});
+			var tabNums = [0]; //tab 화면 전환 싱크
+			var seq1 = [0,1,1,2]; // obj 싱크
+			var thisSeq;
+			var curTab = 1;
+
+			function setList(second) { // 화면 내 오브젝트
+				thisSeq = eval("seq" + curTab);
+				for (var i = 0; i < thisSeq.length; i++) {
+					//자막제어
+					if (second >= thisSeq[i]) {
+						$(".sync" + (i + 1)).show();
+					} else if (second < thisSeq[i]) {
+						$(".sync" + (i + 1)).hide();
+					}
+				}
+			}
+
+			function tabShow(num) {
+				$(".tab").each(function(idx) {
+					if (idx == num) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				})
+			}
+
+			function setTab(second) { // 화면 전환
+				for (var i = 0; i < tabNums.length; i++) {
+					if (tabNums[i + 1]) {
+						if (second >= tabNums[i] && second < tabNums[i + 1]) {
+							tabShow(i);
+							curTab = i + 1;
+						}
+					} else {
+						if (second >= tabNums[i]) {
+							tabShow(i);
+							curTab = i + 1;
+						}
+					}
+
+				}
+			}
+
+	});
+	</script>
+	<style>
+		body{
+			margin: 0;
+			padding:0;
+			background: #fff url(./img/bg3.png) 0 0 no-repeat;
+			background-size: cover;
+			min-height: 591px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Body -->
+	<div id="container" class="quiz">
+		<audio id="video" class="aod" width="1008" height="648" poster="img/poster.png">
+			<source src="media/mp3/14-03-01.mp3" type="video/mp4">
+			<track id="track" label="" src="media/vtt/03.vtt" kind="metadata" srclang="ko" default>
+		</audio>
+		<audio src="media/mp3/quiz_bgm.mp3"  id="bgm" autoplay loop ></audio>
+		<div id="header">
+			<h2><span class="chasi">14.</span>가해학생도 교사가 계속 품어 주어야 할 아이들</h2>
+			<h1></h1>
+		</div>
+		<div id="contents" class="wrap">
+			<!-- quiz -->
+				<div class="quiz choice">
+					<!-- quiz 네비영역 -->
+					<ul class="quiz_nav ir dn">
+						<li><button class="ir">Q1</button></li>
+						<li><button class="ir">Q2</button></li>
+					</ul>
+					<!-- quiz 문제영역-->
+					<!--
+						*문제 유형
+						-qz_type1 4지선형
+						-qz_type2 OX 퀴즈형
+					-->
+					<ul class="question_wrap">
+						<li class="q1 qz_type1" >
+							<div class="question">
+								<div><span>Q1.</span> 다음 중 학교와 교사의 의무 사항에 관한 설명으로 옳은 것은?</div>
+							</div>
+							<ul class="answer_list">
+								<li class="answer_list1"><button class="answer_btn answer1 " data-value="1" ><span class="num">1</span>
+									<span>학교폭력 사건 발생 시 교사는 피해학생 보호만을 의무로 할 뿐, 가해학생의 선도와 교육은 필요 없다.</span>
+								</button></li>
+								<li class="answer_list2"><button class="answer_btn answer2 " data-value="2" ><span class="num">2</span>
+									<span>한 번 가해학생이 된 학생은 개선의 여지가 전혀 없으므로 다른 학생과 격리하여 학교 밖에서의 교육을 받도록 하는 것이 필수적이다.</span>
+								</button></li>
+								<li class="answer_list3"><button class="answer_btn answer3" data-value="3"><span class="num">3</span>
+									<span>학교폭력 피해학생 보호가 우선이기 때문에 가해학생들에 대한 교육과 상담은 피해학생이 용서를 했을 때에만 진행 가능한 사안이다.</span>
+								</button></li>
+								<li class="answer_list4"><button class="answer_btn answer4 ra" data-value="4"><span class="num">4</span>
+									<span>학교폭력 가해학생이 더 이상 폭력행위를 저지르지 않도록 선도하고 교육하여 신속히 교육현장으로 복귀하도록 하는 것 역시 중요하다.</span>
+								</button></li>
+							</ul>
+							<div class="answerWrap dn">
+								<ul>
+									<li>
+										<p class="ranswer">
+											<span class="txt">정답</span>
+											<span class="num act">4</span>
+										</p>
+									</li>
+									<li>
+										<p class="ranswer_desc">
+											<span class="txt">해설</span>
+											<span>
+												학교폭력이 발생하면 피해학생에 대한 빠른 조치를 통해 그 피해를 구제하고 더 이상 학교폭력으로부터 피해를 당하지 않도록 하여야 한다는 점에 대해서는 의문이 없으나, 그에 못지않게 가해학생이 더 이상 폭력행위를 저지르지 않도록 선도하고 교육하여 신속히 교육현장으로 복귀하도록 하는 것 역시 중요하다.
+											</span>
+										</p>
+									</li>
+								</ul>
+								<button class="nextBtn ir">다음문제</button>
+							</div>
+						</li>
+
+						<li class="q2 qz_type1" >
+							<div class="question">
+								<div><span>Q2.</span> 학교폭력 가해학생 상담 및 교육에 관한 사항으로 옳지 않은 것은?</div>
+							</div>
+							<ul class="answer_list">
+								<li class="answer_list1"><button class="answer_btn answer1 ra" data-value="1" ><span class="num">1</span>
+									<span>가해사실을 반복적으로 언급하며 그에 대한 체벌을 여러 번 함으로써 피해학생이 겪은 고통을 그대로 느낄 수 있도록 해야 한다.</span>
+								</button></li>
+								<li class="answer_list2"><button class="answer_btn answer2 " data-value="2" ><span class="num">2</span>
+									<span>가해학생이 폭력적인 성향이 있는 경우 그 배경이 되는 사실이나 그에 이른 경위에 대한 파악이 필요하다.</span>
+								</button></li>
+								<li class="answer_list3"><button class="answer_btn answer3" data-value="3"><span class="num">3</span>
+									<span>가해학생이라 할지라도 그 내면에 있는 큰 어려움이나 고통을 파악하고, 내면적인 성숙을 통해 변화하고 문제해결을 할 수 있도록 돕는다.</span>
+								</button></li>
+								<li class="answer_list4"><button class="answer_btn answer4" data-value="4"><span class="num">4</span>
+									<span>법령이 정한 바의 조치 외에 자의적인 방식의 비난은 허용될 성질의 것이 아닐 뿐 아니라 그 자체로는 큰 개선 효과도 기대하기 어렵다.</span>
+								</button></li>
+							</ul>
+							<div class="answerWrap dn">
+								<ul>
+									<li>
+										<p class="ranswer">
+											<span class="txt">정답</span>
+											<span class="num act">1</span>
+										</p>
+									</li>
+									<li>
+										<p class="ranswer_desc">
+											<span class="txt">해설</span>
+											<span>
+												법령이 정한 바의 가해학생 조치 외에 자의적인 방식의 체벌이나 비난은 허용될 성질의 것이 아닐 뿐 아니라 그 자체로는 개선 효과도 기대할 수 없다.
+											</span>
+										</p>
+									</li>
+								</ul>
+								<button class="rsBtn">결과보기</button>
+							</div>
+						</li>
+						<!-- <li class="q3 qz_type2">
+							<div class="question line2">
+								<div>다음은 사회복지사의 자세 향상을 위한 질문입니다. 맞는 질문인지 설명에 대하여<br />O, X 하세요. </div>
+							</div>
+							<hr class="q_under"/>
+							<div class="ox_question ">
+								사회복지 자신의 가치관은 어떤 것이며, 이것이 나의 행동 및 타인과의 관계를 어떻게 규정하나?
+							</div>
+							<ul class="answer_list"  >
+								<li class="answer_list1">
+									<button class="answer_btn answer1 ra" data-value="1" ></button>
+								</li>
+								<li class="answer_list2">
+									<button class="answer_btn answer2"  data-value="2" ></button>
+								</li>
+							</ul>
+							<div class="answerWrap">
+								<ul>
+									<li>
+										<p class="ranswer"><span class="num act">O</span></p>
+									</li>
+									<li>
+										<p class="ranswer_desc">
+											<span>
+											‘사회복지 자신의 가치관은 어떤 것이며, 이것이 나의 행동 및 타인과의 관계를 어떻게 규정하나?’라는 질문은<br />사회복지사의 자세 향상을 위한 중요한 질문 중 하나임
+											</span>
+										</p>
+									</li>
+								</ul>
+								<button class="rsBtn  ir">다음</button>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+				<!-- //quiz -->
+				<div class="alert"></div>
+				<div class="quiz_intro">
+					<div class="sync sync1"><img src="./img/content/test/quiz.png" alt="quiz"></div>
+					<div class="intro_title sync sync3">
+						<span>오늘 배운 내용을 간단한 퀴즈를 통해 확인해 보도록 하겠습니다.</span>
+					</div>
+					<div class="intro_account sync sync4">
+						총 2문제가 제시되며, 한 문제당 2번의 기회가 제공됩니다.<br>
+						<span><span class="start_text">START</span> 버튼을 클릭해 주세요.</span>
+					</div>
+					<div class="quiz_start_btn sync sync2">
+						<button class="ir">START</button>
+					</div>
+				</div>
+				<div class="contentsBtnWrap">
+					<div class="prevPage subBtn">
+						<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+					</div>
+					<div class="nextPage subBtn">
+						<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+					</div>
+				</div>
+				<!-- 퀴즈 결과 영역 -->
+				<div class="rs">
+					<div class="rs_title">RESULT</div>
+					<!--
+					<h4><img src="img/content/test/rs/rs.png" width="277" height="57" border="0" alt="결과보기"></h4>
+					<p>총 <em class="total_cnt">3</em> 문항 중 <em class="ranswer_cnt">2</em>문항을 맞혔습니다.</p>
+					<ul>
+						<li>Q1<span class="marking2 ok"></span></li>
+						<li>Q2<span class="marking2 no"></span></li>
+						<li>Q3<span class="marking2 ok"></span></li>
+					</ul>
+					-->
+					<button class="retry_btn">다시풀기</button>
+				</div>
+		</div>
+
+
+		<!-- Bottom -->
+		<div id="bottom" class="intro nf">
+			<div id="bottom_wrap">
+				<div id="display"></div><button id="dis_close_btn"></button><div class="display_bg"></div>
+				<div class="learningmap">
+					<button title="러닝맵" class="learning">ROAD MAP</button>
+				</div>
+				<div class="rateGroup">
+					<ul class="playBackRate">
+						<li class="option">
+							<button title="1.0 배속" rate="1.0">1.0</button>
+						</li>
+						<li class="option">
+							<button title="1.2 배속" rate="1.2" >1.2</button>
+						</li>
+						<li class="option">
+							<button title="1.3 배속" rate="1.3" >1.3</button>
+						</li>
+						<!-- <li class="option">
+							<button title="1.5 배속" rate="1.5" >1.5</button>
+						</li>
+						<li class="option">
+							<button title="2.0 배속" rate="2.0" >2.0</button>
+						</li> -->
+					</ul>
+				</div>
+				<div class="progressGroup">
+					<div class="progress">
+						 <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						 	<div class="p_circle"></div>
+						 </div>
+					</div>
+					<div class="time">
+						<span class="currentTime">00:00</span> /
+						<span class="duration">00:00</span>
+					</div>
+				</div>
+				<div class="videoGroup">
+					<div class="btn playBtn">
+						<button title="재생"  class="play ir">재생</button>
+					</div>
+					<div class="btn pauseBtn">
+						<button title="일시정지" class="pause ir">일시정지</button>
+					</div>
+					<div class="btn stopBtn">
+						<button title="정지" class="stop ir">정지</button>
+					</div>
+					<div class="btn fullBtn disable">
+						<button title="전체화면" class="full ir">전체화면</button>
+					</div>
+				</div>
+
+				<div class="soundGroup">
+					<div class="btn noteBtn">
+						<button title="자막" class="note ir">자막</button>
+					</div>
+					<div class="btn soundBtn">
+						<button title="소리끄기" class="sound ir">소리끄기</button>
+						<button title="소리켜기" class="mute ir dn">소리켜기</button>
+					</div>
+					<div class="soundbar">
+						<button class="volume" title="볼륨">
+							<span class="volumeBar">
+
+							</span>
+
+							<span class="volume_bg"></span>
+						</button>
+					</div>
+
+				</div>
+
+				<div class="pageGroup">
+					<div class="prevPage">
+						<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+					</div>
+
+					<div class="currentPageNum">01</div>
+					<div class="pagebar">│</div>
+					<div class="totalPageNum">10</div>
+					<div class="nextPage">
+						<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+					</div>
+
+				</div>
+				<!-- <div class="nextClick dn ir">
+					click
+				</div> -->
+
+						</div>
+
+			</div>
+			<a href="#" class="mobilePlayBtn"></a>
+		<div class="bottom_sub"></div>
+	</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page41">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[8-3 조정 후 금융자산 포트폴리오]
+			</h1>
+			<div class="explain">
+				설계 후 금융자산 투자금액은 <span>+1,000만원</span>, 월적립액은 <span>-50만원</span> 조정되었습니다.
+			</div>
+			<h2 class="page_title c2">08  | 투자설계</h2>
+			<div class="content">
+				<div class="topCon">
+					<div class="bf">
+						<div class="con_title">
+							조정 전
+						</div>
+						<ul>
+							<li class="item1">
+								투자금액<br/><span class="num">15,000</span> <span>만원</span>
+							</li>
+							<li class="item2">
+								월 적립액<br/><span class="num">90</span> <span>만원</span>
+							</li>
+						</ul>
+					</div>
+					<div class="af">
+						<div class="con_title">
+							조정 후
+						</div>
+						<ul>
+							<li class="item1">
+								투자금액<br/><span class="num">16,000</span> <span>만원</span>
+							</li>
+							<li class="item2">
+								월 적립액<br/><span class="num">40</span> <span>만원</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						조정 후 금융자산 포트폴리오
+					</div>
+					<div class="sub_title">
+						(단위:만원)
+					</div>
+					<table class="page_table2">
+						<colgroup>
+							<col style="">
+							<col style="width:15%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:8%">
+							<col style="width:16%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>자산</th>
+								<th>상품명</th>
+								<th>조정 전<br/>평가금액</th>
+								<th>조정 전<br/>월 적립액</th>
+								<th class="point1">조정여부</th>
+								<th class="point1">조정<br/> 평가금액</th>
+								<th class="point1">조정<br/> 월적립액</th>
+								<th>조정 후<br/>평가금액</th>
+								<th>조정<br/>월적립액</th>
+								<th>투자목적</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>단기자금</td>
+								<td>(무)수호천사종신보험</td>
+								<td>30</td>
+								<td>6.4년</td>
+								<td class="point2">유지</td>
+								<td class="point2">000</td>
+								<td class="point2">000</td>
+								<td>000</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>해외채권</td>
+								<td>(무)수호천사종신보험</td>
+								<td>30</td>
+								<td>6.4년</td>
+								<td class="point2">확대</td>
+								<td class="point2">000</td>
+								<td class="point2">000</td>
+								<td>000</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

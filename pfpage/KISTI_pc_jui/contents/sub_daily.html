@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/calendar.css">
+<link rel="stylesheet" href="./css/sub_daily.css">
+
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_daily.js"></script>
+<script>
+  
+</script>
+
+</head>
+
+
+<body>
+
+  <header>
+    <img src="./img/sp1.png" >
+  </header>
+  <!-- content -->
+  <div class="local_popup_wrap">
+    <div class="local_pop_bg">
+
+    </div>
+    <div class="local_popup">
+      <div class="local_popup_header">
+        <p>관심지역 선택</p> 
+        <span>사용할 지역을 최대 10개까지 선택한 후 확인 버튼을 클릭하세요.</span>
+      </div>
+      <ul class="popup_list">
+        <li>
+          <div class="title">
+            <input type="checkbox" >
+            관심지 1
+          </div>
+          <div class="select">
+            <span>대전광역시 유성구 노은동</span>
+            <div class="select_btn">
+              <button class="pop_btn">저장</button>
+              <button class="pop_btn">취소</button>
+            </div>
+          </div>
+          
+        </li>
+        <li>
+          <div class="title">
+            <input type="text" placeholder="관심지2">
+          </div>
+          <div class="select">
+            <select id="sch_1" name="sch_1" class="sch_1" title="">
+              <option value="daejeon" selected="selected">대전광역시</option>
+              <option value="seoul">서울시</option>
+            </select>
+            <select id="sch_2" name="sch_2" class="sch_2" title="">
+              <option value="daejeon" selected="selected">유성구</option>
+              <option value="seoul">서구</option>
+            </select>
+            <select id="sch_3" name="sch_3" class="sch_3" title="">
+              <option value="daejeon" selected="selected">어은동</option>
+              <option value="seoul">구암동</option>
+            </select>
+            <div class="select_btn">
+              <button class="pop_btn">변경</button>
+              <button class="pop_btn">삭제</button>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+      <p>· 지역은 최대 10개까지 설정 가능하며, 신규지역 추가 시 접속한 PC의 IP주소에 맞는 지역이 노출됩니다.</p>
+      <div class="confirm_btn_wrap">
+        <button class="confirm_btn">확인</button>
+        <button class="cancel_btn">취소</button>
+      </div>
+    </div>
+  </div>
+  <div class="conArea">
+    <div class="betaHeader">
+      <h2><span>데일리서비스</span><sup>beta</sup></h2>
+      <p>
+        데일리 서비스는 다양한 정보를 제공합니다. <br>
+        앞으로 서비스 대상을 확대시켜 본 서비스에 적용 예정입니다.
+      </p>
+    </div>
+    <div class="local_choice_wrap">
+      <p>지역 선택</p>
+      <select id="sch_1" name="sch_1" class="sch_1" title="">
+        <option value="daejeon" selected="selected">대전광역시</option>
+        <option value="seoul">서울시</option>
+      </select>
+      <select id="sch_2" name="sch_2" class="sch_2" title="">
+        <option value="daejeon" selected="selected">유성구</option>
+        <option value="seoul">서구</option>
+      </select>
+      <select id="sch_3" name="sch_3" class="sch_3" title="">
+        <option value="daejeon" selected="selected">어은동</option>
+        <option value="seoul">구암동</option>
+      </select>
+      <button class="inquiry_btn">조회</button>
+      <a href="#;" class="set_btn">관심지역 설정</a>
+    </div>
+    <div class="weather_wrap">
+      <div class="wt_header">
+        <h3>
+          <em>현재 날씨</em> <span>유성구</span>
+        </h3>
+        <p>15:30 발표</p>
+      </div>
+      <div class="wt_con">
+        <div class="wt_main_info">
+          <div class="wt_icon">
+            <img src="./img/wt_icon1.png" >
+          </div>
+          <div class="wt_today_info">
+            <div class="now">15시 현재</div>
+            <div class="today_temp">
+              <span>20</span><span>℃</span><small>구름많음</small>
+            </div>
+            <div class="detail_box">
+              <span class="yesterday">어제보다 <em>-5℃</em></span>
+              <span class="rainfall">강수량 <em>0.0mm</em></span> <br>
+              <span class="dust">미세먼지 <em>좋음</em></span>
+              <span class="ozone">오존 <em>보통</em></span>
+            </div>
+          </div>
+        </div>
+        <div class="wt_sub_info">
+          <div class="wt_icon">
+            <img src="./img/wt_s_icon5.png">
+          </div>
+          <div class="sub_info_text">
+            <p>16시 예보</p>
+            <p><em>비</em></p>
+          </div>
+        </div>
+        <div class="wt_sub_info">
+          <div class="wt_icon">
+            <img src="./img/wt_s_icon5.png">
+          </div>
+          <div class="sub_info_text">
+            <p>16시 예보</p>
+            <p><em>비</em></p>
+          </div>
+        </div>
+      </div>
+      <div class="weekly_wt">
+        <ul class="weekly_wt_list">
+          <li>
+            <p class="day_info">
+              <em>내일</em>
+              <span>07. 07</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon1.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 19℃</span>
+                <br>
+                <span>맑음</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon3.png">
+              </div>
+              
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>구름많음</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="day_info">
+              <em>수요일</em>
+              <span>07. 07</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon2.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 20℃</span>
+                <br>
+                <span>흐림</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon5.png">
+              </div>
+
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>비</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="day_info">
+              <em>목요일</em>
+              <span>07. 08</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon6.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 19℃</span>
+                <br>
+                <span>비/눈</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon7.png">
+              </div>
+
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>눈</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="day_info">
+              <em>금요일</em>
+              <span>07. 09</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon4.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 19℃</span>
+                <br>
+                <span>소나기</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon8.png">
+              </div>
+
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>빗방울</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="day_info">
+              <em>토요일</em>
+              <span>07. 10</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon9.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 19℃</span>
+                <br>
+                <span>빗방울/눈날림</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon10.png">
+              </div>
+
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>눈날림</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="day_info">
+              <em>일요일</em>
+              <span>07. 11</span>
+            </p>
+            <div class="time_info morning">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon1.png">
+              </div>
+              <div class="point_time ">
+                <span>오전 19℃</span>
+                <br>
+                <span>맑음</span>
+              </div>
+            </div>
+            <div class="time_info afternoon">
+              <div class="wt_s_icon">
+                <img src="./img/wt_s_icon3.png">
+              </div>
+
+              <div class="point_time ">
+                <span>오후 19℃</span>
+                <br>
+                <span>구름많음</span>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="weekly_btn_wrap">
+        <a href="#;" class="on">주간예보 보기</a>
+      </div>
+    </div>
+    <div class="calendar_wrap">
+      <div class="my_calendar">
+        <div class="title">
+          <p>내 캘린더</p>
+          <a href="#;" class="google_interlink">구글 캘린더 연동</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#;" class="color1">Personal</a>
+          </li>
+          <li>
+            <a href="#;" class="color2">Business</a>
+          </li>
+          <li>
+            <a href="#;" class="color3">Move</a>
+          </li>
+          <li>
+            <a href="#;" class="color4">Plan</a>
+          </li>
+          <li>
+            <a href="#;" class="color5">Family</a>
+          </li>
+          <li>
+            <a href="#;" class="color6">Goodo</a>
+          </li>
+          <li>
+            <a href="#;" class="color7">Phone</a>
+          </li>
+          <li>
+            <a href="#;" class="color8">Repeat</a>
+          </li>
+        </ul>
+      </div>
+      <div class="calendar_area">
+        <div id="calendar">
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="tab_board_wrap">
+      <div class="tab_nav">
+        <ul>
+          <li class="active"><a href="#;">뉴스</a></li>
+          <li><a href="#;">동영상</a></li>
+          <li><a href="#;">사업공고</a></li>
+          <li><a href="#;">채용공고</a></li>
+          <li><a href="#;">학회개최</a></li>
+        </ul>
+      </div>
+      <div class="tab_con_wrap">
+        <ul class="tab_con_list">
+          <li class="on">
+            <ul class="tab_con">
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail1.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tab_con">
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail1.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tab_con">
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail1.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              
+
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tab_con">
+              
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail1.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+
+
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tab_con">
+
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail1.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <a href="#;">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+              <li class="con_list">
+                <div class="media_area">
+                  <img src="./img/thumbnail2.png">
+                </div>
+                <a href="#;" class="media_in">
+                  <p><span>[기업]</span>삼성 갤럭시로 혈압 잰다.... ‘혈압 측정 앱’ 출시</p>
+                  <div class="text">
+                    삼성전자가 지난 4월 식품의약품안전처에서 허가를 받은 혈압 측정 앱, ‘삼성 헬스 모니터’를 오늘 출시했습니다. 이 앱을 이용하면 갤럭시 워치 액티브 2가 측정한 맥박 파형을
+                    혈압계로 측정해 입력해둔 기준 ....
+                  </div>
+                  <span class="date">2020. 07.06 15:44</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagination">
+      <div>
+        <span class="active">1</span>&nbsp;
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>다음</span>
+        <span>끝</span>
+        <input id="pageIndex" name="pageIndex" type="hidden" value="1">
+      </div>
+    </div>
+
+
+    
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+</body>
+
+</html>

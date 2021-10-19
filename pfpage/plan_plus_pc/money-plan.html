@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+
+
+	</style>
+</head>
+<body>
+	<div id="body" class="body-custom">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo4.png" alt="">
+				목돈설계
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="#"  class="on">목적자금분석</a>
+				</li>
+			</ul>
+			<div class="left-menu-statwrap">
+				<div class="left-menu-stats">
+					<h3 class="left-title">
+						<img src="images/common/left-title-logo-sub1.png" alt="">
+						목적자금 합계
+					</h3>
+					<p>
+						<span class="num">4.0</span><span>억원</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar ">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar ">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="./edu-plan1_1.html" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="Purpose_fund-bar on">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content money-plan">
+				<div class="step">
+					<div class="step-title">
+						<span class="green eng">Setp 7.</span>
+						<span class="eng"> Develop the savings plan</span>
+					</div>
+					<p class="title-sub">
+						다양한 목적자금을 설계합니다.
+					</p>
+				</div>
+
+
+
+				<div  class="slide-box" >
+					<div class="" id="slides">
+						<div class="slide-contents">
+							<div class="content-title">
+								▶ [목적자금 목표 1] 부부 은퇴 후 전원주택 마련자금
+							</div>
+
+							<div class="slide-left-table">
+								<table class="slide-table">
+									<colgroup>
+										<col style="width:65%">
+										<col style="width:35%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th class="">목적자금</th>
+											<th class="t_a_r">30,000원</th>
+										</tr>
+										<tr>
+											<th class="">준비자금(현재)</th>
+											<th class="t_a_r">21,000원</th>
+										</tr>
+										<tr>
+											<th class="">월적립액(현재)</th>
+											<th class="t_a_r">8,700원</th>
+										</tr>
+										<tr>
+											<th class="">목표시점</th>
+											<th class="t_a_r">15년후</th>
+										</tr>
+										<tr>
+											<th class="">현재시점 고객나이</th>
+											<th class="t_a_r">45세</th>
+										</tr>
+										<tr>
+											<th class="">목표시점 고객나이</th>
+											<th class="t_a_r">60세</th>
+										</tr>
+										<tr>
+											<th class="">기대수익률</th>
+											<th class="t_a_r">5.0%</th>
+										</tr>
+										<tr>
+											<th class="">준비자금 (목표시점)</th>
+											<td class="t_a_r">5,000만원</td>
+										</tr>
+										<tr>
+											<th class="">부족자금 (목표시점)</th>
+											<td class="t_a_r">40만원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="slide-right-table">
+								<div class="result-table-wrap">
+									<table class="result-table result1">
+										<colgroup>
+											<col style="width:15%">
+											<col >
+										</colgroup>
+										<tbody>
+											<tr >
+												<th colspan="2"class="tc">15년후 목표자금</th>
+											<tr>
+												<td colspan="2" class="tc">30,000만원</td>
+											</tr>
+											<tr>
+												<td class="result-percent" colspan="2">예상 목표달성률 <span >71</span>%</td>
+											</tr>
+											<tr>
+												<td class="result-ready" ><span>666</span>만원</td>
+												<td class="result-shortage"><span>30,00</span>0만원</td>
+											</tr>
+											<tr>
+												<td>준비자금</td>
+												<td>부족자금</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<img src="./images/common/result_icon.png" alt="" />월 필요 저축액 <span>33만원</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="slide-contents">
+							<div class="content-title">
+								▶ [목적자금 목표 2] 큰 아들 결혼자금
+							</div>
+
+							<div class="slide-left-table">
+								<table class="slide-table">
+									<colgroup>
+										<col style="width:65%">
+										<col style="width:35%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th class="">목적자금</th>
+											<th class="t_a_r">30,000원</th>
+										</tr>
+										<tr>
+											<th class="">준비자금(목표시점)</th>
+											<th class="t_a_r">21,000원</th>
+										</tr>
+										<tr>
+											<th class="">부족자금(목표시점)</th>
+											<th class="t_a_r">8,700원</th>
+										</tr>
+										<tr>
+											<th class="">목표시점</th>
+											<th class="t_a_r">15년후</th>
+										</tr>
+										<tr>
+											<th class="">현재시점 고객나이</th>
+											<th class="t_a_r">45세</th>
+										</tr>
+										<tr>
+											<th class="">목표시점 고객나이</th>
+											<th class="t_a_r">60세</th>
+										</tr>
+										<tr>
+											<th class="">기대수익률</th>
+											<th class="t_a_r">5.0%</th>
+										</tr>
+										<tr>
+											<th class="">준비자금 (현재)</th>
+											<td class="t_a_r">5,000만원</td>
+										</tr>
+										<tr>
+											<th class="">부족자금 (현재)</th>
+											<td class="t_a_r">40만원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="slide-right-table">
+								<div class="result-table-wrap">
+									<table class="result-table result2">
+										<colgroup>
+											<col style="width:15%">
+											<col >
+										</colgroup>
+										<tbody>
+											<tr >
+												<th colspan="2"class="tc">15년후 목표자금</th>
+											<tr>
+												<td colspan="2" class="tc">30,000만원</td>
+											</tr>
+											<tr>
+												<td class="result-percent" colspan="2">예상 목표달성률 <span >70</span>%</td>
+											</tr>
+											<tr>
+												<td class="result-ready" ><span>666</span>만원</td>
+												<td class="result-shortage"><span>30,000</span>만원</td>
+											</tr>
+											<tr>
+												<td>준비자금</td>
+												<td>부족자금</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<img src="./images/common/result_icon.png" alt="" />월 필요 저축액 <span>33만원</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.slides.js"></script>
+	<script src="./js/script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(function(){
+			$('a').click(function(e){
+			});
+		});
+		$(function(){
+      $("#slides").slidesjs({
+		      width: 1100,
+		      height: 500
+      });
+    });
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+		$(window).on('load',function(){
+			horizonBarAnimate(".result1")
+		});
+
+
+		function money_planActive(){
+		  var active = $(".slidesjs-pagination li a.active").parent("li").index()
+		  if(active == 1 ){
+		    setTimeout(function(){
+		      horizonBarAnimate(".result2")
+		    },350);
+
+		  }
+		}
+		$(function(){
+			$(".slidesjs-pagination li a").click(function(){
+				money_planActive()
+			});
+		});
+		$(function(){
+			$(".slidesjs-navigation").click(function(){
+				money_planActive()
+			});
+		});
+
+
+	</script>
+</body>
+</html>

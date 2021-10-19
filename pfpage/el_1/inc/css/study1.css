@@ -1,0 +1,56 @@
+.study1 div, li, span, p{
+
+}
+
+.study1 h1 span{
+	font-size: 18px;
+}
+
+.study1 .textbox{
+	position: absolute;
+}
+
+.open-pop{
+	display: none;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+	padding: 60px 0;
+}
+
+.open-pop button{
+	position: absolute;
+    top: 75px;
+    right: 105px;
+    background: none;
+}
+
+
+.study1 .tab1 .sync1{top: 90px;right: 165px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+.study1 .tab1 .sync2{top: 162px;left: 529px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+
+.study1 .tab2 .sync1{top: 35px;right: 105px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1}
+.study1 .tab3 .sync1{top: 35px;right: 105px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+
+.study1 .tab4 .sync1{top: 40px;left: 410px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+.study1 .tab4 .sync2{top: 125px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+
+.study1 .tab5 .sync1{top: 40px;left: 410px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}
+.study1 .tab5 .sync2{top: 125px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+
+.study1 .tab6 .sync1{top: 40px;left: 410px;}
+.study1 .tab6 .sync2{top: 105px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+
+.study1 .tab7 .sync1{top: 40px;left: 410px;}
+.study1 .tab7 .sync2{top: 95px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+.study1 .tab7 .sync3{top: 295px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+
+.study1 .tab8 .sync1{top: 40px;left: 410px;}
+.study1 .tab8 .sync2{top: 105px;left: 420px; animation:fadeInRight 1.5s 1;-webkit-animation:fadeInRight 1.5s 1;}
+.study1 .tab8 .sync3{top: 455px;right: 85px; animation:fadeIn 1.5s 1;-webkit-animation:fadeIn 1.5s 1;}

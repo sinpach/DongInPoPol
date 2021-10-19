@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link href='./css/fullcalendar.css' rel='stylesheet' />
+	<link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link href='./css/fullcalendar.css' rel='stylesheet' />
+	<link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<script src='./js/moment.min.js'></script>
+	<script src='./js/fullcalendar.js'></script>
+	<script src='./js/ko.js'></script>
+	<script>
+
+		$(document).ready(function() {
+
+			$('#calendar').fullCalendar({
+				height: 720,
+				editable: false, //drag <!-- 01-19 수정 -->
+				eventLimit: true, // allow "more" link when too many events
+				events: [
+
+					{
+
+						className: 'c_event1',
+						title: 'test1 Event',
+						start: '2017-01-03'
+					},
+					{
+						className: 'c_event3',
+						title: 'test1 Eventtest1 Eventtest1 Eventtest1 Eventtest1 Eventtest1 Event',
+						start: '2017-01-04',
+
+					},
+					{
+						className: 'c_event2',
+						title: 'test1 Event',
+						start: '2017-01-12'
+					},
+					{
+						className: 'day_off1',
+						title: 'test1 Event',
+						start: '2017-01-27',
+						end: '2017-01-31'
+					},
+					{
+						className: 'day_off2',
+						title: 'test1 Event',
+						start: '2017-01-23',
+						end: '2017-02-01'
+					},
+				],
+				/*		dayClick: function(date, jsEvent, view) { // 날짜 클릭이벤트
+
+		        alert('Clicked on: ' + date.format());
+
+		        alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+
+		        alert('Current view: ' + view.name);
+
+		    }*/
+			});
+
+		});
+
+	</script>
+
+
+</head>
+<body>
+	<div id="body">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo.png" alt="">
+				고객관리
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="./customer_list.html">고객관리리스트</a>
+				</li>
+				<li class="green">
+					<a  href="./customer_input1.html">고객등록</a>
+				</li>
+				<li class="green">
+					<a  href="./customer_group.html" >고객그룹관리</a>
+				</li>
+				<li class="green">
+					<a class="on" href="#">상담캘린더</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+
+				<!-- 01-19 추가 시작  -->
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<!-- 01-19 추가 끝  -->
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" class="on">
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content calendar">
+					<h4 class="table-title">상담캘린더</h4>
+				<div class="" id='calendar'>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script src='./js/script.js'></script><!-- 01-19 추가 시작  -->
+	<script>
+		$(function(){
+			$('a').click(function(e){
+			});
+		});
+	</script>
+</body>
+</html>

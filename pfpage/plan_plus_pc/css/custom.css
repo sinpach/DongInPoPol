@@ -1,0 +1,92 @@
+/*content main*/
+.content .main {
+    width: 1082px;
+    margin: 0 auto;
+}
+
+.main .logowrap {
+    text-align: center;
+}
+
+.main .logowrap .main-logo {
+    display: block;
+    width: 288px;
+    height: 147px;
+    background: url('../images/common/logo-big.png') 0 0 no-repeat;
+    margin: 1px auto 15px;
+}
+
+.main .logowrap>span {
+    font-size: 18px;
+    font-weight: 100;
+    display: inline-block;
+    color: #000;
+}
+
+.main .main-btns {
+    margin: 60px 0;
+}
+
+.main .main-btns a {
+    display: block;
+    float: left;
+    width: 318px;
+    height: 308px;
+    text-align: center;
+    margin-left: 64px;
+    padding: 36px;
+}
+
+.main .main-btns a:first-child {
+    margin-left: 0;
+}
+
+.main .main-btns a.btn1 {
+    background: url('../images/main/btn_bg1.png') 0 0 no-repeat;
+}
+
+.main .main-btns a.btn2 {
+    background: url('../images/main/btn_bg2.png') 0 0 no-repeat;
+}
+
+.main .main-btns a.btn3 {
+    background: url('../images/main/btn_bg3.png') 0 0 no-repeat;
+}
+
+.main .main-btns a>span {
+    display: block;
+    color: #fff;
+}
+
+.main .main-btns a .main-btn-icon {
+    width: 100%;
+    height: 59px;
+    margin: 20px 0 30px;
+}
+
+.main .main-btns a.btn1 .main-btn-icon {
+    background: url('../images/main/btn_bg1_icon.png') center center no-repeat;
+}
+
+.main .main-btns a.btn2 .main-btn-icon {
+    background: url('../images/main/btn_bg2_icon.png') center center no-repeat;
+}
+
+.main .main-btns a.btn3 .main-btn-icon {
+    background: url('../images/main/btn_bg3_icon.png') center center no-repeat;
+}
+
+.main .main-btns a .main-btn-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main .main-btns a .main-btn-subtitle {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.main .main-btns a .main-btn-text {
+    font-size: 20px;
+    line-height: 1.4;
+}

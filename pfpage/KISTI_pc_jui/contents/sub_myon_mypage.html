@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sionfont.css">
+<link rel="stylesheet" href="./css/sion2020.css">
+<link rel="stylesheet" href="./css/inline.css">
+<link rel="stylesheet" href="./css/unified_search.css">
+<link rel="stylesheet" href="./css/filter2.css">
+<link rel="stylesheet" href="./css/sionbot.css">
+<link rel="stylesheet" href="./css/jquery-ui-12.css">
+<link rel="stylesheet" href="./css/jquery-confirm.css">
+<link rel="stylesheet" href="./css/jquery.bxslider.css">
+<link rel="stylesheet" href="./css/summernote-lite.css">
+<link rel="stylesheet" href="./css/jstree-style.min.css">
+<link rel="stylesheet" href="./css/c3.min.css">
+
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/sub_myon_mypage.css">
+
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_beta.js"></script>
+
+</head>
+
+
+<body>
+  <img src="./img/sp4.png">
+  <!-- content -->
+  <div class="conArea">
+    
+    
+    <div class="schTabArea">
+      <ul class="schTab">
+        <li class="active">
+          <a href="#;">내 연구환경</a>
+        </li>
+        <li>
+          <a href="#;">즐겨찾기</a>
+        </li>
+        <li>
+          <a href="#;">내 성과물 관리</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <h2 class="dpib">내 MyON</h2>
+    <div class="paper_content mb40 ">
+      <div class="section_left">
+        <div class="mt20">
+          <div class="ren_btn">
+            <button class="act fnTapBtn" value="Y" title="참여중 MyON">참여중 MyON</button>
+            <button class="fnTapBtn" value="N" title="참여요청 MyON">참여요청 MyON</button>
+            <div style="float:right;margin-top: -4px;">
+              <button class="makemyon" id="myonRgt" style="position: inherit;" title="MyON 만들기로 이동">MyON 만들기</button>
+              <button class="makemyon" id="myonList" style="position: inherit; background-color: orange !important;"
+                title="회원전체 MyON목록 조회">회원전체 MyON보기</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="myon_results">
+        
+          ▶ 현재 1개 (1개 소유, 0개 참여)의 MyON을 이용 중입니다.
+        
+        
+          <select id="orderCondition" name="orderCondition" class="year myon_select1" title="정렬조건">
+            <option value="crateDt" selected="selected">생성일</option>
+            <option value="title">제목</option>
+          </select>
+          <select id="orderDirection" name="orderDirection" class="year myon_select2" title="정렬순서">
+            <option value="DESC" selected="selected">내림차순</option>
+            <option value="ASC">오름차순</option>
+          </select>
+        </div>
+        <div class="myoncard_wrap">
+          <div class="card_wrap w100p mt10">
+            <h2 title="나의 MyON정보">나의 MyON 정보</h2>
+        
+            <div class="new_myoncard_wrap">
+              <div class="new_myoncard w100p">
+                <div class="new_myoncard_inner fnDetail" style="height:auto;cursor: pointer;" data-id="MYON0000001119">
+                  <div class="card_header">
+                    <div class="onlyowner">
+                      <span>권장원</span>
+                    </div>
+                    <h3>
+                      <a href="#;" title="MyON 상세 이동">인공지능 스마트 홈</a>
+                    </h3>
+                    <p title="인공지능">인공지능</p>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="실험 및 분석">1) 실험 및 분석</dt>
+                      <dd title="연구기관 검색">연구기관 검색</dd>
+                      <dd title="특허상세검색">특허상세검색</dd>
+                      <dd title="논문상세검색">논문상세검색</dd>
+                    </dl>
+                    <span class="filemore" style="padding-left: 19px;">more...</span>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="기초연구">2) 기초연구</dt>
+                    </dl>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="성과창출">3) 성과창출</dt>
+                    </dl>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="펀딩 파악 및 확보">4) 펀딩 파악 및 확보</dt>
+                    </dl>
+                  </div>
+                  <span class="dirmore">more...</span>
+                </div>
+                <span class="myondate">생성일 : 2020.06.02, 수정일 : 2020.06.02</span>
+                <div class="myoncard_btnwrap">
+                  <button type="button" class="dup fnCopy" value="MYON0000001119" title="MyON 프로젝트 복사">복사 생성</button>
+                  <button type="button" class="del fnDel" value="MYON0000001119" title="MyON 프로젝트 삭제">삭제</button>
+                </div>
+        
+        
+              </div>
+            </div>
+            <div class="new_myoncard_wrap">
+              <div class="new_myoncard w100p">
+                <div class="new_myoncard_inner fnDetail" style="height:auto;cursor: pointer;" data-id="MYON0000001119">
+                  <div class="card_header">
+                    <div class="onlyowner">
+                      <span>권장원</span>
+                    </div>
+                    <h3>
+                      <a href="#;" title="MyON 상세 이동">인공지능 스마트 홈</a>
+                    </h3>
+                    <p title="인공지능">인공지능</p>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="실험 및 분석">1) 실험 및 분석</dt>
+                      <dd title="연구기관 검색">연구기관 검색</dd>
+                      <dd title="특허상세검색">특허상세검색</dd>
+                      <dd title="논문상세검색">논문상세검색</dd>
+                    </dl>
+                    <span class="filemore" style="padding-left: 19px;">more...</span>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="기초연구">2) 기초연구</dt>
+                    </dl>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="성과창출">3) 성과창출</dt>
+                    </dl>
+                  </div>
+                  <div class="card_dir">
+                    <dl>
+                      <dt title="펀딩 파악 및 확보">4) 펀딩 파악 및 확보</dt>
+                    </dl>
+                  </div>
+                  <span class="dirmore">more...</span>
+                </div>
+                <span class="myondate">생성일 : 2020.06.02, 수정일 : 2020.06.02</span>
+                <div class="myoncard_btnwrap">
+                  <button type="button" class="dup fnCopy" value="MYON0000001119" title="MyON 프로젝트 복사">복사 생성</button>
+                  <button type="button" class="del fnDel" value="MYON0000001119" title="MyON 프로젝트 삭제">삭제</button>
+                </div>
+
+
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="section_right">
+        
+        <div class="sch_rightwrap">
+          <div class="schlist_wrap">
+            <div class="profile">
+              <div class="profile_top">
+                <a href="#;">
+                  <img src="./img/profile.png" >
+                </a>
+                <p>권장원 <br>(rnjswkddnjs)</p>
+              </div>
+              <p>소속 : <span>(출연연/공공기관) 한국과학기술정보연구원</span></p>
+              <p>직종 및 연구분야 : <span>연구원, 공학</span></p>
+              <p>ScienceON 이용목적 : <span>과학기술 동향 및 정책 파악</span></p>
+              <p>이메일 : <span>test@kisti.re.kr</span></p>
+              <p>휴대폰 번호 : <span>010-1234-1234</span></p>
+              
+            </div>
+          </div>
+          <div class="schlist_wrap">
+            <h3>즐겨찾기 <a href="#" class="accordion_btn"><img src="./img/minus.svg"></a></h3>
+            <div class="accordion">
+              <div class="sch_dotlist">
+                <ul id="srchViewList">
+                  <li>
+                    <a href="">인공지능 챗봇구현 논문작성 (10)</a>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="schlist_wrap">
+            <h3>워드클라우드 <a href="#" class="accordion_btn"><img src="./img/minus.svg"></a></h3>
+            <div class="accordion">
+              <div class="sch_radiobox">
+                <input type="radio" id="rd2" name="cloudBtn" value="1" checked="checked"><label for="rd2">키워드</label>
+                <input type="radio" id="rd1" name="cloudBtn" value="2"><label for="rd1">저자</label>
+                <input type="radio" id="rd3" name="cloudBtn" value="3"><label for="rd3">저자+키워드</label>
+              </div>
+              
+              <div class="keyword_wrap">
+                <div id="keywordCloud" data-type="all"
+                  style="border: 5px solid #e2e2e2;  border-radius: 15px; padding-top: 20px;text-align: center;"><svg width="250"
+                    height="210">
+                    <g transform="translate(125,105)"><text text-anchor="middle" transform="translate(-23,-15)rotate(90)"
+                        style="font-size: 36px; fill: rgb(31, 119, 180);">택트</text><text text-anchor="middle"
+                        transform="translate(-4,-47)rotate(0)" style="font-size: 31px; fill: rgb(174, 199, 232);">Firmware</text><text
+                        text-anchor="middle" transform="translate(69,-12)rotate(90)"
+                        style="font-size: 29px; fill: rgb(255, 127, 14);">Helical Gears</text><text text-anchor="middle"
+                        transform="translate(-26,43)rotate(0)" style="font-size: 28px; fill: rgb(255, 187, 120);">언택트</text><text
+                        text-anchor="middle" transform="translate(21,71)rotate(0)"
+                        style="font-size: 26px; fill: rgb(44, 160, 44);">택트타임</text><text text-anchor="middle"
+                        transform="translate(-1,-71)rotate(0)" style="font-size: 23px; fill: rgb(152, 223, 138);">작업일보</text><text
+                        text-anchor="middle" transform="translate(-90,-13)rotate(90)"
+                        style="font-size: 22px; fill: rgb(214, 39, 40);">M-M/C Interface</text><text text-anchor="middle"
+                        transform="translate(-12,88)rotate(0)" style="font-size: 18px; fill: rgb(255, 152, 150);">Productivity
+                        Data</text><text text-anchor="middle" transform="translate(39,1)rotate(0)"
+                        style="font-size: 11px; fill: rgb(148, 103, 189);">Finish work</text><text text-anchor="middle"
+                        transform="translate(30,20)rotate(0)" style="font-size: 11px; fill: rgb(197, 176, 213);">Option</text><text
+                        text-anchor="middle" transform="translate(-60,17)rotate(0)"
+                        style="font-size: 10px; fill: rgb(140, 86, 75);">Buffer</text><text text-anchor="middle"
+                        transform="translate(2,-96)rotate(0)" style="font-size: 9px; fill: rgb(196, 156, 148);">High-rise
+                        Building</text><text text-anchor="middle" transform="translate(-74,98)rotate(0)"
+                        style="font-size: 8px; fill: rgb(227, 119, 194);">S-SMART 시스템</text></g>
+                  </svg></div>
+                <p>저자 및 키워드를 통하여 검색결과의 연구동향을 파악할 수 있습니다.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="schlist_wrap">
+            <h3>추천 과학기술정보 <a href="#" class="accordion_btn"><img src="./img/minus.svg"></a></h3>
+            <div class="accordion">
+              <div class="side_tab_wrap">
+                <div class="side_tab_menu">
+                  <a href="#;" class="on">논문</a>
+                  <a href="#;">특허</a></li>
+                  <a href="#;">연구보고서</a>
+                  <a href="#;">R&D과제</a>
+                  <a href="#;">동향</a>
+                </div>
+                <div class="side_tab_con">
+                  <div class="side_tab_title">
+                    <input type="checkbox" >
+                    <a href="#;"><img src="./img/add.png"> MyON담기</a>
+                    <select >
+                      <option value="">내림차순</option>
+                      <option value="">오름차순</option>
+                    </select>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="chk_box">
+                        <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="side_tab_info">
+                        <a href="#;">
+                          <p><span>[학위논문]</span>현대미술이 갖는 치유적 특성에 관한 연구 : 현대 미술 작가 4人</p>
+                          <span>전영선 (고려대학교 교육대학원)</span>
+                          <span>2014, ii, 110장, 고려대학교 교육대학원, 국내석사</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chk_box">
+                        <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="side_tab_info">
+                        <a href="#;">
+                          <p><span>[학위논문]</span>현대미술이 갖는 치유적 특성에 관한 연구 : 현대 미술 작가 4人을 중심</p>
+                          <span>전영선 (고려대학교 교육대학원)</span>
+                          <span>2014, ii, 110장, 고려대학교 교육대학원, 국내석사</span>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chk_box">
+                        <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="side_tab_info">
+                        <a href="#;">
+                          <p><span>[학위논문]</span>현대미술이 갖는 치유적 특성에 관한 연구 : 현대 미술 작가 4人을 중심</p>
+                          <span>전영선 (고려대학교 교육대학원)</span>
+                          <span>2014, ii, 110장, 고려대학교 교육대학원, 국내석사</span>
+                        </a>
+                      </div>
+                    </li>
+                    <div class="btn_wrap">
+                      <a href="#;" class="prev_btn"><img src="./img/prev.png"></a>
+                      <a href="#;" class="next_btn"><img src="./img/next.png"></a>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+
+</body>
+<script>
+  $(function () {
+    $('.accordion_btn').click(function(e){
+       e.preventDefault();
+       console.log($(this).parent().siblings('.accordion'))
+      if (!$(this).hasClass("on")) {
+        $(this).addClass('on');
+        $(this).html("<img src='./img/plus.svg'>");
+        $(this).parent().siblings('.accordion').hide()
+      }else{
+        $(this).removeClass('on');
+        $(this).html("<img src='./img/minus.svg'>");
+        $(this).parent().siblings('.accordion').show()
+      }
+    });
+    $(".side_tab_menu a").click(function(){
+      $( '.side_tab_menu a' ).removeClass('on');
+      $(this).addClass("on")
+    });
+
+  });
+  
+</script>
+</html>

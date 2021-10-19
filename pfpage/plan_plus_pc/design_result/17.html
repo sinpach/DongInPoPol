@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page17">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-5 은퇴 후 현금흐름(Cash Flow) 설계_(1) 설계 전 예상 은퇴 CF 분석]
+			</h1>
+			<div class="explain">
+				연금형 CF목표는 은퇴생활비의 <span>70%</span>로, 은퇴후 예상 CF는 월<span>213만원</span>이고 부족 CF는 <span>137만원</span>입니다.
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="chart-box">
+					<div class="con_title">
+						설계 전 연간 예상 은퇴 CF 추이
+					</div>
+					<div id="chartbar1" class="chart">
+
+					</div>
+					<div class="chart_legend">
+						<ul>
+							<li><span></span>초과 현금흐름</li>
+							<li><span></span>부족 현금흐름</li>
+							<li><span></span>임대수익</li>
+							<li><span></span>주택연금</li>
+							<li><span></span>연금자산</li>
+							<li><span></span>공적연금</li>
+						</ul>
+					</div>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						은퇴 CF 자산 예상 연금수령액
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:12%">
+							<col style="">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:9%">
+							<col style="width:12%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>은퇴 CF자산</th>
+								<th >월 수령액</th>
+								<th >수령 시점</th>
+								<th>지급 기간</th>
+								<th>은퇴시점 평가액</th>
+								<th>은퇴 CF자산</th>
+								<th>월 수령액</th>
+								<th>수령 시점</th>
+								<th>지급 기간</th>
+								<th>은퇴시점 평가액</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>공적연금(고객)</td>
+								<td>100만원</td>
+								<td>66세</td>
+								<td>종신</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>공적연금(배우자)</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>주택연금</td>
+								<td>60만원</td>
+								<td>60세</td>
+								<td>20년</td>
+								<td>12,547만원</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>임대수익</td>
+								<td>100만원</td>
+								<td>60세</td>
+								<td>10년</td>
+								<td>12,547만원</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>드림재테크 저축보험</td>
+								<td>100만원</td>
+								<td>60세</td>
+								<td>10년</td>
+								<td>12,547만원</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>스마트밸런스 연금보험</td>
+								<td>100만원</td>
+								<td>60세</td>
+								<td>10년</td>
+								<td>12,547만원</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+				<div class="info_box">
+					은퇴후 CF설계의 목적은 은퇴생활비 중 최소 60-70% 정도는 매월 정기적인 현금흐름이 기대되는 연금형 또는 월지급식 상품으로 준비할 수 있도록 하기 위함입니다. 은퇴 후 CF설계가 제대로 이루어지지 않을 경우 불규칙적인 생활비 인출, 투자수익률 악화, 의도치 않은 목돈 지출 등으로 은퇴시점에 준비한 은퇴자금이 조기에 고갈될 위험에 처할 수 있습니다.
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+
+				page17_Barstacked('#chartbar1');
+		});
+
+	</script>
+</body>
+</html>

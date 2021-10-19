@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page12">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-1 은퇴 준비자금]
+			</h1>
+			<div class="explain">
+				고객님의 은퇴시점에 준비될 것으로 예상되는 자금은 총 <span>9.9억원</span>입니다.
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="con_title">
+						공적연금
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:20%">
+							<col style="">
+							<col style="width:33%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th rowspan="3">본인</th>
+								<td>공적연금 유형</td>
+								<td>국민연금</td>
+							</tr>
+							<tr>
+								<td>예상 월 연금액</td>
+								<td>100만원</td>
+							</tr>
+							<tr>
+								<td>연금수령 시점</td>
+								<td>000세</td>
+							</tr>
+							<tr>
+								<th rowspan="3">배우자</th>
+								<td>공적연금 유형</td>
+								<td>예상 월 연금액</td>
+							</tr>
+							<tr>
+								<td>예상 월 연금액</td>
+								<td>100만원</td>
+							</tr>
+							<tr>
+								<td>연금수령 시점</td>
+								<td>000세</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">공적연금 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="3">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						퇴직금
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:20%">
+							<col style="">
+							<col style="width:33%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th rowspan="2">본인</th>
+								<td>예상퇴직금</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>퇴직 시점</td>
+								<td>000세</td>
+							</tr>
+							<tr>
+								<th rowspan="2">배우자</th>
+								<td>예상퇴직금</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>퇴직 시점</td>
+								<td>000세</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">퇴직금 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="3">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						주택연금
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:50%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>예상 월 연금액</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>주택연금 지급 기간</td>
+								<td>00년</td>
+							</tr>
+							<tr>
+								<td>연금수령 시점</td>
+								<td>000세</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">주택연금 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="2">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						연금자산
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:55%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>예상자산평가액(현재)</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>월 적립액</td>
+								<td>00만원</td>
+							</tr>
+							<tr>
+								<td>포트폴리오 기대 수익률</td>
+								<td>3.0%</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">연금자산 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="2">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						금융자산
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:55%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>금융자산평가액(현재)</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>월 적립액</td>
+								<td>00만원</td>
+							</tr>
+							<tr>
+								<td>포트폴리오 기대 수익률</td>
+								<td>3.0%</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">금융자산 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="2">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						임대수익
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:55%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td>월 임대료</td>
+								<td>000만원</td>
+							</tr>
+							<tr>
+								<td>임대수익기간</td>
+								<td>00년</td>
+							</tr>
+							<tr>
+								<td>임대료 상승률</td>
+								<td>0.0%</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">임대수익 평가금액 <span>(은퇴시점)</span></td>
+							</tr>
+							<tr>
+								<td colspan="2">00,000만원</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+
+
+			</div>
+			<p>* 공적연금은 국민연금, 사학연금, 공무원연금 등을 총칭하는 개념입니다.</p>
+			<p>* 주택연금과 임대수익의 평가금액을 연간 예상 연금액(임대료)을 은퇴시점 기준으로 현가 할인한 값입니다.</p>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

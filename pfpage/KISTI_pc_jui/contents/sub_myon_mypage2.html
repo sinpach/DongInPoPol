@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <link rel="stylesheet" href="./css/sion2020.css"> -->
+<link rel="stylesheet" href="./css/sionfont.css">
+<link rel="stylesheet" href="./css/sion2020.css">
+<link rel="stylesheet" href="./css/inline.css">
+<link rel="stylesheet" href="./css/unified_search.css">
+<link rel="stylesheet" href="./css/filter2.css">
+<link rel="stylesheet" href="./css/sionbot.css">
+<link rel="stylesheet" href="./css/jquery-ui-12.css">
+<link rel="stylesheet" href="./css/jquery-confirm.css">
+<link rel="stylesheet" href="./css/jquery.bxslider.css">
+<link rel="stylesheet" href="./css/summernote-lite.css">
+<link rel="stylesheet" href="./css/jstree-style.min.css">
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/sub_myon_mypage.css">
+
+
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_myon_mypage2.js"></script>
+<script type="text/javascript" src="./js/bpopup.js"></script>
+
+</head>
+
+
+<body>
+  <img src="./img/sp4.png">
+  <!-- content -->
+  <div class="conArea">
+    
+    
+    <div class="schTabArea">
+      <ul class="schTab">
+        <li >
+          <a href="#;">내 연구환경</a>
+        </li>
+        <li class="active">
+          <a href="#;">즐겨찾기</a>
+        </li>
+        <li>
+          <a href="#;">내 성과물 관리</a>
+        </li>
+        
+      </ul>
+    </div>
+
+    <h2 class="dpib">즐겨찾기</h2>
+    
+    <div class="bookmark">
+      <div class="my_bookmark">
+        <div class="my_bookmark_title">
+          <h3>나의 즐겨찾기</h3>
+          <a href="#;" class="bookmark_modify"><img src="./img/add_folder.png"></a>
+        </div>
+        <div class="my_bookmark_con">
+          <div class="my_bookmark_top">
+            <p>즐겨찾기명</p>
+          </div>
+          <ul>
+            <li class="active">
+              <p>기본폴더 <span>(1)</span></p>
+              <button class="f_write"></button>
+              <button class="f_delete"></button>
+            </li>
+            <li>
+              <p>기본폴더 <span>(1)</span> <span>(0)</span></p>
+              <button class="f_write"></button>
+              <button class="f_delete"></button>
+            </li>
+            <li>
+              <p>기본폴더 <span>(2)</span><span>(0)</span></p>
+              <button class="f_write"></button>
+              <button class="f_delete"></button>
+            </li>
+            
+          </ul>
+          <div class="folder_explain">
+            폴더 설명
+          </div>
+        </div>
+      </div>
+      <div class="folder">
+        <div class="folder_title">
+          <h3>기본폴더</h3>
+          <p>
+            생성일 : 2015-11-11
+          </p>
+        </div>
+        <div class="folder_tab">
+          <a href="#;" class="on">기능</a>
+          <a href="#;">논문</a>
+          <a href="#;">특허</a>
+          <a href="#;">보고서</a>
+          <a href="#;">동향</a>
+          <a href="#;">저널</a>
+          <a href="#;">연구자</a>
+        </div>
+        <div class="folder_con">
+          <div class="folder_input">
+            <p>자료수: <span><em>1</em>(1/1)</span></p>
+            <select >
+              <option value="">정확도</option>
+              <option value="">관련도</option>
+            </select>
+            <select>
+              <option value="">내림차순</option>
+              <option value="">오름차순</option>
+            </select>
+            <select>
+              <option value="">10개씩</option>
+              <option value="">20개씩</option>
+            </select>
+            <button class="array_btn">정렬</button>
+            <div class="search_wrap">
+              <input type="text">
+              <button class="search_btn">검색</button>
+            </div>
+            
+          </div>
+          <div class="folder_table">
+            <div class="table_top">
+              <input type="checkbox" >
+              <a href="#;">이동/복사</a>
+              <a href="#;"><img src="./img/del_icon.png" > 삭제</a>
+              <a href="#;"><img src="./img/copy_icon.png"> 원문복사신청</a>
+              <a href="#;" onclick="javascript:exportList();"><img src="./img/export_icon.png"> 내보내기</a>
+
+              <p><img src="./img/folder_icon_s.png"> 폴더</p>
+            </div>
+            <ul>
+              <li>
+                <div class="chk_box">
+                  <input type="checkbox" name="" id="">
+                </div>
+                <div class="num">1</div>
+                <div class="folder_in_con">
+                  <a href="#;">
+                    <p><span>[학위논문]</span>미술 콘텐츠 작가 매니지먼트 연구</p>
+                    <span>최보경 (韓國外國語大學校 大學院)</span>
+                    <span>2013 , vii,136 p. , 韓國外國語大學校 大學院 , 국내석사</span>
+                  </a>
+                </div>
+                <p class="folder_name">기본폴더 </p>
+              </li>
+            </ul>
+
+            <div class="pagination">
+              <div>
+                <span>처음</span>
+                <span>이전</span>
+                <span class="active">1</span>&nbsp;
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>다음</span>
+                <span>끝</span>
+                <input id="pageIndex" name="pageIndex" type="hidden" value="1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+  <div class="popup_wrap">
+    <div class="pop_bg">
+
+    </div>
+    <div class="popup" style="display: block;">
+      <div class="popup_header">
+        <p>즐겨찾기 수정</p>
+      </div>
+      <ul class="popup_list">
+        <li>
+          <div class="title">
+            즐겨찾기명
+          </div>
+          <input type="text">
+        </li>
+
+      </ul>
+      <div class="confirm_btn_wrap">
+        <button class="confirm_btn">수정</button>
+        <button class="cancel_btn">취소</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<div class="Pstyle3 type2 hidden" id="exportDiv" style="display: none;">
+	<button id="fnClose" class="xclose"><span class="screenout">닫기</span></button>
+	<div class="pop_layer">
+		<p class="p_title_main">내보내기</p>
+		<div class="p_con">
+			<table class="tbl st2 grid">
+			<caption>상세정보</caption>
+			<colgroup>
+			<col style="width:125px;">
+			<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">내보내기 구분</th>
+					<td>
+						<input type="radio" id="exportType1" name="exportType" value="file" checked="checked"><label for="exportType1">파일저장</label>
+						<input type="radio" id="exportType2" name="exportType" value="print"><label for="exportType2">인쇄</label>
+						<input type="radio" id="exportType3" name="exportType" value="mail"><label for="exportType3">메일전송</label>
+						
+							
+								<input type="radio" id="exportType4" name="exportType" value="bigFile"><label for="exportType4">대량다운로드</label>
+							
+							
+						
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">구성항목</th>
+					<td>
+						<select id="exptInfo" name="exptInfo" onchange="javascript:exptInfoChange();" title="종류" style="width: 95px;">
+							<option value="brief">기본정보</option>
+							<option value="detail">상세정보</option>
+						</select>
+						
+							
+								
+								
+								
+								<div id="exptBrf">관리번호, 논문명, 저널/프로시딩명, 저자 , 발행년, 권, 호, 시작페이지, 끝페이지, 발행기관</div>
+								<div id="exptDtl" class="hidden">관리번호, 논문명, 대등논문명, 저자 , 저널/프로시딩명, 발행기관, 발행년, 발행언어, 권, 호, 시작페이지, 끝페이지, ISBN, ISSN, 주제분야, 키워드, 초록(한글), 초록(영문), 저자(소속기관) </div>
+								
+								
+							
+							
+							
+							
+							
+						
+						
+					</td>
+				</tr>
+				<tr id="fileType">
+					<th scope="row">저장형식</th>
+					<td>
+						<input type="radio" id="downType1" name="downType" value="txt" checked="checked"><label for="downType1">Text(ASCII format)</label><br>
+						<input type="radio" id="downType2" name="downType" value="excel"><label for="downType2">Excel format</label><br>
+						
+						<input type="radio" id="downType3" name="downType" value="ref"><label for="downType3">RefWorks Direct Export</label><br>
+						<input type="radio" id="downType4" name="downType" value="ris"><label for="downType4">RIS format (for Reference Manager, ProCite, EndNote), Scholar's Aids, Mendeley </label>
+						
+						
+					</td>
+				</tr>
+				<tr id="mailType" class="hidden">
+					<th scope="row">메일정보</th>
+					<td>
+						<dl>
+							<dt><label for="toMailId">받는사람 (필수)</label></dt>
+							<dd>
+								<input type="text" id="toMailId" name="toMailId" title="보내는사람 이메일 주소 입력" style="width:90px;"> @ 
+								<input type="text" id="toMailDomain" name="toMailDomain" title="보내는사람 이메일 주소 입력" style="width:90px;">
+								<select id="domainOpt1" name="domainOpt1" onchange="javascript:setEmail('1');" title="이메일 선택" style="width:90px;" class="select_st1">
+									<option value="직접선택" selected="selected">직접선택</option>
+									<option value="hanmail.net">hanmail.net</option>
+									<option value="naver.com">naver.com</option>
+									<option value="korea.com">korea.com</option>
+									<option value="nate.com">nate.com</option>
+									<option value="hotmail.com">hotmail.com</option>
+									<option value="gmail.com">gmail.com</option>
+								</select>
+							</dd>
+							<dt><label for="fromMailId">보내는사람 (선택)</label></dt>
+							<dd>
+								<input type="text" id="fromMailId" name="fromMailId" title="받는사람 이메일 주소 입력" style="width:90px;"> @
+								<input type="text" id="fromMailDomain" name="fromMailDomain" title="받는사람 이메일 주소 입력" style="width:90px;">
+								<select id="domainOpt2" name="domainOpt2" onchange="javascript:setEmail('2');" title="이메일 선택" style="width:90px;" class="select_st1">
+									<option value="직접선택" selected="selected">직접선택</option>
+									<option value="hanmail.net">hanmail.net</option>
+									<option value="naver.com">naver.com</option>
+									<option value="korea.com">korea.com</option>
+									<option value="nate.com">nate.com</option>
+									<option value="hotmail.com">hotmail.com</option>
+									<option value="gmail.com">gmail.com</option>
+								</select>
+							</dd>
+							<dt><label for="mailTitle">제목</label></dt>
+							<dd><input type="text" id="mailTitle" name="mailTitle" title="메일제목" style="width:300px;" value="KISTI 검색결과 이메일  서비스"></dd>
+							<dt><label for="mail04">내용</label></dt>
+							<dd><textarea id="mailCont" name="mailCont" title="이메일 내용을 입력합니다." cols="50" rows="4" style="width:300px; padding: 10px;">KISTI 검색결과 이메일  서비스</textarea></dd>
+						</dl>
+					</td>
+				</tr>
+				<tr id="bigFile" class="hidden">
+					<th scope="row">안내</th>
+					<td>
+						<dl class="export">
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">총 1,222 건의 자료가 검색되었습니다.</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">다운받으실 자료의 인덱스를 입력하세요. (1-10,000)</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">검색결과의 순서대로 최대 10,000건 까지 다운로드가 가능합니다.</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">데이타가 많을 경우 속도가 느려질 수 있습니다.(최대 2~3분 소요)</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">다운로드 파일은 UTF-8 형태로 저장됩니다. 파일의 내용이 제대로 보이지 않을실 때는 웹브라우저 상단의 보기 -&gt; 인코딩 -&gt; 자동선택 여부를 확인하십시오</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">
+								<input type="text" id="startIndex" name="startIndex" title="출력사이즈 입력" maxlength="5" style="width:90px;">
+								~
+								<input type="text" id="endIndex" name="endIndex" title="출력사이즈 입력" maxlength="5" style="width:90px;">
+								
+								</dd>
+							<dt style="width: 5%;"><label for="mail01">&gt; </label></dt>
+							<dd style="width: 95%;">
+								<input type="radio" id="downType11" name="downType1" value="txt" checked="checked"><label for="downType11">Text(ASCII format)</label><br>
+								<input type="radio" id="downType22" name="downType1" value="excel"><label for="downType22">Excel format</label>
+							</dd>
+						</dl>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			<div class="p_btn_wrap" style="text-align: center;">
+				<button type="button" onclick="exportSrchList();">실행</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+  $(function () {
+    $('.accordion_btn').click(function(e){
+       e.preventDefault();
+       console.log($(this).parent().siblings('.accordion'))
+      if (!$(this).hasClass("on")) {
+        $(this).addClass('on');
+        $(this).html("<img src='./img/plus.svg'>");
+        $(this).parent().siblings('.accordion').hide()
+      }else{
+        $(this).removeClass('on');
+        $(this).html("<img src='./img/minus.svg'>");
+        $(this).parent().siblings('.accordion').show()
+      }
+    });
+    $(".side_tab_menu a").click(function(){
+      $( '.side_tab_menu a' ).removeClass('on');
+      $(this).addClass("on")
+    });
+
+  });
+  function exportList () {
+   $('#exportDiv').bPopup();
+   }
+</script>
+
+</html>

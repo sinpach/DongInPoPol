@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/plan_plus_pc1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/plan_plus_pc2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/plan_plus_pc3.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/plan_plus_pc/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                PLAN PLUS website 작업 <br>
+                HTML5, css, javascript 동적 기능 작업 <br>
+                c3.js, d3.js 사용 차트 커스텀 작업
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <pre>
+              <code>
+
+// 도넛 차트 커스텀 donutChart(bindDiv,patterColor,mainTitle,data)
+
+function donutChart(bindDiv,patterColor,mainTitle,data,width){
+    var chart = c3.generate({
+        bindto: bindDiv,
+        data: {
+            columns: [
+                ['data1', 0],
+                ['', 100],
+            ],
+            type : 'donut',
+            labels : false,
+            order : null
+        },
+        donut: {
+            title: '',
+            width: 12
+        },
+        color: {
+            pattern: [patterColor,'#ddd']
+        },
+        legend:{
+            hide: true
+        },
+        tooltip: {
+            show: false
+        }
+    });
+
+    var title = d3.select(bindDiv+' .c3-chart-arcs-title');
+    title.text('');
+    if(mainTitle.length > 1){
+        title.attr('y', -24).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+        title.insert('tspan').text(mainTitle[1]).attr('dy', 24).attr('x', 0);
+    }else{
+        title.attr('y', -10).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+    }
+    title.insert('tspan').text(data+'%').attr('dy', 36).attr('x', 0).attr('class','title');
+    $(bindDiv+' .c3-chart-arcs-title tspan').css({'font-size':'18px'});
+    $(bindDiv+' .c3-chart-arcs-title .title').css({'font-size':'36px', 'fill' : patterColor,'font-weight':'bold'});
+    //도넛 그래프 수정 03-08 start
+    setTimeout(function () {
+        if(data > 100){
+
+          chart.load({
+              columns: [
+                  ['data1', data],
+                  ['',0],
+              ]
+            });
+        }else{
+
+
+          chart.load({
+              columns: [
+                  ['data1', data],
+                  ['', 100-data],
+              ]
+          });
+        }
+        //도넛 그래프 수정 03-08 end
+        if(width){
+                chart.resize({width:width});
+        }
+        if($('.custom-chart-title')){
+            $('.custom-chart-title').fadeIn();
+        }
+    }, 1000);
+
+}
+
+
+function donutChart2(bindDiv,patterColor1,patterColor2,mainTitle,data1,data2,width){
+    var chart = c3.generate({
+        bindto: bindDiv,
+        data: {
+            columns: [
+                ['data2', 0],
+                ['', 100],
+                ['data1', 0],
+            ],
+            type : 'donut',
+            labels : false,
+            order : null
+        },
+        donut: {
+            title: '',
+            width: 30
+        },
+        color: {
+            pattern: [patterColor1,'#ddd',patterColor2,]
+        },
+        legend:{
+            hide: true
+        },
+        tooltip: {
+            show: false
+        }
+    });
+
+    var title = d3.select(bindDiv+' .c3-chart-arcs-title');
+    title.text('');
+    if(mainTitle.length > 1){
+        title.attr('y', -24).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+        title.insert('tspan').text(mainTitle[1]).attr('dy', 24).attr('x', 0);
+    }else{
+        title.attr('y', -10).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+    }
+    title.insert('tspan').text(data1+'%').attr('dy', 36).attr('x', 0).attr('class','title');
+    $(bindDiv+' .c3-chart-arcs-title tspan').css({'font-size':'18px'});
+    $(bindDiv+' .c3-chart-arcs-title .title').css({'font-size':'36px', 'fill' : patterColor2,'font-weight':'bold'});
+    setTimeout(function () {
+        chart.load({
+            columns: [
+                ['data1', data1],
+                ['data2', data2],
+                ['', 100-data1-data2]
+            ]
+        });
+        if(width){
+                chart.resize({width:width});
+        }
+        if($('.custom-chart-title')){
+            $('.custom-chart-title').fadeIn();
+        }
+    }, 1000);
+
+}
+
+
+/*설계결과 06페이지*/
+
+function donutChart3(bindDiv,patterColor,mainTitle,data,datatext,width){
+    var chart = c3.generate({
+        bindto: bindDiv,
+        data: {
+            columns: [
+                ['data1', 0],
+                ['', 100],
+            ],
+            type : 'donut',
+            labels : false,
+            order : null
+        },
+        donut: {
+            title: '',
+            width: 15
+        },
+        color: {
+            pattern: [patterColor,'#ddd']
+        },
+        legend:{
+            hide: true
+        },
+        tooltip: {
+            show: false
+        }
+    });
+
+    var title = d3.select(bindDiv+' .c3-chart-arcs-title');
+    title.text('');
+    if(mainTitle.length > 1){
+        title.attr('y', -24).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+        title.insert('tspan').text(mainTitle[1]  ).attr('dy', 24).attr('x', 0);
+    }else{
+        title.attr('y', -10).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0] ).attr('dy', 0).attr('x', 0);
+    }
+    title.insert('tspan').text(datatext).attr('dy', 36).attr('x', 0).attr('class','title');
+    title.insert('tspan').insert('tspan').text('억원')
+    $(bindDiv+' .c3-chart-arcs-title tspan').css({'font-size':'18px'});
+    $(bindDiv+' .c3-chart-arcs-title .title').css({'font-size':'36px', 'fill' : patterColor,'font-weight':'bold'});
+    $(bindDiv+' .c3-chart-arcs-title>tspan>tspan').css({'font-size':'18px', 'fill' : patterColor,'font-weight':'bold'});
+    setTimeout(function () {
+        chart.load({
+            columns: [
+                ['data1', data],
+                ['', 100-data],
+            ]
+        });
+        if(width){
+                chart.resize({width:width});
+        }
+        if($('.custom-chart-title')){
+            $('.custom-chart-title').fadeIn();
+        }
+    }, 1000);
+
+}
+
+function donutChart_page16(bindDiv,patterColor,mainTitle,data,width){
+    var chart = c3.generate({
+        bindto: bindDiv,
+        data: {
+            columns: [
+                ['data1', 0],
+                ['', 100],
+            ],
+            type : 'donut',
+            labels : false,
+            order : null
+        },
+        donut: {
+            title: '',
+            width: 10
+        },
+        color: {
+            pattern: [patterColor,'#ddd']
+        },
+        legend:{
+            hide: true
+        },
+        tooltip: {
+            show: false
+        },
+        size: {
+          height: 170
+        }
+    });
+
+    var title = d3.select(bindDiv+' .c3-chart-arcs-title');
+    title.text('');
+    if(mainTitle.length > 1){
+        title.attr('y', -24).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+        title.insert('tspan').text(mainTitle[1]).attr('dy', 24).attr('x', 0);
+    }else{
+        title.attr('y', -10).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+    }
+    title.insert('tspan').text(data+'%').attr('dy', 36).attr('x', 0).attr('class','title');
+    $(bindDiv+' .c3-chart-arcs-title tspan').css({'font-size':'14px'});
+    $(bindDiv+' .c3-chart-arcs-title .title').css({'font-size':'32px', 'fill' : patterColor,'font-weight':'bold'});
+    setTimeout(function () {
+        chart.load({
+            columns: [
+                ['data1', data],
+                ['', 100-data],
+            ]
+        });
+        if(width){
+                chart.resize({width:width});
+        }
+        if($('.custom-chart-title')){
+            $('.custom-chart-title').fadeIn();
+        }
+    }, 1000);
+
+}
+
+
+function donutChart_page31(bindDiv,patterColor,mainTitle,data,datatext,width){
+    var chart = c3.generate({
+        bindto: bindDiv,
+        data: {
+            columns: [
+                ['data1', 0],
+                ['', 100],
+            ],
+            type : 'donut',
+            labels : false,
+            order : null
+        },
+        donut: {
+            title: '',
+            width: 15
+        },
+        color: {
+            pattern: [patterColor,'#ddd']
+        },
+        legend:{
+            hide: true
+        },
+        tooltip: {
+            show: false
+        }
+    });
+
+    var title = d3.select(bindDiv+' .c3-chart-arcs-title');
+    title.text('');
+    if(mainTitle.length > 1){
+        title.attr('y', -24).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0]).attr('dy', 0).attr('x', 0);
+        title.insert('tspan').text(mainTitle[1]  ).attr('dy', 24).attr('x', 0).attr('style', 'fill:#00aced');
+    }else{
+        title.attr('y', -10).attr('x', 0);
+        title.insert('tspan').text(mainTitle[0] ).attr('dy', 0).attr('x', 0);
+    }
+    title.insert('tspan').text(datatext).attr('dy', 36).attr('x', 0).attr('class','title');
+    title.insert('tspan').insert('tspan').text('만원')
+    $(bindDiv+' .c3-chart-arcs-title tspan').css({'font-size':'18px'});
+    $(bindDiv+' .c3-chart-arcs-title .title').css({'font-size':'28px', 'fill' : patterColor,'font-weight':'bold'});
+    $(bindDiv+' .c3-chart-arcs-title>tspan>tspan').css({'font-size':'18px', 'fill' : patterColor,'font-weight':'bold'});
+    setTimeout(function () {
+        chart.load({
+            columns: [
+                ['data1', data],
+                ['', 100-data],
+            ]
+        });
+        if(width){
+                chart.resize({width:width});
+        }
+        if($('.custom-chart-title')){
+            $('.custom-chart-title').fadeIn();
+        }
+    }, 1000);
+
+}
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

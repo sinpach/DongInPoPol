@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/koaj_jui1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/koaj_jui2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/koaj_jui3.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/plan_plus_pc/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                KOAJ website 작업 <br>
+                HTML5, css, javascript 동적 기능 작업 <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <pre>
+              <code>
+
+
+
+
+
+$(function(){
+	// nav
+$(".top_nav").mouseover(function(){
+	$(".top_nav").stop().animate({"height": "260px"},150);
+});
+$(".top_nav").mouseleave(function(){
+	$(".top_nav").stop().animate({"height": "68px"},150);
+});
+
+//main lot_paper
+
+$(".left_con .title").click(function(){
+	if ($(this).hasClass("on")) {
+
+	}else {
+		var eq = $(this).index();
+		$(this).addClass("on");
+		$(this).siblings(".left_con .title").removeClass("on");
+		if (eq == 0) {
+			$(".left_con .lot_paper_wrap ul").removeClass("on");
+				$(".left_con .lot_paper_wrap .btn_wrap a").removeClass("on");
+			$(".left_con .lot_paper_wrap ul").eq(0).addClass("on");
+			$(".left_con .lot_paper_wrap .btn_wrap a").eq(0).addClass("on");
+		}else{
+			$(".left_con .lot_paper_wrap ul").removeClass("on");
+			$(".left_con .lot_paper_wrap .btn_wrap a").removeClass("on");
+			$(".left_con .lot_paper_wrap ul").eq(1).addClass("on");
+			$(".left_con .lot_paper_wrap .btn_wrap a").eq(1).addClass("on");
+		}
+
+	}
+});
+	// main slide
+
+	var list_length = $(".recent_list li").length +1;
+	var list_width = $(".recent_list li").length;
+	$(".recent_list").css("width","331" * list_width  + "px");
+	var eq = 0;
+	$(".recent_wrap .list_btn").click(function(){
+		eq++;
+
+		if (list_width / 3 <= eq) {
+			$(".recent_list").animate({"left": "0px"});
+			eq = 0;
+		}else{
+			$(".recent_list").animate({"left": "-993" * eq + "px"});
+		}
+	});
+
+	// year slide_down
+
+	$(".by_year_list>a").click(function(){
+		if ($(this).hasClass("on")) {
+			var sel = $(this);
+
+			$(this).removeClass("on");
+			setTimeout(function(){
+				sel.siblings(".by_year_nav").hide();
+			},240);
+			$(this).siblings(".by_year_nav").slideUp(300);
+
+		}else{
+			$(this).addClass("on");
+			$(this).siblings(".by_year_nav").slideDown(300);
+		}
+	});
+
+	// select_box more btn
+
+	$(".select_box_title>a").click(function(){
+		if ($(this).hasClass("on")) {
+			$(this).removeClass("on");
+			$(this).parent().parent(".select_wrap").removeClass("on");
+		}else{
+			$(this).addClass("on");
+			$(this).parent().parent(".select_wrap").addClass("on");
+		}
+	});
+
+	// article slide
+	$(".slide_title a").click(function(){
+		if ($(this).hasClass("on")) {
+			$(this).removeClass("on");
+			$(this).parent().siblings(".content").slideDown(300);
+		}else{
+			$(this).addClass("on");
+			$(this).parent().siblings(".content").slideUp(300);
+
+
+		}
+	});
+
+	$(".list_btn_green").click(function(){
+		if ($(this).hasClass("on")) {
+			$(this).removeClass("on");
+			$(this).siblings(".green_con").slideUp(300);
+
+		}else{
+			$(this).addClass("on");
+			$(this).siblings(".green_con").slideDown(300);
+
+
+		}
+	});
+
+
+$(".sectionMenu button").click(function() {
+	$(this).parent().find(".sectionTitle").fadeToggle(200);
+});
+
+
+
+var lastPosition = new Array();
+// article view section title click - mobile only
+$(".sectionTitle li").click(function() {
+		var select = $(this).index();
+		var topPosition = $(document).scrollTop();
+		lastPosition.unshift(topPosition);
+		lastPosition.splice(2, 1);
+		console.log(lastPosition);
+		$(this).parents(".sectionTitle").fadeOut(200);
+		if(select==0 ) {
+			$("html, body").animate({ scrollTop:lastPosition[1]}, 500);
+		} else if(select==1) {
+			$("html, body").animate({ scrollTop:0 }, 500);
+		} else {
+			var target = $(".slide_con li").eq(select-2);
+			$("html, body").animate({ scrollTop:target.offset().top-100 }, 500);
+		}
+
+	});
+
+
+	$(".pop_btn").click(function() {
+		$(this).siblings(".pop_up").fadeToggle(200);
+	});
+
+	$(".toggle_btn").click(function() {
+		$(this).parent().parent(".pop_up").fadeToggle(200);
+	});
+
+	$(".alignment").click(function() {
+		$(".select_pop_up").fadeToggle(200);
+	});
+
+	$(".select_pop_btn").click(function() {
+		$(".select_pop_up").fadeToggle(200);
+		 var chk1 = $("input:radio[name='chk1']:checked").val();
+		 var chk2 = $("input:radio[name='chk2']:checked").val();
+		 var chk3 = $("input:radio[name='chk3']:checked").val();
+		 $(".alignment span").eq(0).text(chk1);
+		 $(".alignment span").eq(1).text(chk2);
+		 $(".alignment span").eq(2).text(chk3);
+
+	});
+	$(".info_tab li a").click(function(){
+		var li = $(this).parent("li");
+		var idx = $(this).parent("li").index();
+		$(".info_tab li").removeClass("on")
+		li.addClass("on")
+		$(".info_tab_con li").removeClass("on")
+		$(".info_tab_con li").eq(idx).addClass("on")
+	});
+
+});
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

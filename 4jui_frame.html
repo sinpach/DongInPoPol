@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/jui_frame1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/jui_frame2.png" alt="">
+                </div>
+
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/jui_frame/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                Web MES Sample  <br>
+                JUI Framework를 이용한 MES 관리자 페이지 작업 <br>
+                HTML5, css, javascript 동적 기능 작업
+
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <pre>
+              <code>
+
+
+var sideMenu = document.querySelectorAll(".vmenu a:not(.title)");
+var alertBtn = document.querySelectorAll(".alert a.btn");
+
+
+  
+jui.ready(["ui.tab"], (tab) =>{
+    
+    ui_tab = tab("#ui_tab", {
+      
+      nodes: [
+        { text: sideMenu[0].innerText, tabNum: 0, url: sideMenu[0].getAttribute("data-url") },
+      ],
+      
+      event: {
+        click: (data, e) =>{
+          
+          if (e.target.classList.contains("icon")) {
+            return false;
+            
+          }
+          //  else if (e.target.getAttribute('tab-num') >= sideMenu.length ){
+          //   alert(e.target.getAttribute('tab-num'))
+          // }
+          else{
+            var existenceIframe = document.querySelector("#iframe_wrap li[tab-num='" + e.target.getAttribute('tab-num') + "']");
+            var activeIframe = document.querySelectorAll("#iframe_wrap li");
+            var activeUrl = ui_tab.options.nodes[e.target.getAttribute('tab-num')].url;
+            activeIframe.forEach(e => {
+              e.classList.remove("active");
+            });
+            if (existenceIframe == null) {
+              iframeAdd(e.target.getAttribute('tab-num'), activeUrl)
+            } else {
+              
+              activeSide(e.target.getAttribute('tab-num'))
+            }
+            document.querySelector("#iframe_wrap li[tab-num='" + e.target.getAttribute('tab-num') + "']").classList.add("active")
+            swiper.update();
+            
+          }
+         
+        },
+        change: ()=>{
+          tabCallBack();
+        },
+
+        
+      },
+      tpl: {
+        node: "<li class='swiper-slide'><a href='#' tab-num='<!= tabNum !>'><!= text !></a><button class='tab_close' onclick='tab_close(this,<!= tabNum !>)'><span class='icon icon-close'></span></button></li>"
+      },
+      
+
+    });
+
+    for (var i = 0; i < sideMenu.length; i++ ) {
+      sideMenu[i].setAttribute("tab-num", i);
+      var sideMenuUrl = sideMenu[i].getAttribute("data-url"); 
+      var sideMenuText = sideMenu[i].innerText;
+      if (i > 0) ui_tab.options.nodes.push({ text: sideMenuText, tabNum: i, url: sideMenuUrl});
+    }
+
+  
+  for (var l = 0; l < alertBtn.length; l++) {
+    alertBtn[l].setAttribute("tab-num", i + l);
+    var sideMenuUrl = alertBtn[l].getAttribute("data-url");
+    var sideMenuText = alertBtn[l].getAttribute("title");
+    if (i > 0) ui_tab.options.nodes.push({ text: sideMenuText, tabNum: i + l, url: sideMenuUrl });
+  }
+  
+  });
+
+function iframeAdd(i , url ,cl){
+  if(cl){
+    $("#iframe_wrap").append("<li  tab-num='" + i + "' class='" + cl + "'><iframe src='" + url + "' frameborder='0'></iframe></li>");
+  }else{
+    $("#iframe_wrap").append("<li  tab-num='" + i + "'><iframe src='" + url + "' frameborder='0'></iframe></li>");
+
+  }
+}
+function activeSide (e){
+  if (e >= sideMenu.length) {
+    return false;
+  }else{
+    var activeSideA = document.querySelectorAll(".vmenu a[tab-num='" + e + "']");
+    var twoDepth = activeSideA[0].parentElement.parentElement
+    var threeDepth = activeSideA[0].parentElement.parentElement.parentElement.parentElement
+
+    if (threeDepth.classList.contains('submenu')) {
+      threeDepth.previousElementSibling.click();
+
+    } else if (twoDepth.classList.contains('submenu')) {
+      twoDepth.previousElementSibling.click();
+    }
+    activeSideA[0].click();
+  }
+  
+}
+
+for (let i = 0; i < sideMenu.length; i++) {
+  sideMenu[i].addEventListener("click", (e) => {
+    var tabIndex = e.target.getAttribute("tab-num");
+
+    var tabTitle = ui_tab.options.nodes[tabIndex].text;
+    var num = ui_tab.options.nodes[tabIndex].tabNum;
+    var tabUrl = ui_tab.options.nodes[tabIndex].url;
+
+    var tabChk = document.querySelectorAll("#ui_tab li a");
+
+    arr = new Array();
+    tabChk.forEach(el => {
+      var arrData = el.getAttribute("tab-num")
+      arr.push(arrData);
+    });
+    if (!arr.includes(tabIndex)) {
+      ui_tab.append({ text: tabTitle, tabNum: num, url: tabUrl});
+    }
+    
+    var showTab = document.querySelectorAll("#ui_tab a[tab-num='" + tabIndex + "']")
+    showTab[0].click()
+    
+  });
+  
+}
+
+for (let i = 0; i < alertBtn.length; i++) {
+  alertBtn[i].addEventListener("click", (e) => {
+    if (e.target.classList.contains("icon")) {
+      var tabIndex = e.target.parentElement.getAttribute("tab-num");
+
+      var tabTitle = ui_tab.options.nodes[tabIndex].text;
+      var num = ui_tab.options.nodes[tabIndex].tabNum;
+      var tabUrl = ui_tab.options.nodes[tabIndex].url;
+
+      var tabChk = document.querySelectorAll("#ui_tab li a");
+
+      arr = new Array();
+      tabChk.forEach(el => {
+        var arrData = el.getAttribute("tab-num")
+        arr.push(arrData);
+      });
+      if (!arr.includes(tabIndex)) {
+        ui_tab.append({ text: tabTitle, tabNum: num, url: tabUrl });
+      }
+
+      var showTab = document.querySelectorAll("#ui_tab a[tab-num='" + tabIndex + "']")
+      showTab[0].click()
+    }else{
+      var tabIndex = e.target.getAttribute("tab-num");
+
+      var tabTitle = ui_tab.options.nodes[tabIndex].text;
+      var num = ui_tab.options.nodes[tabIndex].tabNum;
+      var tabUrl = ui_tab.options.nodes[tabIndex].url;
+
+      var tabChk = document.querySelectorAll("#ui_tab li a");
+
+      arr = new Array();
+      tabChk.forEach(el => {
+        var arrData = el.getAttribute("tab-num")
+        arr.push(arrData);
+      });
+      if (!arr.includes(tabIndex)) {
+        ui_tab.append({ text: tabTitle, tabNum: num, url: tabUrl });
+      }
+
+      var showTab = document.querySelectorAll("#ui_tab a[tab-num='" + tabIndex + "']")
+      showTab[0].click()
+    }
+    
+
+  });
+
+}
+
+function tab_close (el, idx){
+  
+  var removeEl = $("#ui_tab a[tab-num='" + idx + "']").parent().index();
+  var tabLength = el.parentElement.parentElement.children.length - 1;
+  if (el.parentElement.classList.contains("active")) {
+    
+    if (removeEl == tabLength) {
+      var activeFirst = document.querySelectorAll(".vmenu a[tab-num='0']");
+      activeFirst[0].click();
+      
+    }else{
+      var n = el.parentElement.nextElementSibling.childNodes[0].getAttribute("tab-num")
+      
+      var activeNext = document.querySelectorAll(".vmenu a[tab-num='"+n+"']");
+      var twoDepth = activeNext[0].parentElement.parentElement
+      var threeDepth = activeNext[0].parentElement.parentElement.parentElement.parentElement
+
+      if (threeDepth.classList.contains('submenu')) {
+        
+        
+        var activeRemove = document.querySelectorAll(".vmenu .active");
+        activeRemove.forEach(e => {
+          e.classList.remove("active")
+        });
+        threeDepth.classList.add("active")
+        threeDepth.previousElementSibling.classList.add("active")
+        activeNext[0].classList.add("active")
+
+        document.querySelector("#iframe_wrap .active").classList.remove("active");
+        document.querySelector("#iframe_wrap li[tab-num='" + n + "']").classList.add("active");
+
+
+
+      } else if (twoDepth.classList.contains('submenu')) {
+        var activeRemove = document.querySelectorAll(".vmenu .active");
+        activeRemove.forEach(e => {
+          e.classList.remove("active")
+        });
+        twoDepth.classList.add("active")
+        twoDepth.previousElementSibling.classList.add("active")
+        activeNext[0].classList.add("active")
+        
+        document.querySelector("#iframe_wrap .active").classList.remove("active");
+        document.querySelector("#iframe_wrap li[tab-num='" + n + "']").classList.add("active");
+        
+      }else {
+        var activeRemove = document.querySelectorAll(".vmenu .active");
+        activeRemove.forEach(e => {
+          e.classList.remove("active")
+        });
+        activeNext[0].classList.add("active")
+        
+        document.querySelector("#iframe_wrap .active").classList.remove("active");
+        document.querySelector("#iframe_wrap li[tab-num='" + n + "']").classList.add("active");
+      }
+    }
+   
+  }
+  ui_tab.remove(removeEl);
+  swiper.update();
+  
+}
+var slideMaxLength = 12;
+var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: slideMaxLength,
+  spaceBetween: 3,
+  allowTouchMove: false,
+  on: {
+    slidesLengthChange:  ()=> {
+      var tabLength = document.querySelectorAll("#ui_tab li").length
+      
+      if (slideMaxLength < tabLength) {
+        var moveToSlide = tabLength - slideMaxLength
+        swiper.slideTo(moveToSlide)
+      }
+    },
+  }
+
+});
+
+
+
+
+$(document).ready(()=>{
+  var startIframeData = ui_tab.options.nodes[0];
+  iframeAdd(startIframeData.tabNum, startIframeData.url, 'active')
+  swiper.update();
+});
+
+
+function tabCallBack(){
+  var tabLength = document.querySelectorAll("#ui_tab li").length
+  var moveToSlide = tabLength - slideMaxLength
+
+  if (slideMaxLength > ui_tab.activeIndex()) {
+    if (moveToSlide > 0) {
+      swiper.slideTo(0)
+    } 
+  } else{
+    swiper.slideTo(ui_tab.activeIndex() - slideMaxLength + 1)
+  }
+}
+
+function elementIndexNum(ele){
+  var _i = 0;
+  while ((ele = ele.previousSibling) != null) {
+    _i++;
+  }
+  return _i;
+}
+
+
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+		.c3-chart-arc text{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page06">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[2-1 자산·부채 분석]
+			</h1>
+			<div class="explain">
+				나윤석님 가족의 총자산은 <span>10.92억원</span>이며, 부채 <span>4억원</span>을 차감한 순자산은 <span>6.92억원</span>입니다.
+			</div>
+			<h2 class="page_title c2">02  | 재무상태 분석</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="con_title">
+						자산·부채 분석
+					</div>
+					<div class="donut_wrap">
+						<div id="donutChart1" class="donut-chart sm">
+						</div>
+						<div id="donutChart2" class="donut-chart sm">
+						</div>
+						<div id="donutChart3" class="donut-chart sm">
+						</div>
+					</div>
+
+					<div class="table-wrap">
+						<div class="left-table">
+							<table class="page_table2">
+								<colgroup>
+									<col style="width:20%">
+									<col style="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="tc" colspan="2">자산 구성</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>부동산</td>
+										<td class="barstat">
+											<span class="text">90,000만원</span>
+											<span class="percent">76%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>금융자산</td>
+										<td class="barstat">
+											<span class="text">29,000만원</span>
+											<span class="percent">24%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>연금자산</td>
+										<td class="barstat">
+											<span class="text">8,000만원</span>
+											<span class="percent">7%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right-table">
+							<table class="page_table2">
+								<colgroup>
+									<col style="width:20%">
+									<col style="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="tc" colspan="2">부채 구성</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>부동산</td>
+										<td class="barstat">
+											<span class="text">90,000만원</span>
+											<span class="percent">22%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>금융자산</td>
+										<td class="barstat">
+											<span class="text">29,000만원</span>
+											<span class="percent">48%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>연금자산</td>
+										<td class="barstat">
+											<span class="text">8,000만원</span>
+											<span class="percent">10%</span>
+											<span class="bar"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="info_box">
+						자산·부채 분석은 재무적으로 취약한 부분이나 문제점 등을 파악하여 재무설계에 반영하고 보완하기 위한 것입니다. 고객님이 제공해주신 자산 및 부채 정보를 바탕으로 현재 시점 고객의 자산, 부채, 순자산 규모와 자산 및 부채 세부 구성 비중 등을 보여줍니다.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+		function horizonBar(box){
+			var bar = $(box +">.bar")
+			var percent = new Array();
+			var percentText = new Array();
+			for (var i = 0; i < bar.length; i++) {
+				percent.push($(bar[i]).siblings(".percent").text())
+				percentText.push(100 - parseFloat(percent[i]))
+			}
+			$.each(bar,function(i) {
+		    $(this).animate({right:percentText[i]+"%"});
+			});
+		}
+		$(window).on('load',function(){
+			horizonBar(".barstat")
+		});
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+				donutChart3('#donutChart1','#00aced',['총 자산'],100,11.9);
+				donutChart3('#donutChart2','#58585A',['총 부채'],40,2.0);
+				donutChart3('#donutChart3','#804095',['순자산'],60,9.9);
+		});
+
+	</script>
+</body>
+</html>

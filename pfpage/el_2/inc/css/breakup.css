@@ -1,0 +1,129 @@
+#container.breakup{background:url("../../img/content/breakup/b_bg.png") 0 0 no-repeat;}
+
+#container.breakup .wrap{
+    margin-top: 60px;
+    padding: 0 60px;
+    position: relative;
+}
+
+#container.breakup .con-t{
+    font-size: 27px;
+    color: #67a000;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #67a000;
+    width: 390px;
+    font-weight: bold;
+    background: url("../../img/content/breakup/icon3.png") right 6px no-repeat;
+}
+
+#container.breakup .con-c{
+
+}
+
+#container.breakup .con-c{
+    background:url("../../img/content/breakup/arrow1.png") 0 0 no-repeat;
+    padding-left: 47px;
+    height: 400px;
+    width: 37%;
+    float: left;
+}
+
+#container.breakup .con-c > li{
+    width: 248px;
+    height: 37px;
+    line-height: 37px;
+    background:url("../../img/content/breakup/item_bg.png") 0 0 no-repeat;
+    font-size:19px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#container.breakup .con-c > li.last{
+    background:none;
+    color: #fc421d;
+    font-size:21px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+#container.breakup .con-d{
+    width: 50%;
+    float: left;
+    margin-top: 60px;
+}
+
+#container.breakup .con-d p{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#container.breakup .con-d ul{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+#container.breakup .con-d ul li{
+    font-size:18px;
+    color:#333;
+    list-style-type: disc;
+    margin-top: 10px;
+    word-break: keep-all;
+    line-height: 1.4;
+}
+
+#container.breakup .con-bs{
+    position: absolute;
+    top: 0;
+    left: 600px;;
+}
+
+#container.breakup .con-bs button{
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    overflow: visible;
+}
+
+#container.breakup .con-bs p{
+    margin-top: 46px;
+    width: 70px;
+    margin-left: -15px;
+    color:#67a000;
+}
+
+#container.breakup .con-bs button.popup{
+    background:url("../../img/content/breakup/icon1.png") 50% 50% no-repeat;
+}
+
+#container.breakup .con-bs button.print{
+    background:url("../../img/content/breakup/icon2.png") 50% 50% no-repeat;
+}
+
+#container.breakup .pop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url("../../img/content/breakup/pop.png") 50% 50% no-repeat;
+    z-index: 99;
+}
+
+#container.breakup .pop-close{
+    display: block;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background:url("../../img/content/breakup/pop_close.png") 50% 50% no-repeat;
+    top: 203px;
+    left: 719px;
+}
+
+@media print {
+ #bottom { display: none !important; }
+}

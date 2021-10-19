@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+	.c3-chart-arc text {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page16">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-4 은퇴자금 필요 저축액]
+			</h1>
+			<div class="explain">
+				은퇴 부족자금마련을 위해 매월 <span>124만원</span>을 추가적으로 저축해야 하나 설계 가정이 달라지면 금액이 줄어들 수 있습니다.
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="left-box">
+					<div class="con_title">
+						설계 전
+					</div>
+					<div id="donutChart1" class="donut-chart sm">
+					</div>
+					<table class="chart-table color1 sm">
+						<colgroup>
+							<col style="width : 50%">
+							<col style="width : 50%">
+						</colgroup>
+						<tr>
+							<th colspan="">가정변수</th>
+							<th colspan="">고객 재무목표</th>
+						</tr>
+						<tr>
+							<td>은퇴필요자금(은퇴시점)</td>
+							<td>13.0억원</td>
+						</tr>
+						<tr>
+							<td>은퇴준비자금(은퇴시점)</td>
+							<td>9.9억원</td>
+						</tr>
+						<tr>
+							<td>은퇴부족자금(은퇴시점)</td>
+							<td>3.0억원</td>
+						</tr>
+						<tr>
+							<td>설계 전 월 저축액</td>
+							<td>110만원</td>
+						</tr>
+						<tr class="result">
+							<td colspan="">추가월 저축액</td>
+							<td colspan="">132만원</td>
+						</tr>
+						<tr class="text_c12">
+							<td colspan="">은퇴 예상시점(고객기준)</td>
+							<td colspan="">60세</td>
+						</tr>
+						<tr>
+							<td colspan="">은퇴준비기간</td>
+							<td colspan="">29년</td>
+						</tr>
+						<tr>
+
+							<td>고등학교</td>
+							<td colspan="">1000만원</td>
+						</tr>
+						<tr>
+							<td colspan="" >은퇴기간</td>
+							<td colspan="">29년</td>
+						</tr>
+						<tr class="text_c1">
+							<td colspan="" >은퇴 전 기대수익률</td>
+							<td colspan="">4.0%</td>
+						</tr>
+						<tr class="text_c1">
+							<td>은퇴 후 기대수익률</td>
+							<td colspan="">3.0%</td>
+						</tr>
+						<tr class="text_c1">
+							<td colspan="" >은퇴시점 예상 생활비</td>
+							<td colspan="">400만원</td>
+						</tr>
+						<tr class="text_c1">
+							<td colspan="" >은퇴중반 예상 생활비</td>
+							<td colspan="">400만원</td>
+						</tr>
+						<tr class="text_c1">
+							<td>은퇴후반 예상 생활비</td>
+							<td colspan="">300만원</td>
+						</tr>
+						<tr >
+							<td colspan="2" >※ 물가상승률 가정 1.5% / 고객 기대수명 89세</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="right-box">
+					<div class="con_title">
+						설계 후
+					</div>
+					<div class="cahrtWrap">
+						<div id="donutChart2" class="donut-chart sm">
+						</div>
+						<div id="donutChart3" class="donut-chart sm">
+						</div>
+					</div>
+					<table class="chart-table color2 sm ">
+						<colgroup>
+							<col style="width: 50%;">
+							<col style="width: 50%;">
+						</colgroup>
+						<tr>
+							<th>설계 A안</th>
+							<th>설계 B안</th>
+						</tr>
+						<tr>
+							<td>13.0억원</td>
+							<td>13.0억원</td>
+						</tr>
+						<tr>
+							<td>9.9억원</td>
+							<td>9.9억원</td>
+						</tr>
+						<tr>
+							<td>3.0억원</td>
+							<td>3.0억원</td>
+
+						</tr>
+						<tr>
+							<td>110만원</td>
+							<td>110만원</td>
+						</tr>
+						<tr class="result">
+							<td class="t_a_r" style="padding-right:30">85만원</td>
+							<td>63만원</td>
+						</tr>
+						<tr class="text_c2">
+							<td>60세</td>
+							<td>60세</td>
+						</tr>
+						<tr class="">
+							<td>29년</td>
+							<td>29년</td>
+						</tr>
+						<tr class="">
+							<td>29년</td>
+							<td>29년</td>
+						</tr>
+						<tr class="text_c2">
+							<td>4.0%</td>
+							<td>4.0%</td>
+						</tr>
+						<tr class="text_c2">
+							<td>3.0%</td>
+							<td>3.0%</td>
+						</tr>
+						<tr class="text_c2">
+							<td>400만원</td>
+							<td>400만원</td>
+						</tr>
+						<tr class="text_c2">
+							<td>300만원</td>
+							<td>300만원</td>
+						</tr>
+						<tr class="text_c2">
+							<td>400만원</td>
+							<td>400만원</td>
+						</tr>
+						<tr class="">
+							<td colspan="2"></td>
+						</tr>
+					</table>
+				</div>
+
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+			donutChart_page16('#donutChart1','#00aced',['목표 달성률'],99);
+			donutChart_page16('#donutChart2','#804095',['목표 달성률'],40);
+			donutChart_page16('#donutChart3','#804095',['목표 달성률'],60);
+			$('#donutChart1').append("<div class='custom-chart-title under1'>기본가정</div>");
+			$('#donutChart2').append("<div class='custom-chart-title under2'>설계A안</div>");
+			$('#donutChart3').append("<div class='custom-chart-title under2'>설계B안</div>");
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

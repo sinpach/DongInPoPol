@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title></title>
+	<link rel="stylesheet" href="inc/css/font/nanumbarungothic.css" />
+	<link rel="stylesheet" href="inc/css/common.css" />
+	<link rel="stylesheet" href="inc/css/animate.css" />
+
+	<link rel="stylesheet" href="inc/css/body.css" />
+	<link rel="stylesheet" href="inc/css/bottom.css" />
+	<link rel="stylesheet" href="inc/css/intro.css" />
+	<link rel="stylesheet" href="inc/css/mobile.css" />
+
+
+	<script src="inc/js/jquery-1.11.2.js"></script>
+	<script src="inc/js/script.js"></script>
+	<script src="inc/js/body.js"></script>
+	<script src="inc/js/bottom.js"></script>
+	<script>
+		$(document).ready(function(){
+			var video = $('#video');
+			video.on('timeupdate', function() {
+				var currentPos = parseInt(video[0].currentTime);
+				setList(currentPos);
+			});
+			var seq = [0];
+			function  setList(second) {
+				for (var i=0; i<seq.length; i++) {
+					if (second>=seq[i] ) {
+						$(".sync"+(i+1)).show();
+					}else if (second<seq[i]) {
+						$(".sync"+(i+1)).hide();
+					}
+				}
+			}
+			//영상 sync end ///////////////////////////////////////////////////////
+		});
+			$(window).load(function(){
+				var $container = $('#container');
+				var $intro_skip = $('.intro_skip_btn');
+				video.on('timeupdate', function() {
+					if(parseInt(video[0].currentTime) >= 32){
+						$intro_skip.fadeOut();
+					}else{
+						$intro_skip.css('display','block');
+					}
+				});
+				$intro_skip.on('click',function(){
+					video[0].currentTime = 32;
+					$(this).fadeOut();
+				});
+			});
+	</script>
+	<style>
+		body{
+			margin: 0;
+			padding:0;
+			background: #fff url(./img/bg.png) 0 0 no-repeat;
+			background-size: cover;
+			min-height: 591px;
+		}
+		#container #contents {
+		    background: url(./img/quiz_bg.png) no-repeat;
+		    background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Body -->
+	<div id="container" class="intro videoPage classVideo">
+		<!-- <div class="sync sync1 intro_bg"></div> -->
+		<div id="header">
+			<h2><span class="chasi">14.</span>가해학생도 교사가 계속 품어 주어야 할 아이들</h2>
+			<h1></h1>
+		</div>
+		<div id="contents" class="wrap">
+
+			<video id="video" poster="">
+				<source src="media/vod/01.mp4">
+				<track id="track" label="" src="media/vtt/01.vtt" kind="metadata" srclang="ko" default>
+			</video>
+			<div class="contentsBtnWrap">
+				<div class="prevPage subBtn">
+					<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+				</div>
+				<div class="nextPage subBtn">
+					<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+				</div>
+			</div>
+			<button class="intro_skip_btn ir" >Start</button>
+		</div>
+
+		<!-- Bottom -->
+		<div id="bottom" class="intro nf">
+			<div id="bottom_wrap">
+
+					<div id="display"></div><button id="dis_close_btn"></button><div class="display_bg"></div>
+
+				<div class="learningmap">
+					<button title="러닝맵" class="learning">ROAD MAP</button>
+				</div>
+				<div class="rateGroup">
+					<ul class="playBackRate">
+						<li class="option">
+							<button title="1.0 배속" rate="1.0">1.0</button>
+						</li>
+						<li class="option">
+							<button title="1.2 배속" rate="1.2" >1.2</button>
+						</li>
+						<li class="option">
+							<button title="1.3 배속" rate="1.3" >1.3</button>
+						</li>
+						<!-- <li class="option">
+							<button title="2.0 배속" rate="2.0" >2.0</button>
+						</li> -->
+					</ul>
+				</div>
+				<div class="progressGroup">
+					<div class="progress">
+						 <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						 	<div class="p_circle"></div>
+						 </div>
+					</div>
+					<div class="time">
+						<span class="currentTime">00:00</span> /
+						<span class="duration">00:00</span>
+					</div>
+				</div>
+				<div class="videoGroup">
+					<div class="btn playBtn">
+						<button title="재생"  class="play ir">재생</button>
+					</div>
+					<div class="btn pauseBtn">
+						<button title="일시정지" class="pause ir">일시정지</button>
+					</div>
+					<div class="btn stopBtn">
+						<button title="정지" class="stop ir">정지</button>
+					</div>
+					<div class="btn fullBtn">
+						<button title="전체화면" class="full ir">전체화면</button>
+					</div>
+				</div>
+
+				<div class="soundGroup">
+					<div class="btn noteBtn">
+						<button title="자막" class="note ir">자막</button>
+					</div>
+					<div class="btn soundBtn">
+						<button title="소리끄기" class="sound ir">소리끄기</button>
+						<button title="소리켜기" class="mute ir dn">소리켜기</button>
+					</div>
+					<div class="soundbar">
+						<button class="volume" title="볼륨">
+							<span class="volumeBar">
+
+							</span>
+
+							<span class="volume_bg"></span>
+						</button>
+					</div>
+
+				</div>
+
+				<div class="pageGroup">
+					<div class="prevPage">
+						<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+					</div>
+					<div class="currentPageNum">01</div>
+					<div class="pagebar">│</div>
+					<div class="totalPageNum">03</div>
+					<div class="nextPage">
+						<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+					</div>
+				</div>
+				<div class="nextClick dn ir">
+					click
+				</div>
+						</div>
+
+			</div>
+		<a href="#" class="mobilePlayBtn"></a>
+
+	</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sion2020.css">
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/sub_myon.css">
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_myon.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <img src="./img/sp1.png" >
+  </header>
+  <!-- content -->
+  <div class="conArea">
+    <div class="myon_header myon_use">
+      <div class="myheader_inner">
+        <h2>다양한 연구목적에 맞는 나만의 지식인프라 활용환경을 자유롭게 구성하여 이용할 수 있습니다. </h2>
+        <p class="subtext text_white">연구목적에 맞게 필요한 연구단계와 활용할 정보, 기능을 구성하여 나만의 연구환경을 생성하세요.<br>
+          개인 파일, 링크, 메모를 쉽게 관리할 수 있고 연관성 높은 과학기술 정보를 얻을 수 있으며,<br>
+          MyON을 공유하여 공동 연구자와 함께 연구를 쉽게 수행할 수 있습니다. </p>
+      </div>
+    </div>
+
+    <div class="myon_list">
+      <div class="myon_title_area">
+        <div class="title">
+          <h3>세미나 참가</h3>
+          <a href="#;" class="make_seminar">세미나 만들기 </a>
+        </div>
+        <div class="caption">
+          <p>
+            온라인 세미나 도구(Webinar)를 이용해 비대면 연구를 진행해 보세요. Webinar는 온라인 수업 및 세미나에 최적화된 무료 화상회의 서비스입니다. <br>화상 회의, 웹 세미나, 스크린 공유,
+            프리젠테이션 파일공유, 채팅 등의 기능을 이용해 동료에게 지식정보를 전달할 수 있습니다.
+          </p>
+          <span>
+            입장 버튼을 클릭하면 세미나(public)에 바로 참가할 수 있습니다. 단, private 세미나의 경우 제공되는 세미나 리스트에 비밀번호를 입력한 후 참가할 수 있습니다.
+          </span>
+        </div>
+      </div>
+      <div class="seminar_list">
+        <table>
+          <colgroup>
+            <col width="340px">
+            <col width="114px">
+            <col width="203px">
+            <col width="234px">
+            <col width="110px">
+            <col >
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>세미나명</th>
+              <th>접근속성</th>
+              <th>생성일시</th>
+              <th>관련 MyOn</th>
+              <th>생성자</th>
+              <th>입장</th>
+            </tr>
+            <tr>
+              <td>NCUP</td>
+              <td>private</td>
+              <td>2020-06-19 09:06:35</td>
+              <td>프로젝트 명1</td>
+              <td>한희준</td>
+              <td><a href="#;" class="join_btn">JOIN</a></td>
+            </tr>
+            <tr>
+              <td>역상고성 강독 모임</td>
+              <td>private</td>
+              <td>2020-06-19 09:06:35</td>
+              <td>인공지능 스마트 홈</td>
+              <td>김고은</td>
+              <td><a href="#;" class="join_btn">JOIN</a></td>
+            </tr>
+            <tr>
+              <td>BSPL seminar</td>
+              <td>private</td>
+              <td>2020-06-19 09:06:35</td>
+              <td>이오도늄 화학엔진 시스템</td>
+              <td>김빛나리</td>
+              <td><a href="#;" class="join_btn">JOIN</a></td>
+            </tr>
+            <tr>
+              <td>슈퍼컴회의-0619</td>
+              <td>public</td>
+              <td>2020-06-18 11:06:35</td>
+              <td>-</td>
+              <td>강백호</td>
+              <td><a href="#;" class="join_btn">JOIN</a></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="myonsearch_wrap">
+      <h4>MyON 검색</h4>
+      <div class="myonsearch_inner">
+        <input type="text" id="searchInput" value="" maxlength="30" title="MyON 검색">
+        <button type="submit" id="searchBtn"><span class="screenout">검색</span></button>
+      </div>
+      <button type="button" class="makemyon idNone" title="MyON 만들기로 이동" style="top: 10px;">MyON 만들기</button>
+    </div>
+
+    <div class="myon_results">
+      ▶ 전체 42개의 MyON이 활용되고 있습니다.
+      <select id="orderCondition" name="orderCondition" class="year myon_select1" title="정렬조건">
+        <option value="crateDt" selected="selected">생성일</option>
+        <option value="title">제목</option>
+      </select>
+      <select id="orderDirection" name="orderDirection" class="year myon_select2" title="정렬순서">
+        <option value="DESC" selected="selected">내림차순</option>
+        <option value="ASC">오름차순</option>
+      </select>
+    </div>
+
+    <div class="myoncard_wrap main">
+      <div class="card_wrap w100p mt10">
+        <h2>논문 검색기능</h2>
+        <div class="new_myoncard_wrap">
+
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail" " style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>이영기</span>
+                </div>
+
+                <h3>
+                  <a href="#;" title="dsaw">dsaw</a>
+                </h3>
+                <p title="코로나">코로나</p>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="아이디어 발굴">1) 아이디어 발굴</dt>
+                  <dd title="동향 검색">동향 검색</dd>
+                  <dd title="정책·기술동향 정보 검색">정책·기술동향 정보 검색</dd>
+                  <dd title="최신연구 동향보고서">최신연구 동향보고서</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기초연구">2) 기초연구</dt>
+                  <dd title="논문 검색">논문 검색</dd>
+                  <dd title="보고서 검색">보고서 검색</dd>
+                  <dd title="과학기술정보 통합 검색">과학기술정보 통합 검색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.06.25, 수정일 : 2020.06.25</span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>유만호</span>
+                </div>
+                <h3>
+                  <a href="MYON0000001144" title="식물플랑크톤_성과지표">식물플랑크톤_성과지표</a>
+                </h3>
+                <p title="식물플랑크톤 분석에 대한 성과지표 평가 설정 등">식물플랑크톤 분석에 대한 성과지표 평가 설정 등</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="국내외 동향 및 현황조사">1) 국내외 동향 및 현황조사</dt>
+                  <dd title="논문 검색">논문 검색</dd>
+                  <dd title="특허 검색">특허 검색</dd>
+                  <dd title="보고서 검색">보고서 검색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기술수준분석">2) 기술수준분석</dt>
+                  <dd title="Korean Patent Analysis - 한국특허분석">Korean Patent Analysis - 한국특허분석</dd>
+                  <dd title="Journal Article Analysis - 논문분석">Journal Article Analysis - 논문분석</dd>
+                  <dd title="Core Patents - 핵심특허탐색">Core Patents - 핵심특허탐색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.06.24, 수정일 : 2020.06.24</span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>김주희</span>
+                </div>
+                <h3>
+                  <a href="MYON0000001142" title="융복합 촉진지원">융복합 촉진지원</a>
+                </h3>
+                <p title="사업별 세부기획">사업별 세부기획</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="국내외 동향 및 현황조사">1) 국내외 동향 및 현황조사</dt>
+                  <dd title="논문 검색">논문 검색</dd>
+                  <dd title="특허 검색">특허 검색</dd>
+                  <dd title="보고서 검색">보고서 검색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기술수준분석">2) 기술수준분석</dt>
+                  <dd title="Korean Patent Analysis - 한국특허분석">Korean Patent Analysis - 한국특허분석</dd>
+                  <dd title="Journal Article Analysis - 논문분석">Journal Article Analysis - 논문분석</dd>
+                  <dd title="Core Patents - 핵심특허탐색">Core Patents - 핵심특허탐색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.06.23, 수정일 : 2020.06.24</span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail" style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>이종훈</span>
+                </div>
+                <h3>
+                  <a href="#;" title="Inflammasome competitor by 4,4′-Diaminodiphenyl Su">Inflammasome
+                    competitor by 4,4′-Diaminodiphenyl Su</a>
+                </h3>
+                <p
+                  title="Our background is to suggest medicine that can prevent Viral pneumonia. Coronaviruses have zoonotic potential due to the adaptability of their S protein to receptors of other species, most notably demonstrated by SARS-CoV. (1) The binding of SARS-COV-2 to TLR causes the release of pro-IL-1β which is cleaved by caspase-1, followed by inflammasome which is a mediator of lung inflammation, fever and fibrosis. (2) The NLRP3 inflammasome which is implicated in a variety of human diseases including Alzheimer disease (AD), Prion diseases, type 2 diabetes, and some infectious diseases. (3) By examination of DDS and AD in Hansen disease, this study demonstrates diverse mechanisms of the activation of inflammsomes. TLRs due to polymorphisms of TLR genes can alter immune response to a wide variety of microbial ligands, including viruses. In particular, TLR-Arg677Trp was reported to be present in Korean patients with lepromatous leprosy exclusively. The mutation in the intracellular domain of TLR2 has a role in susceptibility to LL but LL was treated by DDS with rifampicin, and clofazimine. DDS among three antibiotics was effective for molecular regulation of NLRP3 inflammasome activators such as MCI, PD and AD. (4) The specific targeting of NLRP3 itself or up-/downstream factors of NLRP3 inflammasome by DDS may produce preventive effects as a competitor.">
+                  Our background is to suggest medicine th...</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="시험 및 평가">1) 시험 및 평가</dt>
+                  <dd title="Inflammasome competitor by 4,4′-Diaminodiphenyl Sulfone (DDS)">Inflammasome competitor by
+                    4,4′-Diaminodiphenyl Sulfone (DDS)</dd>
+                </dl>
+              </div>
+              <span class="myondate">생성일 : 2020.06.07, 수정일 : 2020.06.07</span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>권장원</span>
+                </div>
+                <h3>
+                  <a href="#;" title="인공지능 스마트 홈">인공지능 스마트 홈</a>
+                </h3>
+                <p title="인공지능">인공지능</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="실험 및 분석">1) 실험 및 분석</dt>
+                  <dd title="연구기관 검색">연구기관 검색</dd>
+                  <dd title="특허상세검색">특허상세검색</dd>
+                  <dd title="논문상세검색">논문상세검색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기초연구">2) 기초연구</dt>
+                </dl>
+              </div>
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.06.02, 수정일 : 2020.06.02 </span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>차승혁</span>
+                </div>
+                <h3>
+                  <a href="#;" title="이오도늄 화학엔진 시스템">이오도늄 화학엔진 시스템</a>
+                </h3>
+                <p title="이오도늄 화학엔진 시스템 관련 연구소 개설">이오도늄 화학엔진 시스템 관련 연구소 개설</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="아이디어 발굴">1) 아이디어 발굴</dt>
+                  <dd title="동향 검색">동향 검색</dd>
+                  <dd title="정책·기술동향 정보 검색">정책·기술동향 정보 검색</dd>
+                  <dd title="최신연구 동향보고서">최신연구 동향보고서</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기초연구">2) 기초연구</dt>
+                  <dd title="논문 검색">논문 검색</dd>
+                  <dd title="보고서 검색">보고서 검색</dd>
+                  <dd title="과학기술정보 통합 검색">과학기술정보 통합 검색</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+              </div>
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.06.02, 수정일 : 2020.06.15</span>
+            </div>
+          </div>
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail" style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>박종길</span>
+                </div>
+                <h3>
+                  <a href="#;" title="플라즈마 토치 용융로를 이용한 광물내 금속 회수 제련">플라즈마 토치 용융로를 이용한 광물내 금속 회수 제련</a>
+                </h3>
+                <p title="(주)피엔지(plasma Energy &amp; Material Group) 의 핵심 공정 개발">(주)피엔지(plasma Energy &amp; Material
+                  Group) 의...</p>
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="기술이전 및 사업화">1) 기술이전 및 사업화</dt>
+                  <dd title="MoS2의 환원 공정">MoS2의 환원 공정</dd>
+                  <dd title="Electronic-dimensionality reduction of bulk MoS2 by hydrogen treatment">
+                    Electronic-dimensionality reduction of bulk MoS2 by hydrogen treatment</dd>
+
+                </dl>
+
+              </div>
+
+              <span class="myondate">생성일 : 2020.05.25
+
+                , 수정일 : 2020.05.25
+
+              </span>
+            </div>
+          </div>
+
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>이상엽</span>
+                </div>
+
+                <h3>
+                  <a href="#;" title="통계적 품질관리에 대한 조사">통계적 품질관리에 대한 조사</a>
+                </h3>
+                <p title="과제 수행을 위한 자료 수집 목적">과제 수행을 위한 자료 수집 목적</p>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="아이디어 발굴">1) 아이디어 발굴</dt>
+                  <dd title="동향 검색">동향 검색</dd>
+                  <dd title="정책기술동향">정책기술동향</dd>
+                  <dd title="최신연구 동향보고서">최신연구 동향보고서</dd>
+
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="정책 및 동향조사">2) 정책 및 동향조사</dt>
+                  <dd title="동향 검색">동향 검색</dd>
+                  <dd title="연구생태계맵">연구생태계맵</dd>
+                  <dd title="논문 검색">논문 검색</dd>
+
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+
+              </div>
+
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.05.25
+
+                , 수정일 : 2020.05.25
+
+              </span>
+            </div>
+          </div>
+
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail"  style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>박유나</span>
+                </div>
+
+                <h3>
+                  <a href="#;" title="Collecting the research regarding COVID19">Collecting the research
+                    regarding COVID19</a>
+                </h3>
+                <p title="Corona virus  research trend">Corona virus research trend</p>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="Covid- research">1) Covid- research</dt>
+                  <dd title=" COVID-19: an update on diagnostic and therapeutic approaches"> COVID-19: an update on
+                    diagnostic and therapeutic approaches</dd>
+                  <dd title="EDITORIAL : One oral and maxillofacial surgeon's attitude toward the COVID-19 pandemic">
+                    EDITORIAL : One oral and maxillofacial surgeon's attitude toward the COVID-19 pandemic</dd>
+                  <dd title="국가 융합 R&amp;D 기획을 위한 글로벌 연구개발 과제 정보의 활용연구: 코로나 바이러스 연구를 중심으로">국가 융합 R&amp;D 기획을 위한 글로벌 연구개발
+                    과제 정보의 활용연구: 코로나 바이러스 연구를 중심으로</dd>
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+
+              </div>
+              <div class="card_dir fnDetail" style="cursor: pointer;">
+                <dl>
+                  <dt title="Key research">2) Key research</dt>
+                  <dd
+                    title="Current Status of Epidemiology, Diagnosis, Therapeutics, and Vaccines for Novel Coronavirus Disease 2019 (COVID-19)">
+                    Current Status of Epidemiology, Diagnosis, Therapeutics, and Vaccines for Novel Coronavirus Disease
+                    2019 (COVID-19)</dd>
+                  <dd
+                    title="Real-time forecasts and risk assessment of novel coronavirus (COVID-19) cases: A data-driven analysis">
+                    Real-time forecasts and risk assessment of novel coronavirus (COVID-19) cases: A data-driven
+                    analysis</dd>
+                  <dd title="What we know so far: COVID-19 current clinical knowledge and research">What we know so far:
+                    COVID-19 current clinical knowledge and research</dd>
+
+                </dl>
+                <span class="filemore" style="padding-left:19px;">more...</span>
+
+              </div>
+
+              <span class="dirmore fnDetail"  style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.05.21
+
+                , 수정일 : 2020.05.29
+
+              </span>
+            </div>
+          </div>
+
+          <div class="new_myoncard">
+            <div class="new_myoncard_inner" style="height:auto;">
+              <div class="card_header fnDetail" style="cursor: pointer;">
+                <div class="onlyowner">
+                  <span>박유나</span>
+                </div>
+
+                <h3>
+                  <a href="#;" title="Structural equivalence in the BIM technology field">Structural
+                    equivalence in the BIM technology field</a>
+                </h3>
+                <p title="To study the technological network by structural equivalence">To study the technological
+                  network by st...</p>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="Literature Review">1) Literature Review</dt>
+                  <dd
+                    title="Use of social network analysis to characterize the pattern of animal movements in the initial phases of the 2001 foot and mouth disease (FMD) epidemic in the UK">
+                    Use of social network analysis to characterize the pattern of animal movements in the initial phases
+                    of the 2001 foot and mouth disease (FMD) epidemic in the UK</dd>
+
+                </dl>
+
+              </div>
+              <div class="card_dir fnDetail"  style="cursor: pointer;">
+                <dl>
+                  <dt title="research framework">2) research framework</dt>
+                  <dd title="research">research</dd>
+                  <dd title="1. Introduction">1. Introduction</dd>
+
+                </dl>
+
+              </div>
+
+              <span class="dirmore fnDetail" style="cursor: pointer;">more...</span>
+              <span class="myondate">생성일 : 2020.05.21
+
+                , 수정일 : 2020.06.03
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div>
+        <span class="active">1</span>&nbsp;
+        <span>2</span>&nbsp;
+        <span>3</span>&nbsp;
+        <span>4</span>&nbsp;
+        <span>5</span>&nbsp;
+        <input id="pageIndex" name="pageIndex" type="hidden" value="1">
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+
+</body>
+
+</html>

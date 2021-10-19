@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/sub_beta.css">
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_beta.js"></script>
+
+</head>
+
+
+<body>
+
+  <header>
+    <img src="./img/sp1.png" >
+  </header>
+  <!-- content -->
+  <div class="conArea">
+    
+    
+    <div class="betaHeader">
+      <h2><img src="./img/beta2_h2.png" alt="sciencs on"><sup>beta</sup></h2>
+      <p>
+        ScienceON CLIP은 인기 키워드와 과학기술 동향의 이슈키워드에서 발굴한 토픽을 기반으로 <br>
+        ScienceON과 연관된 모든 콘텐츠를 한 번에 모아서 볼 수 있는 서비스입니다.
+      </p>
+    </div>
+    
+      <h3 class="untact_title">
+        <a href="#;"><span>Untact(비대면)</span></a>
+      </h3>
+    
+    <ul class="subject_list">
+      <li class="active">
+        <div>
+          <img src="./img/ut_s_icon1.png" >
+        </div>
+        <p>논문/특허/보고서</p>
+      </li>
+      <li>
+        <div>
+          <img src="./img/ut_s_icon2.png">
+        </div>
+        <p>동향</p>
+      </li>
+      <li>
+        <div>
+          <img src="./img/ut_s_icon3.png">
+        </div>
+        <p>지식인프라</p>
+      </li>
+      <li>
+        <div>
+          <img src="./img/ut_s_icon4.png">
+        </div>
+        <p>연구자</p>
+      </li>
+    </ul>
+    <div class="schTabArea">
+      <ul class="schTab">
+        <li class="active">
+          <a href="#;">전체</a>
+        </li>
+        <li>
+          <a href="#;">U-Work(비즈니스)</a>
+        </li>
+        <li>
+          <a href="#;">U-education(교육)</a>
+        </li>
+        <li>
+          <a href="#;">U-medical(의료)</a>
+        </li>
+        <li>
+          <a href="#;">U-commerce(소비)</a>
+        </li>
+        <li>
+          <a href="#;">U-life(문화/엔터)</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="schnav_wrap" id="schnav_wrap">
+      <ul class="sch_nav">
+        <li class="sch_category">
+          <a href="#;">전체<span></span></a>
+        </li>
+        <li class="sch_category on"><a href="#;">논문<span></span></a></li>
+        <li class="sch_category"><a href="#;">특허<span></span></a></li>
+        <li class="sch_category"><a href="#;">보고서<span></span></a></li>
+        <li class="sch_category"><a href="#;">동향<span></span></a></li>
+        <li class="sch_category"><a href="#;">연구자<span></span></a></li>
+        <li class="sch_category"><a href="#;">기능<span></span></a></li>
+        
+          
+          
+        
+      </ul>
+    </nav>
+    <ul class="schtab_btn">
+      <li class="btn_cell"><button type="button" class="on">논문 전체(65)</button></li>
+      <li class="btn_cell"><button type="button" >국내논문(34)</button></li>
+      <li class="btn_cell"><button type="button" >해외논문(0)</button></li>
+      <li class="btn_cell"><button type="button" >학위논문(31)</button></li>
+    </ul>
+    <div class="paper_content mb40 ">
+      <div class="section_left">
+        <div class="sectionhead">
+          <h2>전체 논문&nbsp;<span>65</span></h2>
+          <div id="filterBox" class="filter_applied"></div>
+        </div>
+        <div class="sort_box"><span class="all_chk"><input type="checkbox" class="checkAll" title="전체선택"></span>
+          <a href="#;" class="exchange">내보내기</a>
+          <a href="#;" class="bookmark">즐겨찾기</a>
+          <a href="#;;" class="myonput">MyON담기</a>
+          <div class="right_box">
+            <span class="numselect">
+              <select id="freeflag" name="freeflag" class="sort_numsel">
+                <option value="" disabled="" selected="">원문유형</option>
+                <option value="">전체</option>
+                <option value="T">무료</option>
+                <option value="F">유료</option>
+              </select>
+              <select id="sortby1" name="sortby1" class="sort_numsel">
+                <option value="_score" selected="selected">정확도</option>
+                <option value="titlesort">논문명</option>
+                <option value="journalname">저널명</option>
+                <option value="pubyear">발행일</option>
+                <option value="authorsort">저자</option>
+              </select>
+              <select id="sortby2" name="sortby2" class="sort_numsel">
+                <option value="DESC" selected="selected">내림차순</option>
+                <option value="ASC">오름차순</option>
+              </select>
+
+              <select id="pageUnit" name="pageUnit" class="sort_numsel">
+                <option value="10" selected="selected">10개씩</option>
+                <option value="20">20개씩</option>
+                <option value="30">30개씩</option>
+                <option value="50">50개씩</option>
+                <option value="100">100개씩</option>
+              </select>
+
+              <button type="button"  class="practice_btn">실행</button>
+            </span>
+          </div>
+        </div>
+
+        <!-- 검색결과리스트 str -->
+
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="" >
+          <span class="num">1.</span>
+          <h3>
+            <a href="/srch/selectPORSrchArticle.do?cn=DIKO0000014596"   title="상세보기" target="_blank">
+              <span class="mark">[학위논문]</span><em>택트</em> 스프링 타발과 <em>택트</em> 스위치 작동의 유한요소해석 (Finite element analyses
+              of stamping tact spring and operation of tact switch)</a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            엄경근
+            (서울대학교 대학원)
+            <br>
+            1995, ii, 40p., 서울대학교 대학원, 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <div class="result_itembtn">
+            <button type="button"  class="ico_pdf">원문보기</button>
+          </div>
+        </div>
+
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">2.</span>
+          <h3>
+            <a href="#;" title="상세보기" target="_blank">
+              <span class="mark">[국내논문]</span><em>택트</em> 스프링 타발과 <em>택트</em> 스위치 작동의 유한요소해석 (Finite Element Analyses
+              of Stamping Tact Spring and Operation of Tact Switch)</a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            엄경근(서울대학교 금속공학과 및 신소재 공동연구소), 이세형(삼성전자(주) 반도체연구소), 오규환(서울대학교 금속공학과 및 신소재 공동연구소), 이동녕(서울대학교 금속공학과 및 신소재 공동연구소)
+            <br>
+            <a href="#;">소성가공 = Transactions of materials processing : Journal of the Korean society for technology of plastics</a>
+            <a href="#;">v.4 no.1</a>
+            ,pp. 17 - 27, 1995, 1225-696x
+          </div>
+          <!-- //저자정보 -->
+          <span class="flag_g">
+            <span class="flag_con">관련콘텐츠</span>
+            <span class="flag_con">참고문헌</span>
+          </span>
+          <div class="result_itembtn">
+            <button type="button"  class="ico_pdf">원문보기</button>
+            <button type="button"  class="arrow_down">초록</button>
+          </div>
+          <div class="item_content hidden" id="abs2">
+            <h6>초록</h6>
+            <p>The tact switch is widely used in electric and electronic products. The dome type tact spring is
+              produced by stamping. Stamping of the tact spring and operation of the tact switch have been simulated
+              by the elasto-plastic finite element method. The operating characteristics of the switch may be given by
+              the relation between the operating force and stroke. For a given material, this is affected by two main
+              factors. One is the geometry of dome spring which is determined by the geometry of stamping dies and the
+              stamping pressure, and another one is the dimension of switch. From the calculation, it was possible to
+              obtain the stamping conditions and switch dimension for a predetermined force-stroki relation And, the
+              hoop stresses and effective strains distributions due to the stamping and during the operation of the
+              switch indicate a possibility of cracking in the center and rim of dome spring.</p>
+          </div>
+        </div>
+
+
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">3.</span>
+          <h3>
+            <a href="#;" title="상세보기" target="_blank">
+              <span class="mark">[학위논문]</span>수정된 멜로디 억양기법이 자폐스펙트럼장애 아동의 맨드, <em>택트</em>, 인트라버벌에 미치는 효과 (The Effects
+              of Adapted Melodic Intonation Therapy on Mand, Tact and Intraverbal in Children with Autism Spectrum
+              Disorders)</a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            박예리
+            (백석대학교 교육대학원)
+            <br>
+            2019
+            , 79
+            , 백석대학교 교육대학원
+            , 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <div class="result_itembtn">
+            <button type="button" class="ico_pdf">원문보기</button>
+            <button type="button" class="arrow_down">초록</button>
+          </div>
+          <div class="item_content hidden" id="abs3">
+            <h6>초록</h6>
+            <p>(국문초록)
+              수정된 멜로디 억양기법이 자폐스펙트럼장애 아동의
+              맨드, <em>택트</em>, 인트라버벌에 미치는 효과
+              백석대학교 교육대학원
+              응용행동분석전공
+              박 예 리
+              지도교수: 양 문 봉
+              연구자는 영유아기 자폐스펙트럼장애 아동들의 사회적 의사소통기술을 향상시키기 위한 중재전략을 개발하기 위해 기존의 중재전략과는 달리 음악이라는 보편적이고 치료적 접근성이 좋은 요소를
+              응용행동분석적인 관점에서 접근하였다. 수정된 멜로디 억양기법(melodic intonation therapy: MIT)은 기존의 표준화된 멜로디 억양기법을 자폐스펙트럼장애 아동의 특성과
+              요구에 맞게 재해석한 중재전략이다. 이 연구의 목적은 수정된 멜로디 억양기법이 사회적 의사소통기술의 기반이 되는 기본적인 언어작동, 맨드, <em>택트</em>, 인트라버벌에 미치는
+              영향을 알아보는 것이다. 연구에는 5세 이하의 자폐스펙트럼장애 아동 2명이 참여하였다. 실험은 행동 간 중다간헐설계를 사용하여 약 5주간 27회기에 걸쳐 시행되었다. 연구 결과, 두 아동
+              모두 맨드, <em>택트</em>, 인트라버벌의 발생 빈도가 증가하였다. 이러한 중재의 효과는 유지 단계에서도 대부분 비슷한 수준으로 유지되었으며 모든 중재의 종결 1주와 2주 후에 각각
+              시행한 일반화 단계에서도 유지되고 있는 것이 관찰되었다. 따라서 음악적 요소를 응용행동분석적 접근에 결합시킨 수정된 멜로디 억양기법은 자폐스펙트럼장애 아동의 맨드, <em>택트</em>,
+              인트라버벌 향상에 효과적인 것으로 나타났다.
+              중심 단어: 자폐스펙트럼장애, 맨드, <em>택트</em>, 인트라버벌, 언어행동, 의사소통기술, 멜로디 억양치료(MIT), 음악치료
+            </p>
+          </div>
+        </div>
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">4.</span>
+          <h3>
+            <a href="#;" title="상세보기" target="_blank"><span class="mark">[학위논문]</span><em>택트</em>타임설정을 통한 <em>택트</em>공정관리기법의 현장적용 방안에 관한 연구. </a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            나덕수
+            (暻園大學校 大學院)
+            <br>
+            2005
+            , 67p.
+            , 暻園大學校 大學院
+            , 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <div class="result_itembtn">
+            <button type="button" class="ico_pdf">원문보기</button>
+          </div>
+        </div>
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">5.</span>
+          <h3>
+            <a href="#;" target="_blank"> <span class="mark">[학위논문]</span>언<em>택트</em> 방식을 통한 음악산업의 새로운 패러다임 </a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            윤창원
+            (상명대학교 일반대학원,)
+            <br>
+            2020
+            , 84 p.:
+            , 상명대학교 일반대학원,
+            , 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <span class="flag_g">
+            <span class="flag_con">관련콘텐츠</span>
+          </span>
+          <div class="result_itembtn">
+            <button type="button" class="ico_pdf">원문보기</button>
+            <button type="button" class="arrow_down">초록</button>
+          </div>
+          <div class="item_content hidden" id="abs5">
+            <h6>초록</h6>
+            <p>국문요약
+              비대면으로 할 수 있는 일, 언<em>택트</em>가 음악 산업에 미치는 영향
+              이 연구는 비대면을 통해 이루어지는 음악산업의 변화를 설명하면서 향 후 언<em>택트</em> 방식을 적용시킨 음악산업의 전망을 그려보는 것을 목적으로 한다.
+              ‘언<em>택트</em>’라는 용어는 4차 산업혁명과 함께 등장했다. 김난도 서울대 소비자학과 교수는 ‘2018년 10대 소비 트렌드’가운데 ‘언<em>택트</em> 마케 팅’를
+              제시했다. 국내에 ‘언<em>택트</em>’라는 개념은 이때 알려지게 되었다. 언<em>택트</em>(Untact)는 접촉(contact)을 뜻하는 콘택트에 부정을 뜻하는 접두사
+              ‘언(un)’이 붙어 비대면으로서 ‘접촉하지 않는다’는 의미를 가진 신 조어이다.
+              언<em>택트</em> 기술은 ‘익명성’과 ‘접근성’이라는 2가지 특징을 가지고 있 다. 세대 구조 등의 변화로 1인 가구가 급증하게 되면서 사람들은 서로를 만나는 것을 꺼리게 되는
+              성향을 가지게 되었고 기업가들은 이를 포착해 익명성을 보장하는 언<em>택트</em> 방식의 서비스를 제공하게 되었다. 언<em>택트</em> 방 식의 서비스는 대인관계에서 오는 피로감을
+              해소하고, 부정적 관념을 축 소시켜주었을 뿐만 아니라 소비자들이 타인 지향적 성향에서의 벗어나도 록 작용하여 자신의 주관에 따라 삶을 살아가도록 유도하고 있다.
+              언<em>택트</em>의 또 다른 특징인 접근성은 언<em>택트</em> 기술을 사용함으로써 물리적 장애를 벗어났다는 것을 뜻한다. 소비자들은 장소에 구애받지 않고 언제 든 서비스를
+              이용할 수 있게 되어 시간과 비용을 절약하게 되었다. 또한
+              - iv -
+              지역에 상관없이 서비스를 활용할 수 있다는 이점은 모든 이들이 동등한 인프라를 공유한다는 것을 뜻한다. 접근성으로 인해 언<em>택트</em> 기술은 생산 자와 소비자 모두에게 이점을
+              주며 현대 사회에 확산되고 있다.
+              음악산업 분야 중 언<em>택트</em>가 활용될 수 있는 분야는 디지털 음악이다. 장소에 구애받지 않은 언<em>택트</em> 방식은 온라인 채널로 변화하고 있는 음악 산업에 필수적인
+              요소가 되었기 때문이다. 언<em>택트</em> 방식은 음악의 각 분야 별로 다양하게 적용되어 활성화되고 있다. 프로덕션 분야에서는 ‘VST Connect’ᆞ방송 프로그램이 등에
+              언<em>택트</em>가 활용된다. 포스트 프로덕션 분야에서는 랜더와 스털링 사운드가 예시가 될 수 있겠다. 퍼블리셔ᆞ기 획사에서도 언<em>택트</em> 방식은 사용되고 있다.
+              언<em>택트</em>는 점점 활용도가 넓어지고 있지만 분명 한계점도 가지고 있다. 창의성ᆞ다양성ᆞ정교성의 한계와 과잉공급의 문제, 히스토리의 부재, 그 리고 휴먼 커넥션의 단절을
+              한계점으로 들 수 있다. 이러한 한계점을 극 복할 수 있는 대안적인 방안이 나온다면 언<em>택트</em> 기술은 효과적이고 효율 적으로 음악 제작에 사용될 수 있을 것이다.
+              4차 산업혁명에 진입한 현시대에 언<em>택트</em> 방식은 피할 수 없는 흐름이 되었다. 앞으로 언<em>택트</em> 방식은 디지털 음악시장과 스트리밍 분야, 저작권 수익구조 등에
+              많은 영향을 끼칠 것이다.
+              언<em>택트</em> 방식이 적용된 음악산업에 대한 전망은 앞으로 지속적인 관찰과 연구가 필요하다. 현재 상황을 분석하고 음악산업의 패러다임을 새롭게 볼 수 있는 시각을 제공한 것으로
+              이 연구는 그 목적을 충분히 달성했다 고 보고 후속적인 연구를 기대해본다.</p>
+          </div>
+        </div>
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">6.</span>
+          <h3>
+            <a href="#;" target="_blank"><span class="mark">[학위논문]</span>작업일보 정보를 이용한 <em>택트</em>공정관리시스템 개발 </a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            나광수
+            (경희대학교 대학원)
+            <br>
+            2003
+            , v, 51 p.
+            , 경희대학교 대학원
+            , 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <div class="result_itembtn">
+            <button type="button" class="ico_pdf">원문보기</button>
+          </div>
+        </div>
+        <div class="result_item">
+          <input type="checkbox" class="fnAddMyon" name="scrapChkBox" id="">
+          <span class="num">7.</span>
+          <h3>
+            <a href="#;" title="상세보기" target="_blank"><span class="mark">[학위논문]</span>에코익<em>택트</em> 훈련이 자폐성장애 아동의 조음능력과 말 명료도에 미치는 효과 (The Effects of
+              echoic-tact training on articulation ability and speech intelligibility in children with autism spectrum
+              disorders)</a>
+          </h3>
+          <div class="result_item_info">
+            <!-- 저자정보 -->
+            이미자
+            (백석대학교 교육대학원)
+            <br>
+            2019
+            , 65
+            , 백석대학교 교육대학원
+            , 국내석사
+          </div>
+          <!-- //저자정보 -->
+          <div class="result_itembtn">
+            <button type="button" class="ico_pdf">원문보기</button>
+            <button type="button" class="arrow_down">초록</button>
+          </div>
+          <div class="item_content hidden" id="abs7">
+            <h6>초록</h6>
+            <p>(국문초록)
+              에코익<em>택트</em> 훈련이 자폐성장애 아동의 조음능력과
+              말 명료도에 미치는 효과
+              백석대학교 교육대학원
+              응용행동분석전공
+              이 미 자
+              지도교수: 이 성 봉
+              본 연구는 에코익<em>택트</em> 훈련이 자폐성장애 아동의 조음능력과 말 명료도에 미치는 효과를 알아보는 것이다. 연구 참여자는 언어발달이 전반적으로 1년 이상 지체되고 구어로
+              의사표현을 하지 않는 무발화 아동 1명을 대상으로 하였다. 연구 설계는 행동간 중다기초선 설계를 적용하였고 기초선, 중재, 유지 단계로 에코익<em>택트</em>와 <em>택트</em>의
+              어두초성 발생 횟수와 자음정확도, 단어단위 명료도율(proportion of whole word proximity: PWP)을 측정하였다.
+              본 연구에서의 에코익<em>택트</em> 훈련 단어는 참여자의 조음발달수준을 고려하고 우리말 조음음운발달에 근거하여 어두초성위치의 양순음 /ㅁ, ㅂ/와 치조음 /ㄴ/, 치조음 /ㄷ/를
+              1음절, 2음절, 3음절 단어로 구성하였다.
+              실험결과는 양순음, 치조음을 음절수별로 에코익한 결과 종속변인인 어두초성 발생 횟수가 빠르게 증가되었고 회기 수가 증가됨에 따라 단어의 자음정확도와 PWP도 증가되었다. 중재가 끝난
+              후에도 그 효과가 유지되고 있었으며 친숙하지 않은 대상에게 명료도를 검사한 결과 명료도가 유의미하게 증가된 것으로 나타났다.
+              이러한 결과는 에코익<em>택트</em> 훈련이 조음능력을 발달시키며 명료도 또한 증가시키는데 효과적임을 확인하였다. 또한 에코익에서 독립적인 <em>택트</em>가 증가되었으므로
+              자폐성장애 아동의 언어습득과 의사소통 능력이 증가될 수 있음을 시사한다.
+            </p>
+          </div>
+
+        </div>
+        <div class="sort_box mt40"><span class="all_chk"><input type="checkbox" class="checkAll" title="전체선택"></span>
+          <a href="#;" class="exchange">내보내기</a>
+          <a href="#;" class="bookmark">즐겨찾기</a>
+          <a href="#;" class="myonput">MyON담기</a>
+        </div>
+
+
+        
+      </div>
+
+      <div class="section_right">
+        <button type="button" class="usage_guidebtn">관련기능
+          활용안내</button>
+        <button type="button" class="schfilter_btn schfilter_icon" id="schfilter_btn">필터</button>
+        <div class="tip">
+          <div>
+           
+            <span>"필터"(</span><img src="./img/filter.png"><span>)를 활용하여</span><br>
+            <span>검색결과를 좁혀볼 수 있습니다.</span>
+             <a href="#;" class="tip_close">다시보지않기 X</a>
+          </div>
+        </div>
+        <div class="sch_rightwrap">
+          <div class="schlist_wrap">
+            <h3>워드클라우드</h3>
+            <div class="sch_radiobox">
+              <input type="radio" id="rd2" name="cloudBtn" value="1" checked="checked"><label for="rd2">키워드</label>
+              <input type="radio" id="rd1" name="cloudBtn" value="2"><label for="rd1">저자</label>
+              <input type="radio" id="rd3" name="cloudBtn" value="3"><label for="rd3">저자+키워드</label>
+            </div>
+
+            <div class="keyword_wrap">
+              <div id="keywordCloud" data-type="all"
+                style="border: 5px solid #e2e2e2;  border-radius: 15px; padding-top: 20px;text-align: center;"><svg
+                  width="250" height="210">
+                  <g transform="translate(125,105)"><text text-anchor="middle"
+                      transform="translate(-23,-15)rotate(90)"
+                      style="font-size: 36px; fill: rgb(31, 119, 180);">택트</text><text text-anchor="middle"
+                      transform="translate(-4,-47)rotate(0)" 
+                      style="font-size: 31px; fill: rgb(174, 199, 232);">Firmware</text><text text-anchor="middle"
+                      transform="translate(69,-12)rotate(90)" 
+                      style="font-size: 29px; fill: rgb(255, 127, 14);">Helical Gears</text><text text-anchor="middle"
+                      transform="translate(-26,43)rotate(0)" 
+                      style="font-size: 28px; fill: rgb(255, 187, 120);">언택트</text><text text-anchor="middle"
+                      transform="translate(21,71)rotate(0)" 
+                      style="font-size: 26px; fill: rgb(44, 160, 44);">택트타임</text><text text-anchor="middle"
+                      transform="translate(-1,-71)rotate(0)" 
+                      style="font-size: 23px; fill: rgb(152, 223, 138);">작업일보</text><text text-anchor="middle"
+                      transform="translate(-90,-13)rotate(90)" 
+                      style="font-size: 22px; fill: rgb(214, 39, 40);">M-M/C Interface</text><text
+                      text-anchor="middle" transform="translate(-12,88)rotate(0)"
+                      
+                      style="font-size: 18px; fill: rgb(255, 152, 150);">Productivity Data</text><text
+                      text-anchor="middle" transform="translate(39,1)rotate(0)"
+                      
+                      style="font-size: 11px; fill: rgb(148, 103, 189);">Finish work</text><text text-anchor="middle"
+                      transform="translate(30,20)rotate(0)" 
+                      style="font-size: 11px; fill: rgb(197, 176, 213);">Option</text><text text-anchor="middle"
+                      transform="translate(-60,17)rotate(0)" 
+                      style="font-size: 10px; fill: rgb(140, 86, 75);">Buffer</text><text text-anchor="middle"
+                      transform="translate(2,-96)rotate(0)" 
+                      style="font-size: 9px; fill: rgb(196, 156, 148);">High-rise Building</text><text
+                      text-anchor="middle" transform="translate(-74,98)rotate(0)"
+                      
+                      style="font-size: 8px; fill: rgb(227, 119, 194);">S-SMART 시스템</text></g>
+                </svg></div>
+              <p>저자 및 키워드를 통하여 검색결과의 연구동향을 파악할 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="schlist_wrap">
+            <h3>내가 본 자료</h3>
+            <div class="sch_dotlist mCustomScrollbar _mCS_8 mCS_no_scrollbar" data-mcs-theme="inset"
+              style="height: 200px;">
+              <div id="mCSB_8" class="mCustomScrollBox mCS-inset mCSB_vertical mCSB_inside" tabindex="0"
+                style="max-height: none;">
+                <div id="mCSB_8_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                  style="position:relative; top:0; left:0;" dir="ltr">
+                  <ul id="srchViewList">
+                    <li><a href="javascript:fn_detail('논문', 'DIKO0015392063')">[논문] 수정된 멜로디 억양기법이 자폐스펙트럼장애 아동의 맨드, 택트,
+                        인트라버벌에 미치는 효과</a> <button class="del" type="button"
+                        
+                        value="수정된 멜로디 억양기법이 자폐스펙트럼장애 아동의 맨드, 택트, 인트라버벌에 미치는 효과" title="삭제"></button></li>
+                  </ul>
+                </div>
+                <div id="mCSB_8_scrollbar_vertical"
+                  class="mCSB_scrollTools mCSB_8_scrollbar mCS-inset mCSB_scrollTools_vertical"
+                  style="display: none;">
+                  <div class="mCSB_draggerContainer">
+                    <div id="mCSB_8_dragger_vertical" class="mCSB_dragger"
+                      style="position: absolute; min-height: 30px; height: 0px; top: 0px;">
+                      <div class="mCSB_dragger_bar" style="line-height: 30px;"></div>
+                    </div>
+                    <div class="mCSB_draggerRail"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="schlist_wrap mt20">
+            <h3>나의 최근검색어</h3>
+            <div class="sch_dotlist mCustomScrollbar _mCS_9 mCS_no_scrollbar" data-mcs-theme="inset"
+              style="height: 200px;">
+              <div id="mCSB_9" class="mCustomScrollBox mCS-inset mCSB_vertical mCSB_inside" tabindex="0"
+                style="max-height: none;">
+                <div id="mCSB_9_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+                  style="position:relative; top:0; left:0;" dir="ltr">
+                  <ul id="srchHisList">
+                    <li><a href="javascript:searchTag('택트')">택트</a> <button class="del" type="button"
+                         value="택트" title="삭제"></button></li>
+                    <li><a href="javascript:searchTag('언택트')">언택트</a> <button class="del" type="button"
+                        value="언택트" title="삭제"></button></li>
+                    <li><a href="javascript:searchTag('cold')">cold</a> <button class="del" type="button"
+                         value="cold" title="삭제"></button></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+
+</body>
+
+</html>

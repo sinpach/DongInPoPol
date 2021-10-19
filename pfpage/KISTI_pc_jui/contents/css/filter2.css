@@ -1,0 +1,134 @@
+@charset UTF-8;
+
+.filter_wrap {
+  width: 100%;
+  padding: 0;
+  display: block;
+  height: auto;
+  overflow: visible;
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  border-top: 2px solid #666;
+  z-index: 2;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+}
+
+.filter_btn {
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #0f67bb;
+  color: #fff;
+  border: 1px solid #0f67bb;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.filter_btn:hover {
+  background-color: coral !important;
+  border-color: coral !important;
+}
+
+.sch_filter {
+  position: relative;
+  background: #f9f9f9;
+}
+
+.filterhead {
+  border-bottom: 1px solid #e2e2e2;
+  overflow: hidden;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.filterhead h2 {
+  padding: 4px 32px;
+  line-height: 40px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+}
+
+/* 20191105 */
+.filter_item {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.sch_filter>ul {
+  background: #f9f9f9;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+
+.sch_filter ul li:nth-last-child(1) {
+  border-right: 1px;
+}
+
+.sch_filter>ul>li {
+  padding: 0 0 0 12px;
+  position: relative;
+  display: table-cell;
+  border-right: 1px solid #e2e2e2;
+}
+
+.filter_wrap h3 {
+  /*    background: url(../images/usr/triangle_rb.svg) no-repeat 0 21px;*/
+  font-size: 13px;
+  background-size: 11px 8px;
+  padding-top: 15px;
+  color: #333;
+  line-height: 18px;
+  border: none;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+/* 20191105 */
+.scroll_box {
+  overflow-y: auto;
+  /*! padding-right: 5px; */
+  min-height: 200px;
+  max-height: 200px;
+
+}
+
+.chk_list {
+
+  padding: 3px 0 2px;
+
+}
+
+
+
+.chk_list>li {
+
+  position: relative;
+  margin-right: 8px;
+}
+
+.chk_list>li>input[type=checkbox] {
+  position: absolute;
+  top: 7px;
+  margin: 0 5px 0 0;
+}
+
+.chk_list>li>label {
+  font-size: 12px;
+  display: inline-table;
+}
+
+.filter_icon {
+  background: url(../images/usr/schfilter_icon.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 16px 19px;
+}

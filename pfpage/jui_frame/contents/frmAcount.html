@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW JMES Sample</title>
+  <link rel="stylesheet" href="../common/css/font.css" />
+  <link rel="stylesheet" href="../common/css/reset.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../common/fontawesome5.15.4/css/all.css" />
+  <!-- jui framework -->
+
+  <!-- Basic style components -->
+  <link rel="stylesheet" href="../common/jui/dist/ui.min.css" />
+  <link rel="stylesheet" href="../common/jui/dist/jui-ui.classic.css" />
+  <link rel="stylesheet" href="../common/jui/dist/ui-jennifer.min.css" />
+  <!-- Grid style components -->
+  <link rel="stylesheet" href="../common/jui/dist/jui-grid.classic.css" />
+  <!-- Required script files -->
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/jui/dist/jui-core.min.js"></script>
+  <!-- Basic script components -->
+  <script src="../common/jui/dist/jui-ui.min.js"></script>
+  <!-- Grid script components -->
+  <script src="../common/jui/dist/jui-grid.min.js"></script>
+  <!-- jui framework -->
+  <script src="../common/js/swiper-bundle.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../common/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="../common/css/style.css" />
+  <link rel="stylesheet" href="../common/css/main.css" />
+
+ <!-- custom js -->
+ <script src="../common/js/main.js"></script>
+
+</head>
+
+<body class="jui iframe_jui">
+  <header>
+    <div class="page-title">
+      <div class="navbar flat">
+        <div class="inline right">
+          <i class="icon icon-home"></i><span>HOME</span><i class="icon icon-chevron-right"></i> <span>기준정보관리</span><i class="icon icon-chevron-right"></i><span>거래처관리</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="row">
+        <div class="col col-7" style="padding-right: 15px;">
+          <div class="content-top">
+            <h4>거래처 리스트</h4>
+            <div class="function-wrap flex-a">
+              <div id="combo_1" class="combo">
+                <a class="btn small" style="width: 70px;">거래상태</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  
+                  <li value="1">정상</li>
+                  <li value="2">관리</li>
+                  <li value="3">정지</li>
+                </ul>
+              </div>
+              <div id="combo_2" class="combo">
+                <a class="btn small" style="width: 60px;">구분</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">매입</li>
+                  <li value="2">매출</li>
+                  <li value="3">외주</li>
+                </ul>
+              </div>
+              <div id="combo_3" class="combo">
+                <a class="btn small" style="width: 80px;">검색항목</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">거래처 이름</li>
+                  <li value="2">대표자명</li>
+                  <li value="2">주소</li>
+                </ul>
+              </div>
+              <div style="display: inline-block;" class="group">
+                <input type="text" class="input  small">
+                <button class="btn focus small"><i class="icon icon-search"></i></button>
+              </div>
+              <div class="group">
+                <a class="btn small ">
+                  <i class="icon icon-refresh"></i>
+                </a>
+                <button class="btn small " onclick="alert1.show()">
+                  <i class="icon icon icon-trashcan"></i>
+                </button>
+                <button class="btn small ">
+                  <i class="far fa-file-excel"></i>
+                </button>
+                <button class="btn small ">
+                  <i class="icon icon-printer"></i>
+                </button>
+              </div>
+             
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col col-12">
+                <table class="table classic hover">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px;">
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>코드</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>구분</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>거래상태</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>거래처명</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>대표</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>전화</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="chk ">
+                          <input type="checkbox" style="display: none;" class="checkbox">
+                          <i class="icon-checkbox2"></i>
+                        </div>
+                      </td>
+                      <td>8</td>
+                      <td>매출</td>
+                      <td>정상</td>
+                      <td>오리엔트정공</td>
+                      <td>오리엔트정공</td>
+                      <td>0314340435</td>
+                    </tr>
+                    
+                  </tbody>
+                  
+                </table>
+
+                <div class="table-bottom-wrap">
+                  <div class="count-wrap">
+
+                    <!-- <div id="data_cnt" class="combo">
+                      <a class="btn small" style="width: 50px;">20</a>
+                      <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                      <ul>
+                        <li value="1">20</li>
+                        <li value="2">30</li>
+                        <li value="3">40</li>
+                        <li value="4">50</li>
+                      </ul>
+                    </div> -->
+
+                    <div class="total_cnt">
+                      전체 : <span>50</span>건
+                    </div>
+                  </div>
+                  
+                  <div class="paging-wrap" style="width: 600px;">
+                    <a href="#;" class="btn focus small ">
+                      first
+                    </a>
+                    <div class="paging">
+                      <a href="#;" class="prev">Previous</a>
+                      <div class="list">
+                        <a href="#;">1</a>
+                        <a href="#;" class="active">2</a>
+                        <a href="#;">3</a>
+                        <a href="#;">4</a>
+                        <a href="#;">5</a>
+                        <a href="#;">6</a>
+                        <a href="#;">7</a>
+                        <a href="#;">8</a>
+                        <a href="#;">9</a>
+                        <a href="#;">10</a>
+                      </div>
+                      <a href="#;" class="next">Next</a>
+                    </div>
+                    <a href="#;" class="btn focus small ">
+                      end
+                    </a>
+                  </div>
+
+                </div>
+                
+                
+
+                
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="col col-5">
+          <table class="table simple horizontal">
+            <colgroup>
+              <col width="20%">
+              <col width="30%">
+              <col width="20%">
+              <col width="30%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th style="text-align:right"> 거래처코드</th>
+                <td colspan="3"><input type="text" name="account_id" id="account_id" class="input mini" readonly=""></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 거래처구분 *</th>
+                <td >
+                  <div class="property " style="display: inline-block;">
+                    <div class="property-table" style="position: relative;">
+                      <div class="property-item" data-index="0" data-key="theme" style="border: 0;margin: 0;padding: 0;">
+                        <div class="property-render" style="margin: 0;padding: 0;">
+                          <div class="item">
+                            <select style="max-width: 100%;height:22px;background: transparent;">
+                              <option value="" selected="" disabled="" hidden="">거래처구분</option>
+                              <option value="001">매입</option>
+                              <option value="002">매출</option>
+                              <option value="003">외주</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <th style="text-align:right"> 외주업체구분</th>
+                <td >
+                  <input type="radio"  name="account_outsourcing" id="yes" value="Y"> <label for="yes" class="lbl">예</label>
+                  <input type="radio"  name="account_outsourcing" id="no" value="N" checked=""> <label for="no" class="lbl">아니오</label>
+                </td>
+              </tr>
+
+              <tr>
+                <th style="text-align:right"> 거래처명 *</th>
+                <td colspan="3"><input type="text"  name="account_name" id="account_name" class="input mini" ></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 사업자등록번호 *</th>
+                <td><input type="text"  name="account_reg_no" id="account_reg_no" class="input mini" ></td>
+                <th style="text-align:right"> 법인등록번호</th>
+                <td><input type="text"  name="account_corp_no" id="account_corp_no" class="input mini"></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 업태</th>
+                <td><input type="text"  name="account_condition" id="account_condition" class="input mini"></td>
+                <th style="text-align:right"> 종목</th>
+                <td><input type="text"  name="account_event" id="account_event" class="input mini"></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 회사전화</th>
+                <td><input type="text"  name="account_tel" id="account_tel" class="input mini"></td>
+                <th style="text-align:right"> 팩스</th>
+                <td><input type="text"  name="account_fax" id="account_fax" class="input mini"></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 대표자명 *</th>
+                <td><input type="text"  name="account_owner" id="account_owner" class="input mini"></td>
+                <th style="text-align:right"> 대표휴대폰 *</th>
+                <td><input type="text"  name="account_owner_mobile" id="account_owner_mobile" class="input mini"></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 담당자 *</th>
+                <td><input type="text"  name="account_manager" id="account_manager" class="input mini"></td>
+                <th style="text-align:right"> 담당자 전화</th>
+                <td><input type="text"  name="account_manager_mobile" id="account_manager_mobile" class="input mini"></td>
+              </tr>
+
+              <tr>
+                <th style="text-align:right"> 담당자이메일</th>
+                <td colspan="3"><input type="text"  class="input mini" name="account_manager_email" id="account_manager_email"></td>
+              </tr>
+
+              <tr>
+                <th style="text-align:right"> 거래상태 *</th>
+                <td>
+                  <div class="property " style="display: inline-block;">
+                    <div class="property-table" style="position: relative;">
+                      <div class="property-item" data-index="0" data-key="theme" style="border: 0;margin: 0;padding: 0;">
+                        <div class="property-render" style="margin: 0;padding: 0;">
+                          <div class="item">
+                            <select style="max-width: 100%;height:22px;background: transparent;">
+                              <option value="" selected="" disabled="" hidden="">거래상태</option>
+                              <option value="001">정상</option>
+                              <option value="002">관리</option>
+                              <option value="003">정지</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <th style="text-align:right"> 할인률 (%)</th>
+                <td><input type="text"  name="account_dc_rate" id="account_dc_rate" class="input mini"></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 은행/예금주</th>
+                <td colspan="3">
+                  <div class="property " style="display: inline-block;">
+                    <div class="property-table" style="position: relative;">
+                      <div class="property-item" data-index="0" data-key="theme" style="border: 0;margin: 0;padding: 0;">
+                        <div class="property-render" style="margin: 0;padding: 0;">
+                          <div class="item">
+                            <select style="max-width: 100%;height:22px;background: transparent;">
+                              <option value="" selected="" disabled="" hidden="">은행</option>
+                              <option value="011">농협은행</option>
+                              <option value="012">단위농협</option>
+                              <option value="031">대구은행</option>
+                              <option value="029">동남은행</option>
+                              <option value="032">부산은행</option>
+                              <option value="064">산림조합중앙회</option>
+                              <option value="002">산업은행</option>
+                              <option value="050">상호저축은행</option>
+                              <option value="045">새마을금고</option>
+                              <option value="007">수협중앙회</option>
+                              <option value="081">KEB하나은행</option>
+                              <option value="088">신한은행</option>
+                              <option value="048">신협중앙회</option>
+                              <option value="053">씨티은행</option>
+                              <option value="005">외환은행</option>
+                              <option value="020">우리은행</option>
+                              <option value="037">전북은행</option>
+                              <option value="057">제이피모간체이스은행</option>
+                              <option value="035">제주은행</option>
+                              <option value="090">카카오뱅크</option>
+                              <option value="089">케이뱅크</option>
+                              <option value="023">SC제일은행</option>
+                              <option value="027">한국씨티은행</option>
+                              <option value="071">우체국</option>
+                              <option value="278">굿모닝신한증권</option>
+                              <option value="267">대신증권</option>
+                              <option value="238">대우증권</option>
+                              <option value="279">동부증권</option>
+                              <option value="209">동양종합금융증권</option>
+                              <option value="287">메리츠증권</option>
+                              <option value="230">미래에셋증권</option>
+                              <option value="290">부국증권</option>
+                              <option value="039">경남은행</option>
+                              <option value="240">삼성증권</option>
+                              <option value="268">솔로몬투자증권</option>
+                              <option value="291">신영증권</option>
+                              <option value="266">에스케이증권</option>
+                              <option value="263">에이치엠씨투자증권</option>
+                              <option value="292">엘아이지투자증권</option>
+                              <option value="247">우리투자증권</option>
+                              <option value="280">유진투자증권</option>
+                              <option value="265">이트레이드증권</option>
+                              <option value="264">키움증권</option>
+                              <option value="034">광주은행</option>
+                              <option value="270">하나대투증권</option>
+                              <option value="243">한국투자증권</option>
+                              <option value="269">한화증권</option>
+                              <option value="218">현대증권</option>
+                              <option value="0261">교보증권</option>
+                              <option value="004">국민은행</option>
+                              <option value="055">도이치은행</option>
+                              <option value="003">기업은행</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="text"  name="account_bank_user" id="account_bank_user" class="input mini">
+                </td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 계좌번호</th>
+                <td colspan="3"><input type="text"  class="input mini" name="account_bank_num" id="account_bank_num" ></td>
+              </tr>
+              <tr>
+                <th style="text-align:right"> 주소</th>
+                <td colspan="3">
+                  <div class="input-group">
+                    <input type="text"  class="input mini" placeholder="우편번호" name="zipcode" id="zipcode" readonly="">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn small">
+                        <i class="icon icon-search"></i>
+                        주소검색
+                      </button>
+                    </span>
+                  </div>
+                  <div style="margin-top:5px">
+                    <input type="text" class="input mini" placeholder="주소" name="address" id="address">
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <div class="flex-c " style="margin-top: 6px;">
+            <button class="btn small focus" type="button" id="btnSubmit" style="margin: 0 5px;">
+              거래처 등록
+            </button>
+            <button class="btn small" type="button"  style="margin: 0 5px;">
+              새로고침
+            </button>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  
+
+<div id="alert-box1"class="msgbox danger">
+  <div class="head">
+    삭제 확인
+  </div>
+  <div class="body">
+    선택하신 데이터를 삭제하시겠습니까?
+     <br>
+    다른 데이터와 연동된 데이터는 삭제가 되지 않습니다.
+     <br>
+
+    <div style="text-align: center; margin-top: 45px;">
+      <a href="#;" class="btn focus small">삭제</a>
+      <a href="#;" class="btn small" onclick="alert1.hide()">취소</a>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script>
+  jui.ready([ "ui.combo" ], function(combo) {
+    combo_1 = combo("#combo_1", {
+        value: "거래처선택",
+    });
+    combo_2 = combo("#combo_2", {
+      value: "구분",
+    });
+    combo_2 = combo("#combo_3", {
+      value: "검색항목",
+    });
+   
+    
+  });
+  jui.ready([ "ui.window" ], function(win) {
+    alert1 = win("#alert-box1", {
+      modal: true,
+      height:180,
+    });
+  });
+
+
+  var checkbox = document.querySelectorAll(".chk i");
+  for (let i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener("click", (e)=>{
+    var checked =e.target.previousElementSibling
+    if (e.target.classList.contains("icon-checkbox")) {
+      e.target.className = "icon-checkbox2"
+      checked.checked= false;
+    }else{
+      e.target.className = "icon-checkbox"
+      checked.checked= true;
+    }
+    });
+    
+  }
+</script>
+</html>

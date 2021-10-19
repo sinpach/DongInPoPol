@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sub_common.css">
+<link rel="stylesheet" href="./css/sub_search_setup.css">
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/sub_search_reset.js"></script>
+</head>
+
+
+<body>
+
+  <header>
+    <img src="./img/sp1.png" >
+  </header>
+  <!-- content -->
+  <div class="conArea">
+    <div class="setupHeader">
+      <h2>검색환경 설정</h2>
+      <p>
+        검색환경 설정에서 다양한 기능으로 정보 검색을 설정합니다.
+      </p>
+    </div>
+    <div class="setup">
+      <h3>
+        검색환경 설정
+      </h3>
+
+      <div class="setup_view">
+        <h4>검색결과 보기 설정</h4>
+        <div class="setup_box">
+          <p>출력건수 설정</p>
+          <div class="sel_wrap">
+            <select id="" name="" class="">
+              <option value="" selected="">페이지당 20개씩 </option>
+              <option value="">페이지당 40개씩</option>
+              <option value="">페이지당 60개씩</option>
+              <option value="">페이지당 80개씩</option>
+            </select>
+          </div>
+        </div>
+        <div class="setup_box">
+          <p>정렬옵션 설정</p>
+          <div class="sel_wrap">
+            <ul>
+              <li>
+                <label for="">·논문</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">발행일</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·연구자</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">명칭</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·특허</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">출원일자</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·연구기관</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">정확도</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·보고서</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">발행년도</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·기능</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">명칭</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·동향</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">발행일</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+              <li>
+                <label for="">·서비스</label>
+                <select id="" name="" class="">
+                  <option value="" selected="">정확도</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+                <select id="" name="" class="">
+                  <option value="" selected="">내림차순 </option>
+                  <option value="">오름차순</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="setup_box">
+          <p>출력건수 설정</p>
+          <div class="sel_wrap">
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">페이지 이동</label>
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">팝업으로 보기</label>
+          </div>
+        </div>
+      </div>
+      <div class="setup_list">
+        <h4>내보내기 - 내 항목 설정</h4>
+        <div class="setup_box">
+          <p>논문</p>
+          <ul>
+            <li><input type="checkbox" id="" class="all_chk"><label for="">전체</label></li>
+            <li><input type="checkbox" id=""><label for="">관리번호</label></li>
+            <li><input type="checkbox" id=""><label for="">논문명</label></li>
+            <li><input type="checkbox" id=""><label for="">대등논문명</label></li>
+            <li><input type="checkbox" id=""><label for="">저자</label></li>
+            <li><input type="checkbox" id=""><label for="">저널/프로시딩명</label></li>
+            <li><input type="checkbox" id=""><label for="">발행기관</label></li>
+            <li><input type="checkbox" id=""><label for="">발행년</label></li>
+            <li><input type="checkbox" id=""><label for="">발행언어</label></li>
+            <li><input type="checkbox" id=""><label for="">권</label></li>
+            <li><input type="checkbox" id=""><label for="">호</label></li>
+            <li><input type="checkbox" id=""><label for="">시작페이</label></li>
+            <li><input type="checkbox" id=""><label for="">끝페이지</li>
+            <li><input type="checkbox" id=""><label for="">ISBN</label></li>
+            <li><input type="checkbox" id=""><label for="">ISSN</label></li>
+            <li><input type="checkbox" id=""><label for="">주제분야</label></li>
+            <li><input type="checkbox" id=""><label for="">키워드</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">저자(소속기관)</label></li>
+          </ul>
+        </div>
+        <div class="setup_box">
+          <p>학윈 논문</p>
+          <ul>
+            <li><input type="checkbox" id="" class="all_chk"><label for="">전체</label></li>
+            <li><input type="checkbox" id=""><label for="">관리번호</label></li>
+            <li><input type="checkbox" id=""><label for="">논문명(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">논문명(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">저자명(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">저자명(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">학위수여기관</label></li>
+            <li><input type="checkbox" id=""><label for="">학위년도</label></li>
+            <li><input type="checkbox" id=""><label for="">학위구분</label></li>
+            <li><input type="checkbox" id=""><label for="">학과</label></li>
+            <li><input type="checkbox" id=""><label for="">총페이지</label></li>
+            <li><input type="checkbox" id=""><label for="">키워드</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(영문)</label></li>
+          </ul>
+        </div>
+        <div class="setup_box">
+          <p>특허</p>
+          <ul>
+            <li><input type="checkbox" id="" class="all_chk"><label for="">전체</label></li>
+            <li><input type="checkbox" id=""><label for="">관리번호</label></li>
+            <li><input type="checkbox" id=""><label for="">국가코드</label></li>
+            <li><input type="checkbox" id=""><label for="">자료구분</label></li>
+            <li><input type="checkbox" id=""><label for="">상태</label></li>
+            <li><input type="checkbox" id=""><label for="">출원번호</label></li>
+            <li><input type="checkbox" id=""><label for="">출원일자</label></li>
+            <li><input type="checkbox" id=""><label for="">공개번호</label></li>
+            <li><input type="checkbox" id=""><label for="">공개일자</label></li>
+            <li><input type="checkbox" id=""><label for="">발명명칭(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">발명명칭(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">출원인(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">출원인(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">출원인코드</label></li>
+            <li><input type="checkbox" id=""><label for="">대표출원인</label></li>
+            <li><input type="checkbox" id=""><label for="">출원인국적</label></li>
+            <li><input type="checkbox" id=""><label for="">출원인주소</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자코드</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자주소</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자 우편번호</label></li>
+            <li><input type="checkbox" id=""><label for="">발명자국적</label></li>
+            <li><input type="checkbox" id=""><label for="">대표IPC</label></li>
+            <li><input type="checkbox" id=""><label for="">IPC코드</label></li>
+            <li><input type="checkbox" id=""><label for="">요약</label></li>
+            <li><input type="checkbox" id=""><label for="">미국특허분류</label></li>
+            <li><input type="checkbox" id=""><label for="">대리인주소</label></li>
+            <li><input type="checkbox" id=""><label for="">대리인코드</label></li>
+            <li><input type="checkbox" id=""><label for="">대리인(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">대리인(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">국제공개일자</label></li>
+            <li><input type="checkbox" id=""><label for="">국제공개번호</label></li>
+            <li><input type="checkbox" id=""><label for="">국제출원일자</label></li>
+            <li><input type="checkbox" id=""><label for="">국제출원번호</label></li>
+            <li><input type="checkbox" id=""><label for="">우선권</label></li>
+            <li><input type="checkbox" id=""><label for="">우선권주장일</label></li>
+            <li><input type="checkbox" id=""><label for="">우선권국가</label></li>
+            <li><input type="checkbox" id=""><label for="">우선권출원번호</label></li>
+            <li><input type="checkbox" id=""><label for="">원출원일자</label></li>
+            <li><input type="checkbox" id=""><label for="">원출원번호</label></li>
+            <li><input type="checkbox" id=""><label for="">지정국</label></li>
+            <li><input type="checkbox" id=""><label for="">Citing Patents</label></li>
+            <li><input type="checkbox" id=""><label for="">Cited Patents</label></li>
+            
+          </ul>
+        </div>
+        <div class="setup_box">
+          <p>보고서</p>
+          <ul>
+            <li><input type="checkbox" id="" class="all_chk"><label for="">전체</label></li>
+            <li><input type="checkbox" id=""><label for="">관리번호</label></li>
+            <li><input type="checkbox" id=""><label for="">제목(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">제목(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">저자명(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">저자명(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">주관연구기관(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">주관연구기관(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">발행일자</label></li>
+            <li><input type="checkbox" id=""><label for="">총페이지수</label></li>
+            <li><input type="checkbox" id=""><label for="">주관부처명</label></li>
+            <li><input type="checkbox" id=""><label for="">과제시작일</label></li>
+            <li><input type="checkbox" id=""><label for="">과제종료일</label></li>
+            <li><input type="checkbox" id=""><label for="">주제분류</label></li>
+            <li><input type="checkbox" id=""><label for="">키워드(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">키워드(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(한글)</label></li>
+            <li><input type="checkbox" id=""><label for="">초록(영문)</label></li>
+            <li><input type="checkbox" id=""><label for="">목차</label></li>
+          </ul>
+        </div>
+        <div class="setup_box">
+          <p>동향</p>
+          <ul>
+            <li><input type="checkbox" id="" class="all_chk"><label for="">전체</label></li>
+            <li><input type="checkbox" id=""><label for="">관리번호</label></li>
+            <li><input type="checkbox" id=""><label for="">제목</label></li>
+            <li><input type="checkbox" id=""><label for="">작성일자</label></li>
+            <li><input type="checkbox" id=""><label for="">출처</label></li>
+            <li><input type="checkbox" id=""><label for="">주제분류</label></li>
+            <li><input type="checkbox" id=""><label for="">본문</label></li>
+            <li><input type="checkbox" id=""><label for="">한글키워드</label></li>
+            <li><input type="checkbox" id=""><label for="">영문키워드</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn_wrap">
+        <button class="set_save">저장</button>
+        <button class="re_set">초기화</button>
+      </div>
+    </div>
+    
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+
+</body>
+
+</html>

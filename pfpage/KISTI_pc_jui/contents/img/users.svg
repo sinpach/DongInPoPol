@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.688" height="23.97" viewBox="0 0 42.688 23.97">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_788" data-name="사각형 788" width="20.691" height="11.035" fill="none" stroke="#555" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_788-3" data-name="사각형 788" width="25.395" height="13.544" fill="#ededed" stroke="#000" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_2408" data-name="그룹 2408" transform="translate(-76.854 -863.141)">
+    <g id="icon_users" transform="translate(76.854 863.141)">
+      <g id="타원_62" data-name="타원 62" transform="translate(5.932)" fill="none" stroke="#555" stroke-width="1">
+        <ellipse cx="4.414" cy="4.414" rx="4.414" ry="4.414" stroke="none"/>
+        <ellipse cx="4.414" cy="4.414" rx="3.914" ry="3.914" fill="none"/>
+      </g>
+      <g id="마스크_그룹_11" data-name="마스크 그룹 11" transform="translate(0 7.794)" clip-path="url(#clip-path)">
+        <g id="타원_63" data-name="타원 63" transform="translate(0.414 0.482)" fill="none" stroke="#555" stroke-width="1">
+          <ellipse cx="9.931" cy="9.931" rx="9.931" ry="9.931" stroke="none"/>
+          <ellipse cx="9.931" cy="9.931" rx="9.431" ry="9.431" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="icon_users-2" data-name="icon_users" transform="translate(98.851 863.141)">
+      <g id="타원_62-2" data-name="타원 62" transform="translate(5.932)" fill="none" stroke="#555" stroke-width="1">
+        <ellipse cx="4.414" cy="4.414" rx="4.414" ry="4.414" stroke="none"/>
+        <ellipse cx="4.414" cy="4.414" rx="3.914" ry="3.914" fill="none"/>
+      </g>
+      <g id="마스크_그룹_11-2" data-name="마스크 그룹 11" transform="translate(0 7.794)" clip-path="url(#clip-path)">
+        <g id="타원_63-2" data-name="타원 63" transform="translate(0.414 0.482)" fill="none" stroke="#555" stroke-width="1">
+          <ellipse cx="9.931" cy="9.931" rx="9.931" ry="9.931" stroke="none"/>
+          <ellipse cx="9.931" cy="9.931" rx="9.431" ry="9.431" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="icon_users-3" data-name="icon_users" transform="translate(85 864)">
+      <g id="타원_62-3" data-name="타원 62" transform="translate(7.281)" fill="#ededed" stroke="#000" stroke-width="1">
+        <circle cx="5.417" cy="5.417" r="5.417" stroke="none"/>
+        <circle cx="5.417" cy="5.417" r="4.917" fill="none"/>
+      </g>
+      <g id="마스크_그룹_11-3" data-name="마스크 그룹 11" transform="translate(0 9.566)" clip-path="url(#clip-path-3)">
+        <g id="타원_63-3" data-name="타원 63" transform="translate(0.508 0.592)" fill="#ededed" stroke="#000" stroke-width="1">
+          <circle cx="12.189" cy="12.189" r="12.189" stroke="none"/>
+          <circle cx="12.189" cy="12.189" r="11.689" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

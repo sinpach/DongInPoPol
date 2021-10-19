@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="./css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+	</style>
+</head>
+<body>
+	<div id="body" class="body-custom">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo4.png" alt="">
+				은퇴설계
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="./retire-plan1_1.html"  >은퇴 기본설계</a>
+
+				</li>
+				<li class="green">
+					<a href="#" class="on">은퇴후 CF 설계</a>
+					<ul>
+						<li class="green"><a   href="./retire-plan2_1.html">연간 은퇴 CF</a></li>
+						<li class="green"><a class="on" href="#">은퇴CF상품 신규추가</a></li>
+						<li class="green"><a  href="./retire-plan2_3.html">신규상품 연간CF설계</a></li>
+						<li class="green"><a  href="./retire-plan2_4.html">설계후 연간 은퇴CF</a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar ">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="#" class="retire_plan-bar on">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="./edu-plan1_1.html" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content retire-plan2_2">
+				<h4 class="table-title">은퇴후 CF 설계</h4>
+				<ul class="customer-input-btns2 font">
+					<li >
+						<a href="./retire-plan2_1.html">연간 은퇴CF</a>
+					</li>
+					<li class="on">
+						<a href="#">연간CF상품 신규추가</a>
+					</li>
+					<li >
+						<a href="./retire-plan2_3.html">신규상품 연간CF설계</a>
+					</li>
+					<li >
+						<a href="./retire-plan2_4.html">설계후 연간 은퇴CF</a>
+					</li>
+
+				</ul>
+				<div class="table-box ">
+					<div class="">
+						<table class="title-table">
+							<colgroup>
+								<col style="width:30%">
+								<col style="width:24%">
+								<col style="width:16%">
+								<col style="width:30%">
+							</colgroup>
+
+							<tbody>
+								<tr>
+									<th  rowspan="3"><div>은퇴 CF 자산<br>추가 설계</div></th>
+									<th colspan="2"><p class="round-box">은퇴 CF 포트폴리오 설계 총 투자 재원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15,000만원</p></th>
+									<th rowspan="3" > <p class="round-box">투자 실행 금액 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+5,000만원</p></th>
+								</tr>
+								<tr>
+									<th>1) 예상 퇴직금(은퇴시점)</th>
+									<td>00,000만원</td>
+
+								</tr>
+								<tr>
+									<th>2) 은퇴목적 금융자산(현재시점)</th>
+									<td>00,000만원</td>
+
+								</tr>
+							</thead>
+
+						</table>
+					</div>
+				</div>
+				<div class="table-box w_80p">
+					<div class="content-title">▶ 연금 개시 상품 추가</span></div>
+					<div class="btnwrap">
+						<a href="#" class="btn">
+							<span><img src="images/common/icon4.png" alt="">추가</span>
+						</a>
+						<a href="#" class="btn">
+							<span><img src="images/common/icon2.png" alt="">삭제</span>
+						</a>
+					</div>
+					<div class="basic-table_wrap1 mCustomScrollbar light" data-mcs-theme="minimal-dark">
+						<div class="scroll-wrap">
+								<table class="basic-table">
+								<colgroup>
+									<col style="width:10%">
+									<col style="">
+									<col style="width:11%">
+									<col style="width:11%">
+									<col style="width:11%">
+									<col style="width:11%">
+									<col style="width:11%">
+									<col style="width:15%">
+								</colgroup>
+								<thaed>
+									<tr>
+										<th>자산</th>
+										<th >상품명</th>
+										<th class="tc">납입원금</th>
+										<th class="tc">거치기간<br><span>(년)</span></th>
+										<th class="tc">피보험자</th>
+										<th class="tc">연금개시시점<br><span>(세)</span></th>
+										<th class="tc">지급기간</th>
+										<th class="tc">연간 연금수령액<br><span>(만원)</span></th>
+									</tr>
+								</thaed>
+								<tbody>
+									<tr>
+										<td>
+											<select class="blan" name="" id="">
+												<option value="">연금보험</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td>푸르덴셜 평생소득연금</td>
+										<td class="tc">30,000만원</td>
+										<td class="tc">5</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">본인</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">60</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">종신</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">12,000</td>
+
+									</tr>
+									<tr>
+										<td>
+											<select class="blan" name="" id="">
+												<option value="">연금보험</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td>푸르덴셜 평생소득연금</td>
+										<td class="tc">30,000만원</td>
+										<td class="tc">5</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">본인</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">60</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">종신</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">12,000</td>
+
+									</tr>
+									<tr>
+										<td>
+											<select class="blan" name="" id="">
+												<option value="">연금보험</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td>푸르덴셜 평생소득연금</td>
+										<td class="tc">30,000만원</td>
+										<td class="tc">5</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">본인</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">60</td>
+										<td class="tc">
+											<select class="blan w_60p" name="" id="">
+												<option value="">종신</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">12,000</td>
+
+									</tr>
+									<tr>
+										<td>
+											<select class="blan" name="" id="">
+												<option value="">연금보험</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td>푸르덴셜 평생소득연금</td>
+										<td class="tc">30,000만원</td>
+										<td class="tc">5</td>
+										<td class="tc">
+											<select class="blan w_80p" name="" id="">
+												<option value="">본인</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">60</td>
+										<td class="tc">
+											<select class="blan w_80p" name="" id="">
+												<option value="">종신</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td class="tc">12,000</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="table-box w_80p">
+					<div class="content-title">▶ 연금개시 상품 외 금융상품 추가</span></div>
+					<div class="btnwrap">
+						<a href="#" class="btn">
+							<span><img src="images/common/icon4.png" alt="">추가</span>
+						</a>
+						<a href="#" class="btn">
+							<span><img src="images/common/icon2.png" alt="">삭제</span>
+						</a>
+					</div>
+					<div class="basic-table_wrap1 mCustomScrollbar light" data-mcs-theme="minimal-dark">
+						<div class="scroll-wrap">
+								<table class="basic-table">
+								<colgroup>
+									<col style="width:10%">
+									<col style="">
+									<col style="width:19%">
+									<col style="width:19%">
+									<col style="width:19%">
+								</colgroup>
+								<thaed>
+									<tr>
+										<th>자산</th>
+										<th >상품명</th>
+										<th class="tc">투자금액<br><span>(만원)</span></th>
+										<th class="tc">기대수익률<br><span>(%)</span></th>
+										<th class="tc">과세여부<br><span>(세)</span></th>
+									</tr>
+								</thaed>
+								<tbody>
+									<tr>
+										<td>
+											<select class="blan" name="" id="">
+												<option value="">대안자산</option>
+												<option value=""></option>
+											</select>
+										</td>
+										<td>미래에셋배당프리미엄펀드</td>
+										<td class="tc">2,000</td>
+										<td class="tc">6.0</td>
+										<td class="tc">
+											<select class="blan w_50p" name="" id="">
+												<option value="">과세</option>
+												<option value="">비과세</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.slides.js"></script>
+	<script src="./js/d3.v3.min.js"></script>
+	<script src="./js/c3.js"></script>
+	<script src="./js/custom_chart_bar_stacked.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(function(){
+			$("#slides").slidesjs({
+				width: 1000,
+				height: 520
+			});
+
+			barstacked('#chartbar1');
+		});
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kihasa_pc1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kihasa_pc2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kihasa_pc3.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/kihasa_pc/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                한국보건사회연구원 홈페이지 리뉴얼 퍼블리싱 <br>
+                c3.js, swiper.js, timelin.js 라이브러리 작업
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <pre>
+              <code>
+(function($){
+	
+	$(document).ready(function(){
+	
+		// 기관변천사 팝업
+		$(".inDetail").click(function () {
+			$(".Popup").fadeIn();
+			$(".Popup").css("display", "flex");
+		});
+		$(".popContent>a.closeBtn").click(function () {
+			$(".Popup").fadeOut();
+		});
+		$(".popupBg").click(function () {
+			$(".Popup").fadeOut();
+		});
+		//연혁 팝업
+		$(".careerArea a.link").click(function () {
+			$(".Popup").fadeIn();
+			$(".Popup").css("display", "flex");
+		});
+		
+		
+	});
+	// 기관변천사 팝업 스크롤
+	$(window).on("load", function () {
+		$(".popScroll").mCustomScrollbar({
+			axis: "y",
+			scrollInertia: 500,
+			theme: "light-3",
+		});
+	});
+ // 역대기관장 
+	function paddingLeft(){
+		var leftPx = $(".subTopTit").css("margin-left");
+		$(".topListArea .mCSB_container").css("padding-left", leftPx)
+	}
+	$(window).resize(function () {
+		
+		paddingLeft();
+		
+	});
+	// 역대기관장 스크롤
+	$(window).on("load", function () {
+		
+		$(".pdScrollArea").mCustomScrollbar({
+			axis: "x",
+			scrollInertia: 500,
+			theme: "light-3",
+			mouseWheel: "disable",
+		});
+		paddingLeft();
+	});
+	$(document).ready(function () {
+			$(".our").mousemove(function (e) {
+				var parentOffset = $(this).offset();
+				var relX = e.pageX - parentOffset.left;
+				var relY = e.pageY - parentOffset.top;
+				$(".imgName").css({
+					"top": relY - 30,
+					"left": relX,
+				});
+			});
+		$(".our a").mouseover(function(e){
+			if (!$(this).hasClass("logo")) {
+				var text = $(this).children("img").attr("alt")
+				$(".imgName span").text(text)
+			}
+			
+		});
+		$(".our ").mouseover(function () {
+			$(".imgName").show();
+		});
+		$(".our ").mouseout(function(){
+			$(".imgName").hide();
+		});
+		
+	});
+	//테마별 클릭 
+	$(document).ready(function () {
+		$(".pr_list>ul>li>a").click(function () {
+			
+			var idx = $(this).parent().index();
+			$(".themaCon>li>.timeLineDetail_2").hide();
+			$(".themaCon>li").eq(idx).children(".timeLineDetail_2").fadeIn();
+		});
+		//연구자들 팝업
+		$(".researchersList>a").click(function () {
+			var name = $(this).text();
+			$(".researchersPopup .rpName").html(name);
+			$(".researchersPopup").fadeIn();
+			$(".researchersPopup").css("display","flex");
+		});
+		
+		$(".rpContent>a.closeBtn").click(function () {
+			$(".researchersPopup").fadeOut();
+		});
+		$(".popupBg").click(function () {
+			$(".researchersPopup").fadeOut();
+		})
+		// 기관별 클릭 
+		$(".agencyList .list li>a").click(function () {
+			$('.agencyList .list li a').removeClass("on");
+			$(this).addClass("on");
+		});
+		$('.tableArea .list li a').click(function () {
+			var conText = $(this).text();
+			var con = $(this).parent().parent(".list").siblings('.detailInfo')
+			con.children('h4').text(conText);
+						
+			$(this).parent().siblings().children('.on').removeClass('on')
+			$(this).addClass("on");
+		});
+	});
+	$(window).on("load", function () {
+		$(".historyCon").mCustomScrollbar({
+			axis: "y",
+			scrollInertia: 500,
+			theme: "light-3",
+		});
+	});
+	
+	// 연구자들 연도 가로 스크롤 
+	
+	$(window).on("load", function () {
+		$(".scrollArea").mCustomScrollbar({
+			axis: "x",
+			scrollInertia: 500,
+			theme: "light-3",
+		});
+	});
+	// 정책과 연구 스크롤 
+	$(window).on("load", function () {
+		$(".policy .timeLine").mCustomScrollbar({
+			axis: "x",
+			scrollInertia: 500,
+			setLeft: "-140px",
+			theme: "light-3",
+			mouseWheel: "disable",
+		});
+	});
+	//연구성과 스크롤
+	$(window).on("load", function () {
+		$(".research .timeLine").mCustomScrollbar({
+			axis: "x",
+			scrollInertia: 500,
+			// setLeft: "-140px",
+			theme: "light-3",
+			mouseWheel: "disable",
+		});
+	});
+// 정책과 연구 클릭
+$(document).ready(function () {
+	$(".linkCon").click(function () {
+		$('.timeLineDetail').addClass('on')
+	});
+});
+// 연구성과 클릭
+$(document).ready(function () {
+	$(".linkArea>li>a").click(function () {
+		// $('.timeLineDetail_2>.tableArea').removeClass('on')
+		$('.timeLineDetail_2>.tableArea').addClass('on')
+	});
+});
+var bindDiv = $("#lineGraph")
+window.onload = function () {
+	
+	
+	
+		// //연구자들 차트
+	if (document.getElementById('myChart')) {
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var labels = ["보건분야", "보건사회분야", "사회분야"];
+		var colorhex = ['rgb(92, 155, 213)', 'rgb(240, 136, 66)', 'rgb(165, 165, 165)'];
+		var cnt = ['30%', '0%', '70%']
+		var myChart = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [97, 1, 244],
+					backgroundColor: colorhex
+				}],
+				labels: labels,
+				conut: cnt,
+			},
+			options: {
+				events: [],
+				responsive: true,
+				legend: false,
+				plugins: {
+					datalabels: {
+						color: ['#0459a6', '#ed6c00', '#000'],
+						anchor: 'end',
+						align: 'end',
+						offset: 3,
+						formatter: function (value, context) {
+							return context.chart.data.labels[context.dataIndex] + '\n' + value + '건\n' + context.chart.data.conut[context.dataIndex];
+						},
+						font: {
+							size: '14'
+						},
+						textAlign: 'center',
+						padding: [{
+								top: 10,
+								bottom: 0,
+								left: 45,
+								rigght: 0,
+							},
+							{
+								top: 250,
+								bottom: 0,
+								left: 20,
+								rigght: 0,
+							},
+							{
+								top: 30,
+								bottom: 0,
+								left: 30,
+								rigght: 0,
+							},
+						],
+					},
+					labels: {
+						render: 'image',
+						position: 'outside',
+						textMargin: -2,
+						images: [{
+								src: './common/img/sub/bd_icon1.png',
+								width: 107,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon2.png',
+								width: 111,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon3.png',
+								width: 97,
+								height: 7
+							}
+						]
+					}
+				}
+			},
+		})
+	}
+	if (document.getElementById('graph1')) {
+		var ctx = document.getElementById('graph1').getContext('2d');
+		var labels = ["정기간행물", "보고서"];
+		var colorhex = ['rgb(92, 155, 213)', 'rgb(240, 136, 66)'];
+		var cnt = ['30%', '0%']
+		var myChart = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [85, 322],
+					backgroundColor: colorhex
+				}],
+				labels: labels,
+				conut: cnt,
+			},
+			options: {
+				events: [],
+				responsive: true,
+				legend: false,
+				plugins: {
+					datalabels: {
+						color: ['#0459a6', '#ed6c00', '#000'],
+						anchor: 'center',
+						align: 'end',
+						offset: 3,
+						formatter: function (value, context) {
+							return context.chart.data.labels[context.dataIndex] + '\n' + value + '건\n' + context.chart.data.conut[context.dataIndex];
+						},
+						font: {
+							size: '14'
+						},
+						textAlign: 'center',
+						padding: [{
+								top: -60,
+								bottom: 10,
+								left: 160,
+								rigght: 0,
+							},
+							{
+								top: -50,
+								bottom: 0,
+								left: 180,
+								rigght: 0,
+							},
+							{
+								top: 30,
+								bottom: 0,
+								left: 30,
+								rigght: 0,
+							},
+						],
+					},
+					labels: {
+						render: 'image',
+						position: 'outside',
+						textMargin: -2,
+						images: [{
+								src: './common/img/sub/bd_icon1.png',
+								width: 107,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon4.png',
+								width: 111,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon3.png',
+								width: 97,
+								height: 7
+							}
+						]
+					}
+				}
+			},
+		})
+	}
+	if (document.getElementById('graph2')) {
+		var ctx = document.getElementById('graph2').getContext('2d');
+		var labels = ["보건분야", "보건사회분야", "사회분야"];
+		var colorhex = ['rgb(92, 155, 213)', 'rgb(240, 136, 66)', 'rgb(165, 165, 165)'];
+		var cnt = ['30%', '0%', '70%']
+		var myChart = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [97, 1, 244],
+					backgroundColor: colorhex
+				}],
+				labels: labels,
+				conut: cnt,
+			},
+			options: {
+				events: [],
+				responsive: true,
+				legend: false,
+				plugins: {
+					datalabels: {
+						color: ['#0459a6', '#ed6c00', '#000'],
+						anchor: 'end',
+						align: 'end',
+						offset: 3,
+						formatter: function (value, context) {
+							return context.chart.data.labels[context.dataIndex] + '\n' + value + '건\n' + context.chart.data.conut[context.dataIndex];
+						},
+						font: {
+							size: '14'
+						},
+						textAlign: 'center',
+						padding: [{
+								top: 10,
+								bottom: 0,
+								left: 45,
+								rigght: 0,
+							},
+							{
+								top: 250,
+								bottom: 0,
+								left: 20,
+								rigght: 0,
+							},
+							{
+								top: 30,
+								bottom: 0,
+								left: 30,
+								rigght: 0,
+							},
+						],
+					},
+					labels: {
+						render: 'image',
+						position: 'outside',
+						textMargin: -2,
+						images: [{
+								src: './common/img/sub/bd_icon1.png',
+								width: 107,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon2.png',
+								width: 111,
+								height: 7
+							},
+							{
+								src: './common/img/sub/bd_icon3.png',
+								width: 97,
+								height: 7
+							}
+						]
+					}
+				}
+			},
+		})
+	}
+	
+};
+$(document).ready(function () {
+	// 사진아카이브 시대별 오버 
+	$(".ageListArea>ul>li").mouseover(function () {
+		if ($(this).children("a").hasClass("hoverCon")){
+				$(this).children(".hoverCon").addClass("on");
+		}
+	});
+	$(".ageListArea>ul>li").mouseout(function () {
+		if ($(this).children('.hoverCon').hasClass('on')){
+			$(this).children('.hoverCon').removeClass("on");
+		}
+	});
+	// 사진아카이브 시대별 년도 nav 
+		$(".yearNav ul li a").click(function(){
+			var oneYear = $(this).parent().parent();
+			var dekad = oneYear.siblings("ul");
+			
+			var nextYear = $(this).text();
+			var prevYear = $(this).text();
+			nextYear++
+			prevYear--
+			dekad.removeClass("oneYear");
+			oneYear.addClass("oneYear");
+			$(".yearNav ul li a").removeClass('on');
+			$(this).addClass("on");
+			var prev = '<i class="far fa-arrow-alt-circle-left"></i>'
+			var next = '<i class="far fa-arrow-alt-circle-right"></i>'
+			$('.yearBtn .yearPrevBtn').html(prev + nextYear);
+			$('.yearBtn .yearNextBtn').html(prevYear + next);
+			$('.yearBtn .yearThisBtn').html($(this).text());
+		});
+		
+});
+	
+})(jQuery)
+
+              </code>
+            </pre>
+          </div>
+
+          
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+           
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

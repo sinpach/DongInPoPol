@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_pc_jui1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_pc_jui2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_pc_jui3.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/KISTI_pc_jui/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                KISTI 사이언스온 PC website 추가 페이지 작업 <br>
+                HTML5, css, javascript 동적 기능 작업 <br>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-12">
+            <pre>
+              <code>
+$(function () {
+
+
+
+  $(".tab_nav a").click(function (event) {
+    event.preventDefault();
+    var idx = $(this).parent("li").index();
+    $(".tab_nav li").removeClass("active pr");
+    $(this).parent("li").addClass("active");
+    if(!idx == 0){
+      $(".tab_nav li").eq(idx - 1).addClass("pr")
+    }
+    $(".tab_con_list>li").removeClass("on");
+    $(".tab_con_list>li").eq(idx - 1).addClass("on");
+  });
+
+  
+
+  $(".arrow_down").click(function(){
+    $(this).siblings(".item_content").toggleClass("hidden");
+  });
+
+
+
+  $(".weekly_btn_wrap a").click(function(){
+    var openHeight = $(".weekly_wt_list").outerHeight();
+    if($(this).hasClass("on")){
+      $(this).removeClass("on");
+      $(this).text("주간예보 닫기");
+      $(".weekly_wt").css("margin-top", "23px")
+      $(".weekly_wt").animate({
+        height: openHeight
+      },300);
+    }else{
+      $(this).addClass("on");
+      $(this).text("주간예보 보기")
+      $(".weekly_wt").animate({
+        height: 0
+        
+      },function(){ $(".weekly_wt").css("margin-top", "0px")});
+    }
+      
+
+  });
+
+  
+
+  $(".my_calendar>ul>li>a").click(function(){
+    $(this).toggleClass("on");
+  });
+  
+
+  $(".set_btn").click(function(){
+    $(".local_popup_wrap").fadeIn();
+  });
+  $(".confirm_btn, .cancel_btn, .local_pop_bg").click(function(){
+    $(".local_popup_wrap").fadeOut();
+
+  });
+  $(".google_interlink, .my_calendar>ul>li>a").click(function () {
+    $(".calendar_area").css("height","950px");
+    $(".google_interlink").fadeOut();
+    
+  });
+
+
+  
+
+  
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    titleFormat: function (date) { 
+      return date.date.year + ". " + (date.date.month + 1) + ".";
+    },
+    titleRangeSeparator: '.',
+    defaultRangeSeparator: ' 181818',
+    headerToolbar: {
+      left: 'today',
+      center: 'title',
+      right: 'prev,next'
+    },
+    
+    buttonText :{
+      today : "오늘"
+    },
+    googleCalendarApiKey: 'AIzaSyCw_zWjOEs9nQABxhwvC4gaKpgmsRX5fA0',
+    eventSources: [
+      {
+        googleCalendarId: 'kim1983q@gmail.com',
+        className: 'event1'
+      },
+      {
+        googleCalendarId: 'urip0ub4prh6af148dopt0eu9o@group.calendar.google.com',
+        className: 'event2'
+      },
+      
+      {
+        googleCalendarId: '6fjlpf62nhelhfifn3i6nc7b58@group.calendar.google.com',
+        className: 'event3'
+      },
+    ],
+  
+   
+
+    eventClick: function (arg) {
+      // opens events in a popup window
+      window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
+      arg.jsEvent.preventDefault() // don't navigate in main tab
+    },
+  });
+  
+  calendar.render();
+
+});
+
+
+
+  
+
+
+
+
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

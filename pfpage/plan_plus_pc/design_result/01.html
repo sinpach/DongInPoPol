@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page01">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[1-1 고객 가족정보]
+			</h1>
+			<div class="explain">
+				나윤석님의 가족구성원은 <span>4명</span>이며 총<span>54년</span>의 인생설계가 필요합니다.
+			</div>
+			<h2 class="page_title c1">01  | 고객 재무정보</h2>
+			<div class="content">
+				<div class="top_con">
+					<div class="con_title">
+						자산곡선 <span class="eng">| Wealth Cycle</span>
+					</div>
+					<p class="before"><span class="dh">은퇴 전 기간 <span class="dh">15년</span></span><br><span>*고객 은퇴시점 기준</span></p>
+					<p class="after"><span class="dh">은퇴 전 기간 <span class="dh">15년</span></span><br><span>*배우자 기대수명 기준</span></p>
+					<ul class="cycle">
+						<li>
+							<span>현재</span>
+							<span>고객 45세</span>
+							<span>배우자 43세</span>
+						</li>
+						<li>
+							<span>은퇴시점</span>
+							<span>고객 60세</span>
+							<span>배우자 58세</span>
+						</li>
+						<li>
+							<span>기대수명</span>
+							<span>고객 81세</span>
+							<span>배우자 87세</span>
+						</li>
+					</ul>
+
+				</div>
+				<div class="bottom_con">
+					<div class="table-title">
+						| 가족 기본정보
+					</div>
+					<table class="page_table">
+						<colgroup>
+							<col style="width:15%">
+							<col style="width:15%">
+							<col style="width:">
+							<col style="width:15%">
+							<col style="width:15%">
+							<col style="width:25%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th >구분</th>
+								<th>이름</th>
+								<th>근무처명/직함</th>
+								<th>나이</th>
+								<th>성별</th>
+								<th>특이사항</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>본인</td>
+								<td>나민O</td>
+								<td>런인베스트 대표</td>
+								<td>54세</td>
+								<td>남</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>본인</td>
+								<td>나민O</td>
+								<td>런인베스트 대표</td>
+								<td>54세</td>
+								<td>남</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>본인</td>
+								<td>나민O</td>
+								<td>런인베스트 대표</td>
+								<td>54세</td>
+								<td>남</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>본인</td>
+								<td>나민O</td>
+								<td>런인베스트 대표</td>
+								<td>54세</td>
+								<td>남</td>
+								<td></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

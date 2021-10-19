@@ -1,0 +1,207 @@
+
+/* page3 */
+
+.page3 .textbox_a{
+	width: 700px;
+	height: 100px;
+	font-size: 30px;
+	color: #333;
+	text-align: left;
+}
+
+#container.page3 .wrap .textbox_b{
+	width: 745px;
+	font-size: 19px;
+	color: #fff;
+	line-height: 36px;
+}
+.page3 .textbox_b span{
+	display: block;
+	width: 100% ;
+	text-align: right;
+	color: #fff;
+}
+
+
+
+
+
+
+#container.page4 .wrap{
+	background: url(../../img/content/test/new/organize.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+.page4 .textbox_a{
+	width: 455px;
+	font-family: 'Nanum Myeongjo';
+	font-size: 56px;
+	text-align: left;
+	color: #424242;
+}
+
+.page4 .textbox_b{
+	width: 590px;
+	font-size: 26px;
+	font-family: 'Nanum Myeongjo';
+	color: #424242;
+	text-align: left;
+	letter-spacing: -2px;
+	text-align: left;
+	word-break:keep-all;
+	word-wrap:break-word;
+}
+.page4 .textbox_b span{
+	color: #611ab1;
+	font-weight: bold;
+	
+}
+.page4 .organize1{
+	display: block;
+	width: 210px;
+	height: 167px;
+	background: url(../../img/content/test/new/organize2.png) no-repeat;
+}
+.page4 .organize2{
+	display: block;
+	width: 270px;
+	height: 206px;
+	background: url(../../img/content/test/new/organize3.png) no-repeat;
+}
+.page4 .organize3{
+	display: block;
+	width: 400px;
+	height: 538px;
+	background: url(../../img/content/test/new/organize4.png) no-repeat;
+}
+
+#container.page5 .wrap{
+	background: url(../../img/content/test/new/outro.png) no-repeat;
+	background-size: 100% 100%;
+}
+.page5 .out_next{
+	display: block;
+	width: 166px;
+	height: 47px;
+	background: url(../../img/content/test/new/out_next.png) no-repeat;
+}
+.page5 .outbg1{
+	display: block;
+	width: 394px;
+	height: 330px;
+	background: url(../../img/content/test/new/out_bg1.png) no-repeat;
+}
+.page5 .outbg2{
+	display: block;
+	width: 500px;
+	height: 418px;
+	background: url(../../img/content/test/new/out_bg2.png) no-repeat;
+}
+.page5 .outbg3{
+	display: block;
+	width: 159px;
+	height: 134px;
+	background: url(../../img/content/test/new/out_bg3.png) no-repeat;
+}
+.page5 .textbox_a{
+	width: 455px;
+	font-family: 'Nanum Myeongjo';
+	font-size: 48px;
+
+	color: #424242;
+
+}
+.page5 .sync span{
+	display: block;
+	font-size: 48px;
+	color: #424242;
+}
+.page5 .sync span.chasi_num{
+	 font-family: 'Butler';
+	margin-bottom: 10px;
+}
+.page5 .sync span.chasi_text{
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+
+.page5 .textbox_b{
+	width: 415px;
+	font-size: 26px;
+	font-family: 'Nanum Myeongjo';
+	color: #424242;
+	text-align: left;
+	letter-spacing: -1px;
+}
+
+
+/* page2,4 싱크 애니메이션 */
+.page3 .sync2{top: 74px;left: 108px; animation:fadeInLeft 1.5s 1;}
+.page3 .sync1{top: 140px;left: 108px; animation:fadeInLeft 1.5s 1;}
+.page4 .sync2{top: 140px;right: 60px; animation:fadeInLeft 1.5s 1;}
+.page4 .sync1{    top: 48px;left: 402px; animation:fadeInLeft 1.5s 1;}
+.page4 .sync3{    top: 13px;left: 15px; animation:fadeInDown 1.5s 1;}
+.page4 .sync4{    top: 348px;left: 110px; animation:fadeInUp 1.5s 1;}
+.page4 .sync5{    top: 15px;left: 16px; animation:fadeInRight 1.5s 1;}
+
+
+
+.page5 .sync2{top: 370px;right: 55px; animation:fadeInLeft 1.5s 1;}
+.page5 .sync1{top: 120px;right: -10px; animation:fadeInLeft 1.5s 1;}
+.page5 .sync3{z-index: 99;top: 305px;right: 375px; animation:fadeInLeft 1.5s 1;}
+.page5 .sync4{top: 15px;right: 391px; animation:fadeInDown 1s 1;}
+.page5 .sync5{top: 136px;right: 471px; animation:fadeInUp 1s 1;}
+.page5 .sync6{top: 218px;right: 424px; animation:fadeInRight 1s 1;}
+
+
+
+
+.videoPage.videoPage07 #video{
+	margin-top: 62px;
+}
+.videoPage07 .top_bar{
+	position: absolute;
+	top:90px;
+	left:0px;
+	width: 999px;
+	height: 27px;
+	z-index: 20;
+	background: url('../../img/content/topbar_s.png') 0 0 no-repeat;
+	background-size:100% 100%;
+}
+.videoPage07 .top_bar li{
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 27px;
+	text-align: center;
+	width: 98px;
+	color:#aaa;
+	background: url('../../img/content/topbar_s.png') 0 0 no-repeat;
+	background-size:100% 100%;
+	cursor: pointer;
+	transition: width 0.5s;
+	white-space: nowrap;
+	float: left;
+}
+
+.videoPage07 .top_bar li.on{
+	color: #aeff1e;
+	width: 607px;
+	padding-left: 20px;
+	background: url('../../img/content/topbar_l.png') 0 0 no-repeat;
+	cursor: default;
+	text-align: left;
+}
+
+.videoPage07 .top_bar li .txt{
+	display: none;
+}
+
+.videoPage07 .top_bar li.on .txt{
+	display: inline-block;
+	color: #aeff1e;
+
+}

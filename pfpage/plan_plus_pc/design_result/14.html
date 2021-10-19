@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page14">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-2 은퇴필요자금 및 부족자금]
+			</h1>
+			<div class="explain">
+				나윤석 고객님의 은퇴시점에 필요할 것으로 예상되는 자금은 총 <span>13.0억원</span>입니다.
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="content-graph">
+					<ul>
+						<li class="bubble-box"><span>고객<br>현재나이</span><br>45세</li>
+						<li class="round-box"> <p>준비기간 <b>12년</b></p></li>
+						<li class="bubble-box"><span>고객<br>은퇴시점</span><br>45세</li>
+						<li class="round-box"><p>은퇴기간 <b>29년</b></p></li>
+						<li class="bubble-box"><span>고객<br>기대수명</span><br>45세</li>
+					</ul>
+				</div>
+				<div class="table-box">
+					<div class="con_title">
+						금융자산 현황
+					</div>
+
+					<table class="page_table2">
+						<colgroup>
+						</colgroup>
+						<thead>
+							<tr>
+								<th></th>
+								<th>60세</th>
+								<th >75세이후</th>
+								<th >85세이후</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>현재가치</td>
+								<td>400만원</td>
+								<td>300만원</td>
+								<td>400만원</td>
+							</tr>
+							<tr>
+								<td>해당시점가치</td>
+								<td>500만원</td>
+								<td>469만원</td>
+								<td>726만원</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="bottom-con">
+					<ul>
+						<li>
+							<p class="page-icon1">필요</p>
+							<span>은퇴필요자금<br><span>(은퇴시점)</span></span>
+							<span>13.0억원</span>
+						</li>
+						<li>
+							<p class="page-icon1">준비</p>
+							<span>은퇴필요자금<br><span>(은퇴시점)</span></span>
+							<span>13.0억원</span>
+						</li>
+						<li>
+							<p class="page-icon2">부족</p>
+							<span>은퇴필요자금<br><span>(은퇴시점)</span></span>
+							<span>13.0억원</span>
+						</li>
+					</ul>
+
+				</div>
+				<p>가정: 물가상승률 1.5% / 은퇴전 기대수익률 4%, 은퇴후 기대수익률 3%</p>
+
+
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+
+	</script>
+</body>
+</html>

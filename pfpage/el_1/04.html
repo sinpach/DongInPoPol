@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>eduwill</title>
+	<link rel="stylesheet" href="inc/css/font/nanumbarungothic.css" />
+	<link rel="stylesheet" href="inc/css/common.css" />
+	<link rel="stylesheet" href="inc/css/animate.css" />
+
+	<link rel="stylesheet" href="inc/css/body.css" />
+	<link rel="stylesheet" href="inc/css/bottom.css" />
+	<link rel="stylesheet" href="inc/css/page03.css" />
+
+	<script src="inc/js/jquery-1.11.2.js"></script>
+	<script src="inc/js/script.js"></script>
+	<script src="inc/js/body.js"></script>
+	<script src="inc/js/bottom.js"></script>
+	<script>
+	$(document).ready(function(){
+		var video = $('#video');
+		video.on('timeupdate', function() {
+			var currentPos = parseInt(video[0].currentTime);
+			setList(currentPos);
+		});
+			var tabNums = [0]; //tab 화면 전환 싱크
+			var seq1 = [1, 2, 3]; // obj 싱크
+			var thisSeq;
+			var curTab = 1;
+
+			function setList(second) { // 화면 내 오브젝트
+				thisSeq = eval("seq" + curTab);
+				for (var i = 0; i < thisSeq.length; i++) {
+					//자막제어
+					if (second >= thisSeq[i]) {
+						$(".sync" + (i + 1)).show();
+					} else if (second < thisSeq[i]) {
+						$(".sync" + (i + 1)).hide();
+					}
+				}
+			}
+
+			function tabShow(num) {
+				$(".tab").each(function(idx) {
+					if (idx == num) {
+						$(this).show();
+					} else {
+						$(this).hide();
+					}
+				})
+			}
+
+			function setTab(second) { // 화면 전환
+				for (var i = 0; i < tabNums.length; i++) {
+					if (tabNums[i + 1]) {
+						if (second >= tabNums[i] && second < tabNums[i + 1]) {
+							tabShow(i);
+							curTab = i + 1;
+						}
+					} else {
+						if (second >= tabNums[i]) {
+							tabShow(i);
+							curTab = i + 1;
+						}
+					}
+
+				}
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Body -->
+	<div id="container" class="page4">
+		<audio id="video" class="intro aod" poster="img/poster.png">
+			<source src="media/mp3/03-01-04.mp3" type="video/mp4">
+			<track id="track" label="" src="media/vtt/04.vtt" kind="metadata" srclang="ko" default>
+		</audio>
+		<div id="header">
+			<div class="jucha">
+				3주차
+			</div>
+			<h1><span class="chasi">1교시</span>가족생활주기의 의의과 발달과제</h1>
+			<h2></h2>
+		</div>
+		<h1>
+			<span>학습목표</span>
+			<span class="fcg sub">오늘 배울 학습내용과 학습목표를 확인해 보세요. </span>
+		</h1>
+		<div class="wrap">
+			<div class="textbox_a sync sync1">
+				<ul>
+					<li>
+						<span>1. </span>
+						<span>가족생활주기의 의미에 대해 설명할 수 있다. </span>
+					</li>
+					<li>
+						<span>2. </span>
+						<span>가족생활주기에 따른 발달과제 및 새로운 가족의 특성에 대해 설명할 수 있다. </span>
+					</li>
+				</ul>
+			</div>
+			<div class="textbox_b sync sync2">
+				<ul>
+					<li>
+						<span>1. </span>
+						<span> 가족생활 주기의 의의</span>
+					</li>
+					<li>
+						<span>2. </span>
+						<span>가족생활주기의 발달과제</span>
+					</li>
+				</ul>
+			</div>
+			<div class="keyword sync sync3">
+				<ul>
+					<li>가족생활주기<p class="touch"></p></li>
+					<li>DUVAL의 8단계<p class="touch"></p></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div id="videobox">
+			<video id="video" controls autoplay poster="img/poster.png" class="dn">
+				<source src="media/vod/02.mp4" type="video/mp4">
+				<track id="track" label="" src="media/vtt/02.vtt" kind="metadata" srclang="ko" default>
+			</video>
+		</div> -->
+		<!-- Bottom -->
+		<div id="bottom" class="intro nf">
+			<div id="display"></div><button id="dis_close_btn"></button>
+			<div class="logo ir">세계사이버대학</div>
+			<div class="search">
+				<input type="text">
+				<button title="검색" class="search_btn ir">검색</button>
+			</div>
+			<div class="learningmap">
+				<button title="러닝맵" class="learning ir">러닝맵</button>
+			</div>
+			<div class="btn shortBtn">
+				<button title="단축키 팝업" class="short ir">단축키 팝업</button>
+			</div>
+			<div class="introduction">
+				<button title="강사소개" class="introductionBtn ir">단축키 팝업</button>
+			</div>
+			<div class="purpose">
+				<button title="학습목표" class="purposeBtn ir">학습목표</button>
+			</div>
+			<div class="quality dis">
+				<button title="화질" class="qualityBtn disable">HD</button>
+			</div>
+			<div class="boolmark dis">
+				<button title="북마크" class="boolmarkBtn disable ir">북마크</button>
+			</div>
+			<div class="download dis">
+				<button title="mp3다운" class="downloadBtn disable ir">북마크</button>
+			</div>
+			<div class="full dis">
+				<button title="전체화면" class="fullBtn disable ir">전체화면</button>
+			</div>
+			<div class="progressGroup">
+				<div class="progress">
+					 <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+					 	<div class="p_circle"></div>
+					 </div>
+				</div>
+				<div class="time">
+					<span class="currentTime">00:00</span> /
+					<span class="duration">00:00</span>
+				</div>
+			</div>
+			<div class="videoGroup">
+				<div class="btn playBtn">
+					<button title="재생"  class="play ir">재생</button>
+				</div>
+				<div class="btn pauseBtn">
+					<button title="일시정지" class="pause ir">일시정지</button>
+				</div>
+				<div class="btn resetBtn">
+					<button title="되돌리기" class="reset ir">되돌리기</button>
+				</div>
+				<div class="btn stopBtn">
+					<button title="정지" class="stop ir">정지</button>
+				</div>
+
+
+				<div class="btn fullBtn">
+					<button title="전체화면" class="full ir">전체화면</button>
+				</div>
+			</div>
+			<div class="rateGroup">
+				<ul class="playBackRate">
+					<li class="option">
+						<button title="1.0 배속" rate="1.0">1.0</button>
+					</li>
+					<li class="option">
+						<button title="1.2 배속" rate="1.2" >1.2</button>
+					</li>
+					<li class="option">
+						<button title="1.5 배속" rate="1.5" >1.5</button>
+					</li>
+					<li class="option">
+						<button title="2.0 배속" rate="2.0" >2.0</button>
+					</li>
+				</ul>
+			</div>
+			<div class="soundGroup">
+				<div class="btn soundBtn">
+					<button title="소리끄기" class="sound ir">소리끄기</button>
+					<button title="소리켜기" class="mute ir dn">소리켜기</button>
+				</div>
+				<div class="soundbar">
+					<button class="volume" title="볼륨">
+						<span class="volumeBar">
+
+						</span>
+
+						<span class="volume_bg"></span>
+					</button>
+				</div>
+				<div class="btn noteBtn">
+					<button title="자막" class="note ir">자막</button>
+				</div>
+			</div>
+
+			<div class="pageGroup">
+				<div class="prevPage">
+					<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+				</div>
+				<div class="currentPageNum">01</div>
+				<div class="pagebar">/</div>
+				<div class="totalPageNum">10</div>
+				<div class="nextPage">
+					<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+				</div>
+			</div>
+			<div class="nextClick dn ir">
+				click
+			</div>
+		</div>
+		<a href="#" class="mobilePlayBtn"></a>
+	</div>
+
+
+
+
+</body>
+
+</html>

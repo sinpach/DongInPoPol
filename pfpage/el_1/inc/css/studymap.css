@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+body{width:800px;height:600px;overflow:hidden;background:#fff;}
+
+
+/* 전체레이아웃 */
+.wrap{width:800px;height:600px;background:url("../../img/studymap/01/bg.png") no-repeat}
+.wrap.num0{background-image:url("../../img/studymap/01/bg.png");}
+.wrap.num1{background-image:url("../../img/studymap/02/bg.png");}
+.wrap.num2{background-image:url("../../img/studymap/03/bg.png");}
+.wrap.num3{background-image:url("../../img/studymap/04/bg.png");}
+.wrap.num4{background-image:url("../../img/studymap/05/bg.png");}
+
+.header{width:800px;height:60px;}
+.content{position:relative;width:800px;height:500px;}
+.bottom{width:800px;height:40px;}
+
+/* header */
+h1.logo{float:left;}
+#snb {float:left;height:60px;margin-left:226px;}
+#snb:after{display:block;content:"";clear:both;}
+#snb > li{float:left;margin-left:10px;margin-left: 8px;}
+#snb > li:first-child{margin-left:0px;}
+#snb > li > a{display:block;text-indent:-9999px;width:105px;height:42px;background:url("../../img/studymap/01/1_n.png") no-repeat;margin:9px 0px;}
+#snb > li.snb1 > a{background-image:url("../../img/studymap/01/1_n.png")}
+#snb > li.snb2 > a{background-image:url("../../img/studymap/01/2_n.png")}
+#snb > li.snb3 > a{background-image:url("../../img/studymap/01/3_n.png")}
+#snb > li.snb4 > a{background-image:url("../../img/studymap/01/4_n.png")}
+#snb > li.snb5 > a{background-image:url("../../img/studymap/01/5_n.png")}
+
+#snb > li.snb1 > a:hover,#snb > li.snb1.on > a{background-image:url("../../img/studymap/01/1_o.png")}
+#snb > li.snb2 > a:hover,#snb > li.snb2.on > a{background-image:url("../../img/studymap/01/2_o.png")}
+#snb > li.snb3 > a:hover,#snb > li.snb3.on > a{background-image:url("../../img/studymap/01/3_o.png")}
+#snb > li.snb4 > a:hover,#snb > li.snb4.on > a{background-image:url("../../img/studymap/01/4_o.png")}
+#snb > li.snb5 > a:hover,#snb > li.snb5.on > a{background-image:url("../../img/studymap/01/5_o.png")}
+
+/* content */
+.content > ul, .content > ul > li{width:800px;height:500px;}
+.content > ul > li{position:absolute;}
+.content > ul li.con1{}
+.content > ul li.con2{background:url("../../img/studymap/02/content.png") no-repeat 0 -60px}
+.content > ul li.con3{background:url("../../img/studymap/03/content.png") no-repeat 0 -60px}
+.content > ul li.con4{}
+.content > ul li.con5{}
+/* 04 */
+.con4 .cons{position:absolute;top:0px;left:155px;width:644px;height:490px;background:url("../../img/studymap/04/1_1.png") no-repeat -155px -60px;}
+.con4 > ul {margin-left:15px;margin-top:36px;}
+.con4 > ul > li {margin-bottom:2px;}
+.con4 > ul > li > a{display:block;width:144px;height:33px;background:url("../../img/studymap/04/1_n.png") no-repeat;text-indent:-9999px}
+.con4 > ul > li:nth-child(1) > a{background-image:url("../../img/studymap/04/1_0_n.png")}
+.con4 > ul > li:nth-child(2) > a{background-image:url("../../img/studymap/04/2_0_n.png")}
+.con4 > ul > li:nth-child(3) > a{background-image:url("../../img/studymap/04/3_0_n.png")}
+.con4 > ul > li:nth-child(4) > a{background-image:url("../../img/studymap/04/4_0_n.png")}
+
+.con4 > ul > li:nth-child(1) > a:hover,.con4 > ul > li:nth-child(1).on > a{background-image:url("../../img/studymap/04/1_0_o.png")}
+.con4 > ul > li:nth-child(2) > a:hover,.con4 > ul > li:nth-child(2).on > a{background-image:url("../../img/studymap/04/2_0_o.png")}
+.con4 > ul > li:nth-child(3) > a:hover,.con4 > ul > li:nth-child(3).on > a{background-image:url("../../img/studymap/04/3_0_o.png")}
+.con4 > ul > li:nth-child(4) > a:hover,.con4 > ul > li:nth-child(4).on > a{background-image:url("../../img/studymap/04/4_0_o.png")}
+
+.con4 > ul > li > ul{}
+.con4 > ul > li > ul > li > a{display:block;width:130px;height:26px;background:url("../../img/studymap/04/1_1_n.png") no-repeat;text-indent:-9999px;margin-left:2px;margin-bottom:2px;}
+
+.con4 > ul > li:nth-child(1) > ul > li:nth-child(1) > a{background-image:url("../../img/studymap/04/1_1_n.png")}
+.con4 > ul > li:nth-child(1) > ul > li:nth-child(2) > a{background-image:url("../../img/studymap/04/1_2_n.png")}
+
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(1) > a{background-image:url("../../img/studymap/04/2_1_n.png")}
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(2) > a{background-image:url("../../img/studymap/04/2_2_n.png")}
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(3) > a{background-image:url("../../img/studymap/04/2_3_n.png")}
+
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(1) > a{background-image:url("../../img/studymap/04/3_1_n.png")}
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(2) > a{background-image:url("../../img/studymap/04/3_2_n.png")}
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(3) > a{background-image:url("../../img/studymap/04/3_3_n.png")}
+
+.con4 > ul > li:nth-child(4) > ul > li:nth-child(1) > a{background-image:url("../../img/studymap/04/4_1_n.png")}
+.con4 > ul > li:nth-child(4) > ul > li:nth-child(2) > a{background-image:url("../../img/studymap/04/4_2_n.png")}
+
+/* hover */
+.con4 > ul > li:nth-child(1) > ul > li:nth-child(1) > a:hover,.con4 > ul > li:nth-child(1) > ul > li:nth-child(1).on > a{background-image:url("../../img/studymap/04/1_1_o.png")}
+.con4 > ul > li:nth-child(1) > ul > li:nth-child(2) > a:hover,.con4 > ul > li:nth-child(1) > ul > li:nth-child(2).on > a{background-image:url("../../img/studymap/04/1_2_o.png")}
+
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(1) > a:hover,.con4 > ul > li:nth-child(2) > ul > li:nth-child(1).on > a{background-image:url("../../img/studymap/04/2_1_o.png")}
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(2) > a:hover,.con4 > ul > li:nth-child(2) > ul > li:nth-child(2).on > a{background-image:url("../../img/studymap/04/2_2_o.png")}
+.con4 > ul > li:nth-child(2) > ul > li:nth-child(3) > a:hover,.con4 > ul > li:nth-child(2) > ul > li:nth-child(3).on > a{background-image:url("../../img/studymap/04/2_3_o.png")}
+
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(1) > a:hover,.con4 > ul > li:nth-child(3) > ul > li:nth-child(1).on > a{background-image:url("../../img/studymap/04/3_1_o.png")}
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(2) > a:hover,.con4 > ul > li:nth-child(3) > ul > li:nth-child(2).on > a{background-image:url("../../img/studymap/04/3_2_o.png")}
+.con4 > ul > li:nth-child(3) > ul > li:nth-child(3) > a:hover,.con4 > ul > li:nth-child(3) > ul > li:nth-child(3).on > a{background-image:url("../../img/studymap/04/3_3_o.png")}
+
+.con4 > ul > li:nth-child(4) > ul > li:nth-child(1) > a:hover,.con4 > ul > li:nth-child(4) > ul > li:nth-child(1).on > a{background-image:url("../../img/studymap/04/4_1_o.png")}
+.con4 > ul > li:nth-child(4) > ul > li:nth-child(2) > a:hover,.con4 > ul > li:nth-child(4) > ul > li:nth-child(2).on > a{background-image:url("../../img/studymap/04/4_2_o.png")}
+
+/* 05 */
+.con5 button{background:none;position:absolute;background:url("../../img/studymap/05/1_1.png") no-repeat;text-indent:-9999px;;cursor:pointer;z-index:10}
+.con5 button.btn1{background-image:url("../../img/studymap/05/1_1.png");width:248px;height:97px;top: 43px;left: 37px;}
+.con5 button.btn2{background-image:url("../../img/studymap/05/2_1.png");width:197px;height:64px;top: 44px;left: 537px;}
+.con5 button.btn3{background-image:url("../../img/studymap/05/3_1.png");width:186px;height:64px;top: 105px;left: 548px;}
+.con5 button.btn4{background-image:url("../../img/studymap/05/4_1.png");width:152px;height:136px;top: 158px;left: 584px;}
+.con5 button.btn5{background-image:url("../../img/studymap/05/5_1.png");width:151px;height:139px;top: 158px;left: 49px;}
+.con5 button.btn6{background-image:url("../../img/studymap/05/6_1.png");width:647px;height:355px;top: 94px;left: 65px;z-index:5}
+.con5 button.btn7{    
+	background: url("../../img/studymap/05/7_1.png") -117px 0;
+    width: 400px;
+    height: 117px;
+    top: 368px;
+    left: 155px;}
+.con5 button.btn8{background-image:url("../../img/studymap/05/8_1.png");width:154px;height:113px;top: 370px;left: 491px;}
+.con5 button.btn9{background-image:url("../../img/studymap/05/9_1.png");width:142px;height:114px;top:0px;left:0px;top: 369px;left: 596px;}
+
+.con5 button.btn1:hover{background-image:url("../../img/studymap/05/1_2.png")}
+.con5 button.btn2:hover{background-image:url("../../img/studymap/05/2_2.png")}
+.con5 button.btn3:hover{background-image:url("../../img/studymap/05/3_2.png")}
+.con5 button.btn4:hover{background-image:url("../../img/studymap/05/4_2.png")}
+.con5 button.btn5:hover{background-image:url("../../img/studymap/05/5_2.png")}
+.con5 button.btn6:hover{background-image:url("../../img/studymap/05/6_2.png")}
+.con5 button.btn7:hover{background-image:url("../../img/studymap/05/7_2.png")}
+.con5 button.btn8:hover{background-image:url("../../img/studymap/05/8_2.png")}
+.con5 button.btn9:hover{background-image:url("../../img/studymap/05/9_2.png")}
+
+/* bottom */
+	#bottom{
+		width: 800px;
+		height: 40px;
+		position: relative;
+	}
+
+	#bottom .pageGroup{
+		position: absolute;
+		height: 40px;
+		top: 0;
+		right:20px;
+	}
+
+	#bottom .pageGroup div{
+		float: left;
+	}
+
+	#bottom .verbar{width:10px;height:40px;line-height:40px;font-size:16px;color:#fff;text-align:left;margin-right:5px}
+
+	#bottom .pageGroup .prevPage,
+	#bottom .pageGroup .nextPage{
+		width: 14px;
+		height: 40px;
+		margin-left: 5px;
+	}
+
+	#bottom .pageGroup .currentPageNum{
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		width: 20px;
+		height: 40px;
+		line-height: 40px;
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+
+	#bottom .pageGroup .currentPageNum.first{
+		color: #666;
+	}
+
+	#bottom .pageGroup .currentPageNum.hover{
+		color: #1d6bbb;
+	}
+
+	#bottom .pageGroup .totalPageNum{
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		width: 20px;
+		height: 40px;
+		line-height: 40px;
+		margin-right: 5px;
+	}
+
+	#bottom .pageGroup .totalPageNum.last{
+		color: #666;
+	}
+
+	#bottom .pageGroup .totalPageNum.hover{
+		color: #1d6bbb;
+	}
+
+	#bottom .pageGroup div.prevPage a,
+	#bottom .pageGroup div.nextPage a{
+		width: 100%;
+		height: 100%;
+	}
+
+	#bottom .pageGroup div.prevPage a.prevPageBtn{
+		background: url('../../img/bottom/pagePrev_n.png') 0 7px no-repeat;
+	}
+
+	#bottom .pageGroup div.prevPage a.prevPageBtn:hover{
+		background: url('../../img/bottom/pagePrev_o.png') 0 7px no-repeat;
+	}
+
+	#bottom .pageGroup div.prevPage a.prevPageBtn.first,
+	#bottom .pageGroup div.nextPage a.nextPageBtn.last
+	{
+		cursor: default;
+	}
+
+	#bottom .pageGroup div.prevPage a.prevPageBtn.first,
+	#bottom .pageGroup div.prevPage a.prevPageBtn.first:hover{
+		background: url('../../img/bottom/pagePrev_dis.png') 0 7px no-repeat;	
+	}
+
+	#bottom .pageGroup div.nextPage a.nextPageBtn{
+		background: url('../../img/bottom/pageNext_n.png') 0 7px no-repeat;
+	}
+
+	#bottom .pageGroup div.nextPage a.nextPageBtn:hover{
+		background: url('../../img/bottom/pageNext_o.png') 0 7px no-repeat;
+	}
+
+	#bottom .pageGroup div.nextPage a.nextPageBtn.last,
+	#bottom .pageGroup div.nextPage a.nextPageBtn.last:hover{
+		background: url('../../img/bottom/pageNext_dis.png') 0 7px no-repeat;
+	}

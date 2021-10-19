@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page45">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[8-7 조정 전ㆍ후 총자산 자산배분 비교]
+			</h1>
+			<div class="explain">
+				보유하고 있는 총자산의 조정 전ㆍ후 자산배분을 비교하여 보여줍니다.
+			</div>
+			<h2 class="page_title c2">08  | 투자설계</h2>
+			<div class="content">
+				<div class="table-box top">
+
+					<div class="left-box">
+
+						<div class="content-box">
+							<div class="con_title">
+								조정 전 총자산 구성
+							</div>
+							<ul>
+								<li class="risk_low"><span>단기/예적금</span><p>52%</p><div>90,000만원</div></li>
+								<li class="risk_high"><span>주식자산</span><p>14%</p><div>90,000만원</div></li>
+								<li><span>대안자산</span><p>0%</p><div>90,000만원</div></li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="right-box">
+
+						<div class="content-box">
+							<div class="con_title">
+								조정 후 총자산 구성
+							</div>
+							<ul>
+								<li class="risk_low"><span>단기/예적금</span><p>52%</p><div>90,000만원</div></li>
+								<li class="risk_high"><span>주식자산</span><p>14%</p><div>90,000만원</div></li>
+								<li><span>대안자산</span><p>0%</p><div>90,000만원</div></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="table-box">
+
+					<div class="table-wrap">
+						<div class="con_title m">
+							조정 전ㆍ후 총자산 구성 비중 변화
+						</div>
+						<table class="page_table">
+							<colgroup>
+								<col style="">
+								<col style="width:10%">
+								<col style="width:14%">
+								<col style="width:6%">
+								<col style="width:10%">
+								<col style="width:14%">
+								<col style="width:6%">
+								<col style="width:8%">
+								<col style="width:8%">
+								<col style="width:8%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="tc">자산구분</th>
+
+									<th class="tc" colspan="3">조정 전</th>
+									<th class="tc" colspan="3">조정 후</th>
+									<th class="tc" colspan="3">비중조정</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td  class="tc">저위험 자산<span>52%</span></td>
+
+									<td class="bdr_n tc">0000만원</td>
+									<td class="high_bar1 barstat lowrisk bdr_n"><p></p></td>
+									<td class="tc"></td>
+									<td class="bdr_n tc">0000만원</td>
+									<td class="middle_bar1 barstat lowrisk bdr_n"><p></p></td>
+									<td class="tc">31%</td>
+									<td class="weight">-</td>
+									<td class="weight">0.0%</td>
+									<td class="weight"><span class="keep">유지</span></td>
+								</tr>
+
+								<tr>
+									<td class="tc">고위험 자산 <span>31%</span></td>
+									<td class="bdr_n tc">0000만원</td>
+									<td class="high_bar1 barstat highrisk bdr_n"><p></p></td>
+									<td class="tc">11%</td>
+									<td class="bdr_n tc">0000만원</td>
+									<td class="middle_bar1 barstat highrisk bdr_n"><p></p></td>
+									<td class="tc">95%</td>
+									<td class="weight">15,000만원</td>
+									<td class="weight">0.9%</td>
+									<td class="weight"><span class="expand">확대</span></td>
+								</tr>
+
+								<tr>
+									<td class="tc">중위험 자산<span>17%</span></td>
+									<td class="bdr_n tc">0000만원</td>
+									<td class="high_bar1 barstat middlerisk bdr_n"><p></p></td>
+									<td class="tc">5%</td>
+									<td class="bdr_n tc">0000만원</td>
+									<td class="middle_bar1 barstat middlerisk bdr_n"><p></p></td>
+									<td class="tc">5%</td>
+									<td class="weight"> 15,000만원</td>
+									<td class="weight">0.9%</td>
+									<td class="weight"><span class="reduction">축소</span></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>합계</td>
+									<td>109,200만원</td>
+									<td colspan="2">100%</td>
+									<td>19,200</td>
+									<td colspan="2">100%</td>
+									<td class="weight">9,000만원</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		function horizonBarAnimate2(risk){
+		  for (var i = 0; i < 6; i++) {
+		    var high_bar = $(".high_bar"+i+risk);
+		    var high_barWidth = high_bar.children('p');
+		    var high_barText = high_bar.next('td').text();
+		    high_barWidth.animate({width:[high_barText]});
+
+		    var safe_bar = $(".safe_bar"+i+risk);
+		    var safe_barWidth = safe_bar.children('p');
+		    var safe_barText = safe_bar.next('td').text();
+		    safe_barWidth.animate({width:[safe_barText]});
+
+		    var middle_bar = $(".middle_bar"+i+risk);
+		    var middle_barWidth = middle_bar.children('p');
+		    var middle_barText = middle_bar.next('td').text();
+		    middle_barWidth.animate({width:[middle_barText]});
+		  }
+
+		}
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+		});
+		$(window).on('load',function(){
+
+			horizonBarAnimate2(".highrisk")
+			horizonBarAnimate2(".middlerisk")
+			horizonBarAnimate2(".lowrisk")
+		});
+
+
+	</script>
+</body>
+</html>

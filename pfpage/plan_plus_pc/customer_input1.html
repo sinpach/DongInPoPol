@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+</head>
+<body>
+	<div id="body">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<h3 class="left-title green2">
+				<img src="images/common/left-title-logo.png" alt="">
+				고객관리
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="./customer_list.html">고객관리리스트</a>
+				</li>
+				<li class="green">
+					<a class="on" href="./customer_input1.html">고객등록</a>
+				</li>
+				<li class="green">
+					<a href="./customer_group.html">고객그룹관리</a>
+				</li>
+				<li class="green">
+					<a href="./calendar.html">상담캘린더</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<!-- 01-19 추가 시작  -->
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<!-- 01-19 추가 끝  -->
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" class="on">
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content customer-input">
+				<h4 class="table-title">고객등록</h4>
+				<div class="customer-input-btns">
+					<a href="./customer_input1.html" class="on">개별입력</a>
+					<a href="./customer_input2.html">붙여넣기 입력</a>
+				</div>
+				<div class="btnwrap">
+					<a href="#" class="btn add-btn">
+						<span><img src="images/common/icon4.png" alt="">추가</span>
+					</a>
+					<a href="#" class="btn">
+						<span><img src="images/common/icon2.png" alt="">삭제</span>
+					</a>
+				</div>
+				<div class="table-box">
+					<div class="scrollwrap mCustomScrollbar light" data-mcs-theme="minimal-dark">
+						<table class="basic-table">
+							<colgroup>
+								<col style="width: 35px;">
+								<col style="width: 115px;">
+								<col style="width: 140px;">
+								<col>
+								<col>
+								<col>
+								<col style="width: 85px;">
+								<col style="width: 105px;">
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="tac">
+										<input type="checkbox" value="">
+									</th>
+									<th class="tal">구분</th>
+									<th>이름</th>
+									<th>근무처명</th>
+									<th>주민번호앞자리</th>
+									<th>실제생일</th>
+									<th>나이</th>
+									<th class="tal">성별</th>
+									<th>전화번호</th>
+									<th class="tal">특이사항</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="tc">
+										<input type="checkbox" value="">
+									</td>
+									<td>
+										<select class="blan" name="gubun" id="">
+											<option value="">구분</option>
+											<option value="1">본인</option>
+											<option value="1">배우자</option>
+											<option value="1">기타</option>
+										</select>
+									</td>
+									<td><input type="text" name="Name" class="tac"/></td>
+									<td><input type="text" class="tac"/></td>
+									<td><input type="text" class="tac"/></td>
+									<td><input type="text" class="tac"/></td>
+									<td class="tac"><input type="text" class="tac"/></td>
+									<td>
+										<select class="blan" name="gender" id="">
+											<option value="">성별</option>
+											<option value="">남</option>
+											<option value="">여</option>
+										</select>
+									</td>
+									<td><input type="text" class="tac"/></td>
+									<td><input type="text"/></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<select class="blan" name="" id="groupSelect">
+						<option value="">그룹설정</option>
+						<option value="">가족</option>
+						<option value="">회사</option>
+						<option value="">기본</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src='./js/script.js'></script><!-- 01-19 추가 시작  -->
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(function(){
+			var inputTr = +
+				'<td class="tc">'+
+					'<input type="checkbox" value="">'+
+				'</td>' +
+				'<td class="tc">' +
+					'<input type="checkbox" value="">' +
+				'</td>' +
+				'<td>' +
+					'<select class="blan" name="gubun" id="">' +
+						'<option value="">구분</option>' +
+						'<option value="1">본인</option>' +
+						'<option value="1">배우자</option>' +
+						'<option value="1">기타</option>' +
+					'</select>' +
+				'</td>' +
+				'<td><input type="text" name="Name" class="tac"/></td>' +
+				'<td><input type="text" class="tac"/></td>' +
+				'<td><input type="text" class="tac"/></td>' +
+				'<td><input type="text" class="tac"/></td>' +
+				'<td class="tac"><input type="text" class="tac"/></td>' +
+				'<td>' +
+					'<select class="blan" name="gender" id="">' +
+						'<option value="">성별</option>' +
+						'<option value="">남</option>' +
+						'<option value="">여</option>' +
+					'</select>' +
+				'</td>' +
+				'<td><input type="text" class="tac"/></td>' +
+				'<td><input type="text"/></td>';
+			$('.add-btn').click(function(e){
+				if($('.basic-table tbody tr').length > 10){
+					$('.scrollwrap').css('padding-right','20px')
+				}
+				$('.basic-table tbody').append('<tr>'+inputTr+'</tr>');
+			});
+		});
+	</script>
+</body>
+</html>

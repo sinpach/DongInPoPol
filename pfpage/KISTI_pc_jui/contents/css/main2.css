@@ -1,0 +1,48 @@
+@charset "utf-8";
+.subRange {
+  width: fit-content;
+  background: #e2e2e2;
+  padding-bottom: 4px;
+}
+.unified_searchui .search_ui_wrap {
+  margin: 30px auto;
+}
+.unified_searchui .search_ui_wrap>a:last-child{
+  right: -210px !important;
+}
+.unified_searchui .icon_search_detail {
+  top: 35%
+}
+.rescan {
+  position: absolute;
+  left: 638px;
+  bottom: 0px;
+  font-size: .875rem;
+  color: #fff;
+  padding-left: 20px;
+  width: 120px;
+}
+
+.sch_filter .chk_list>li>label {
+  font-size: 12px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 630px;
+}
+
+
+
+
+.filter_applied {
+  display: inline-block;
+  font-size: .75rem;
+  vertical-align: middle;
+  padding-left: 25px;
+  background: url(../images/usr/schfilter_icon.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 14px 17px;
+}
+

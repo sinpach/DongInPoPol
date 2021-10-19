@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="./css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides {
+			 display:none;
+		 }
+	</style>
+</head>
+<body>
+	<div id="body" class="body-custom">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo4.png" alt="">
+				보장설계
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a href="#" class="on">사망보장자산 분석</a>
+
+				</li>
+				<li class="green">
+					<a href="./guarantee_plan2_1.html" >건강보장자산 분석</a>
+				</li>
+
+			</ul>
+			<div class="left-menu-statwrap">
+				<div class="left-menu-stats">
+					<h3 class="left-title ">
+						<img src="images/common/left-title-logo-sub1.png" alt="">
+						고객 사망보장 부족자금
+					</h3>
+					<p>
+						<span class="num">000</span><span>억원</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar ">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="#" class="guarantee_plan-bar on">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content guarantee_plan1">
+				<div class="step">
+					<div class="step-title">
+						<span class="green eng">Setp 8.</span>
+						<span class="eng"> Develop family insurance plans</span>
+					</div>
+					<p class="title-sub">
+						가족의 위험보장을 설계합니다.
+					</p>
+				</div>
+				<h4 class="table-title">사망보장자산 분석</h4>
+				<ul class="customer-input-btns2 ">
+					<li class="on">
+						<a href="#">고객</a>
+					</li>
+					<li >
+						<a href="./guarantee_plan1_2.html">배우자</a>
+					</li>
+
+				</ul>
+				<div class="slide-box">
+					<div id="slides">
+						<div class="slide-contents">
+							<div class="content-title">▶ 사망보장 준비자금 분석</div>
+
+							<div class="table-wrap">
+								<div class="left-table">
+									<h4 class="table-title">① 인적자산 (Human Capital)</h4>
+									<table class="slide-table">
+										<colgroup>
+											<col style="width:65%">
+											<col style="width:35%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class=""><u>고객</u> 근로(사업)소득</th>
+												<th class="t_a_r">월800만원</th>
+											<tr>
+												<th class=""><u>고객</u> 퇴직금</th>
+												<th class="t_a_r">1억원</th>
+											</tr>
+											<tr>
+												<th class=""><u>고객</u> 현재나이</th>
+												<th class="t_a_r"> 45세</th>
+											</tr>
+											<tr>
+												<th class=""><u>고객</u> 은퇴시점</th>
+												<th class="t_a_r">60세</th>
+											</tr>
+											<tr>
+												<th class="">소득기간</th>
+												<th class="t_a_r">15년</th>
+											</tr>
+										</tbody>
+
+									</table>
+									<div class="table-footer">
+										<p>· 고객 인적자산</p>
+										<p>14.2억원</p>
+									</div>
+								</div>
+								<div class="right-table">
+									<h4 class="table-title">② 고객 부재시 최소 필요자금 (현재가치)</h4>
+									<table class="slide-table">
+										<colgroup>
+											<col style="width:30%">
+											<col style="width:27%">
+											<col style="width:18%">
+											<col style="width:20%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="">부채잔액</th>
+												<th class="tc">20,000만원</th>
+												<th class="tc">준비율</th>
+												<td class="tc">100%</td>
+											<tr>
+												<th class="">자녀교육필요자금</th>
+												<th class="tc">24,000만원</th>
+												<th class="tc">준비율</th>
+												<td class="tc">100%</td>
+											</tr>
+											<tr>
+												<th class="">은퇴전 생활비</th>
+												<th class="tc">49,000만원</th>
+												<th class="tc">준비율</th>
+												<td class="tc">50%</td>
+											</tr>
+											<tr>
+												<th class="">은퇴후 생활비</th>
+												<th class="tc">36,000만원</th>
+												<th class="tc">준비율</th>
+												<td class="tc">50%</td>
+											</tr>
+											<tr>
+												<th class="">기타필요자금</th>
+												<td class="tc"></td>
+												<th colspan="2"></th>
+											</tr>
+										</tbody>
+
+									</table>
+									<div class="table-footer">
+										<p>· 고객 부재시 최소 필요자금</p>
+										<p>14.2억원</p>
+									</div>
+								</div>
+								<div class="bottom-result">
+									<p>· 사망보장 필요자금 (max ①,②) </p>
+									<p>14.2억원</p>
+								</div>
+							</div>
+						</div>
+						<div class="slide-contents">
+							<div class="table-wrap">
+								<div class="left-table">
+										<div class="content-title">▶ 사망보장 준비자금 분석</div>
+									<table class="slide-table">
+										<colgroup>
+											<col style="width:65%">
+											<col style="width:35%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="">현재시점 순자산</th>
+												<th class="t_a_r">9.4억원</th>
+											<tr>
+												<th class="">사망보험금(일반사망)</th>
+												<th class="t_a_r">2.0억원</th>
+											</tr>
+										</tbody>
+									</table>
+									<div class="table-footer">
+										<p>· 사망보장 준비자금</p>
+										<p>11.4억원</p>
+									</div>
+								</div>
+								<div class="right-table">
+										<div class="content-title">▶ 사망보장 부족자금 분석</div>
+									<table class="slide-table">
+										<colgroup>
+											<col style="width:65%">
+											<col style="width:35%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="">사망보장 필요자금</th>
+												<th class="t_a_r">9.4억원</th>
+											<tr>
+												<th class="">사망보장 준비자금</th>
+												<th class="t_a_r">2.0억원</th>
+											</tr>
+										</tbody>
+									</table>
+									<div class="table-footer">
+										<p>· 사망보장 부족자금</p>
+										<p>11.4억원</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/jquery.slides.js"></script>
+	<script src="./js/d3.v3.min.js"></script>
+	<script src="./js/c3.js"></script>
+	<script src="./js/custom_chart_bar_stacked.js"></script>
+	<script src="./js/script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(function(){
+
+			$("#slides").slidesjs({
+				width: 1120,
+				height: 500
+			});
+
+		});
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+
+	</script>
+</body>
+</html>

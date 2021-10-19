@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+#wrapper{position:relative;}
+
+/* 상단 헤더 */
+	#header{
+		position:fixed;top:0;left:0;overflow:hidden;width:100%;height:90px;background-color:rgba(255,255,255,0.8);z-index:1000;
+		-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+	#header *{-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+	#header:after{position:absolute;bottom:0;left:50%;width:1300px;height:1px;margin-left:-650px;background-color:#002e6e;content:'';z-index:1001}
+	#header:before{position:absolute;bottom:0;left:50%;width:150px;height:1px;margin-left:-650px;background-color:#f37b70;content:'';z-index:1002}
+	#header h1{position:absolute;top:15px;;left:0;width:430px;}
+	#header h1 img{height:60px;}
+	#header .morebtn{position:absolute;top:20px;right:0;}
+	#header .morebtn a{display:block;width:50px;height:50px;line-height:50px;color:#f37b70;font-size:24px;text-align:center;}
+	#header #gnb{margin-left:480px;}
+	#header #gnb a{display:block;color:#212121;text-align:center;}
+	#header #gnb > ul > li > a{height:90px;line-height:90px;padding:0 45px;font-weight:bold;font-size:20px;}
+	#header #gnb > ul > li > ul > li > a{height:40px;line-height:40px;font-size:16px;}
+	#header:hover{height:350px;background-color:rgba(255,255,255,1);}
+
+	.scrollOn #header{height:60px}
+	.scrollOn #header h1{top:10px}
+	.scrollOn #header h1 img{height:40px}
+	.scrollOn #header .morebtn{top:5px;}
+	.scrollOn #header #gnb > ul > li > a{height:60px;line-height:60px;}
+	.scrollOn #header:hover{height:310px}
+
+	#header.mainMode:after,
+	#header.mainMode:before{display:none;}
+	#header.mainMode{background-color:rgba(5,14,29,0.4);}
+	#header.mainMode:hover{background-color:rgba(0,46,110,1);}
+	#header.mainMode .morebtn a{color:#fff}
+	#header.mainMode #gnb a{color:#fff}
+
+/* 메인페이지 */
+	#mainContainer{}
+	#mainContainer h2.mainTit em{font-family: 'Arita-buri-SemiBold';font-size:48px;color:#002e6e}
+	#mainContainer h2.mainTit .lineline{margin:15px 0;}
+	#mainContainer h2.mainTit .lineline span{display:inline-block;width:52px;height:2px;margin:0 3px;background-color:#002e6e;vertical-align:top}
+	#mainContainer h2.mainTit .lineline span.on{background-color:#f37b70}
+	#mainContainer h2.mainTit small{color:#686868;font-size:20px;font-weight:300;}
+	#mainContainer a.viewmorebtn{
+		display:inline-block;height:44px;line-height:44px;padding:0 28px;margin-top:30px;border:1px solid #da6458;color:#da6458;text-transform:uppercase;
+		-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+	#mainContainer a.viewmorebtn:hover{background-color:#da6458;color:#fff;}
+
+	/* 메인 슬라이드 */
+		#mainSlide{position:relative;padding-bottom:36px;background-color:#002e6e}
+		#mainSlide .gallery-top ul li{position:relative;height:985px;}
+		#mainSlide .gallery-top ul li.main_slide1{}
+		#mainSlide .gallery-top ul li.main_slide2{}
+		#mainSlide .gallery-top ul li.main_slide3{}
+		#mainSlide .gallery-top ul li.main_slide4{}
+		#mainSlide .gallery-top ul li p{padding-top:250px;text-align:center;color:#fff;letter-spacing:-.5pt}
+		#mainSlide .gallery-top ul li p em{display:block;font-size:50px;margin-top:10px;}
+		#mainSlide .gallery-top ul li p span{display:block;font-size:34px;margin-top:10px;}
+		#mainSlide .gallery-top .swiper-pagination{bottom:445px}
+		#mainSlide .gallery-top .swiper-pagination .swiper-pagination-bullet{
+			width:16px;height:16px;border:2px solid #fff;border-radius:8px;opacity:1;background-color:#fff;
+			-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;
+			-moz-box-shadow:0px 1px 1px rgba(132,183,181,0.2);-webkit-box-shadow:0px 1px 1px rgba(132,183,181,0.2);box-shadow:0px 1px 1px rgba(132,183,181,0.2)}
+		#mainSlide .gallery-top .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{width:45px;background-color:#2a68ac}
+		#mainSlide .historyname{position:absolute;bottom:125px;left:50%;width:1100px;margin-left:-550px;z-index:10}
+		#mainSlide .historyname ul li{position:relative;margin-left:33px}
+		#mainSlide .historyname ul li:first-child{margin-left:0}
+		#mainSlide .historyname ul li a{
+			display:block;
+			-moz-box-shadow:5px 4px 11px rgba(0,0,0,0.5);-webkit-box-shadow:5px 4px 11px rgba(0,0,0,0.5);box-shadow:5px 4px 11px rgba(0,0,0,0.5)}
+		#mainSlide .historyname ul li a span{
+			position:absolute;top:0;left:0;bottom:0;width:100%;border:3px solid #fff;padding-top:100px;text-align:center;font-size:20px;text-shadow:1px 1px 1px rgba(0,0,0,0.8);font-weight:bold;;color:#fff;
+			-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+		#mainSlide .historyname ul li a:hover span{padding-top:60px;background-color:rgba(0,0,0,0.4)}
+	
+	/* 기관 변천사 */
+		#mainMilestones{padding:140px 0 140px 410px;}
+		#mainMilestones h2.mainTit{position:absolute;top:140px;left:0;}
+		#mainMilestones .mainMilestones_con .tabmnu{margin-bottom:50px;background-color:#efefef}
+		#mainMilestones .mainMilestones_con .tabmnu ul li{position:relative;width:25%;}
+		#mainMilestones .mainMilestones_con .tabmnu ul li a{display:block;height:60px;line-height:60px;border-bottom:1px solid #b7b7b7;text-align:center;color:#686868;font-size:18px;}
+		#mainMilestones .mainMilestones_con .tabmnu ul li a:after{position:absolute;top:50%;left:0;width:1px;height:24px;margin-top:-12px;background-color:#b7b7b7;content:''}
+		#mainMilestones .mainMilestones_con .tabmnu ul li a.current{border-color:#730000;background-color:#730000;color:#fff;}
+		#mainMilestones .mainMilestones_con .tabmnu ul li:first-child a:after,
+		#mainMilestones .mainMilestones_con .tabmnu ul li a.current:after{display:none;}
+		#mainMilestones .mainMilestones_con .tab_unit h3{margin-bottom:20px;font-size:40px;}
+		#mainMilestones .mainMilestones_con .tab_unit h3 em{color:#0d8095;font-weight:bold;letter-spacing:-.5pt}
+		#mainMilestones .mainMilestones_con .tab_unit h3 small{font-weight:300;color:#212121}
+		#mainMilestones .mainMilestones_con .tab_unit h4{font-size:20px;font-weight:bold;}
+		#mainMilestones .mainMilestones_con .tab_unit p{margin-top:5px;font-size:18px;}
+		#mainMilestones .mainMilestones_con .tab_unit .imgbox{margin-top:20px;}
+	
+	/* 정책과 연구 */
+		#mainPolicyResearch{padding:140px 0 120px;background-color:#f3f3f3}
+		#mainPolicyResearch .pr_list{margin-top:50px;}
+		#mainPolicyResearch .pr_list ul li{position:relative;width:32%;margin-left:2%;margin-bottom:20px;}
+		#mainPolicyResearch .pr_list ul li:nth-child(3n+1){margin-left:0;}
+		#mainPolicyResearch .pr_list ul li a{
+			display:block;padding:15px 0 15px 60px;background-color:#fff;
+			-webkit-transition:.6s ease-in-out;-moz-transition:.6s ease-in-out;-o-transition:.6s ease-in-out;transition:.6s ease-in-out;
+			-moz-box-shadow:0px 0px 0px rgba(0,0,0,0.0);-webkit-box-shadow:0px 0px 0px rgba(0,0,0,0.0);box-shadow:0px 0px 0px rgba(0,0,0,0.0)}
+		#mainPolicyResearch .pr_list ul li a em{display:inline-block;vertical-align:middle}
+		#mainPolicyResearch .pr_list ul li a span{display:inline-block;margin-left:20px;font-size:24px;vertical-align:middle}
+		#mainPolicyResearch .pr_list ul li a:hover{-moz-box-shadow:4px 8px 11px rgba(0,0,0,0.1);-webkit-box-shadow:4px 8px 11px rgba(0,0,0,0.1);box-shadow:4px 8px 11px rgba(0,0,0,0.1)}
+
+	/* 기록물 아카이브 */
+		#mainArchives{padding:140px 0 120px}
+		#mainArchives .archives_list{margin-top:50px;}
+		#mainArchives .archives_list ul li{position:relative;width:49%;margin-left:2%;margin-bottom:20px;}
+		#mainArchives .archives_list ul li:nth-child(2n+1){margin-left:0;}
+		#mainArchives .archives_list ul li a{
+			display:block;padding-left:240px;background-color:#e2e2e2;color:#212121;
+			-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+		#mainArchives .archives_list ul li a em.txt{position:absolute;bottom:30px;left:40px;}
+		#mainArchives .archives_list ul li a em.txt strong{display:block;margin-bottom:10px;font-size:20px;}
+		#mainArchives .archives_list ul li a em.txt span{display:block;line-height:20px;font-size:16px;}
+		#mainArchives .archives_list ul li a:hover{background-color:#730000;color:#fff}
+	
+	/* KIHASA 성과 50선 */
+		#mainTracks{position:relative;padding:140px 0;background:url("../img/main_tofd_bg.jpg") no-repeat center;background-size:cover}
+		#mainTracks .mainTit{position:absolute;top:0;right:0;width:450px;}
+		#mainTracks .lc{float:left;width:740px;}
+		#mainTracks .lc .trackbox{overflow:hidden;height:660px;}
+		#mainTracks .lc .trackbox .mCSB_scrollTools{left:0;right:auto}
+		#mainTracks .lc .trackbox ul{padding-left:40px;}
+		#mainTracks .lc .trackbox ul li a{
+			display:block;padding:20px 0;color:#212121;font-size:20px;
+			-webkit-transition:.3s ease-in-out;-moz-transition:.3s ease-in-out;-o-transition:.3s ease-in-out;transition:.3s ease-in-out;}
+		#mainTracks .lc .trackbox ul li a:hover{padding:18px 0;font-size:22px;color:#0d8095;font-weight:bold;}
+		#mainTracks .rc{float:right;width:450px;padding-top:330px;}
+		#mainTracks .rc .choice_con a{display:block;}
+		#mainTracks .rc .choice_con a strong{display:block;margin-bottom:10px;font-size:20px;letter-spacing:-.5pt}
+		#mainTracks .rc .choice_con a span{display:block;line-height:24px;font-size:16px;}
+	
+/* 서브 페이지 */
+	#container{padding-top:115px;}
+	#container .subTopTit{padding-bottom:30px}
+	#container .subTopTit .locationarea{text-align:right}
+	#container .subTopTit h1.subTit{margin-top:15px;font-size:38px;}
+	#container .subTopTit h1.subTit em{display:inline-block;font-family: 'Arita-buri-SemiBold';color:#002e6e}
+	#container .subTopTit h1.subTit small{display:inline-block;margin-left:10px;font-weight:300}
+
+/* 하단 푸터 */
+	#footer{border-top:1px solid #a3a3a3;color:#666}
+	#footer .respon{padding:25px 0 25px 190px;background:url("../img/foot_logo.png") no-repeat center left;background-size:160px auto;}
+	#footer .respon .addr li{margin-right:40px}
+	#footer .respon p.copyright{margin-top:10px;color:#999;font-weight:300}

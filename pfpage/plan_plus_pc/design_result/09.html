@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page09">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[2-4 가계 재무지표 분석]
+			</h1>
+			<div class="explain">
+				재무지표 분석은 주요 재무 항목에 대한 나윤석님 가족의 재무상태를 파악하고 문제점을 개선하는 절차입니다
+			</div>
+			<h2 class="page_title c2">02  | 재무상태 분석</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="table-wrap">
+						<div class="left-box">
+							<table class="page_table2">
+								<colgroup>
+									<col style="width:50%">
+									<col style="">
+								</colgroup>
+								<thead>
+									<tr >
+										<th colspan="2">재무지표 개선 필요 항목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../images/result/excessive.png" alt=""></td>
+										<td>
+											<span>ㆍ보장성보험준비지표</span>
+											<span>ㆍ투자성향지표</span>
+											<span>ㆍ금융자산비중지표</span>
+										</td>
+									</tr>
+									<tr>
+										<td><img src="../images/result/shortage.png" alt=""></td>
+										<td>
+											<span>ㆍ비상자금지표</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right-box">
+							<table class="page_table2">
+								<colgroup>
+									<col style="width:13%">
+									<col style="width:">
+									<col style="width:">
+									<col style="width:14%">
+									<col style="width:14%">
+									<col style="width:14%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th colspan="2">가계 재무지표</th>
+										<th>권장</th>
+										<th>고객</th>
+										<th>분석결과</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="7">건정성</td>
+										<td>비상자금지표</td>
+										<td><span>(비상예비자금/월지출)</span></td>
+										<td>4.0배</td>
+										<td>7.5배</td>
+										<td><span class="shortage">부족</span></td>
+									</tr>
+									<tr>
+										<td>소비생활부채상환지표</td>
+										<td><span>(신용대출상환액/월소득)</span></td>
+										<td>10% 이하</td>
+										<td>2.3%</td>
+										<td><span class="optimum">적정</span></td>
+									</tr>
+									<tr>
+										<td>부동산부채상환지표</td>
+										<td><span>(담보대출상환액/월소득)</span></td>
+										<td>20% 이하</td>
+										<td>3.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td>가계수지지표</td>
+										<td><span>(월지출/월소득)</span></td>
+										<td>80% 이하</td>
+										<td>74.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td>부채상환지표</td>
+										<td><span>(월부채상환액/월소득)</span></td>
+										<td>25% 이하</td>
+										<td>5.8%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td>총부채부담지표</td>
+										<td><span>(총부채/총자산)</span></td>
+										<td>20% 이하</td>
+										<td>13.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td>보장성보험준비지표</td>
+										<td><span>(월보장성보험료/월소득)</span></td>
+										<td>8~10%</td>
+										<td>3.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td rowspan="4">성장성</td>
+										<td>저축성향지표</td>
+										<td><span>(월저축액/월소득)</span></td>
+										<td>4.0배</td>
+										<td>7.5배</td>
+										<td><span class="shortage">부족</span></td>
+									</tr>
+									<tr>
+										<td>투자성향지표</td>
+										<td><span>(투자성월적립액/월저축액득)</span></td>
+										<td>10% 이하</td>
+										<td>2.3%</td>
+										<td><span class="optimum">적정</span></td>
+									</tr>
+									<tr>
+										<td>노후대비저축지표</td>
+										<td><span>(연금자산월적립액/월저축액)</span></td>
+										<td>20% 이하</td>
+										<td>3.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+									<tr>
+										<td>금융자신비중지표</td>
+										<td><span>(금융자산/총자산)</span></td>
+										<td>80% 이하</td>
+										<td>74.4%</td>
+										<td><span class="excessive">과도</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+
+					<div class="info_box">
+						상기 재무지표 분석은 한국 FP학회의 한국형재무비율 도출 및 가이드라인 논문(2012.12.7)에서 제시한 권장 기준에 근거하여 작성되었으며 당사는 그 정확성이나 안전성을 보장할 수 없습니다. 따라서 어떠한 경우에도 본 자료는 고객의 투자 결과에 대한 법적 책임소재에 대한 증빙자료로 사용될 수 없습니다.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+		});
+
+	</script>
+</body>
+</html>

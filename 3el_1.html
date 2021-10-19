@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/el1_1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/el1_2.png" alt="">
+                </div>
+
+                
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: e-learning</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/el_1/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                e-learning 콘텐츠 제작 <br>
+                HTML5, css, javascript 이용한 동영상제어 및 퀴즈, <br> 동적 기능 작업
+                
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <pre>
+              <code>
+$(document).ready(function(){
+	var aod = $('audio');
+	if(aod.length > 0){
+		aod[0].load();
+		aod[0].removeAttribute('controls');
+
+		aod.on('loadedmetadata', function() {
+            $('.aod-progress-bar').css('width',0);  
+            $('.aodpause').hide();
+            $('.aodplay').css('display','block');
+            $('.ttime').text(timeFormat(aod[0].duration));
+            updateVolume(0, 1);
+        });
+
+		aod[0].onplay = function () {
+            $('.aodplay').hide();
+            $('.aodpause').css('display','block');
+        };
+
+        aod.on('ended',function(){
+            $('.aodpause').hide();
+            $('.aodplay').css('display','block');
+        });
+
+        //시간값 변경
+        var timeFormat = function(seconds){
+            var m = Math.floor(seconds/60)<10 ? "0"+Math.floor(seconds/60) : Math.floor(seconds/60);
+            var s = Math.floor(seconds-(m*60))<10 ? "0"+Math.floor(seconds-(m*60)) : Math.floor(seconds-(m*60));
+            return m+":"+s;
+        };
+
+        aod.on('timeupdate',function(){
+        	var currentPos = aod[0].currentTime;
+            var maxduration = aod[0].duration;
+            var perc = 100 * currentPos / maxduration;
+        	$('.aod-progress-bar').css('width',perc+'%');  
+            $('.ctime').text(timeFormat(currentPos));  
+        });
+
+        //프로그래스 바
+        var updatebar = function(x) {
+            var progress = $('.aodprogress');
+            
+            var maxduration = aod[0].duration;
+            var position = x - progress.offset().left;
+            var percentage = 100 * position / progress.width();
+            if(percentage > 100) {
+                percentage = 100;
+            }
+            if(percentage < 0) {
+                percentage = 0;
+            }
+            $('.aod-progress-bar').css('width',percentage+'%'); 
+            aod[0].currentTime = maxduration * percentage / 100;
+        };
+        
+        var timeDrag = false;
+        $('.aodprogress').on('mousedown', function(e) {
+            timeDrag = true;
+            updatebar(e.pageX);
+        });
+        $(document).on('mouseup', function(e) {
+            if(timeDrag) {
+                timeDrag = false;
+                updatebar(e.pageX);
+            }
+        });
+        $(document).on('mouseout', function(e) {
+            if(timeDrag) {
+                timeDrag = false;
+                updatebar(e.pageX);
+            }
+        });
+        $(document).on('mousemove', function(e) {
+            if(timeDrag) {
+                updatebar(e.pageX);
+            }
+        });
+
+        //볼륨 컨트롤
+        var volumeDrag = false;
+        $('.aodvolume').on('mousedown', function(e) {
+            volumeDrag = true;
+            aod[0].muted = false;
+            $('.aodsound').removeClass('muted');
+            updateVolume(e.pageX);
+        });
+        $(document).on('mouseup', function(e) {
+            if(volumeDrag) {
+                volumeDrag = false;
+                updateVolume(e.pageX);
+            }
+        });
+        $(document).on('mousemove', function(e) {
+            if(volumeDrag) {
+                updateVolume(e.pageX);
+            }
+        });
+
+        var updateVolume = function(x, vol) {
+            var volume = $('.aodvolume');
+            var percentage;
+            if(vol) {
+                percentage = vol * 100;
+            }
+            else {
+                var position = x - volume.offset().left;
+                percentage = 100 * position / volume.width();
+            }
+            
+            if(percentage > 100) {
+                percentage = 100;
+            }
+            if(percentage < 0) {
+                percentage = 0;
+            }
+            
+            $('.aodvolumeBar').css('width',percentage+'%');    
+            aod[0].volume = percentage / 100;
+            
+            if(aod[0].volume == 0){
+                $('.aodsound').addClass('muted');
+            }else{
+                $('.aodsound').removeClass('muted');
+            }
+            
+        };
+
+        $('.aodplay').click(function(){
+        	$('.aodplay').hide();
+            $('.aodpause').css('display','block');
+            aod[0].play();
+        });
+
+         $('.aodpause').click(function(){
+        	$('.aodpause').hide();
+            $('.aodplay').css('display','block');
+            aod[0].pause();
+        });
+
+         $('.aodstop').click(function(){
+
+         	$('.aodpause').hide();
+            $('.aodplay').css('display','block');
+            updatebar($('.aodprogress').offset().left);
+            aod[0].pause();
+	    });
+
+         $('.aodsound').click(function(e){
+            aod[0].muted = !aod[0].muted;
+         	if($(this).hasClass('muted')){
+         		$(this).removeClass('muted');
+         		$('.aodvolumeBar').css('width',aod[0].volume*100+'%');
+         	}else{
+         		$(this).addClass('muted');
+         		$('.aodvolumeBar').css('width',0);
+         	}
+        });
+	}
+});
+
+
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

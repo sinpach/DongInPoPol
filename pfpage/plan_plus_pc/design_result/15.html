@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page15">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[3-3 은퇴자금 감소추이]
+			</h1>
+			<div class="explain">
+				준비한 은퇴자금이 고갈될 것으로 예상되는 시점은 <span>80세</span>입니다.
+			</div>
+			<h2 class="page_title c1">03  | 은퇴자금 설계</h2>
+			<div class="content">
+				<div class="table-box">
+					<div class="chart-wrap">
+						<div id="chartbar1" class="chart"></div>
+						<div class="chart_legend3">
+							<p>80세</p>
+							<span>은퇴자금 고갈 시점</span>
+							<img src="../images/result/icon_4.png" alt="icon">
+							<ul>
+								<li>금융시장 위험</li>
+								<li>장수 위험</li>
+								<li>초과인출 위험</li>
+							</ul>
+						</div>
+					</div>
+					<div class="info_box">
+						상기 차트는 은퇴준비자산에서 은퇴생활비를 차감한 후 남아있는 은퇴자산의 감소 추이를 보여주는 그래프입니다. 은퇴 후 예상 기대수익률보다 더 낮은 수익 또는 손실을 내거나, 물가상승률이 예상보다 높을 경우 은퇴자금 고갈 시점은 더욱 빨라질 수 있습니다. 또한 고객의 기대수명보다 더 오래 살거나 예상했던 연간 생활비보다 더 많은 금액을 인출했을 경우에도 마찬가지입니다.
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script>  -->
+	<script>
+
+		$(function(){
+			page15('#chartbar1');
+			var parentiframe = window.parent.document.getElementById('iframe');
+			var parentiframeSrc = parentiframe.getAttribute("src");
+			var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+			$(".currentPageNum").text(parentiframeNum)
+			$(".totalPageNum").text(parent.totalPageNum)
+			setTimeout(function() {
+					$(".page15 .chart-wrap .chart_legend3").fadeIn();
+			}, 1400)
+		});
+
+	</script>
+</body>
+</html>

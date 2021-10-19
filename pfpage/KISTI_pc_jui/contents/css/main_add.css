@@ -1,0 +1,354 @@
+﻿@charset "utf-8";
+
+
+.info_wrap{
+	position: fixed;
+	bottom: 110px;
+	right: 1px;
+	border: 4px solid #0c94ad;
+	width: 222px;
+	background: #fff;
+}
+.info_wrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.info_wrap>div{
+	
+	width: 100%;
+}
+
+
+
+.main_weather .wt_header {
+	 border-bottom: 1px solid #c9caca;
+	 padding: 8px;
+	 padding-bottom: 5px;
+	 padding-top: 15px;
+}
+.main_weather .wt_header p{
+	display: inline-block;
+	color: #000;
+	font-size: 14px;
+	font-weight: 300;
+	margin-right: 4px;
+}
+
+.main_weather .wt_header span{
+	font-size: 11px;
+	color: #000;
+	margin-right: 4px;
+}
+.main_weather .wt_header span.local {
+	font-size: 12px;
+	color: #004ca0;
+	font-weight: 300;
+}
+.main_weather .wt_header a{
+	float: right;
+	display: block;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+.main_weather .wt_con {
+	height: 148px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.main_weather .wt_con::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main_weather .wt_con>div {
+	float: left;
+	border-right: 1px solid #bfbfbf;
+	height: 100%;
+}
+
+.main_weather .wt_con>div:last-child {
+	border-right: 0px;
+}
+
+.main_weather .wt_today_info {
+	width: 85px;
+	margin-left: 5px;
+}
+
+.main_weather .wt_main_info::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main_weather .wt_main_info>div {
+	float: left;
+}
+
+.main_weather .wt_main_info .wt_icon {
+	width: 110px;
+	height: 100%;
+	line-height: 61px;
+	text-align: center;
+}
+
+.main_weather .wt_main_info .wt_icon img {
+	vertical-align: middle;
+	height: 65px;
+}
+.main_weather .wt_main_info .today_temp{
+	line-height: 67px;
+}
+.main_weather .wt_main_info .today_temp span {
+	color: #000;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.main_weather .wt_main_info .today_temp small {
+	font-size: 14px;
+	color: #000;
+	padding-left: 5px;
+}
+
+.main_weather .wt_today_info .now {
+	color: #dc000c;
+	font-size: 16px;
+}
+
+
+
+.main_weather .detail_box {
+	margin-top: 10px;
+}
+
+.main_weather .detail_box span {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 7px;
+	line-height: 14px;
+	font-weight: normal;
+}
+.main_weather .detail_box .rainfall{
+	letter-spacing: -0.6px;
+}
+.main_weather .detail_box span.yesterday,
+.main_weather .detail_box span.dust {
+	width: 110px;
+	padding-left: 0px;
+	
+}
+
+.main_weather .detail_box span em {
+	font-weight: 300;
+}
+
+.main_weather .detail_box .dust em {
+	color: #005bac;
+}
+
+.main_weather .detail_box .ozone em {
+	color: #45b035;
+}
+
+.main_weather .wt_sub_info {
+	width: 143px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.main_weather .wt_sub_info::after {
+	content: "";
+	clear: both;
+	display: block;
+
+}
+
+.main_weather .wt_sub_info .wt_icon {
+
+}
+
+.main_weather .wt_sub_info .wt_icon img {
+	vertical-align: middle;
+
+}
+
+.main_weather .wt_sub_info .sub_info_text {
+	margin-top: 10px;
+	line-height: 1.4;	
+}
+
+.main_weather .wt_sub_info .sub_info_text p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.main_weather .wt_sub_info .sub_info_text p em {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.info_wrap .right_info {
+	height: 192px;
+	padding-left: 15px;
+	border-top: 4px solid #0c94ad;
+}
+.info_wrap .right_info .schedule{
+ padding-top: 15px;
+ padding-bottom: 10px;
+ border-bottom: 1px solid #c9caca;
+}
+.info_wrap .right_info .news {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+.info_wrap .right_info dl::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.info_wrap .right_info dl dt{
+	width: 85px;
+	height: 65px;
+	float: left;
+}
+.info_wrap .right_info dl dt p{
+	font-size: 14px;
+}
+.info_wrap .right_info dl dt span{
+	font-size: 12px;
+}
+.info_wrap .right_info dl dt a{
+	font-size: 12px;
+}
+
+.info_wrap .right_info dl dd{
+	width: calc(100% - 85px);
+	float: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-right: 4px;
+}
+.info_wrap .right_info dl dd a{
+	font-size: 12px;
+	vertical-align: top;
+}
+.info_wrap .right_info dl dd a em{
+	font-weight: 300;
+}
+.info_wrap .right_info dl dd a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.issue_box{
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	    height: 380px;
+	    margin: 15px 0 0;
+	    position: fixed;
+	    top: 0px;
+	    right: 0px;
+}
+.issue_box h2 {
+	background-color: #fafafa;
+	height: 49px;
+	line-height: 48px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #222;
+	padding: 0 0 0 20px;
+	border-bottom: 1px solid #eee;
+}
+ .issue_box .issue_list {
+	position: relative;
+	padding: 20px;
+	background: url(../images/issue_bg.png) 0 0 no-repeat;
+	background-size: 240px;
+	width: 240px;
+	height: 320px;
+}
+.issue_source {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 11px;
+	letter-spacing: 0px;
+}
+.issue_box .btn_more{
+	position: absolute;
+	background: url(../images/btn_more3.png) no-repeat 50% 50%;
+	width: 50px;
+	height: 48px;
+	border-left: 1px solid #eee;
+	text-indent: -999px;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+}
+.question_img {
+	vertical-align: middle;
+	padding: 0 0 2px 0px;
+	margin-left: 5px;
+	position: relative;
+	cursor: pointer;
+}
+.question_box {
+	cursor: pointer;
+	position: absolute;
+	top: -55px;
+	left: -30px;
+	padding: 5px 8px;
+	text-align: center;
+	font-size: 12px;
+	color: #777;
+	line-height: 140%;
+	width: 300px;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	z-index: 996;
+	background: #fafafa;
+	letter-spacing: -0.2px;
+}
+.issue_box .issue_list li{
+	position: absolute;
+}
+.issue_box .issue_list li a {
+	display: block;
+	line-height: 140%;
+	width: 80px;
+	font-weight: 600;
+	padding: 20px 5px;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: -0.5px;
+}
+
+.issue_box .issue_list .issue_item01 {
+	top: 128px;
+	left: 81px;
+}
+.issue_box .issue_list .issue_item02 {
+top: 20px;
+left: 146px;
+}
+.issue_box .issue_list .issue_item03 {
+    top: 49px;
+    left: 10px;
+}
+.issue_box .issue_list .issue_item04 {
+    top: 223px;
+    left: 10px;
+}
+
+.issue_box .issue_list .issue_item05 {
+    top: 194px;
+    left: 152px;
+}

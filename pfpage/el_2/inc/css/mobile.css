@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+.mobile #header{display: none;}
+#container.mobile #contents{
+  width: 870px;
+  height: 489px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: calc(50% - 870px / 2);
+  margin-top: calc(50% - 812px / 2);
+  top: 0;
+  left: 0;
+}
+.videoPage.classVideo.mobile #video{
+  width: 843px;
+  height: auto;
+  margin: 7px 0 0 14px;
+}
+.mobile #contents .contentsBtnWrap .prevPage.subBtn{
+  left:0
+}
+.mobile #contents .contentsBtnWrap .nextPage.subBtn{
+  right: 0
+}
+
+.mobile #display{
+  width: 926px;
+  margin-left: 49px;
+}
+#contents .quiz{
+  padding: 0 13px 0 14px;
+}
+.mobile .quiz_intro{
+  background-size: cover;
+  background-position: center;
+  width: 845px;
+  height: 463px;
+  margin-top: 13px;
+  margin-left: 12px;
+  background: url(../../img/content/test/m_quiz_start_bg.png) no-repeat;
+}
+.mobile .question {
+    position: relative;
+    margin-left: 60px;
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.mobile .question_wrap>li>ul>li span {
+    display: block;
+    float: left;
+    color: #6f2966;
+    font-size: 20px;
+    width: calc(100% - 90px);
+    word-break: keep-all;
+    word-wrap: break-word;
+    letter-spacing: -1px;
+}
+.mobile .question div{
+  letter-spacing: -1px;
+
+}
+.mobile .question span{
+  font-size: 35px;
+}
+.mobile .question_wrap>li>ul>li .num {
+    display: block;
+    width: 23px;
+    line-height: 1;
+    margin-right: 5px;
+    background-color: #6f2966;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    padding: 2px 6px;
+    float: left;
+    vertical-align: middle;
+}
+.mobile .quiz_intro
+.mobile #bottom .progressGroup .progress{
+      width: 110px;
+}
+.mobile #bottom #bottom_wrap{
+  width: 926px;
+}
+.mobile .quiz_intro{
+
+}
+.mobile .quiz_intro .intro_title {
+    text-align: center;
+    font-size: 28px !important;
+    color: #fffdcd;
+    margin-top: 308px !important;
+}
+.mobile .quiz_intro .intro_account{
+    margin-top: 360px !important;
+}
+.mobile .quiz_intro .quiz_start_btn {
+    position: absolute;
+    bottom: 225px;
+    left: 370px;
+    width: 107px;
+    height: 67px;
+}
+.mobile .quiz_intro .quiz_start_btn button{
+      background-size: 100%;
+      width: 107px;
+}
+#container.mobile.page4 .wrap{
+    background-size: 100% 100%;
+}
+.mobile.page4 .sync1 {
+    top: 48px;
+    left: 362px;
+    animation: fadeInLeft 1.5s 1;
+}
+.mobile.page4 .sync2 {
+    top: 135px;
+    right: 81px;
+    animation: fadeInLeft 1.5s 1;
+}
+.mobile.page4 .textbox_b{
+  font-size: 21px;
+    width: 480px;
+}
+
+.mobile.page5 .sync1 {
+    top: 90px;
+    right: -55px;
+    animation: fadeInLeft 1.5s 1;
+}
+.mobile.page5 .sync2 {
+    top: 300px;
+    right: 10px;
+    animation: fadeInLeft 1.5s 1;
+}
+
+
+.mobile.page5 .sync span.chasi_text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.mobile  .answerWrap{
+  width: 843px;
+  margin: 14px;
+}
+.mobile .answer_list li{
+  margin-top: 5px;
+}
+.mobile .answerWrap .ranswer{font-size: 38px;    height: 85px;line-height: 85px;}
+.mobile .answerWrap .ranswer .txt{font-size: 38px}
+.mobile .answerWrap p.ranswer_desc span{
+  display: block;
+  float: left;
+  width: 86%;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: -1px;
+  padding: 5px 0;
+  word-break: keep-all;
+  word-wrap: break-word;
+  line-height: 18px;
+}
+.mobile .answerWrap p.ranswer_desc span.txt {
+    float: left;
+    display: block;
+    font-size: 26px;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+    width: 66px;
+    height: 82px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url(../../img/content/test/new/explain.png) 0 -2px no-repeat;
+    padding: 0px 0;
+}
+.mobile .answerWrap>button{
+  top:-379px
+}
+.mobile .rs{z-index: 98;}
+.mobile .rs ul.marking>li:nth-child(1) {
+    margin-left: 254px;
+}
+.mobile .rs .retry_btn{bottom:20px;left: 330px;}
+.mobile p.rs_desc {
+    margin-top: 7px;
+    margin-bottom: 9px;
+}
+.mobile #bottom .progressGroup .progress{
+  width: 115px;
+}
+
+.page4.mobile .organize1{
+	display: block;
+	width: 170px;
+	height: 167px;
+	background: url(../../img/content/test/new/organize2.png) no-repeat;
+  background-size: 100%;
+}
+.page4.mobile .organize2{
+	display: block;
+	width: 220px;
+	height: 206px;
+	background: url(../../img/content/test/new/organize3.png) no-repeat;
+  background-size: 100%;
+}
+.page4.mobile .organize3{
+	display: block;
+	width: 345px;
+	height: 538px;
+	background: url(../../img/content/test/new/organize4.png) no-repeat;
+  background-size: 100%;
+}
+.page5.mobile .out_next{
+	display: block;
+	width: 126px;
+	height: 47px;
+	background: url(../../img/content/test/new/out_next.png) no-repeat;
+  background-size: 100%;
+}
+.page5.mobile .outbg1{
+	display: block;
+	width: 304px;
+	height: 330px;
+	background: url(../../img/content/test/new/out_bg1.png) no-repeat;
+  background-size: 100%;
+}
+.page5.mobile .outbg2{
+	display: block;
+	width: 420px;
+	height: 418px;
+	background: url(../../img/content/test/new/out_bg2.png) no-repeat;
+  background-size: 100%;
+}
+.page5.mobile .outbg3{
+	display: block;
+	width: 129px;
+	height: 134px;
+	background: url(../../img/content/test/new/out_bg3.png) no-repeat;
+  background-size: 100%;
+}
+.mobile.page4 .sync3{    top: 11px;left: 15px; animation:fadeInDown 1.5s 1;}
+.mobile.page4 .sync4{    top: 309px;left: 100px; animation:fadeInUp 1.5s 1;}
+.mobile.page4 .sync5{    top: 13px;left: 13px; animation:fadeInRight 1.5s 1;}
+
+
+
+.mobile.page5 .sync3{z-index: 99;top: 241px;right: 359px; animation:fadeInLeft 1.5s 1;}
+.mobile.page5 .sync4{top: 13px;right: 391px; animation:fadeInDown 1s 1;}
+.mobile.page5 .sync5{top: 125px;right: 436px; animation:fadeInUp 1s 1;}
+.mobile.page5 .sync6{top: 168px;right: 404px; animation:fadeInRight 1s 1;}
+
+#container.mobile  .quiz_intro .sync1{
+  top:18px;
+}
+#container.mobile  .quiz_intro .sync1 img{
+  width: 269px;
+}
+.mobile .alert{
+  width: 870px;
+  height: 489px;
+  background-position: center;
+}
+.mobile .rs h4{
+  width: 842px;
+  background-size: 100%;
+  background-position: center 54px;
+  margin-top: 15px;
+
+}
+.mobile .re_text{
+      margin: 8px 0;
+}

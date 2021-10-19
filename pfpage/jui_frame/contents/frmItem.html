@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW JMES Sample</title>
+  <link rel="stylesheet" href="../common/css/font.css" />
+  <link rel="stylesheet" href="../common/css/reset.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../common/fontawesome5.15.4/css/all.css" />
+  <!-- jui framework -->
+
+  <!-- Basic style components -->
+  <link rel="stylesheet" href="../common/jui/dist/ui.min.css" />
+  <link rel="stylesheet" href="../common/jui/dist/jui-ui.classic.css" />
+  <link rel="stylesheet" href="../common/jui/dist/ui-jennifer.min.css" />
+  <!-- Grid style components -->
+  <link rel="stylesheet" href="../common/jui/dist/jui-grid.classic.css" />
+  <!-- Required script files -->
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/jui/dist/jui-core.min.js"></script>
+  <!-- Basic script components -->
+  <script src="../common/jui/dist/jui-ui.min.js"></script>
+  <!-- Grid script components -->
+  <script src="../common/jui/dist/jui-grid.min.js"></script>
+  <!-- jui framework -->
+  <script src="../common/js/swiper-bundle.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../common/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="../common/css/style.css" />
+  <link rel="stylesheet" href="../common/css/main.css" />
+
+  <!-- custom js -->
+  <script src="../common/js/main.js"></script>
+
+</head>
+
+<body class="jui iframe_jui">
+  <header>
+    <div class="page-title">
+      <div class="navbar flat">
+        <div class="inline right">
+          <i class="icon icon-home"></i><span>HOME</span><i class="icon icon-chevron-right"></i> <span>기준정보관리</span><i class="icon icon-chevron-right"></i><span>자재</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="row">
+        <div class="col col-12">
+          <div class="content-top">
+            <h4>자재리스트 <span></span></h4>
+            <div class="function-wrap flex-a">
+              <div id="combo_1" class="combo">
+                <a class="btn small" style="width: 120px;">거래처선택</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  
+                  <li value="1">오리엔트정공</li>
+                  <li value="2">글로벌</li>
+                  <li value="3">코넥</li>
+                  <li value="4">인지디스플레이어</li>
+                </ul>
+              </div>
+              <div id="combo_2" class="combo">
+                <a class="btn small" style="width: 90px;">자재 타입</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">원자재</li>
+                  <li value="2">부자재</li>
+                  <li value="3">잡자재</li>
+                </ul>
+              </div>
+              <div id="combo_3" class="combo">
+                <a class="btn small" style="width: 90px;">검색항목</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">자재명</li>
+                  <li value="2">자재번호</li>
+                </ul>
+              </div>
+              <div style="display: inline-block;" class="group">
+                <input type="text" class="input  small">
+                <button class="btn focus small"><i class="icon icon-search"></i></button>
+              </div>
+              <div class="group">
+                <a class="btn small ">
+                  <i class="icon icon-refresh"></i>
+                </a>
+                <button class="btn small " onclick="win_2.show()">
+                  <i class="icon icon-plus"></i>
+                </button>
+                <button class="btn small ">
+                  <i class="far fa-file-excel"></i>
+                </button>
+                <button class="btn small ">
+                  <i class="icon icon-printer"></i>
+                </button>
+              </div>
+              
+              <!-- <div class="select1 property " style="display: inline-block;">
+                <div class="property-table" style="position: relative;">
+                  <div class="property-item"  style="border: 0;margin: 0;padding: 0;">
+                    <div class="property-render" style="margin: 0;padding: 0;">
+                      <div class="item">
+                        <select style="max-width: 100%;height:22px;background: transparent;" >
+                          <option value="" selected disabled hidden>거래처선택</option>
+                          <option value="black">오리엔트정공</option>
+                          <option value="league">코넥</option>
+                          <option value="league">글로벌</option>
+                          <option value="beige">인지디스플레이어</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col col-12">
+                <table class="table classic hover">
+                  <thead>
+                    <tr>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>거래처</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>품번</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>품명</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>자재구분</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>자재타입</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>규격</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>단위</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>조달기간</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>안전재고수량</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>매입단가</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>관리</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>43122-2B500</td>
+                      <td>6속 2B500</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>43122-2B510</td>
+                      <td>6속 2B510</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                      
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>43122-2B200</td>
+                      <td>6속 2B200</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>43171-3B000</td>
+                      <td>SQUARE NUT-8속</td>
+                      <td>차량부품</td>
+                      <td>부자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                    <tr o>
+                      <td>오리엔트정공</td>
+                      <td>45210-4G130</td>
+                      <td>8속 4G130</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><input type="button"></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>43171-26000</td>
+                      <td>SQUARE NUT-6속</td>
+                      <td>차량부품</td>
+                      <td>부자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><input type="button"></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>45210-4G185</td>
+                      <td>8속 4G185</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>45210-4G140</td>
+                      <td>8속 4G140</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><input type="button"></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>45210-4G145</td>
+                      <td>8속 4G145</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>11403-06126K</td>
+                      <td>BOLT FLANGE</td>
+                      <td>차량부품</td>
+                      <td>부자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>45210-4G190</td>
+                      <td>8속 4G190</td>
+                      <td>차량부품</td>
+                      <td>원자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                    <tr>
+                      <td>오리엔트정공</td>
+                      <td>45213-3B201</td>
+                      <td>PLATE STOPPER - 8속</td>
+                      <td>차량부품</td>
+                      <td>부자재</td>
+                      <td align="">1</td>
+                      <td align="">EA</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td align="">0</td>
+                      <td><button class="btn mini focus">수정</button></td>
+                    </tr>
+                  </tbody>
+                  
+                </table>
+
+                <div class="table-bottom-wrap">
+                  <div class="count-wrap">
+
+                    <!-- <div id="data_cnt" class="combo">
+                      <a class="btn small" style="width: 50px;">20</a>
+                      <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                      <ul>
+                        <li value="1">20</li>
+                        <li value="2">30</li>
+                        <li value="3">40</li>
+                        <li value="4">50</li>
+                      </ul>
+                    </div> -->
+
+                    <div class="total_cnt">
+                      전체 : <span>50</span>건
+                    </div>
+                  </div>
+                  
+                  <div class="paging-wrap" style="width: 600px;">
+                    <a href="#;" class="btn focus small ">
+                      first
+                    </a>
+                    <div class="paging">
+                      <a href="#;" class="prev">Previous</a>
+                      <div class="list">
+                        <a href="#;">1</a>
+                        <a href="#;" class="active">2</a>
+                        <a href="#;">3</a>
+                        <a href="#;">4</a>
+                        <a href="#;">5</a>
+                        <a href="#;">6</a>
+                        <a href="#;">7</a>
+                        <a href="#;">8</a>
+                        <a href="#;">9</a>
+                        <a href="#;">10</a>
+                      </div>
+                      <a href="#;" class="next">Next</a>
+                    </div>
+                    <a href="#;" class="btn focus small ">
+                      end
+                    </a>
+                  </div>
+
+                </div>
+                
+                
+
+                
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          <!-- <div class="content">
+            <div class="row">
+            <div class="col col-12">
+              <table class="table simple hover">
+                <thead>
+                  <tr>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>거래처</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>품번</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>품명</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>자재구분</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>자재타입</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>규격</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>단위</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>조달기간</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>안전재고수량</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>매입단가</th>
+                    <th><i class="icon icon-play" style="font-size:10px;"></i>관리</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>43122-2B500</td>
+                    <td>6속 2B500</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>43122-2B510</td>
+                    <td>6속 2B510</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>43122-2B200</td>
+                    <td>6속 2B200</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>43171-3B000</td>
+                    <td>SQUARE NUT-8속</td>
+                    <td>차량부품</td>
+                    <td>부자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr o>
+                    <td>오리엔트정공</td>
+                    <td>45210-4G130</td>
+                    <td>8속 4G130</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><input type="button"></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>43171-26000</td>
+                    <td>SQUARE NUT-6속</td>
+                    <td>차량부품</td>
+                    <td>부자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><input type="button"></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>45210-4G185</td>
+                    <td>8속 4G185</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>45210-4G140</td>
+                    <td>8속 4G140</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><input type="button"></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>45210-4G145</td>
+                    <td>8속 4G145</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>11403-06126K</td>
+                    <td>BOLT FLANGE</td>
+                    <td>차량부품</td>
+                    <td>부자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>45210-4G190</td>
+                    <td>8속 4G190</td>
+                    <td>차량부품</td>
+                    <td>원자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                  <tr>
+                    <td>오리엔트정공</td>
+                    <td>45213-3B201</td>
+                    <td>PLATE STOPPER - 8속</td>
+                    <td>차량부품</td>
+                    <td>부자재</td>
+                    <td align="">1</td>
+                    <td align="">EA</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td align="">0</td>
+                    <td><button class="btn mini focus">수정</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </section>
+  </main>
+  
+
+<div id="win_2" class="window ">
+  <div class="head">
+    <div class="title">자재등록</div>
+    <div class="right">
+      <a href="#;" class="close"><i class="icon-exit"></i></a>
+    </div>
+  </div>
+  <div class="body">
+    <div class="content-head">
+      <h4>품목기본정보</h4>
+    </div>
+    <div class="content-body">
+      <table class="table simple horizontal th-right">
+        <colgroup>
+          <col width="10%">
+          <col width="30%">
+          <col width="15%">
+          <col width="45%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th style="vertical-align:middle;" rowspan="11"> 이미지</th>
+            <td rowspan="11">
+              <div style="height:200px;width:200px;border:1px solid #ddd;">
+                <img src="#" id="uploadImg" style="height: 450px; width: 450px; display: none;">
+              </div>
+              <input type="file" name="item_img" id="item_img">
+            </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 거래처*</th>
+            <td>
+              <input type="text" name="account_name" id="account_name" class="input  mini" onclick="modal_2.show()">
+            </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 품번*</th>
+            <td>
+              <input type="text" name="item_id" id="item_id" class="input  mini">
+              <span id="item_id_help"><span style="color:blue">사용가능</span></span>
+            </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 품명*</th>
+            <td><input type="text" class="form-control input  mini" name="item_name" id="item_name"></td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 자재 구분*</th>
+            <td>
+              <div class="property " style="display: inline-block;">
+                <div class="property-table" style="position: relative;">
+                  <div class="property-item"  style="border: 0;margin: 0;padding: 0;">
+                    <div class="property-render" style="margin: 0;padding: 0;">
+                      <div class="item">
+                        <select style="max-width: 100%;height:22px;background: transparent;" >
+                          <option value="" selected disabled hidden>자재구분</option>
+                          <option value="1">차량부품</option>
+                          <option value="2">기타</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 자재 타입*</th>
+            <td>
+              <div class="property " style="display: inline-block;">
+                <div class="property-table" style="position: relative;">
+                  <div class="property-item"  style="border: 0;margin: 0;padding: 0;">
+                    <div class="property-render" style="margin: 0;padding: 0;">
+                      <div class="item">
+                        <select style="max-width: 100%;height:22px;background: transparent;" >
+                          <option value="" selected disabled hidden>자재 타입</option>
+                          <option value="001">원자재</option>
+                          <option value="002">부자재</option>
+                          <option value="003">잡자재</option>
+                          <option value="004">반제품</option>
+                          <option value="005">기타</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 규격</th>
+            <td>
+              <input type="number" class="comma onlynum input  mini" name="item_standard" id="item_standard">
+              <div class="property " style="display: inline-block;">
+                <div class="property-table" style="position: relative;">
+                  <div class="property-item"  style="border: 0;margin: 0;padding: 0;">
+                    <div class="property-render" style="margin: 0;padding: 0;">
+                      <div class="item">
+                        <select style="max-width: 100%;height:22px;background: transparent;" >
+                          <option value="" selected disabled hidden>단위</option>
+                          <option value="g">g</option>
+                          <option value="Kg">Kg</option>
+                          <option value="EA">EA</option>
+                          <option value="Box">Box</option>
+                          <option value="m">m</option>
+                          <option value="Km">Km</option>
+                          <option value="Roll">Roll</option>
+                          <option value="파이(pi">파이(pi)</option>
+                          <option value="mm">mm</option>
+                          <option value="cm">cm</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 매입단가</th>
+            <td><input type="number" class="comma onlynum input  mini" name="item_price" id="item_price">원</td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 기본 조달기간</th>
+            <td><input type="number" class="comma onlynum input  mini" name="item_period" id="item_period">일</td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 안전재고수량</th>
+            <td><input type="number" class="comma onlynum input  mini" name="item_safety_cnt" id="item_safety_cnt"></td>
+          </tr>
+          <tr>
+            <th style="vertical-align:middle; "><i class="icon icon-play" style="font-size:10px;"></i> 완성품 ID</th>
+            <td>
+              <span id="fitem_id_help">완성품 id (자동 수주등록시 사용)</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="foot" align="center">
+    <a href="#;" class="btn focus">자재 등록</a> <a href="#;" class="btn" onclick="win_2.hide()">취소</a>
+  </div>
+
+  <div id="modal_2_msg" class="window" style="display: none;">
+    <div class="head">
+      <div class="title">거래처 리스트</div>
+      <div class="right">
+        <a href="#;" class="close" onclick="modal_2.hide()"><i class="icon-exit"></i></a>
+      </div>
+    </div>
+    <div class="body" style="height:300px ">
+      <div class="content-head flex-b">
+        <h4>품목기본정보</h4>
+        <div class="function-wrap flex-a ">
+
+          <div id="combo_4" class="combo">
+            <a class="btn small" style="width: 80px;">거래처구분</a>
+            <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+            <ul>
+              <li value="1">매입</li>
+              <li value="2">매출</li>
+              <li value="3">외주</li>
+            </ul>
+          </div>
+
+          <div style="display: inline-block;" class="group">
+            <input type="text" class="input  small" style="width: 80px;">
+            <button class="btn focus small"><i class="icon icon-search"></i></button>
+          </div>
+          <div class="group">
+            <a class="btn small ">
+              <i class="icon icon-refresh"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content-body" style="width:400px">
+        <table id="accountListTb" class="table simple ">
+          <thead style="border-bottom:1px solid #ccc">
+            <tr>
+              <th><i class="icon icon-play" style="font-size:10px;"></i>구분</th>
+              <th><i class="icon icon-play" style="font-size:10px;"></i>거래처코드</th>
+              <th><i class="icon icon-play" style="font-size:10px;"></i>거래처명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  style="cursor:pointer">
+              <td>매출</td>
+              <td>8</td>
+              <td>오리엔트정공</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>외주</td>
+              <td>7</td>
+              <td>글로벌</td>
+            </tr>
+            <tr  style="cursor:pointer">
+              <td>매입</td>
+              <td>4</td>
+              <td>코넥</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매입</td>
+              <td>3</td>
+              <td>인지컨트롤스</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매입</td>
+              <td>2</td>
+              <td>인지디스플레이어</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>1</td>
+              <td>YK TECH</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>1</td>
+              <td>YK TECH</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>1</td>
+              <td>YK TECH</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>1</td>
+              <td>YK TECH</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>1</td>
+              <td>YK TECH</td>
+            </tr>
+            <tr style="cursor:pointer">
+              <td>매출</td>
+              <td>2</td>
+              <td>YK TECH</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="foot" align="center" style="position:relative;height:auto;padding-bottom: 10px;">
+      <div class="paging-wrap" style="width: 100%;">
+        
+        <div class="paging">
+          <div class="list">
+            <a href="#;">1</a>
+            <a href="#;" class="active">2</a>
+            <a href="#;">3</a>
+            <a href="#;">4</a>
+            <a href="#;">5</a>
+          </div>
+        </div>
+        
+      </div>
+      <a href="#;" class="btn" onclick="modal_2.hide()">취소</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+<script>
+  jui.ready([ "ui.combo" ], function(combo) {
+    combo_1 = combo("#combo_1", {
+        value: "거래처선택",
+    });
+    combo_2 = combo("#combo_2", {
+      value: "자재 타입",
+    });
+    combo_2 = combo("#combo_3", {
+      value: "검색항목",
+    });
+    data_cnt = combo("#data_cnt", {
+    
+    });
+    combo_4 = combo("#combo_4", {
+    value: "거래처구분",
+    });
+  });
+  jui.ready([ "ui.window" ], function(win) {
+    win_2 = win("#win_2", {
+        width: 700,
+        height: 440,
+        modal: true
+    });
+  });
+  jui.ready([ "ui.modal" ], function(modal) {
+      modal_2 = modal("#modal_2_msg", {
+          target: "#win_2",
+          opacity: 0.5,
+          color: 'white',
+          
+      });
+      
+  });
+</script>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.3.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#career" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Career</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfoio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfoio Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_mobile_jui1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_mobile_jui2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/KISTI_mobile_jui3.png" alt="">
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Mobie Web site</li>
+                <li><strong>Project detail view</strong>: <a href="./pfpage/KISTI_mobile_jui/index.html" target="_blank">view</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <p>
+                KISTI 사이언스온 Mobie website 작업 <br>
+                HTML5, css, javascript 동적 기능 작업 <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <pre>
+              <code>
+var slide_move = true;
+var ch_order_text = [];
+var ch_order_html = [];
+var ch_order_num = [];
+$(function () {
+
+	$(".sub_tab_con .accordion_menu .item>a").click(function(){
+		$(this).toggleClass("on");
+		$(this).siblings(".faq_section_inner").toggle();
+	});
+
+	$(".faq_more").click(function(){
+			$(this).toggleClass("on");
+			$(this).parent().siblings(".faq_ans").toggle();
+	});
+
+	$(".con_area>.more_btn").click(function(){
+		$(this).siblings('.con_box').addClass("on")
+		var add_height = $(this).siblings('.con_box.on').height() - 880;
+		console.log(add_height)
+		var el = $(this).parent().parent().parent(".swiper-wrapper")
+		var el_h = el.height();
+		var plus_h = el_h + add_height
+		el.height(plus_h +"px") 
+
+	});
+
+	$(".sub_tab_menu.faq>ul>li>a").click(function(){
+		if (!$(this).parent("li").hasClass("on")) {
+			var idx = $(this).parent("li").index();
+			$(".sub_tab_menu.faq>ul>li").removeClass("on");
+			$(".sub_tab_con>li").removeClass("on");
+			$(this).parent("li").addClass("on")
+			$(".sub_tab_con>li").eq(idx).addClass("on")
+		}
+	});
+
+
+
+	var ellipsis = function (con, c) {
+		con.each(function () {
+			var length = c;
+			$(this).each(function () {
+				if ($(this).text().length >= length) {
+					$(this).text($(this).text().substr(0, length) + ' ...')
+				}
+			});
+		});
+	}
+
+
+
+	$(document).ready(function () {
+		$(".m_nav_btn").click(function () {
+				$(window).scrollTop(0);
+				$('html').addClass('navOn');
+				$(".main_nav").fadeIn();
+		});
+
+		$(".nav_close_btn").click(function(){
+			$('html').removeClass('navOn');
+			$(".main_nav").fadeOut();
+		})
+
+	
+
+	})
+	 
+	$(".green").click(function(){
+		var g_con = $(this).parent().siblings('.green_con')
+		if (!$(this).hasClass("on")) {
+			g_con.show();
+			$(this).addClass("on");
+		}else{
+			g_con.hide();
+			$(this).removeClass("on");
+		}
+		
+	});
+
+
+	$(".switch_close_btn").click(function(){
+		
+		ch_order_text = [];
+		ch_order_html = [];
+		ch_order_num = [];
+		var array = $(".switch_menu li");
+
+		for (var i = 0; i < array.length; i++) {
+			var order_text = array.eq(i).text();
+			var order_data = array.eq(i).attr("data");
+			ch_order_text.push(order_text)
+			ch_order_num.push(Number(order_data));
+		}
+		
+		for (var i = 0; i < ch_order_text.length; i++) {
+			$(".sub_nav .swiper-slide").eq(i + 1).text(ch_order_text[i])
+		}	
+
+		for (var i = 0; i < ch_order_num.length; i++) {
+			var save_data = $(".swiper-container1>ul>li").eq(ch_order_num[i] + 1).children("div");
+			ch_order_html.push(save_data);
+			
+		}
+		for (var i = 0; i < ch_order_html.length; i++ ) {
+			var inner_html = $(".swiper-container1>ul>li").eq(i + 2) ;
+			inner_html.html(ch_order_html[i]);
+		}
+		
+		$(".switch_wrap").stop().animate({
+			left: "-1080px"
+		},function(){
+			var clone = $(".swiper-container1>ul>li").eq(ch_order_html.length + 1).children('div').clone();
+			$(".swiper-container1>ul>li").eq(0).html(clone);
+			for (var i = 0; i < ch_order_num.length; i++) {
+				$(".switch_menu li").eq(i).attr("data", i + 1);
+			}
+
+		});
+	
+		
+	});
+
+	$(".exchange_btn").click(function(){
+		$(".switch_wrap").stop().animate({
+			left: 0,
+		});
+	});
+
+	$(".pop_close_btn").click(function(){
+		$(".popup_wrap").hide();
+		$('body,html').css("overflow-y", "auto");
+	});
+
+ var add = '<div> <select name="" id=""><option value="">전체</option></select><input type="text"><select name="" id=""><option value="">AND</option><option value="">OR</option></select></div>'
+	$(".add_btn").click(function(){
+		$(".item").prepend(add)
+	});
+
+})
+
+
+
+function popShow(id) {
+	$('#' + id).show();
+	$('body,html').css("overflow", "hidden");
+}
+
+
+
+
+              </code>
+            </pre>
+          </div>
+
+
+
+        </div>
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

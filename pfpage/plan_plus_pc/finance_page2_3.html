@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	
+</head>
+<body>
+	<div id="body">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+			</div>
+			<h3 class="left-title green2 noimg">
+				재무목표
+			</h3>
+			<ul class="left-menu financial">
+				<li>
+					<a href="finance_page2_2.html">
+						<span>은퇴</span>
+						부부 은퇴자금 마련
+					</a>
+				</li>
+				<li>
+					<a href="finance_page2_3.html" class="on">
+						<span>교육</span>
+						큰딸 교육자금 마련
+					</a>
+				</li>
+				<li>
+					<a href="finance_page2_4.html">
+						<span>목적</span>
+						내 집 마련 자금
+					</a>
+				</li>
+				<li>
+					<a href="finance_page2_5.html">
+						<span>위험</span>
+						위험보장
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html" >
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar on">
+								재무목표
+							</a>
+							<div class="act">
+								<span class="ir">Start Financial Planning!</span>
+							</div>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="./edu-plan1_1.html" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!-- 01-23 settings-bar 팝업추가 시작 -->
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac"/></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="주식자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="4.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"  placeholder="부동산자산 수익률"/></th>
+												<td class="tc"><input type="text" name="" class="tac"  placeholder="2.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%"/></th>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율"/></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%"/></th>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계"/></th>
+
+											</tr>
+											<tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac"/></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+							<!-- 01-23 settings-bar 팝업추가 끝 -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content finance_page2 bac">
+				<div class="step">
+					<div class="step-title">
+						<span class="green eng">Setp 1.</span>
+						<span class="eng"> Establish the client's ﬁnancial Goals</span>
+					</div>
+					<p class="title-sub">
+						고객의 재무목표를 수립합니다.
+					</p>
+				</div>
+				<ul class="plan">
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng">1</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+					</li>
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng">2</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+						<div class="plan-mask">
+							<a href="#">
+								<img src="./images/plan/plan_plus.png" alt="재무목표 추가">
+								<div>재무목표 추가</div>
+							</a>
+						</div>
+					</li>
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng">3</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+						<div class="plan-mask">
+							<a href="#">
+								<img src="./images/plan/plan_plus.png" alt="재무목표 추가">
+								<div>재무목표 추가</div>
+							</a>
+						</div>
+					</li>
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng blue">4</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+						<div class="plan-mask">
+							<a href="#">
+								<img src="./images/plan/plan_plus.png" alt="재무목표 추가">
+								<div>재무목표 추가</div>
+							</a>
+						</div>
+					</li>
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng blue">5</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+						<div class="plan-mask">
+							<a href="#">
+								<img src="./images/plan/plan_plus.png" alt="재무목표 추가">
+								<div>재무목표 추가</div>
+							</a>
+						</div>
+					</li>
+					<li class="plan-item">
+						<div class="btns">
+							<a href="#">
+								<img src="./images/plan/plan_del_icon.png" alt="삭제" class="icon">
+								삭제
+							</a>
+							<a href="#">
+								<img src="./images/plan/plan_submit_icon.png" alt="저장" class="icon">
+								저장
+							</a>
+						</div>
+						<p class="num eng blue">6</p>
+						<div class="input-area">
+							<input type="text" class="plan-input" placeholder="재무목표 입력하기">
+						</div>
+						<div class="select-area">
+							<select name="" class="plan-select">
+								<option value="">목표 카테고리 선택</option>
+								<option value="">부부은퇴</option>
+								<option value="">자녀교육</option>
+							</select>
+						</div>
+						<div class="plan-mask">
+							<a href="#">
+								<img src="./images/plan/plan_plus.png" alt="재무목표 추가">
+								<div>재무목표 추가</div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="popbg">
+		<div class="plan-popup">
+			<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+			<p class="popup-title">
+				<span class="title">재무목표: </span>
+				<span class="sel-title">자녀교육</span>
+				<span class="input-title">큰딸 교육자금 마련</span>
+			</p>
+			<table class="popup-con">
+				<tbody>
+					<tr>
+						<td>
+							<p class="green num">1.</p>
+							<p>자녀 교육비 기본 가정</p>
+						</td>
+						<td>
+							<table>
+								<colgroup>
+									<col style="width: 30%;">
+								</colgroup>
+								<tr>
+									<th>자녀이름</th>
+									<td class="tar">나민혁</td>
+								</tr>
+								<tr>
+									<th>자녀현재나이</th>
+									<td class="tar">14세</td>
+								</tr>
+								<tr>
+									<th>고객현재나이</th>
+									<td>48세</td>
+								</tr>
+								<tr>
+									<th>교육자금 준비기간</th>
+									<td class="tar"><input type="text">년</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="green num">2.</p>
+							<p>교육목표별 예상교육비</p>
+						</td>
+						<td>
+							<table>
+								<tr>
+									<th class="tac">교육목표</th>
+									<th class="tac">입학나이</th>
+									<th class="tac">교육년수</th>
+									<th class="tac">연간등록금</th>
+									<th class="tac">연간생활비</th>
+								</tr>
+								<tr>
+									<td>
+										<select name="" id="">
+											<option value="" selected>고등학교</option>
+											<option value="">대학교</option>
+											<option value="">대학원</option>
+										</select>
+									</td>
+									<td><input type="text">세</td>
+									<td><input type="text">년</td>
+									<td><input type="text">만원</td>
+									<td><input type="text">만원</td>
+								</tr>
+								<tr>
+									<td>
+										<select name="" id="">
+											<option value="" >고등학교</option>
+											<option value="" selected>대학교</option>
+											<option value="">대학원</option>
+										</select>
+									</td>
+									<td><input type="text">세</td>
+									<td><input type="text">년</td>
+									<td><input type="text">만원</td>
+									<td><input type="text">만원</td>
+								</tr>
+								<tr>
+									<td>
+										<select name="" id="">
+											<option value="" >고등학교</option>
+											<option value="" selected>대학교</option>
+											<option value="">대학원</option>
+										</select>
+									</td>
+									<td><input type="text">세</td>
+									<td><input type="text">년</td>
+									<td><input type="text">만원</td>
+									<td><input type="text">만원</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="green num">3.</p>
+							<p>교육비상승률 및<br>기대수익률 가정</p>
+						</td>
+						<td>
+							<table style="width: 50%;height: 50%;margin: 0 auto;">
+								<tr>
+									<th>교육비상승률 가정</th>
+									<td>3.0%</td>
+								</tr>
+								<tr>
+									<th>기대수익률 가정</th>
+									<td><input type="text">%</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="#" class="btn_submit">저장하기</a>
+		</div>
+	</div>
+	
+	<script src="./js/script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 --> 
+	<script>
+		var $popup = $('.popbg .plan-popup');
+		var popHeight;
+
+		$(function(){
+			popHeight = Number($popup.css('height').substring(0,3))/2;
+			$popup.parent('.popbg').hide();
+
+			$(document).on('click','.plan-mask a',function(e){
+				e.preventDefault();
+				$(this).parent('.plan-mask').fadeOut();
+			});
+			$(document).on('click','.plan-popup-close',function(e){
+				e.preventDefault();
+				$(this).parents('.popbg').fadeOut();
+			});
+		});
+		$(window).on('load',function(){  /*$(window).load(function(){  02-08 수정 */
+			// 팝업 위치 조정
+			$popup.css('margin-top','-'+popHeight+'px');
+			$popup.parent('.popbg').fadeIn();
+		});
+		// 01-23 settings-bar 팝업 추가 시작
+		$(function(){
+			$(".setting_pop .customer-input-btns a").click(function(){
+				var indexNum = $(this).index()+1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+				
+				$(".tab"+indexNum).show();
+				$(".tab"+indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function(){
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function(){
+				$(".setting_pop").fadeIn()
+			})
+		});
+		// 01-23 settings-bar 팝업 추가 끝
+	</script>
+</body>
+</html>

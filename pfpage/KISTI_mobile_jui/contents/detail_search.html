@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1080, user-scalable=no">
+  <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/mobile.js"></script>
+  <title>ScienceON</title>
+</head>
+<body class="search ">
+  <div class="header">
+    
+    
+    <h1><a href="#;"><img src="./img/m_logo_s.png" alt="ScienceON"></a></h1>
+    <a href="#;" class="log_in">
+      <i class="fa fa-power-off" aria-hidden="true"></i>
+    </a>
+  </div >
+
+  <button class="m_nav_btn">
+    <img src="./img/nav_btn.png" alt="">
+  </button>
+  <nav class="main_nav">
+    <div class="nav_bg">
+
+    </div>
+    <div class="nav_wrap">
+      <div class="nav_head">
+        <a href="#;" class="nav_close_btn">
+          <img src="./img/nav_close.png" alt="">
+        </a>
+        <p><a href="#;">로그인하세요.</a></p>
+      </div>
+      <dl>
+        <dd><a href="#;">마이페이지</a></dd>
+        <dd><a href="#;">즐겨찾기</a></dd>
+        <dd><a href="#;">로그인</a></dd>
+      </dl>
+      <dl>
+        <dt>Service</dt>
+        <dd>
+          <a href="#;">논문</a>
+        </dd>
+        <dd>
+          <a href="#;">특허</a>
+        </dd>
+        <dd>
+          <a href="#;">보고서</a>
+        </dd>
+        <dd>
+          <a href="#;">동향</a>
+        </dd>
+        <dd>
+          <a href="#;">날씨와 일정</a>
+        </dd>
+
+      </dl>
+      <dl>
+        <dt>ScienceON</dt>
+        <dd>
+          <a href="#;">About</a>
+        </dd>
+        <dd>
+          <a href="#;">공지사항</a>
+        </dd>
+        <dd>
+          <a href="#;">이용문의</a>
+        </dd>
+      </dl>
+      <dl class="sns">
+        <dt>SNS</dt>
+        <dd><a href="#;"><img src="./img/sns_icon1.png" alt=""></a><span>블로그</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon2.png" alt=""></a><span>유튜브</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon3.png" alt=""></a><span>페이스북</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon4.png" alt=""></a><span>인스타</span></dd>
+      </dl>
+    </div>
+
+
+  </nav>
+
+  <section class="main_wrap">
+    <div class="search_box" >
+      <div class="input_wrap">
+        <input type="text" placeholder="검색어를 입력하세요">
+        <button>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <button class="detail_search_btn" onclick="popShow('detail_search')">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    
+    <div class="detail_area">
+      <div class="detail_title">
+        <h3>상세검색</h3>
+      </div>
+      <div class="detail_wrap">
+        <div class="detail_top">
+          <ul>
+            <li class="on">논문</li>
+            <li>특허</li>
+            <li>보고서</li>
+            <li>동향</li>
+          </ul>
+        </div>
+        <div class="detail_box">
+          <p>검색범위</p>
+          <div class="detail_con">
+            <ul>
+              <li><input type="checkbox" id="range1"><label for="range1">전체</label></li>
+              <li><input type="checkbox" id="range2"><label for="range2">국내논문</label></li>
+              <li><input type="checkbox" id="range3"><label for="range3">해외논문</label></li>
+              <li><input type="checkbox" id="range4"><label for="range4">학위논문</label></li>
+              <li><input type="checkbox" id="range5"><label for="range5">전체</label></li>
+              <li><input type="checkbox" id="range6"><label for="range6">국내논문</label></li>
+              <li><input type="checkbox" id="range7"><label for="range7">해외논문</label></li>
+              <li><input type="checkbox" id="range8"><label for="range8">학위논문</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail_box">
+          <p>자료유형</p>
+          <div class="detail_con">
+            <ul class="radio">
+              <li><input type="radio" name="type" id="type1"><label for="type1">전체</label></li>
+              <li><input type="radio" name="type" id="type2"><label for="type2">NDSL 무료</label></li>
+              <li><input type="radio" name="type" id="type3"><label for="type3">프로시딩</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail_box">
+          <p>검색항목</p>
+          <div class="detail_con item">
+            <div class="">
+              <select name="" id="">
+                <option value="">전체</option>
+              </select>
+              <input type="text">
+              <select name="" id="">
+                <option value="">AND</option>
+                <option value="">OR</option>
+              </select>
+            </div>
+            <div class="">
+              <select name="" id="">
+                <option value="">전체</option>
+              </select>
+              <input type="text">
+             <button class="add_btn">한줄추가</button>
+            </div>
+          </div>
+        </div>
+        <div class="detail_box">
+          <p>발행년도</p>
+          <div class="detail_con">
+            <input type="text" placeholder="ex)2000">
+            &nbsp;~&nbsp;
+            <input type="text" placeholder="ex)2011">
+          </div>
+        </div>
+      </div>
+      <div class="detail_btn_wrap">
+        <button class="action_btn">실행</button>
+      </div>
+    </div>
+    
+  </section>
+  <!-- /* 2020-10-27 수정 start */ -->
+  <div class="popup_wrap" id="detail_search" style="display: none;">
+    <div class="popup">
+      <div class="pop_header">
+        <p>상세검색</p>
+        <button class="pop_close_btn"><i class="fa fa-times" -hidden="true"></i></button>
+      </div>
+      <ul class="popup_list">
+        <li>
+          
+          <div class="detail_top">
+            <ul>
+              <li class="on"><a href="#;">논문</a></li>
+              <li>특허</li>
+              <li>보고서</li>
+              <li>동향</li>
+            </ul>
+          </div>
+          <div class="detail_box">
+            <p>검색항목</p>
+            <div class="detail_con item">
+              <div class="">
+                <select name="" id="">
+                  <option value="">저자소속기관</option>
+                </select>
+                <input type="text">
+                <select name="" id="">
+                  <option value="">AND</option>
+                  <option value="">OR</option>
+                </select>
+              </div>
+              <div class="">
+                <select name="" id="">
+                  <option value="">전체</option>
+                </select>
+                <input type="text">
+                <button class="add_btn">한줄추가</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="pop_btn_wrap">
+        <button>실행</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- /* 2020-10-27 수정 end */ -->
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#;">로그인</a>
+      </li>
+      <li>
+        <a href="#;">PC버전</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#;">개인정보처리방침</a> 
+      </li>
+      <li>
+        <a href="#;">이용약관</a>
+      </li>
+      <li>
+        <a href="#;">이메일무단수집 거부</a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright KISTI. All Rights Reserved.</p>
+  </footer>
+  
+</ㅠㅐ>
+</html>

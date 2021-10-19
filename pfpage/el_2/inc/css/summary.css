@@ -1,0 +1,33 @@
+.summary{position:absolute;width:939px;height:569px;background:url("../../img/content/01_05/summary/bg.png") no-repeat}
+.summary_left{width:250px;height:100%;padding-top:145px;float:left;}
+.summary_right{float:left;width:680px;height:100%;padding: 70px 24px;}
+.summary_close_btn{position:absolute;top:19px;right:21px;display:block;width:21px;height:21px;background:url("../../img/content/01_05/summary/close.png") no-repeat}
+.summary_menu li{font-size:17px;font-weight:bold;padding-left:50px;line-height:30px;color:#333}
+.summary_menu li a:hover,.summary_menu li.on a{color:#a188f0}
+.summary_con > li{display:none;position:absolute;height:470px;width:645px}
+.summary_con > li.on{display:block;}
+.summary_con li h3{padding-left:40px;color:#333;background-position:0 50%;font-weight:bold;font-size:21px;}
+.summary_con li .con_wrap{height:435px;overflow-y:auto;overflow-x:hidden;margin-top:10px;padding-right:20px;padding-bottom:60px;}
+.summary_con li:nth-child(1) h3{background:url("../../img/content/01_05/summary/num1.png") no-repeat}
+.summary_con li:nth-child(2) h3{background:url("../../img/content/01_05/summary/num2.png") no-repeat}
+.summary_con li:nth-child(3) h3{background:url("../../img/content/01_05/summary/num3.png") no-repeat}
+.summary_con li:nth-child(4) h3{background:url("../../img/content/01_05/summary/num4.png") no-repeat}
+.summary_con li:nth-child(5) h3{background:url("../../img/content/01_05/summary/num5.png") no-repeat}
+.summary_con li:nth-child(6) h3{background:url("../../img/content/01_05/summary/num6.png") no-repeat}
+.summary_con li:nth-child(7) h3{background:url("../../img/content/01_05/summary/num7.png") no-repeat}
+.summary_con li h4{color:#8b63b9;font-size:20px;padding-left:20px;padding-top:25px;padding-bottom:10px;}
+.summary_con li p{padding-left:10px;}
+.summary_con li ul{padding-left:30px;font-weight:bold;font-size:17px;color:#ccc}
+.summary_con li ul li ul{padding-left:0px;}
+.summary_con li ul li{line-height:24px;}
+.con_wrap > ul > li{background:url("../../img/content/c_bullet.png") no-repeat 2px 7px;padding-left:8px;margin-bottom:10px;}
+.grap  ul > li{background:url("../../img/content/c_bullet.png") no-repeat 2px 7px;padding-left:8px;margin-bottom:10px;}
+.grap  ul{padding-left:10px !important;}
+.con_wrap ul li.nob{background:none;}
+.con_wrap ul.nob li{background:none;}
+.con_wrap > ul > li > ul > li{background:url("../../img/content/bullet2.png") no-repeat 2px 7px;padding-left:10px;}
+.summary_con li ul li table{border-collapse:collapse;border-spacing:0px;width:540px;margin-left:10px;}
+
+.summary_con li ul li table td,.summary_con li ul li table th{text-align:center;border:1px solid #ccc;padding:10px;}
+.summary_con li ul li table td{font-weight:normal;}
+.down_btn{position:absolute;bottom:50px;right:50px;background:url("../../img/content/01_05/summary/down.png") no-repeat;width:59px;height:58px;}

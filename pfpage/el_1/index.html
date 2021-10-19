@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+-->
+<TITLE> 샘플 콘텐츠 </TITLE>
+<link rel="stylesheet" href="inc/css/common.css" />
+<link rel="stylesheet" href="inc/css/menu.css" />
+
+<script src="inc/js/chromeframe.js"></script>
+<script src="inc/js/jquery-1.11.2.js"></script>
+<script src="inc/js/default.js"></script>
+<script type="text/javascript">
+var videoEnded = false;
+var pg="01";
+$(document).ready(function (){
+  var menuFrame = $("#menuFrame");
+  var contentFrame = $("#contentFrame");
+  menuFrame.on('focus',function  () {
+    menuFrame.contents().find('#menuBtn button').focus();
+  });
+});
+</script>
+<style>
+  body{
+    margin: 0;
+    padding:0;
+    background: #000 url(./img/bg.png) 0 0 ;
+  }
+
+ #default{
+    width: 999px;
+    height: 681px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -341px;
+    margin-left: -504px;
+    overflow: hidden;
+  }
+
+  iframe{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contentFrame{
+    width: 100%;
+    height: 100%;
+  }
+
+  #menuFrame{
+    width: 100%;
+    position: absolute;
+    top:-112px;
+    left:0;
+  }
+  #summaryFrame{
+    width: 939px;
+    height: 569px;
+    position: absolute;
+    top: 130px;
+    left:50%;
+    margin-left:-469.5px;
+    display:none;
+}
+</style>
+</HEAD>
+<body>
+  <div id="default">
+    <iframe id="menuFrame" allowfullscreen name="menuFrame" src="menu.html" ></iframe>
+    <iframe id="contentFrame" allowfullscreen name="contentFrame" src="01.html" ></iframe>
+  </div>
+  <div class="pageVolume dn">0.5</div> <!-- 페이지 기본 음량 -->
+  <div class="trackDisplay dn">off</div> <!-- 자막 활성화 on/off -->
+  <div class="pageRate dn">1.0</div> <!-- 배속 -->
+</body>
+</HTML>

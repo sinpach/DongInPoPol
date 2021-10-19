@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<title>eduwill</title>
+
+	<link rel="stylesheet" href="inc/css/font/nanumbarungothic.css" />
+	<link rel="stylesheet" href="inc/css/common.css" />
+	<link rel="stylesheet" href="inc/css/body.css" />
+	<link rel="stylesheet" href="inc/css/bottom.css" />
+	<link rel="stylesheet" href="inc/css/animate.css" />
+	<link rel="stylesheet" href="inc/css/drag1.css" />
+
+	<script src="inc/js/jquery-1.11.2.js"></script>
+	<script src="inc/js/jquery-ui.drag.js"></script>
+	<script src="inc/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="inc/js/script.js"></script>
+	<script src="inc/js/body.js"></script>
+	<script src="inc/js/bottom.js"></script>
+	<script src="inc/js/drag1.js"></script>
+	<script type="text/javascript">
+	var trackDisplay="off";
+
+	</script>
+
+   <script style="text/javascript">
+
+	  $(document).ready(function() {
+
+		/*$("drag_item2").onDrop(function() {
+          $(".testm").show();
+          )};*/
+      });
+
+	</script>
+</head>
+<style>.testm{display:none;}</style>
+<body>
+	<!-- Body -->
+	<div id="container" class="drag1">
+		<audio id="video" class="aod" poster="img/poster.png">
+			<source src="media/mp3/03-01-03.mp3" type="video/mp4">
+			<track id="track" label="" src="media/vtt/03.vtt" kind="metadata" srclang="ko" default>
+		</audio>
+		<div id="header">
+			<div class="jucha">
+				3주차
+			</div>
+			<h1><span class="chasi">1교시</span>가족생활주기의 의의과 발달과제</h1>
+			<h2></h2>
+		</div>
+		<h1>
+			<span>사전학습</span>
+			<span class="fcg sub">해당 학습에 대한 사전지식이 어느 정도인지 점검해 보세요.</span>
+		</h1>
+		<div class="wrap">
+			<div class="drag_wrap">
+				<p>빈 칸에 들어갈 알맞은 내용을 <b>보기에서 찾아 드래그</b>하여 가족생활주기의 역사적 흐름을 정리해보세요.</p>
+				<div class="drag_items">
+					<div class="drag_item drag_item1" data-ranswer="1">생활주기의 집합</div>
+					<div class="drag_item drag_item2" data-ranswer="2">중심적 사건</div>
+					<div class="drag_item drag_item3" data-ranswer="3">가족평가</div>
+					<div class="drag_item drag_item4" data-ranswer="4">가족스트레스</div>
+					<div class="drag_item drag_item5" data-ranswer="5">발달적 주기</div>
+				</div>
+				<div class="drag_con">
+					<ul>
+						<li>
+							<div>
+								힐과 듀발은 가족을 각 구성원의 개별적 <div class="dragin dragin1" data-ranswer="1"></div>으로 취급했다.
+							</div>
+						</li>
+						<li>
+							<div>
+								듀발은 가족 수가 줄거나 느는 것을 <div class="dragin dragin2" data-ranswer="2"></div>으로 8단계를 설정했다.
+							</div>
+						</li>
+						<li>
+							<div>
+								보웬은 <div class="dragin dragin3" data-ranswer="3"></div>를 통해 가족생활주기의 전체상을 그려내는 것이 <br>중요하다고 봤다.
+							</div>
+						</li>
+						<li>
+							<div>
+								헤일리는 <div class="dragin dragin4" data-ranswer="4"></div>는 어떤 단계에서 다른 단계로 이행하는 시점에서 <br>자주 나타난다고 강조했다.
+							</div>
+						</li>
+						<li>
+							<div>
+								미뉴친은 가족을 하나의 체계로 볼 때, 기본 도식의 중요한 구성 요인을 <br>
+								가족의 <div class="dragin dragin5" data-ranswer="5"></div>로 보았다.
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="dragin_blind"></div>
+			</div>
+		</div>
+
+		<!-- Bottom -->
+		<div id="bottom" class="intro nf">
+			<div id="display"></div><button id="dis_close_btn"></button>
+			<div class="logo ir">세계사이버대학</div>
+			<div class="search">
+				<input type="text">
+				<button title="검색" class="search_btn ir">검색</button>
+			</div>
+			<div class="learningmap">
+				<button title="러닝맵" class="learning ir">러닝맵</button>
+			</div>
+			<div class="btn shortBtn">
+				<button title="단축키 팝업" class="short ir">단축키 팝업</button>
+			</div>
+			<div class="introduction">
+				<button title="강사소개" class="introductionBtn ir">단축키 팝업</button>
+			</div>
+			<div class="purpose">
+				<button title="학습목표" class="purposeBtn ir">학습목표</button>
+			</div>
+			<div class="quality dis">
+				<button title="화질" class="qualityBtn disable">HD</button>
+			</div>
+			<div class="boolmark dis">
+				<button title="북마크" class="boolmarkBtn disable ir">북마크</button>
+			</div>
+			<div class="download dis">
+				<button title="mp3다운" class="downloadBtn disable ir">북마크</button>
+			</div>
+			<div class="full dis">
+				<button title="전체화면" class="fullBtn disable ir">전체화면</button>
+			</div>
+			<div class="progressGroup">
+				<div class="progress">
+					 <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+					 	<div class="p_circle"></div>
+					 </div>
+				</div>
+				<div class="time">
+					<span class="currentTime">00:00</span> /
+					<span class="duration">00:00</span>
+				</div>
+			</div>
+			<div class="videoGroup">
+				<div class="btn playBtn">
+					<button title="재생"  class="play ir">재생</button>
+				</div>
+				<div class="btn pauseBtn">
+					<button title="일시정지" class="pause ir">일시정지</button>
+				</div>
+				<div class="btn resetBtn">
+					<button title="되돌리기" class="reset ir">되돌리기</button>
+				</div>
+				<div class="btn stopBtn">
+					<button title="정지" class="stop ir">정지</button>
+				</div>
+
+
+				<div class="btn fullBtn">
+					<button title="전체화면" class="full ir">전체화면</button>
+				</div>
+			</div>
+			<div class="rateGroup">
+				<ul class="playBackRate">
+					<li class="option">
+						<button title="1.0 배속" rate="1.0">1.0</button>
+					</li>
+					<li class="option">
+						<button title="1.2 배속" rate="1.2" >1.2</button>
+					</li>
+					<li class="option">
+						<button title="1.5 배속" rate="1.5" >1.5</button>
+					</li>
+					<li class="option">
+						<button title="2.0 배속" rate="2.0" >2.0</button>
+					</li>
+				</ul>
+			</div>
+			<div class="soundGroup">
+				<div class="btn soundBtn">
+					<button title="소리끄기" class="sound ir">소리끄기</button>
+					<button title="소리켜기" class="mute ir dn">소리켜기</button>
+				</div>
+				<div class="soundbar">
+					<button class="volume" title="볼륨">
+						<span class="volumeBar">
+
+						</span>
+
+						<span class="volume_bg"></span>
+					</button>
+				</div>
+				<div class="btn noteBtn ">
+					<button title="자막" class="note ir">자막</button>
+				</div>
+			</div>
+
+			<div class="pageGroup">
+				<div class="prevPage">
+					<button class="ir prevPageBtn" title="" pageNum="">이전 페이지</button>
+				</div>
+				<div class="currentPageNum">01</div>
+				<div class="pagebar">/</div>
+				<div class="totalPageNum">10</div>
+				<div class="nextPage">
+					<button class="ir nextPageBtn" title="다음 페이지" pageNum="02">다음 페이지</button>
+				</div>
+			</div>
+			<div class="nextClick dn ir">
+				click
+			</div>
+		</div>
+		<a href="#" class="mobilePlayBtn"></a>
+	</div>
+
+
+
+
+</body>
+</html>

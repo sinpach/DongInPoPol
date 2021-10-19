@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi">
+-->
+<TITLE>시공 미디어</TITLE>
+<link rel="stylesheet" href="inc/css/common.css" />
+<link rel="stylesheet" href="inc/css/menu.css" />
+
+<script src="inc/js/jquery-1.11.2.js"></script>
+<script src="inc/js/default.js"></script>
+<script type="text/javascript">
+var videoEnded = false;
+var pg="01";
+$(document).ready(function (){
+  var menuFrame = $("#menuFrame");
+  var contentFrame = $("#contentFrame");
+  menuFrame.on('focus',function  () {
+    menuFrame.contents().find('#menuBtn button').focus();
+  });
+});
+</script>
+<style>
+  body{
+    margin: 0;
+    padding:0;
+    background: #fff ;
+    background-size: cover;
+    min-height: 591px;
+  }
+
+ #default{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+
+  iframe{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contentFrame{
+    width: 100%;
+    height: 100%;
+  }
+
+  #menuFrame{
+    width: 288px;
+    height: calc(100% - 65px);
+    position: absolute;
+    top:65px;
+    left:-220px;
+  }
+  .learning_on{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6) ;
+    background-position: center;
+    position: absolute;
+    top:0px;
+    left:-100%;
+    display: none;
+  }
+
+</style>
+</HEAD>
+<body>
+  <div id="default">
+    <iframe id="menuFrame" allowfullscreen name="menuFrame" src="menu.html" ></iframe>
+    <iframe id="contentFrame" allowfullscreen name="contentFrame" src="01.html" ></iframe>
+  </div>
+  <div class="learning_on">
+    <div class="learning_wrap">
+        <a href="./media/down/plan.zip" class="learning_down ir">교안 다운로드</a>
+        <a href="#" class="jungri_down ir">정리하기 다운로드</a>
+      <button class="learning_close ir"></button>
+    </div>
+  </div>
+  <div class="pageVolume dn">0.5</div> <!-- 페이지 기본 음량 -->
+  <div class="trackDisplay dn">off</div> <!-- 자막 활성화 on/off -->
+  <div class="pageRate dn">1.0</div> <!-- 배속 -->
+</body>
+</HTML>

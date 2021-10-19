@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1080, user-scalable=no">
+  <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./css/calendar.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <script src="./js/fullcalendar.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/mobile.js"></script>
+  <script src="./js/calendar.js"></script>
+  <title>ScienceON</title>
+</head>
+<body class="search ">
+  <div class="header">
+    
+    
+    <h1><a href="#;"><img src="./img/m_logo_s.png" alt="ScienceON"></a></h1>
+    <a href="#;" class="log_in">
+      <i class="fa fa-power-off" aria-hidden="true"></i>
+    </a>
+  </div >
+
+  <button class="m_nav_btn">
+    <img src="./img/nav_btn.png" alt="">
+  </button>
+  <nav class="main_nav">
+    <div class="nav_bg">
+
+    </div>
+    <div class="nav_wrap">
+      <div class="nav_head">
+        <a href="#;" class="nav_close_btn">
+          <img src="./img/nav_close.png" alt="">
+        </a>
+        <p><a href="#;">로그인하세요.</a></p>
+      </div>
+      <dl>
+        <dd><a href="#;">마이페이지</a></dd>
+        <dd><a href="#;">즐겨찾기</a></dd>
+        <dd><a href="#;">로그인</a></dd>
+      </dl>
+      <dl>
+        <dt>Service</dt>
+        <dd>
+          <a href="#;">논문</a>
+        </dd>
+        <dd>
+          <a href="#;">특허</a>
+        </dd>
+        <dd>
+          <a href="#;">보고서</a>
+        </dd>
+        <dd>
+          <a href="#;">동향</a>
+        </dd>
+        <dd>
+          <a href="#;">날씨와 일정</a>
+        </dd>
+
+      </dl>
+      <dl>
+        <dt>ScienceON</dt>
+        <dd>
+          <a href="#;">About</a>
+        </dd>
+        <dd>
+          <a href="#;">공지사항</a>
+        </dd>
+        <dd>
+          <a href="#;">이용문의</a>
+        </dd>
+      </dl>
+      <dl class="sns">
+        <dt>SNS</dt>
+        <dd><a href="#;"><img src="./img/sns_icon1.png" alt=""></a><span>블로그</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon2.png" alt=""></a><span>유튜브</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon3.png" alt=""></a><span>페이스북</span></dd>
+        <dd><a href="#;"><img src="./img/sns_icon4.png" alt=""></a><span>인스타</span></dd>
+      </dl>
+    </div>
+
+
+  </nav>
+
+  <section class="main_wrap">
+    <div class="search_box">
+      <div class="input_wrap">
+        <input type="text" placeholder="검색어를 입력하세요">
+        <button>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <button class="detail_search_btn">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    
+    <div class="dailyl_area">
+      <div class="daily_title">
+        <h3>상세검색</h3>
+      </div>
+      <div class="daily_wrap">
+        <div class="local_choice_wrap">
+          <div class="local_choice_top">
+            <p>지역 선택</p>
+            <a href="#;" class="set_btn" onclick="popShow('select_local')">관심지역 설정</a>
+          </div>
+          <div class="local_select">
+            <select id="sch_1" name="sch_1" class="sch_1" title="">
+              <option value="daejeon" selected="selected">대전광역시</option>
+              <option value="seoul">서울시</option>
+            </select>
+            <select id="sch_2" name="sch_2" class="sch_2" title="">
+              <option value="daejeon" selected="selected">유성구</option>
+              <option value="seoul">서구</option>
+            </select>
+            <select id="sch_3" name="sch_3" class="sch_3" title="">
+              <option value="daejeon" selected="selected">어은동</option>
+              <option value="seoul">구암동</option>
+            </select>
+          </div>
+          
+          <div class="btn_wrap">
+            <button class="inquiry_btn">조회</button>
+          </div>
+          
+          
+        </div>
+        <div class="weather_wrap">
+          <div class="wt_header">
+            <h3>
+              <em>현재 날씨</em> <span>유성구</span>
+            </h3>
+            <p>15:30 발표</p>
+          </div>
+          <div class="wt_con">
+            <div class="wt_main_info">
+              <div class="wt_icon">
+                <img src="./img/wt_icon2.png">
+              </div>
+              <div class="wt_today_info">
+                <div class="now">15시 현재</div>
+                <div class="today_temp">
+                  <span>20</span><span>℃</span><small>구름많음</small>
+                </div>
+                <div class="detail_info_box">
+                  <span class="yesterday">어제보다 <em>-5℃</em></span>
+                  <span class="rainfall">강수량 <em>0.0mm</em></span> <br>
+                  <span class="dust">미세먼지 <em class="blue">좋음</em></span>
+                  <span class="ozone">오존 <em class="red">보통</em></span>
+                </div>
+              </div>
+            </div>
+            <div class="wt_sub_wrap">
+              <div class="wt_sub_info">
+                <div class="wt_icon">
+                  <img src="./img/w_icon9.png">
+                </div>
+                <div class="sub_info_text">
+                  <p>16시 예보</p>
+                  <p><em>비</em></p>
+                </div>
+              </div>
+              <div class="wt_sub_info">
+                <div class="wt_icon">
+                  <img src="./img/w_icon9.png">
+                </div>
+                <div class="sub_info_text">
+                  <p>16시 예보</p>
+                  <p><em>비</em></p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="weekly_btn_wrap">
+            <a href="#;" class="">주간예보</a>
+          </div>
+          <div class="weekly_wt">
+            <ul class="weekly_wt_list">
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon1.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon3.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon1.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon2.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon3.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon4.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon5.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon6.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon7.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon8.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="day_info">
+                  <p>
+                    <em>내일</em>
+                    <span>07. 07</span>
+                  </p>
+                </div>
+                <div class="time_info morning">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon9.png">
+                  </div>
+                  <div class="point_time ">
+                    <span>오전 <em>19℃</em></span>
+                    <span>맑음</span>
+                  </div>
+                </div>
+                <div class="time_info afternoon">
+                  <div class="wt_s_icon">
+                    <img src="./img/w_icon10.png">
+                  </div>
+
+                  <div class="point_time ">
+                    <span>오후 <em>19℃</em></span>
+                    <span>구름많음</span>
+                  </div>
+                </div>
+              </li>
+              
+
+            </ul>
+          </div>
+          
+        </div>
+        <div class="calendar_wrap">
+          <div class="calendar_area">
+            <div id="calendar">
+
+            </div>
+          </div>
+          <div class="event_wrap">
+            <ul>
+              <li>
+                <p>11:00</p>
+                <span>과기부 미팅</span>
+              </li>
+              <li>
+                <p>14:00</p>
+                <span>대한민국 군수사업</span>
+              </li>
+              <li>
+                <p>17:00</p>
+                <span>유관기관 관계자 미팅</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#;">로그인</a>
+      </li>
+      <li>
+        <a href="#;">PC버전</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#;">개인정보처리방침</a> 
+      </li>
+      <li>
+        <a href="#;">이용약관</a>
+      </li>
+      <li>
+        <a href="#;">이메일무단수집 거부</a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright KISTI. All Rights Reserved.</p>
+  </footer>
+  <div class="popup_wrap" id="select_local" style="display: none;">
+    <div class="popup">
+      <div class="pop_header">
+        <p>관심지역 선택</p>
+        <button class="pop_close_btn">X</button>
+      </div>
+      <ul class="popup_list">
+        <li>
+          <div class="title">
+            <div>
+              <input type="checkbox">
+              관심지 1
+            </div>
+            <div class="select_btn">
+              <button class="pop_btn">변경</button>
+              <button class="pop_btn">삭제</button>
+            </div>
+          </div>
+          <div class="select">
+            <span>대전광역시 유성구 노은동</span>
+          </div>
+        </li>
+        <li>
+          <div class="title">
+            <div>
+              <input type="text" placeholder="관심지2">
+            </div>
+            
+            <div class="select_btn">
+              <button class="pop_btn">저장</button>
+              <button class="pop_btn">삭제</button>
+            </div>
+          </div>
+          <div class="select">
+            <select id="sch_1" name="sch_1" class="sch_1" title="">
+              <option value="daejeon" selected="selected">대전광역시</option>
+              <option value="seoul">서울시</option>
+            </select>
+            <select id="sch_2" name="sch_2" class="sch_2" title="">
+              <option value="daejeon" selected="selected">유성구</option>
+              <option value="seoul">서구</option>
+            </select>
+            <select id="sch_3" name="sch_3" class="sch_3" title="">
+              <option value="daejeon" selected="selected">어은동</option>
+              <option value="seoul">구암동</option>
+            </select>
+            
+          </div>
+        </li>
+
+      </ul>
+      <p>· 지역은 최대 10개까지 설정 가능하며, 신규지역 추가 시 접속한 위치에 맞는 지역이 노출됩니다.</p>
+      <div class="pop_btn_wrap">
+        <button>확인</button>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+<script>
+  $(".weekly_btn_wrap a").click(function(){
+    if ($(this).hasClass("on")) {
+      $(this).removeClass("on")
+      $(".weekly_wt").stop().animate({
+      height:994
+      });
+    }else{
+      $(this).addClass("on")
+      $(".weekly_wt").stop().animate({
+        height:0
+      });
+    }
+  });
+  
+  
+</script>
+
+</html>

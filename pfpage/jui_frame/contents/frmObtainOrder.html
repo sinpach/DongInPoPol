@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW JMES Sample</title>
+  <link rel="stylesheet" href="../common/css/font.css" />
+  <link rel="stylesheet" href="../common/css/reset.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../common/fontawesome5.15.4/css/all.css" />
+  <!-- jui framework -->
+
+  <!-- Basic style components -->
+  <link rel="stylesheet" href="../common/jui/dist/ui.min.css" />
+  <link rel="stylesheet" href="../common/jui/dist/jui-ui.classic.css" />
+  <link rel="stylesheet" href="../common/jui/dist/ui-jennifer.min.css" />
+  <!-- Grid style components -->
+  <link rel="stylesheet" href="../common/jui/dist/jui-grid.classic.css" />
+  <!-- Required script files -->
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/jui/dist/jui-core.min.js"></script>
+  <!-- Basic script components -->
+  <script src="../common/jui/dist/jui-ui.min.js"></script>
+  <!-- Grid script components -->
+  <script src="../common/jui/dist/jui-grid.min.js"></script>
+  <!-- jui framework -->
+  <script src="../common/js/swiper-bundle.js"></script>
+
+  <!-- fontawesome -->
+  <script src="../common/fontawesome5.15.4/js/all.js"></script>
+  <link rel="stylesheet" href="../common/fontawesome5.15.4/css/all.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="../common/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="../common/css/style.css" />
+  <link rel="stylesheet" href="../common/css/main.css" />
+  
+  <!-- custom js -->
+  <script src="../common/js/main.js"></script>
+</head>
+
+<body class="jui iframe_jui">
+  <header>
+    <div class="page-title">
+      <div class="navbar flat">
+        <div class="inline right">
+          <i class="icon icon-home"></i><span>HOME</span><i class="icon icon-chevron-right"></i> <span>영업관리</span><i class="icon icon-chevron-right"></i><span>수주관리</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="row">
+        <div class="col col-12" >
+          <div class="content-top">
+            <h4>수주 리스트</h4>
+            <div class="function-wrap flex-a">
+              <div id="combo_1" class="combo">
+                <a class="btn small" >날짜조건검색</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">납품기한</li>
+                  <li value="2">견적일자</li>
+                </ul>
+              </div>
+              <div style="display: inline-block;" class="group date">
+                <input type="text" class="input  small" style="width: 90px;">
+                <button class="btn focus small"><i class="icon icon-calendar"></i></button>
+              </div>
+              ~
+              <div style="display: inline-block;" class="group date">
+                <input type="text" class="input  small" style="width: 90px;">
+                <button class="btn focus small"><i class="icon icon-calendar"></i></button>
+              </div>
+              <button class="btn small ">
+                <i class="icon icon-search"></i>날짜검색
+              </button>
+
+              <div id="combo_2" class="combo">
+                <a class="btn small" style="width: 140x;">선택</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">코넥</li>
+                  <li value="2">인지커트롤스</li>
+                  <li value="3">인지디스플레이어</li>
+                  <li value="4">오리엔트정공</li>
+                  <li value="5">글로벌</li>
+                  <li value="6">YK TECH</li>
+                </ul>
+              </div>
+              <div id="combo_3" class="combo">
+                <a class="btn small" >검색항목</a>
+                <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                <ul>
+                  <li value="1">거래처 이름</li>
+                  <li value="2">대표자명</li>
+                  <li value="2">주소</li>
+                </ul>
+              </div>
+              <div style="display: inline-block;" class="group">
+                <input type="text" class="input  small" style="width: 90px;">
+                <button class="btn focus small"><i class="icon icon-search"></i></button>
+              </div>
+              <div class="group">
+                <a class="btn small ">
+                  <i class="icon icon-refresh"></i>
+                </a>
+                <button class="btn small " onclick="win_2.show();">
+                  수주등록
+                </button>
+                <button class="btn small ">
+                  <i class="far fa-file-excel"></i>
+                </button>
+                <button class="btn small ">
+                  <i class="icon icon-printer"></i>
+                </button>
+              </div>
+             
+              
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col col-12">
+                <table class="table classic hover">
+                  <thead >
+                    <tr>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>수주코드</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>거래처명</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>담당자</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>담당자연락처</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>납품기한</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>수주일자</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>상태</th>
+                      <th><i class="icon icon-play" style="font-size:10px;"></i>관리</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>333</td>
+                      <td>인지디스플레이어</td>
+                      <td>인지디스플레이어</td>
+                      <td></td>
+                      <td>2021-09-25</td>
+                      <td>2021-08-25</td>
+                      <td>수주</td>
+                      <td >
+                        <input type="button" class="btn small" value="보기">
+                        <input type="button" class="btn small" value="재수주">
+                        <input type="button" class="btn small" value="수정">
+                      </td>
+                    </tr>
+                  </tbody>
+                  
+                  
+                  
+                </table>
+
+                <div class="table-bottom-wrap">
+                  <div class="count-wrap">
+
+                    <!-- <div id="data_cnt" class="combo">
+                      <a class="btn small" style="width: 50px;">20</a>
+                      <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+                      <ul>
+                        <li value="1">20</li>
+                        <li value="2">30</li>
+                        <li value="3">40</li>
+                        <li value="4">50</li>
+                      </ul>
+                    </div> -->
+
+                    <div class="total_cnt">
+                      전체 : <span>50</span>건
+                    </div>
+                  </div>
+                  
+                  <div class="paging-wrap" style="width:auto;">
+                    <a href="#;" class="btn focus small ">
+                      first
+                    </a>
+                    <div class="paging">
+                      <a href="#;" class="prev">Previous</a>
+                      <div class="list">
+                        <a href="#;">1</a>
+                        <a href="#;" class="active">2</a>
+                        <a href="#;">3</a>
+                        <a href="#;">4</a>
+                        <a href="#;">5</a>
+                        <a href="#;">4</a>
+                        <a href="#;">5</a>
+                      </div>
+                      <a href="#;" class="next">Next</a>
+                    </div>
+                    <a href="#;" class="btn focus small ">
+                      end
+                    </a>
+                  </div>
+
+                </div>
+                
+                
+
+                
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </section>
+  </main>
+  
+  <div id="win_2" class="window ">
+    <div class="head">
+      <div class="title">수주서</div>
+      <div class="right">
+        <a href="#;" class="close"><i class="icon-exit"></i></a>
+      </div>
+    </div>
+    <div class="body">
+      <div class="content-head">
+        <h4>수주정보</h4>
+      </div>
+      <div class="content-body">
+        <table class="table simple horizontal th-right">
+          <colgroup>
+            <col width="12%">
+            <col width="38%">
+            <col width="12%">
+             <col width="38%">
+          </colgroup>
+          <tbody>
+            
+            <tr>
+              <th >수주코드</th>
+              <td><input type="text" class="input mini" name="c_order_id" id="c_order_id" value="" readonly=""></td>
+              <th >수주일*</th>
+              <td>
+                <div style="display: inline-block;" class="group date">
+                  <input type="text" class="input  small" style="width: 150px;">
+                  <button class="btn focus small"><i class="icon icon-calendar"></i></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th >거래처*</th>
+              <td>
+                <input type="hidden" name="account_id" id="account_id">
+                <input type="text" class="input mini" name="c_officer_name" id="c_officer_name" onclick="modal_2.show(dateHide());">
+              </td>
+              <th >연락처</th>
+              <td><input type="text" class="input mini" name="c_officer_tel" id="c_officer_tel" ></td>
+            </tr>
+            <tr>
+              <th >거래처담당자</th>
+              <td><input type="text" class="input mini" name="c_officer" id="c_officer"></td>
+              <th >담당자이메일</th>
+              <td><input type="text" class="input mini" name="c_officer_email" id="c_officer_email"></td>
+            </tr>
+            <tr>
+              <th >대금결제방법</th>
+              <td>
+                <div class="property " style="display: inline-block;">
+                  <div class="property-table" style="position: relative;">
+                    <div class="property-item" style="border: 0;margin: 0;padding: 0;">
+                      <div class="property-render" style="margin: 0;padding: 0;">
+                        <div class="item">
+                          <select style="max-width: 100%;height:22px;background: transparent;">
+                            <option value="" selected disabled hidden>선택</option>
+                            <option value="001">현금</option>
+                            <option value="002">카드</option>
+                            <option value="003">계좌이체</option>
+                            <option value="004">어음</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <th >팩스</th>
+              <td><input type="text" class="input mini" name="c_officer_fax" id="c_officer_fax"></td>
+            </tr>
+            <tr>
+              <th >부가세적용</th>
+              <td>
+                <div class="property " style="display: inline-block;">
+                  <div class="property-table" style="position: relative;">
+                    <div class="property-item" style="border: 0;margin: 0;padding: 0;">
+                      <div class="property-render" style="margin: 0;padding: 0;">
+                        <div class="item">
+                          <select style="max-width: 100%;height:22px;background: transparent;">
+                             <option value="y">적용</option>
+                             <option value="n">미적용</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </td>
+              <th >납품기한*</th>
+              <td>
+                <div style="display: inline-block;" class="group date">
+                  <input type="text" class="input  small" style="width: 150px;">
+                  <button class="btn focus small"><i class="icon icon-calendar"></i></button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th >배송지</th>
+
+              <td colspan="3">
+                <div style="display: inline-block;" class="group">
+                  <input type="text" placeholder="우편번호" readonly="" class="input  small" style="width: 105px;">
+                  <button class="btn focus small"><i class="icon icon-search"></i>주소검색</button>
+                </div>
+                <div style="margin-top:5px">
+                  <input type="text" class="input mini" placeholder="주소" name="address" id="address">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th >비고</th>
+              <td colspan="3">
+                <div class="property ">
+                  <div class="property-item " style="border: 0;margin: 0;padding: 0;">
+                    <div class="property-render" style="margin: 0;padding: 0;">
+                      <div class="item">
+                        <textarea style="width: 100%; height: 100px;resize: none;"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="content-head flex-b">
+        <h4>수주품목* </h4>
+        <div class="function-wrap flex-a ">
+          <div class="group">
+            <button class="btn small " onclick="modal_1.show(dateHide())">
+              <i class="icon icon-plus"></i>
+              품목추가
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content-body">
+        <table class="table classic hover input-table">
+          <colgroup>
+            <col width="25px">
+            <col width="13%">
+            <col width="16%">
+            <col width="6%">
+            <col width="8%">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col width="7%">
+          </colgroup>
+          <thead>
+            <th style="width:25px"></th>
+            <th>품번</th>
+            <th>품명</th>
+            <th>규격</th>
+            <th>수량</th>
+            <th>판매단가</th>
+            <th>할인금액</th>
+            <th>합계금액</th>
+            <th>부가세</th>
+            <th>비고</th>
+
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center"><i class="delBtn fa fa-minus-square " aria-hidden="true" style="color:red"></i></td>
+              <td><input type="text" class="input mini fitem_id" name="fitem_id[]" id="fitem_id_1" value="366F5-1XAAO" readonly="" ></td>
+              <td><input type="text" class="input mini fitem_name" name="fitem_name[]" id="fitem_name_1" value="SENSOR HOUSING" readonly=""></td>
+              <td><input type="text" class="input mini fitem_standard" name="fitem_standard[]" id="fitem_standard_1" value="1" readonly=""></td>
+              <td><input type="text" class="input mini eo_fitem_cnt" name="eo_fitem_cnt[]" id="eo_fitem_cnt_1" value="416" ></td>
+              <td><input type="text" class="input mini fitem_sales_price" name="fitem_sales_price[]" id="fitem_sales_price_1" value="0" ></td>
+              <td><input type="text" class="input mini e_order_price_dc" name="e_order_price_dc[]" id="e_order_price_dc_1" value="0" ></td>
+              <td><input type="text" class="input mini eo_fitem_tot_price" name="eo_fitem_tot_price[]" id="eo_fitem_tot_price_1" value="1,000,000,000" readonly=""></td>
+              <td><input type="text" class="input mini eo_fitem_tax" name="eo_fitem_tax[]" id="eo_fitem_tax_1" value="0" readonly=""></td>
+              <td><input type="text" class="input mini" name="eo_fitem_memo[]" id="eo_fitem_memo_1" value=""></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="foot flex-a flex-c">
+      <div class="flex-c flex-a" style="width:100%">
+        <button href="#;" class="btn focus">자재 등록</button>
+        <button href="#;" class="btn" onclick="win_2.hide()">취소</button>
+        <div class="btn-right-p">
+          <button class="btn small btn-del" type="button" style="margin: 0 5px;">
+            삭제
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div id="modal_1_msg" class="window" style="display: none;">
+      <div class="head">
+        <div class="title">제품 리스트</div>
+        <div class="right">
+          <a href="#;" class="close" onclick="modal_1.hide()"><i class="icon-exit"></i></a>
+        </div>
+      </div>
+      <div class="body" style="height:300px ">
+        
+        <div class="content-body" style="width:500px">
+          <table id="accountListTb" class="table simple ">
+            <colgroup>
+              <col width="10%">
+              <col width="30%">
+              <col width="40%">
+              <col width="10%">
+              <col width="10%">
+            </colgroup>
+            <thead style="border-bottom:1px solid #ccc">
+              <tr>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>구분</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>품번</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>푸목명</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>규격</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>단위</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="cursor:pointer">
+                <td>완성품</td>
+                <td>48246-2H000-X</td>
+                <td>감마 압력필터 아세이(외주)</td>
+                <td>1</td>
+                <td>EA</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>완성품</td>
+                <td>48246-2H000-X</td>
+                <td>감마 압력필터 아세이(외주)</td>
+                <td>1</td>
+                <td>EA</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>완성품</td>
+                <td>48246-2H000-X</td>
+                <td>감마 압력필터 아세이(외주)</td>
+                <td>1</td>
+                <td>EA</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="foot" align="center" style="position:relative;height:auto;padding-bottom: 10px;">
+        <div class="paging-wrap" style="width: 100%;">
+
+          <div class="paging">
+            <div class="list">
+              <a href="#;">1</a>
+              <a href="#;" class="active">2</a>
+              <a href="#;">3</a>
+              <a href="#;">4</a>
+              <a href="#;">5</a>
+            </div>
+          </div>
+
+        </div>
+        <a href="#;" class="btn" onclick="modal_1.hide()">취소</a>
+      </div>
+    </div>
+    <div id="modal_2_msg" class="window" style="display: none;">
+      <div class="head">
+        <div class="title">거래처 리스트</div>
+        <div class="right">
+          <a href="#;" class="close" onclick="modal_2.hide()"><i class="icon-exit"></i></a>
+        </div>
+      </div>
+      <div class="body" style="height:300px ">
+        <div class="content-head flex-b">
+          <h4>품목기본정보</h4>
+          <div class="function-wrap flex-a ">
+
+            <div id="combo_4" class="combo">
+              <a class="btn small" style="width: 80px;">거래처구분</a>
+              <a class="btn small toggle"><i class="icon-arrow2"></i></a>
+              <ul>
+                <li value="1">매입</li>
+                <li value="2">매출</li>
+                <li value="3">외주</li>
+              </ul>
+            </div>
+
+            <div style="display: inline-block;" class="group">
+              <input type="text" class="input  small" style="width: 80px;">
+              <button class="btn focus small"><i class="icon icon-search"></i></button>
+            </div>
+            <div class="group">
+              <a class="btn small ">
+                <i class="icon icon-refresh"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content-body" style="width:400px">
+          <table id="" class="table simple ">
+            <thead style="border-bottom:1px solid #ccc">
+              <tr>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>구분</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>거래처코드</th>
+                <th><i class="icon icon-play" style="font-size:10px;"></i>거래처명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>8</td>
+                <td>오리엔트정공</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>외주</td>
+                <td>7</td>
+                <td>글로벌</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매입</td>
+                <td>4</td>
+                <td>코넥</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매입</td>
+                <td>3</td>
+                <td>인지컨트롤스</td>
+              </tr>
+
+              <tr style="cursor:pointer">
+                <td>매입</td>
+                <td>2</td>
+                <td>인지디스플레이어</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>1</td>
+                <td>YK TECH</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>1</td>
+                <td>YK TECH</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>1</td>
+                <td>YK TECH</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>1</td>
+                <td>YK TECH</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>1</td>
+                <td>YK TECH</td>
+              </tr>
+              <tr style="cursor:pointer">
+                <td>매출</td>
+                <td>2</td>
+                <td>YK TECH</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="foot" align="center" style="position:relative;height:auto;padding-bottom: 10px;">
+        <div class="paging-wrap" style="width: 100%;">
+
+          <div class="paging">
+            <div class="list">
+              <a href="#;">1</a>
+              <a href="#;" class="active">2</a>
+              <a href="#;">3</a>
+              <a href="#;">4</a>
+              <a href="#;">5</a>
+            </div>
+          </div>
+
+        </div>
+        <a href="#;" class="btn" onclick="modal_2.hide()">취소</a>
+      </div>
+    </div>
+    
+
+  </div>
+
+
+  <div id="datepicker" class="datepicker">
+    <div class="head">
+      <div class="prev"><i class="icon-chevron-left"></i></div>
+      <div class="custum-title">
+        <div class="property " id="dateYear" style="display:  inline-block;">
+          <div class="property-table" style="position: relative;">
+            <div class="property-item" style="border: 0;margin: 0;padding: 0;">
+              <div class="property-render" style="margin: 0;padding: 0;">
+                <div class="item">
+                  <select style="max-width: 100%;height:22px;background: transparent;min-width: 40px" onchange="dp()">
+                   
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="property " id="dateMonth" style="display: inline-block;">
+          <div class="property-table" style="position: relative;">
+            <div class="property-item" style="border: 0;margin: 0;padding: 0;">
+              <div class="property-render" style="margin: 0;padding: 0;">
+                <div class="item">
+                  <select style="max-width: 100%;height:22px;background: transparent;min-width: 40px" onchange="dp()">
+                    
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="next"><i class="icon-chevron-right"></i></div>
+    </div>
+    <table class="body">
+      <tr>
+        <th>SU</th>
+        <th>MO</th>
+        <th>TU</th>
+        <th>WE</th>
+        <th>TH</th>
+        <th>FR</th>
+        <th>SA</th>
+      </tr>
+      <script id="tpl_date" type="text/template">
+          <td><!= date !></td>
+      </script>
+    </table>
+  </div>
+
+
+</body>
+
+<script>
+  jui.ready([ "ui.combo" ], function(combo) {
+    combo_1 = combo("#combo_1", {
+        value: "날짜조건검색",
+    });
+    combo_2 = combo("#combo_2", {
+      value: "선택",
+      width:140
+    });
+    combo_2 = combo("#combo_3", {
+      value: "검색항목",
+    });
+   
+    
+  });
+  jui.ready([ "ui.window" ], function(win) {
+    alert1 = win("#alert-box1", {
+      modal: true,
+      height:180,
+    });
+  });
+
+jui.ready([ "ui.window" ], function(win) {
+    win_2 = win("#win_2", {
+        width: 900,
+        height: 600,
+        modal: true,
+        event :{
+          hide : () =>{
+            dateHide()
+          },
+          show : ()=>{
+            dateHide()
+          }
+        }
+    });
+  });
+  jui.ready([ "ui.modal" ], function(modal) {
+    modal_1 = modal("#modal_1_msg", {
+          target: "#win_2",
+          opacity: 0.5,
+          color: 'white',
+         
+      });
+      modal_2 = modal("#modal_2_msg", {
+          target: "#win_2",
+          opacity: 0.5,
+          color: 'white',
+          
+      });
+      
+      
+  });
+  
+
+</script>
+  
+
+
+</html>

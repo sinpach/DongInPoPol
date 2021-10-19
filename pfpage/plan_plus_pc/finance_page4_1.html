@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- 02-08 추가 -->
+</head>
+
+<body>
+	<div id="body" class="body-custom">
+		<div id="left">
+			<div class="logo">
+				<span class="ir">PlanPlus</span>
+			</div>
+			<div class="logon-custom">
+				<span class="eng">Financial Plan for</span>
+				<p class="name">
+					<span>박세라</span><span>님</span>
+				</p>
+
+			</div>
+			<h3 class="left-title green">
+				<img src="images/common/left-title-logo3.png" alt="">
+				재무정보입력
+			</h3>
+			<ul class="left-menu">
+				<li class="green">
+					<a class="" href="#">자산ㆍ부채현황</a>
+					<ul>
+						<li class="green"><a href="./finance_page3_1_1.html">금융자산현황</a></li>
+						<li class="green"><a href="./finance_page3_2_1.html">연금자산현황</a></li>
+						<li class="green"><a class="" href="./finance_page3_3_1.html">부동산자산현황</a></li>
+						<li class="green"><a href="./finance_page3_4_1.html">부채현황</a></li>
+					</ul>
+				</li>
+				<li class="green">
+					<a class="on" href="./finance_page4_1.html">보장성 보험 현황</a>
+				</li>
+				<li class="green">
+					<a href="./finance_page5_1.html">소득ㆍ지출현황</a>
+				</li>
+
+			</ul>
+			<div class="left-menu-statwrap">
+				<div class="left-menu-stats">
+					<h3 class="left-title ">
+						<img src="images/common/left-title-logo-sub1.png" alt="">
+						월 납입보험료 합계
+					</h3>
+					<p>
+						<span class="num">2.9</span><span>억원</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div class="setbar">
+				<div class="m_nav_btn">
+					<a href="#"></a>
+				</div>
+				<div class="btns fr">
+					<a href="#" class="setting">
+						<img src="images/common/setbar-lock.png" alt="">
+					</a>
+					<a href="#" class="lock">
+						<img src="images/common/setbar-power.png" alt="">
+					</a>
+					<a href="#" class="power">
+						<img src="images/common/setbar-setting.png" alt="">
+					</a>
+				</div>
+			</div>
+			<ul class="navbar">
+				<li class="customer">
+					<a href="./customer_list.html">
+						<span><img src="images/common/icon5.png" alt="">고객관리</span>
+					</a>
+
+				</li>
+				<li class="finance">
+					<a href="./finance_page1_1.html" class="on">
+						<span><img src="images/common/icon6.png" alt="">재무설계</span>
+					</a>
+					<ul class="sub_navbar">
+						<li>
+							<a href="./finance_page1_1.html" class="customer_info-bar">
+								고객정보
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page2_1.html" class="customer_info-bar">
+								재무목표
+							</a>
+						</li>
+						<li>
+							<a href="./finance_page3_1_1.html" class="financial-bar on">
+								재무정보
+							</a>
+						</li>
+						<li>
+							<a href="./retire-plan1_1.html" class="retire_plan-bar">
+								은퇴설계
+							</a>
+						</li>
+						<li>
+							<a href="./edu-plan1_1.html" class="education_plan-bar">
+								교육설계
+							</a>
+						</li>
+						<li>
+							<a href="./money-plan.html" class="Purpose_fund-bar">
+								목적자금
+							</a>
+						</li>
+						<li>
+							<a href="./guarantee_plan1_1.html" class="guarantee_plan-bar">
+								보장설계
+							</a>
+						</li>
+						<li>
+							<a href="./debt_plan1_1.html" class="debt_plan-bar">
+								부채설계
+							</a>
+						</li>
+						<li>
+							<a href="./invest_plan1_1.html" class="invest_plan-bar">
+								투자설계
+							</a>
+						</li>
+						<li>
+							<a href="#" class="settings-bar">
+								<span class="eng">Settings</span>
+							</a>
+							<!--01-25 수정 Start -->
+							<div class="plan-popup setting_pop">
+								<a href="#" class="plan-popup-close"><span class="ir">팝업 닫기</span></a>
+								<div class="customer-input-btns">
+									<a href="#" class="on">경제변수 설정</a>
+									<a href="#">투자목적 구분</a>
+									<a href="#">상담 단계</a>
+								</div>
+								<div class="table-box tab1">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+											<col style="width: 50%">
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" placeholder="예적금 수익률" class="tac" /></th>
+												<td class="tc"><input type="text" name="" placeholder="1.5%" class="tac" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="채권자신 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="4.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주식자산 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="4.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="실물자산 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="대안자산 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="부동산자산 수익률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="물가상승률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="소득상승률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="1.5%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="교육비상승률" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="3.0%" /></td>
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="연금할인율" /></th>
+												<td class="tc"><input type="text" name="" class="tac" placeholder="2.0%" /></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab2">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="투자목적" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="비상자금" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="자녀교육" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="주택마련" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="목돈마련" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" /></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+								<div class="table-box tab3">
+									<table class="basic-table">
+										<colgroup>
+											<col style="width: 50%">
+
+										</colgroup>
+
+										<tbody>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="상담단계" /></th>
+
+											</tr>
+
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Opening" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Fact Finding" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Presentation" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Action Plan" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" placeholder="Monitoring" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" /></th>
+
+											</tr>
+											<tr>
+												<th class="tc"><input type="text" name="" class="tac" /></th>
+
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+
+								<a href="#" class="btn_submit">저장하기</a>
+							</div>
+							<!--01-25 수정 end -->
+						</li>
+
+					</ul>
+				</li>
+				<li class="plan">
+					<a href="./design_result.html">
+						<span><img src="images/common/icon7.png" alt="">설계결과</span>
+					</a>
+				</li>
+			</ul>
+			<div class="content finance_page4_1">
+				<div class="step">
+					<div class="step-title">
+						<span class="green eng">Step 3.</span>
+						<span class="eng"> Collect the client's Life &amp; Health insurance information</span>
+					</div>
+					<p class="title-sub">
+						고객의 보장성보험 정보를 수집하여 입력합니다.
+					</p>
+				</div>
+				<h4 class="table-title">보장성 보험 현황</h4>
+				<div class="customer-input-btns">
+					<a href="./finance_page4_1.html" class="on">개별입력</a>
+					<a href="./finance_page4_2.html">붙여넣기 입력</a>
+				</div>
+				<div class="table-box">
+
+					<div class="btnwrap">
+						<a href="#" class="btn">
+							<span>확인</span>
+						</a>
+						<a href="#" class="btn add-btn">
+							<span><img src="images/common/icon4.png" alt="">추가</span>
+						</a>
+						<a href="#" class="btn">
+							<span><img src="images/common/icon2.png" alt="">삭제</span>
+						</a>
+					</div>
+					<div class="basic-table_wrap1 mCustomScrollbar light" data-mcs-theme="minimal-dark">
+						<table class="basic-table oln">
+							<colgroup>
+								<col style="width:4%">
+								<col style="width:12%">
+								<col style="">
+								<col style="width:9%">
+								<col style="width:9%">
+								<col style="width:8%">
+								<col style="width:8%">
+								<col style="width:8%">
+								<col style="width:8%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="tc"><input type="checkbox" value=""></th>
+									<th>선택</th>
+									<th>상품명</th>
+									<th>월보험료</th>
+									<th>계약일</th>
+									<th>납입기간</th>
+									<th>계약자</th>
+									<th>피보함자</th>
+									<th>수익자</th>
+									<th class="tc"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="10">
+										<table class="inner-table">
+											<colgroup>
+												<col style="width:4%">
+												<col style="width:12%">
+												<col style="">
+												<col style="width:9%">
+												<col style="width:9%">
+												<col style="width:8%">
+												<col style="width:8%">
+												<col style="width:8%">
+												<col style="width:8%">
+												<col style="width:10%">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="tc"><input type="checkbox" value=""></td>
+													<td>
+														<select class="blan inner-select" name="" id="">
+														<option value="">종신보험</option>
+														<option value="">예적금</option>
+													</select>
+													</td>
+													<td>(무)수호천사희망가득종신보험</td>
+													<td>500만원</td>
+													<td>2010-05-05</td>
+													<td>
+														<select class="blan inner-select" name="" id="">
+															<option value="">20년</option>
+															<option value="">19년</option>
+															<option value="">18년</option>
+															<option value="">16년</option>
+															<option value="">15년</option>
+															<option value="">14년</option>
+															<option value="">13년</option>
+															<option value="">12년</option>
+															<option value="">11년</option>
+														</select>
+													</td>
+													<td>
+														<select class="blan inner-select" name="" id="">
+															<option value="">본인</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</td>
+													<td>
+														<select class="blan inner-select" name="" id="">
+															<option value="">본인</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</td>
+													<td>
+														<select class="blan inner-select" name="" id="">
+															<option value="">본인</option>
+															<option value=""></option>
+															<option value=""></option>
+														</select>
+													</td>
+													<td>
+														<a href="#" class="more-btn">
+															<span class="ir">상세보기</span>
+														</a>
+													</td>
+												</tr>
+												<tr class="dn">
+													<td colspan="2" class="inner-table-btns">
+														<ul>
+															<li>
+																<a href="#" class="on" data-table=1>사망보험금<span></span></a>
+															</li>
+															<li>
+																<a href="#" data-table=2>진단금 및 후유 장애<span></span></a>
+															</li>
+															<li>
+																<a href="#" data-table=3>수술비, 입원비, 실비<span></span></a>
+															</li>
+														</ul>
+													</td>
+													<td colspan="8">
+														<div class="inner-table-table-wrap">
+															<table class="inner-table-table table1">
+																<colgroup>
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<td></td>
+																		<td>일반사망(종신)</td>
+																		<td>일반사망(정기)</td>
+																		<td>재해사망</td>
+																		<td>질병사망</td>
+																		<td>상해사망</td>
+																		<td>생활보장특약</td>
+																	</tr>
+																</thead>
+																<tr>
+																	<td>보장금액(만원)</td>
+																	<td><input type="text"></td>
+																	<td><input type="text"></td>
+																	<td><input type="text"></td>
+																	<td><input type="text"></td>
+																	<td><input type="text"></td>
+																	<td><input type="text"></td>
+																</tr>
+																<tr>
+																	<td>보장만기</td>
+																	<td>종신</td>
+																	<td>
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td>
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td>
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td>
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td>
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																</tr>
+															</table>
+
+															<table class="inner-table-table table2 dn">
+																<colgroup>
+																	<col>
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																	<col style="width: 11%;">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<td></td>
+																		<td colspan="2">암 진단금</td>
+																		<td colspan="2">뇌혈관 진단금</td>
+																		<td colspan="2">심장 진단금</td>
+																		<td colspan="2">후유장애 진단금</td>
+																	</tr>
+																</thead>
+																<tr>
+																	<td rowspan="3">보장금액<br>(만원)</td>
+																	<td>중대한암</td>
+																	<td><input type="text"></td>
+																	<td>중대한뇌출혈</td>
+																	<td><input type="text"></td>
+																	<td>중대한<br>급성심근경색</td>
+																	<td><input type="text"></td>
+																	<td>질병장애</td>
+																	<td><input type="text"></td>
+																</tr>
+																<tr>
+																	<td>일반암</td>
+																	<td><input type="text"></td>
+																	<td>뇌출혈</td>
+																	<td><input type="text"></td>
+																	<td>급성<br>심근경색</td>
+																	<td><input type="text"></td>
+																	<td>상해장애</td>
+																	<td><input type="text"></td>
+																</tr>
+																<tr>
+																	<td>소액암</td>
+																	<td><input type="text"></td>
+																	<td>뇌졸증</td>
+																	<td><input type="text"></td>
+																	<td>허혈성<br>심장실환</td>
+																	<td><input type="text"></td>
+																	<td>재해장애</td>
+																	<td><input type="text"></td>
+																</tr>
+																<tr>
+																	<td>보장만기</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																</tr>
+																<tr>
+																	<td>갱신주기</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																	<td colspan="2">
+																		<select name="" id="">
+																			<option value=""></option>
+																		</select>
+																	</td>
+																</tr>
+															</table>
+
+															<table class="inner-table-table table3 dn">
+																<colgroup>
+																	<col>
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																	<col style="width:14%">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<td></td>
+																		<td>수술비</td>
+																		<td>입원비</td>
+																		<td colspan="3">실손의료비</td>
+																	</tr>
+																	<tr>
+																		<td></td>
+																		<td>일반수술</td>
+																		<td>일반입원</td>
+																		<td>입원</td>
+																		<td>통원</td>
+																		<td>약재</td>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>보장금액(만원)</td>
+																		<td><input type="text"></td>
+																		<td><input type="text"></td>
+																		<td><input type="text"></td>
+																		<td><input type="text"></td>
+																		<td><input type="text"></td>
+																	</tr>
+																	<tr>
+																		<td>보장만기</td>
+																		<td>
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																		<td>
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																		<td colspan="3">
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>갱신주기</td>
+																		<td>
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																		<td>
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																		<td colspan="3">
+																			<select name="" id="">
+																				<option value=""></option>
+																			</select>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td><!--02-15 수정-->
+								</tr>
+								<!-- </table> --> <!--02-15 삭제-->
+								<!-- </td> --><!--02-15 삭제-->
+								<!-- </tr> --><!--02-15 삭제-->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 02-08 삭제 -->
+	<script>
+		$(document).on('click', '.more-btn', function(e) {
+			e.preventDefault();
+			var $nextTr = $(this).parent().parent().next('tr');
+			if ($(this).hasClass('close')) {
+				$(this).removeClass('close');
+				$nextTr.hide('fast');
+			} else {
+				$(this).addClass('close');
+				$nextTr.show('slow');
+			}
+		});
+
+		$(document).on('click', '.inner-table-btns a', function(e) {
+			e.preventDefault();
+			$(this).parent().parent('ul').find('a').removeClass('on');
+			$(this).addClass('on');
+			var sTable = "table" + $(this).attr('data-table');
+			$(this).parent().parent().parent().parent('tr').find('.inner-table-table').hide();
+			$(this).parent().parent().parent().parent('tr').find('.inner-table-table.' + sTable).show();
+		});
+
+		$(function() {
+			$(".setting_pop .customer-input-btns a").click(function() {
+				var indexNum = $(this).index() + 1;
+				$(this).addClass("on")
+				$(this).siblings("a").removeClass("on")
+
+				$(".tab" + indexNum).show();
+				$(".tab" + indexNum).siblings(".table-box").hide();
+
+			});
+			$(".setting_pop .plan-popup-close").click(function() {
+				$(".setting_pop").fadeOut()
+			})
+			$(".settings-bar").click(function() {
+				$(".setting_pop").fadeIn()
+			})
+
+		});
+		//01-24 추가 클릭 테이블 추가 시작
+		$(function() {
+			var inputTr =
+			'<td colspan="10">' +
+				'<table class="inner-table">' +
+					'<colgroup>' +
+						'<col style="width:4%">' +
+						'<col style="width:12%">' +
+						'<col style="">' +
+						'<col style="width:9%">' +
+						'<col style="width:9%">' +
+						'<col style="width:8%">' +
+						'<col style="width:8%">' +
+						'<col style="width:8%">' +
+						'<col style="width:8%">' +
+						'<col style="width:10%">' +
+					'</colgroup>' +
+					'<tbody>' +
+						'<tr>' +
+							'<td class="tc"><input type="checkbox" value=""></td>' +
+							'<td>' +
+								'<select class="blan inner-select" name="" id="">' +
+								'<option value="">종신보험</option>' +
+								'<option value="">예적금</option>' +
+							'</select>' +
+							'</td>' +
+							'<td>(무)수호천사희망가득종신보험</td>' +
+							'<td>500만원</td>' +
+							'<td>2010-05-05</td>' +
+							'<td>' +
+								'<select class="blan inner-select" name="" id="">' +
+									'<option value="">20년</option>' +
+									'<option value="">19년</option>' +
+									'<option value="">18년</option>' +
+									'<option value="">16년</option>' +
+									'<option value="">15년</option>' +
+									'<option value="">14년</option>' +
+									'<option value="">13년</option>' +
+									'<option value="">12년</option>' +
+									'<option value="">11년</option>' +
+								'</select>' +
+							'</td>' +
+							'<td>' +
+								'<select class="blan inner-select" name="" id="">' +
+									'<option value="">본인</option>' +
+									'<option value=""></option>' +
+									'<option value=""></option>' +
+								'</select>' +
+							'</td>' +
+							'<td>' +
+								'<select class="blan inner-select" name="" id="">' +
+									'<option value="">본인</option>' +
+									'<option value=""></option>' +
+									'<option value=""></option>' +
+								'</select>' +
+							'</td>' +
+							'<td>' +
+								'<select class="blan inner-select" name="" id="">' +
+									'<option value="">본인</option>' +
+									'<option value=""></option>' +
+									'<option value=""></option>' +
+								'</select>' +
+							'</td>' +
+							'<td>' +
+								'<a href="#" class="more-btn">' +
+									'<span class="ir">상세보기</span>' +
+								'</a>' +
+							'</td>' +
+						'</tr>' +
+						'<tr class="dn">' +
+							'<td colspan="2" class="inner-table-btns">' +
+								'<ul>' +
+									'<li>' +
+										'<a href="#" class="on" data-table=1>사망보험금<span></span></a>' +
+									'</li>' +
+									'<li>' +
+										'<a href="#" data-table=2>진단금 및 후유 장애<span></span></a>' +
+									'</li>' +
+									'<li>' +
+										'<a href="#" data-table=3>수술비, 입원비, 실비<span></span></a>' +
+									'</li>' +
+								'</ul>' +
+							'</td>' +
+							'<td colspan="8">' +
+								'<div class="inner-table-table-wrap">' +
+									'<table class="inner-table-table table1">' +
+										'<colgroup>' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+										'</colgroup>' +
+										'<thead>' +
+											'<tr>' +
+												'<td></td>' +
+												'<td>일반사망(종신)</td>' +
+												'<td>일반사망(정기)</td>' +
+												'<td>재해사망</td>' +
+												'<td>질병사망</td>' +
+												'<td>상해사망</td>' +
+												'<td>생활보장특약</td>' +
+											'</tr>' +
+										'</thead>' +
+										'<tr>' +
+											'<td>보장금액(만원)</td>' +
+											'<td><input type="text"></td>' +
+											'<td><input type="text"></td>' +
+											'<td><input type="text"></td>' +
+											'<td><input type="text"></td>' +
+											'<td><input type="text"></td>' +
+											'<td><input type="text"></td>' +
+										'</tr>' +
+										'<tr>' +
+											'<td>보장만기</td>' +
+											'<td>종신</td>' +
+											'<td>' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td>' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td>' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td>' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td>' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+										'</tr>' +
+									'</table>' +
+
+									'<table class="inner-table-table table2 dn">' +
+										'<colgroup>' +
+											'<col>' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+											'<col style="width: 11%;">' +
+										'</colgroup>' +
+										'<thead>' +
+											'<tr>' +
+												'<td></td>' +
+												'<td colspan="2">암 진단금</td>' +
+												'<td colspan="2">뇌혈관 진단금</td>' +
+												'<td colspan="2">심장 진단금</td>' +
+												'<td colspan="2">후유장애 진단금</td>' +
+											'</tr>' +
+										'</thead>' +
+										'<tr>' +
+											'<td rowspan="3">보장금액<br>(만원)</td>' +
+											'<td>중대한암</td>' +
+											'<td><input type="text"></td>' +
+											'<td>중대한뇌출혈</td>' +
+											'<td><input type="text"></td>' +
+											'<td>중대한<br>급성심근경색</td>' +
+											'<td><input type="text"></td>' +
+											'<td>질병장애</td>' +
+											'<td><input type="text"></td>' +
+										'</tr>' +
+										'<tr>' +
+											'<td>일반암</td>' +
+											'<td><input type="text"></td>' +
+											'<td>뇌출혈</td>' +
+											'<td><input type="text"></td>' +
+											'<td>급성<br>심근경색</td>' +
+											'<td><input type="text"></td>' +
+											'<td>상해장애</td>' +
+											'<td><input type="text"></td>' +
+										'</tr>' +
+										'<tr>' +
+											'<td>소액암</td>' +
+											'<td><input type="text"></td>' +
+											'<td>뇌졸증</td>' +
+											'<td><input type="text"></td>' +
+											'<td>허혈성<br>심장실환</td>' +
+											'<td><input type="text"></td>' +
+											'<td>재해장애</td>' +
+											'<td><input type="text"></td>' +
+										'</tr>' +
+										'<tr>' +
+											'<td>보장만기</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+										'</tr>' +
+										'<tr>' +
+											'<td>갱신주기</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+											'<td colspan="2">' +
+												'<select name="" id="">' +
+													'<option value=""></option>' +
+												'</select>' +
+											'</td>' +
+										'</tr>' +
+									'</table>' +
+
+									'<table class="inner-table-table table3 dn">' +
+										'<colgroup>' +
+											'<col>' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+											'<col style="width:14%">' +
+										'</colgroup>' +
+										'<thead>' +
+											'<tr>' +
+												'<td></td>' +
+												'<td>수술비</td>' +
+												'<td>입원비</td>' +
+												'<td colspan="3">실손의료비</td>' +
+											'</tr>' +
+											'<tr>' +
+												'<td></td>' +
+												'<td>일반수술</td>' +
+												'<td>일반입원</td>' +
+												'<td>입원</td>' +
+												'<td>통원</td>' +
+												'<td>약재</td>' +
+											'</tr>' +
+										'</thead>' +
+										'<tbody>' +
+											'<tr>' +
+												'<td>보장금액(만원)</td>' +
+												'<td><input type="text"></td>' +
+												'<td><input type="text"></td>' +
+												'<td><input type="text"></td>' +
+												'<td><input type="text"></td>' +
+												'<td><input type="text"></td>' +
+											'</tr>' +
+											'<tr>' +
+												'<td>보장만기</td>' +
+												'<td>' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+												'<td>' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+												'<td colspan="3">' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+											'</tr>' +
+											'<tr>' +
+												'<td>갱신주기</td>' +
+												'<td>' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+												'<td>' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+												'<td colspan="3">' +
+													'<select name="" id="">' +
+														'<option value=""></option>' +
+													'</select>' +
+												'</td>' +
+											'</tr>' +
+										'</tbody>' +
+									'</table>' +
+								'</div>' +
+							'</td>' +
+						'</tr>' +
+					'</tbody>' +
+				'</table>' +
+			'</td>';
+
+			$('.add-btn').click(function(e) {
+				$('.basic-table_wrap1 .basic-table>tbody').append('<tr>' + inputTr + '</tr>');
+			});
+		});
+		//01-24 추가 클릭 테이블 추가 끝
+	</script>
+</body>
+
+</html>

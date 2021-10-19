@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Near-To</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <link href="commonimg/pavicon-3.png" rel="shortcut icon" type="image/png">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/respond.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="topbar" class="clearfix">
+				<div class="float_r">
+					<div class="sitemap"><p><a href="#">SiteMap</a></p></div>
+					<div class="contact"><p><a href="#">Contact Us</a></p></div>
+					<div class="lang">
+						<div>
+							<p class="lang_ko"><a href="#"><img src="commonimg/ko.png" width="18" height="12" alt="korean" />한국어</a></p>
+							<p class="lang_en"><a href="#"><img src="commonimg/en.png" width="18" height="12" alt="english" />english(영어)</a></p>
+						</div>
+					</div>
+					<div class="top_search">
+						<form class="searchform" action="#" method="get">
+							<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+							<input class="searchsubmit" type="submit" value="Go!">
+							<a href="#"><img src="commonimg/top_serch_off.svg" alt="serch on" /></a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<p class="topbar_toggle"><a href="#"><span ></span></a></p>
+			<div id="bottombar" class="clearfix ">
+				<div class="fix clearfix">
+					<h1 class="top_logo"><a href=""><img src="commonimg/top-logo.png" width="237" height="62" alt="logo" /></a></h1>
+					<div class="web">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="tablet">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="mobile">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fix_none clearfix">
+					<h1 class="top_logo"><a href=""><img src="commonimg/top-logo.png" width="237" height="62" alt="logo" /></a></h1>
+					<div class="web">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="tablet">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="mobile">
+						<div class="nav">
+							<nav>
+								<div class="nav_on"><a href="#"><img src="commonimg/menu_on.png" width="16" height="16" alt="" />menu</a></div>
+								<ul class="depth1">
+									<li class="left_icon"><a href="#">회사소개</a>
+										<ul class="depth2" >
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">CI</a></li>
+											<li><a href="#">브랜드소개</a></li>
+											<li><a href="#">기술소개</a></li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">제품소개</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li class="left_icon"><a href="#">이어폰</a>
+												<ul class="depth3">
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">NT-D1</a></li>
+													<li><a href="#">NT-DC1</a></li>
+												</ul>
+											</li>
+											<li><a href="#">헤드셋</a></li>
+											<li class="left_icon"><a href="#">악세사리</a>
+												<ul class="depth3" >
+													<li class="back back2"><a href="#">back</a></li>
+													<li><a href="#">소프트파우치</a></li>
+													<li><a href="#">하드파우치</a></li>
+													<li><a href="#">컬러 코어 이어팁</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="left_icon"><a href="#">뉴스 및 이벤트</a>
+										<ul class="depth2">
+											<li class="back back1"><a href="#">back</a></li>
+											<li><a href="#">뉴스</a></li>
+											<li><a href="#">이벤트</a></li>
+										</ul>
+									</li>
+									<li><a href="#">협력사</a></li>
+									<li><a href="#">고객센터</a></li>
+								</ul>
+							</nav>
+							<div class="nav_search">
+								<form class="searchform" action="#" method="get">
+									<input class="searchform" type="text" placeholder="Type and hit enter …" value="" name="s" >
+									<input class="searchsubmit" type="submit" value="Go!">
+									<a href=""><img src="commonimg/serch_off.svg" alt="serch on" /></a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>	
+		<!-- header -->
+		<section id="visual">
+				<div class="slide">
+					<div class="vis_frame">
+						<ul>
+							<li class="slide_01">
+								<p class="slide_img"><img src="mainimg/main_01.jpg"  alt="main_image01" /></p >
+							
+							</li>
+							<li class="slide_02">
+								<p  class="slide_img"><img src="mainimg/main_02.jpg" alt="main_image02" /></p >
+								<p  class="slide_text"><img src="mainimg/main02_text.png"  alt="Color core" /></p >
+							</li>
+							<li class="slide_03">
+								<p  class="slide_img"><img src="mainimg/main_03.jpg"  alt="main_image03" /><p >
+								<p  class="slide_text"><img src="mainimg/main03_text.png" " alt="since 1983" /><p >
+							</li>
+						</ul>
+					</div>
+					<div class="control">
+						<div class="control1">
+							<a href="#none" class="left"><span class="blind">left</span></a>
+							<a href="#none" class="right"><span class="blind">right</span></a>
+						</div>
+						
+						<div class="control2">
+							<div class="control2_play"><a href="#none" class="play"><span class="blind">play</span></a></div>
+							<div class="slide_list">
+								<div class="slide01 slide_icon"><a href="#none" ><span class="blind">slide01</span></a>
+									<div class="icon_hover">
+										<p class="box"><img src="mainimg/main_01.jpg" height="60px" alt="" /></p>
+										<p class="box_b"></p>
+									</div>
+								</div>
+								<div class="slide02 slide_icon"><a href="#none"  ><span class="blind">slide02</span></a>
+									<div class="icon_hover">
+										<p class="box" ><img src="mainimg/main_02.jpg" width="90px" alt="" /></p>
+										<p class="box_b"></p>
+									</div>
+								</div>
+								<div class="slide03 slide_icon"><a href="#none" ><span class="blind">slide03</span></a>
+									<div class="icon_hover">
+										<p class="box" ><img src="mainimg/main_03.jpg" width="90px" alt="" /></p>
+										<p class="box_b"></p>
+									</div>
+								</div>
+							</div>
+							<div class="control2_stop"><a href="#none" class="stop"><span class="blind">stop</span></a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="item_01">
+						<p><img src="mainimg/main-icon_01.png"  alt="N-tail Plug" /></p>
+						<dl>
+							<dt>N-tail Plug</dt>
+							<dd>케이블 연결부에 발생하는 부하를 효율적으로 분산시켜 단선을 방지하고 내구성을 향상시켜줍니다.</dd>
+						</dl>
+					</div>
+					<div class="item_02">
+						<p><img src="mainimg/main-icon_02.png"  alt="Convertible ear tip" /></p>
+						<dl>
+							<dt>Convertible ear tip</dt>
+							<dd>오픈형, 커널형으로 전환이 가능하여 사용자의 상황과 취향에 따라 원하는 타입으로 사용 가능합니다.</dd>
+						</dl>
+					</div>
+					<div class="item_03">
+						<p><img src="mainimg/main-icon_03.png"  alt="Slide volume control for IOS and Android" /></p>
+						<dl>
+							<dt>Slide volume control for IOS and Android</dt>
+							<dd>슬라이드 볼륨 조절방식으로 iOS, Android 프로그램에 관계없이 볼륨 컨트롤 호환이 가능합니다.</dd>
+						</dl>
+					</div>
+					<div class="item_04">
+						<p><img src="mainimg/main-icon_04.png"  alt="OMG(Oval Micro Groove) cable" /></p>
+						<dl>
+							<dt>OMG(Oval Micro Groove) cable</dt>
+							<dd>3.5mm 타원형 마이크로 그루브 케이블로 선 꼬임을 방지하며 접촉 면적을 최소화시켜 터치 노이즈를 감소시켰습니다.</dd>
+						</dl>
+					</div>
+				</div>
+		</section>
+		<!-- section -->
+		<aside id="content">
+			<div class="product">
+				<h2><img src="mainimg/product.png" width="110" height="61" alt="product" /></h2>
+				<p>사용자가 니어투의 제품을 통해 편안하고 자연스럽게 소리를 듣는 것, 음악이 주는 행복감 감동을 전달해주는 것이 저희의 목표입니다. <br />고객이 원하는, 니어투의 기술력이 녹아있는 제품을 통해 고객에게 보답하는 브랜드가 되겠습니다.</p>
+				<div class="product_item" >
+					<div class="product_item_01 hover">
+						<div>
+							<p class="item_img"><a href="#"><img src="mainimg/item_01.jpg"  alt="컬러코어이어팁" /></a></p>
+							<p class="item_hover"><a href="#"><img src="commonimg/item_hover.svg"  alt="" /></a></p>
+						</div>
+						<dl>
+							<dt><a href="#">컬러코어이어팁</a></dt>
+							<dd>- 이어폰 전용 케이스 <br />- 깔끔한 정리</dd>
+						</dl>
+					</div>
+					<div class="product_item_02 hover">
+						<div>
+							<p class="item_img"><a href="#"><img src="mainimg/item_02.jpg"  alt="소프트케이스" /></a></p>
+							<p class="item_hover"><a href="#"><img src="commonimg/item_hover.svg"  alt="" /></a></p>
+						</div>
+						<dl>
+							<dt><a href="#">소프트케이스</a></dt>
+							<dd>- 이어폰 전용 케이스 <br />- 깔끔한 정리</dd>
+						</dl>
+					</div>
+					<div class="product_item_03 hover">
+						<div>
+							<p class="item_img"><a href="#"><img src="mainimg/item_03.jpg"  alt="NT-DC1(출시예정)" /></a></p>
+							<p class="item_hover"><a href="#"><img src="commonimg/item_hover.svg"  alt="" /></a></p>
+						</div>
+						<dl>
+							<dt><a href="#">NT-DC1(출시예정)</a></dt>
+							<dd>- 컨버터블 타입 이어폰(세미오픈형 & 커널형)<br />- 플렉서블팁 적용으로 착용감 극대화</dd>
+						</dl>
+					</div>
+					<div class="product_item_04 hover">
+						<div>
+							<p class="item_img"><a href="#"><img src="mainimg/item_04.jpg" " alt="NT-D1" /></a></p>
+							<p class="item_hover"><a href="#"><img src="commonimg/item_hover.svg"  alt="" /></a></p>
+						</div>
+						<dl>
+							<dt><a href="#">컬러코어이어팁</a></dt>
+							<dd>- 인체공학적 디자인의 커널형 이어폰<br />- 단선방지 플러그(N-tail plug) <br />- 슬라이드 볼륨 리모컨(iOS, Android 호환) <br />- OMG 케이블</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="news">
+				<h2><img src="mainimg/news.png" width="197" height="60" alt="news and event" /></h2>
+				<div class="news_item">
+					<div class="news_item_01 hover">
+						<div >
+							<p class="item_img"><a href="#"><img src="mainimg/news_01.jpg"  alt="NEARTO 니어투 NT-D1 / ORIGIN 출시" /></a></p>
+							<p class="item_hover"><a href="#"><img src="commonimg/news_hover.svg"  alt="" /></a></p>
+						</div>
+						<dl>
+							<dt><a href="#">NEARTO 니어투 NT-D1 / ORIGIN 출시</a></dt>
+							<dd>NEARTO의 시작을 알리는 모델 ORIGIN(모델명 : NT-D1) 입니다.</dd>
+							<dd><a href="#">2015년 3월 27일	</a></dd>
+						</dl>
+						
+					</div>
+				</div>
+			</div>
+		</aside>
+		<footer>
+			<div class="footer_logo"><img src="commonimg/footer-logo.png" width="145" height="101" alt="footer_logo" /></div>
+			<address>
+				<p>COMPANY 니어투  l  CEO 박 세 준  l  PHONE +82 32 363 4231  l  FAX +82 32 363 4231</p>
+				<p>인천광역시 부평구 청천2동 440-4 남광센트렉스 708호</p>
+				<p>#708, Namkwang Centlex 440-4, Cheongcheon 2-dong, Bupyeong-gu, Incheon, Korea</p>
+				<p>COPYRIGHT &copy; Nearto CORPORATION ALL RIGHT RESERVED.</p>
+			</address>
+			<div class="to_top">
+				<a href="#header"><img src="commonimg/to_top.svg" width="44px" height="44px" alt="To top"></a>
+			</div>
+		</footer>
+
+	</div>	
+</body>
+</html>

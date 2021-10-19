@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./css/sionfont.css">
+<link rel="stylesheet" href="./css/sion2020.css">
+<link rel="stylesheet" href="./css/inline.css">
+<link rel="stylesheet" href="./css/unified_search.css">
+<link rel="stylesheet" href="./css/filter2.css">
+<link rel="stylesheet" href="./css/sionbot.css">
+<link rel="stylesheet" href="./css/jquery-ui-12.css">
+<link rel="stylesheet" href="./css/jquery-confirm.css">
+<link rel="stylesheet" href="./css/jquery.bxslider.css">
+<link rel="stylesheet" href="./css/summernote-lite.css">
+<link rel="stylesheet" href="./css/jstree-style.min.css">
+<link rel="stylesheet" href="./css/sub_myon.css">
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/bpopup.js"></script>
+<!-- <script type="text/javascript" src="./js/sub_myon.js"></script> -->
+
+</head>
+<body>
+
+  <header>
+    <img src="./img/sp1.png" >
+  </header>
+  <!-- content -->
+  <div class="conArea">
+    <div class="myon_header myon_use">
+      <div class="myheader_inner">
+        <h2>다양한 연구목적에 맞는 나만의 지식인프라 활용환경을 자유롭게 구성하여 이용할 수 있습니다. </h2>
+        <p class="subtext text_white">연구목적에 맞게 필요한 연구단계와 활용할 정보, 기능을 구성하여 나만의 연구환경을 생성하세요.<br>
+          개인 파일, 링크, 메모를 쉽게 관리할 수 있고 연관성 높은 과학기술 정보를 얻을 수 있으며,<br>
+          MyON을 공유하여 공동 연구자와 함께 연구를 쉽게 수행할 수 있습니다. </p>
+      </div>
+    </div>
+
+    <!-- psd -->
+    <div class="myon_make_page">
+      <div class="myon_title_area">
+        <div class="title">
+          <h3>세미나 생성 및 등록</h3>
+        </div>
+        <div class="caption">
+          <p>
+            온라인 세미나 도구(Webinar)를 이용해 비대면 연구를 진행해 보세요. Webinar는 온라인 수업 및 세미나에 최적화된 무료 화상회의 서비스입니다. <br>화상 회의, 웹 세미나, 스크린
+            공유, 프리젠테이션 파일공유, 채팅 등의 기능을 이용해 동료에게 지식정보를 전달할 수 있습니다.
+          </p>
+        </div>
+      </div>
+      <div class="seminar_tab ">
+        <a href="#;" class="step1">
+          <p>STEP1</p>
+          <span>Webinar 서비스(KREONET/KISTI)에 접속하여 세미나 개설하기</span>
+        </a>
+        <a href="#;" class="step2">
+          <p>STEP2</p>
+          <span>세미나 정보 등록하고 초대하기</span>
+        </a>
+      </div>
+      <ul class="seminar_con">
+        <li class="on">
+          <div class="step_title">
+            <h4>STEP1</h4>
+            <p>KISTI 에서 제공하는 온라인 세미나 도구 Webinar 서비스에 접속하여, 세미나를 개설하세요. </p>
+            <p>아래 ‘Webinar 세미나 개설하기’버튼을 클릭한 후, 새 창에서 세미나를 생성한 후 다음 단계로 이동합니다.</p>
+          </div>
+          <div class="seminar_btn_wrap">
+            <a href="#;" class="open_seminar">Webinar 세미나 개설하기</a>
+          </div>
+          
+
+          <div class="form_btn_area">
+            <a href="#;" class="signup_btn">다음</a>
+            <a href="#;" class="reset_btn">취소</a>
+          </div>
+        </li>
+        <li>
+          <div class="step_title">
+            <h4>STEP2</h4>
+            <p>Webinar 서비스에서 개설된 세미나 정보를 등록하고, 연구자를 초대하세요.</p>
+          </div>
+          <div class="form_area">
+
+            <div class="form">
+              <div class="form_header">
+                <p>STEP1 에서 개설된 세미나의 제목, 접근속성, 비밀번호(private일 경우)를 입력하세요. </p>
+              </div>
+              <ul class="top_ul">
+                <li>
+                  <div class="input_title">
+                    세미나명
+                  </div>
+                  <div class="input_area">
+                    <input type="text">
+                  </div>
+                </li>
+                <li>
+                  <div class="input_title">
+                    접근속성
+                  </div>
+                  <div class="input_area radio">
+                    <input type="radio" id="access1" name="access" checked><label for="access1">public</label>
+                    <input type="radio" id="access2" name="access"><label for="access2">private</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="input_title">
+                    비밀번호
+                  </div>
+                  <div class="input_area">
+                    <input type="text">
+                  </div>
+                </li>
+              </ul>
+              <div class="form_header">
+                <p>세미나 공개범위를 설정하고 초대메일을 발송하세요. </p>
+              </div>
+              <ul>
+                <li>
+                  <div class="input_title">
+                    공개범위
+                  </div>
+                  <div class="input_area radio">
+                    <input type="radio" id="scale1" name="scale" checked><label for="scale1">SciencetON 회원전체 공개</label>
+                    <input type="radio" id="scale2" name="scale"><label for="scale2" >MyON프로젝트 내
+                      공개</label>
+                  </div>
+                </li>
+                <li>
+                  <div class="input_title">
+                    공개할 MyOn
+                  </div>
+                  <div class="input_area">
+                    <button class="ch_btn" onclick="myonOpen();">선택</button><input type="text" class="s_input">
+                  </div>
+                </li>
+
+                <li>
+                  <div class="input_title">
+                    초대 이메일
+                  </div>
+                  <div class="input_area">
+                    <input type="text">
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="form_btn_area">
+            <a href="#;" class="signup_btn">다음</a>
+            <a href="#;" class="reset_btn">취소</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    
+  </div>
+  <div class="Pstyle hidden" id="myonOpen" style="display: none; left: 296.505px; position: absolute;top: 817.463px;z-index: 9999;opacity: 1;">
+    <div class="pop_layer">
+      <p class="p_title_main">공개할 MyON</p>
+      <div class="p_con" id="subjectSearch">
+        <div>
+          <div class="sch_form">
+            <label class="title">프로젝트명</label>
+            <input type="text" id="keyword">
+            <button type="button" onclick=";">찾기</button>
+          </div>
+          
+
+          <div id="" class="">
+            <div class="cout_box">
+              <span>검색건수 : <span id="totalCnt">4447</span></span>
+              <select title="출력건수" id="rowCnt" onchange="fncJournalRowCountChange();">
+                <option value="10">10개</option>
+                <option value="20">20개</option>
+                <option value="30">30개</option>
+                <option value="50">50개</option>
+                <option value="100">100개</option>
+                <option value="200">200개</option>
+              </select>
+            </div>
+            <div style="min-height: 250px; overflow-y: auto">
+              
+              <table>
+                <caption>주제 검색</caption>
+                <colgroup>
+                  <col style="width:90px">
+                  <col style="width:500px">
+                  <col >
+                  <col style="width:90px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>번호</th>
+                    <th>저널명</th>
+                    <th>설명</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr>
+                    <td>1</td>
+                    <td class="tleft"><span>- Historical, Geographical, Persons Treatment of Astronomy Persons Treatment
+                        of Astronomy </span>
+                    </td>
+                    <td class="tleft"><span>Historical, Geographical, Persons Treatment of</span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="tleft"><span>- Historical, </span>
+                    </td>
+                    <td class="tleft"><span>Historical, </span></td>
+                    <td><button class="sel_btn">선택</button></td>
+                  </tr>
+
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="pagination" id="pagination">
+            <span class="">처음</span>
+            <span class="">이전</span>
+            <span class="active">1</span>
+            <span onclick="fn_pageing(2); return false;">2</span>
+            <span onclick="fn_pageing(3); return false;">3</span>
+            <span onclick="fn_pageing(4); return false;">4</span>
+            <span onclick="fn_pageing(5); return false;">5</span>
+            <span onclick="fn_pageing(6); return false;">6</span>
+            <span onclick="fn_pageing(7); return false;">7</span>
+            <span onclick="fn_pageing(8); return false;">8</span>
+            <span onclick="fn_pageing(9); return false;">9</span>
+            <span onclick="fn_pageing(10); return false;">10</span>
+            <span onclick="fn_pageing(11); return false;">다음</span>
+            <span onclick="fn_pageing(445); return false;">끝</span>
+          </div>
+          <div class="btn_area">
+            
+            <button type="button" class="btn middle " onclick=""><i class="fa fa-check" aria-hidden="true"></i>&nbsp;확인</button>
+            <button type="button" class="btn middle " onclick="myonOpenClose()">취소</button>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <img src="./img/sp2.png">
+  </footer>
+
+</body>
+<script>
+  $(".seminar_tab .step1").click(function(){
+      $(".seminar_tab").removeClass("on");
+      $(".seminar_con>li").removeClass("on");
+      $(".seminar_con>li").eq(0).addClass("on")
+  });
+  $(".seminar_tab .step2").click(function(){
+    $(".seminar_tab").addClass("on");
+     $(".seminar_con>li").removeClass("on");
+     $(".seminar_con>li").eq(1).addClass("on")
+  });
+  function myonOpen() {
+    $('#myonOpen').bPopup();
+  }
+  function myonOpenClose() {
+  $('#myonOpen').bPopup().close();
+  }
+</script>
+</html>

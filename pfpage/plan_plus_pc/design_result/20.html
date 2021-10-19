@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page20">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[4-1 자녀교육 필요자금]
+			</h1>
+			<div class="explain">
+				자녀교육을 위해 현재시점 필요한 자금은 총 <span>2.5억원</span>입니다.
+			</div>
+			<h2 class="page_title c2">04  | 교육자금 설계</h2>
+			<div class="content">
+				<div class="content-box">
+					<div class="con_title">
+						교육 필요자금 (현재시점)
+					</div>
+					<ul>
+						<li>
+							<p>나민혁<span>14세</span></p>
+							<span>8,414 <span>만원</span></span>
+						</li>
+						<li>
+							<p>나윤미<span>12세</span></p>
+							<span>8,414 <span>만원</span></span>
+						</li>
+						<li>
+							<p>나윤성<span>8세</span></p>
+							<span>8,414 <span>만원</span></span>
+						</li>
+					</ul>
+				</div>
+				<div class="chart-box">
+					<div class="con_title">
+						연간 자녀교육비 추이
+					</div>
+					<div id="chartbar1" class="chart">
+
+					</div>
+					<div class="chart_legend">
+						<ul>
+							<li><span></span>초과 현금흐름</li>
+							<li><span></span>부족 현금흐름</li>
+							<li><span></span>임대수익</li>
+							<li><span></span>나민혁</li>
+							<li><span></span>나윤미</li>
+							<li><span></span>나윤성</li>
+						</ul>
+						<p>※ 교육비 상승률 3%가정</p>
+					</div>
+				</div>
+				<div class="table-box">
+					<table class="page_table2">
+						<colgroup>
+							<col style="width:12%">
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+
+							<tr>
+								<th>교육나이</th>
+								<th >48세</th>
+								<th >49세</th>
+								<th >50세</th>
+								<th >51세</th>
+								<th >52세</th>
+								<th >53세</th>
+								<th >54세</th>
+								<th >55세</th>
+								<th >56세</th>
+								<th >57세</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>연간교육비</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+								<td>000만원</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+				</div>
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+
+				page20_Barstacked('#chartbar1');
+		});
+
+	</script>
+</body>
+</html>

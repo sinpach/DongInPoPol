@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page11">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[2-6 생애현금흐름 및 생애순자산 분석]
+			</h1>
+			<h2 class="page_title c2">02  | 재무상태 분석</h2>
+			<div class="content">
+				<div class="left-box">
+					<div class="top-table">
+						<div class="table-box">
+							<div class="con_title">
+								생애 자금 공급 (PV)
+							</div>
+							<table class="page_table2">
+								<colgroup>
+								</colgroup>
+
+								<tbody>
+									<tr>
+										<td>은퇴전 소득</td>
+										<td>0000000</td>
+									</tr>
+									<tr>
+										<td>은퇴후 소득</td>
+										<td>0000000</td>
+									</tr>
+									<tr>
+										<td>국민연금</td>
+										<td>0000000</td>
+									</tr>
+									<tr>
+										<td>예상퇴직금</td>
+										<td>0000000</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2">생애 자금공급 <span>00,000</span><span>만원</span></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="middle-table">
+						<div class="con_title">
+							생애 자금 수요 (PV)
+						</div>
+						<table class="page_table2">
+							<colgroup>
+							</colgroup>
+
+							<tbody>
+								<tr>
+									<td>은퇴전 생활비</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>은퇴후 생활비</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>자녀 교육비</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>목돈 마련</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>부채잔액</td>
+									<td>0000000</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">생애 자금수요 <span>00,000</span><span>만원</span></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="bottom-table">
+						<div class="con_title">
+							생애 순자산 ① + ② - ③
+						</div>
+						<table class="page_table2">
+							<colgroup>
+							</colgroup>
+
+							<tbody>
+								<tr>
+									<td>①현재 보유자산</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>②생애 자금 공급</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>(=)생애 총자산</td>
+									<td>0000000</td>
+								</tr>
+								<tr>
+									<td>③생애 자금 수요</td>
+									<td>0000000</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2">
+										<p>초과</p>
+										<span>00,000</span><span>만원</span>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div class="right-box">
+					<div class="top-con">
+						<p>생애자금공급</p>
+						<div class="bar-wrap">
+							<div id="chartbar1" class="donut-chart">
+
+							</div>
+							<div id="chartbar2" class="donut-chart">
+
+							</div>
+						</div>
+						<div class="chart_legend chart1">
+							<ul>
+								<li><span></span>은퇴 전 소득</li>
+								<li><span></span>공적연금</li>
+								<li><span></span>은퇴 후 소득</li>
+								<li><span></span>퇴직금</li>
+							</ul>
+						</div>
+						<div class="chart_legend chart2">
+							<ul>
+								<li><span></span>목돈마련</li>
+								<li><span></span>부채상환</li>
+								<li><span></span>자녀교육비</li>
+								<li><span></span>은퇴후 생활비</li>
+								<li><span></span>은퇴전 생활비</li>
+							</ul>
+						</div>
+						<p>생애자금수요</p>
+					</div>
+					<div class="bottom-con">
+						<ul>
+							<li><p>①</p><p><span>생애 자금공급</span>은 생애 전반에 걸친 근로소득, 사업소득 등을 의미합니다.</p></li>
+							<li><p>②</p><p><span>생애 자금수요</span>는 고객의 재무목표에 근거한 해당시점 필요자금을 의미합니다.</p></li>
+							<li><p>③</p><p><span>생애 총자산</span>은 현재 보유자산(Financial Capital) 뿐만 아니라 노동의 공급을 통해 미래 지속적으로 벌어들이게 될생애 자금공급, 다른말로 인적자산(Human Capital)을 포함한 개념입니다.</p></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_chart_bar_stacked.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+
+				page11('#chartbar1');
+				page11_2('#chartbar2');
+		});
+
+	</script>
+</body>
+</html>

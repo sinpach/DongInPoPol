@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=842">
+	<title>PlanPlus</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/c3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- 02-08 추가 -->
+	<style>
+		#slides{display: none;}
+		.c3-chart-arc text{display: none;}
+	</style>
+</head>
+<body>
+
+	<div id="design_result_wrap" class="page39">
+		<div id="design_result_body" class="body-custom">
+			<h1 class="title">
+				[8-1 고객 투자성향을 고려한 모델 포트폴리오 예시]
+			</h1>
+			<div class="explain">
+				나윤석님의 투자성향을 고려한 자산배분 추천 MP는 <span>&lt;고수익추구형&gt;</span>포트폴리오 입니다
+			</div>
+			<h2 class="page_title c2">08  | 투자설계</h2>
+			<div class="content">
+				<div class="table-box">
+
+					<div class="donut_wrap">
+						<div id="donutChart1" class="donut-chart sm">
+						</div>
+						<div id="donutChart2" class="donut-chart sm">
+						</div>
+						<div id="donutChart3" class="donut-chart sm">
+						</div>
+						<div class="chart_legend">
+							<ul>
+								<li><span></span>고위험자산비중</li>
+								<li><span></span>중위험자산비중</li>
+								<li><span></span>저위험자산비중</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="table-box">
+						<div class="con_title">
+							투자성향별 자산배분 MP
+						</div>
+						<div class="table-wrap">
+							<table class="page_table">
+								<colgroup>
+									<col style="width:14%">
+									<col>
+									<col style="width:20%">
+									<col style="width:6%">
+									<col style="width:20%">
+									<col style="width:6%">
+									<col style="width:20%">
+									<col style="width:6%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="tc">위험구분</th>
+										<th>자산</th>
+										<th class="tc" colspan="2">고수익 추구형</th>
+										<th class="tc" colspan="2">중수익 추구형</th>
+										<th class="tc" colspan="2">안정 추구형</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td rowspan="5" class="tc">저위험<br>자산</td>
+										<td>단기자금</td>
+										<td class="high_bar1 barstat lowrisk"><p></p></td>
+										<td class="tc"></td>
+										<td class="middle_bar1 barstat lowrisk"><p></p></td>
+										<td class="tc">31%</td>
+										<td class="safe_bar1 barstat lowrisk"><p></p></td>
+										<td class="tc">25%</td>
+									</tr>
+									<tr>
+										<td>예적금</td>
+										<td class="high_bar2 barstat lowrisk"><p></p></td>
+										<td class="tc">65%</td>
+										<td class="middle_bar2 barstat lowrisk"><p></p></td>
+										<td class="tc">85%</td>
+										<td class="safe_bar2 barstat lowrisk"><p></p></td>
+										<td class="tc">7%</td>
+									</tr>
+									<tr>
+										<td>국내채권</td>
+										<td class="high_bar3 barstat lowrisk"><p></p></td>
+										<td class="tc">9%</td>
+										<td class="middle_bar3 barstat lowrisk"><p></p></td>
+										<td class="tc">10%</td>
+										<td class="safe_bar3 barstat lowrisk"><p></p></td>
+										<td class="tc">15%</td>
+									</tr>
+									<tr>
+										<td>신흥국채권</td>
+										<td class="high_bar4 barstat lowrisk"><p></p></td>
+										<td class="tc">9%</td>
+										<td class="middle_bar4 barstat lowrisk"><p></p></td>
+										<td class="tc">38%</td>
+										<td class="safe_bar4 barstat lowrisk"><p></p></td>
+										<td class="tc">50%</td>
+									</tr>
+									<tr>
+										<td>선진국채권</td>
+										<td class="high_bar5 barstat lowrisk"><p></p></td>
+										<td class="tc">57%</td>
+										<td class="middle_bar5 barstat lowrisk"><p></p></td>
+										<td class="tc">72%</td>
+										<td class="safe_bar5 barstat lowrisk"><p></p></td>
+										<td class="tc">32%</td>
+									</tr>
+									<tr>
+										<td rowspan="4" class="tc">고위험<br>자산</td>
+										<td>국내주식</td>
+										<td class="high_bar1 barstat highrisk"><p></p></td>
+										<td class="tc">11%</td>
+										<td class="middle_bar1 barstat highrisk"><p></p></td>
+										<td class="tc">95%</td>
+										<td class="safe_bar1 barstat highrisk"><p></p></td>
+										<td class="tc">8%</td>
+									</tr>
+									<tr>
+										<td>신흥국주식</td>
+										<td class="high_bar2 barstat highrisk"><p></p></td>
+										<td class="tc">9%</td>
+										<td class="middle_bar2 barstat highrisk"><p></p></td>
+										<td class="tc">5%</td>
+										<td class="safe_bar2 barstat highrisk" ><p></p></td>
+										<td class="tc">10%</td>
+									</tr>
+									<tr>
+										<td>선진국주식</td>
+										<td class="high_bar3 barstat highrisk"><p></p></td>
+										<td class="tc">9%</td>
+										<td class="middle_bar3 barstat highrisk"><p></p></td>
+										<td class="tc">5%</td>
+										<td class="safe_bar3 barstat highrisk"><p></p></td>
+										<td class="tc">10%</td>
+									</tr>
+									<tr>
+										<td>실물자산</td>
+										<td class="high_bar4 barstat highrisk"><p></p></td>
+										<td class="tc">42%</td>
+										<td class="middle_bar4 barstat highrisk"><p></p></td>
+										<td class="tc">58%</td>
+										<td class="safe_bar4 barstat highrisk"><p></p></td>
+										<td class="tc">85%</td>
+									</tr>
+									<tr>
+										<td class="tc">중위험 자산</td>
+										<td>선진국채권</td>
+										<td class="high_bar1 barstat middlerisk"><p></p></td>
+										<td class="tc">5%</td>
+										<td class="middle_bar1 barstat middlerisk"><p></p></td>
+										<td class="tc">5%</td>
+										<td class="safe_bar1 barstat middlerisk"><p></p></td>
+										<td class="tc">19%</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<p>* 투자성향별 자산배분 MP는 ‘런인베스트 자산배분 위원회’의 예시 모델포트폴리오이며, FP의 고객 포트폴리오 설계 시 참고 목적으로만 활용합니다.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="design_result_footer">
+			<ul>
+				<li>박현O님 재무설계 보고서</li>
+				<li class="eng">Learninvest Co.,Ltd.All rights reserved</li>
+				<li>작성자 : 박세라 <span class="currentPageNum">00</span>/<span class="totalPageNum">00</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="../js/jquery.mCustomScrollbar.js"></script>
+	<script src="../js/jquery.slides.js"></script>
+	<script src="../js/d3.v3.min.js"></script>
+	<script src="../js/c3.js"></script>
+	<script src="../js/custom_donut.js"></script>
+	<!-- <script src="../js/script.js"></script> -->
+	<script>
+	function horizonBarAnimate2(risk){
+		for (var i = 0; i < 6; i++) {
+			var high_bar = $(".high_bar"+i+risk);
+			var high_barWidth = high_bar.children('p');
+			var high_barText = high_bar.next('td').text();
+			high_barWidth.animate({width:[high_barText]});
+
+			var safe_bar = $(".safe_bar"+i+risk);
+			var safe_barWidth = safe_bar.children('p');
+			var safe_barText = safe_bar.next('td').text();
+			safe_barWidth.animate({width:[safe_barText]});
+
+			var middle_bar = $(".middle_bar"+i+risk);
+			var middle_barWidth = middle_bar.children('p');
+			var middle_barText = middle_bar.next('td').text();
+			middle_barWidth.animate({width:[middle_barText]});
+		}
+
+	}
+		$(function(){
+
+				var parentiframe = window.parent.document.getElementById('iframe');
+				var parentiframeSrc = parentiframe.getAttribute("src");
+				var parentiframeNum = parentiframeSrc.replace(/[^0-9]/g, "");
+				$(".currentPageNum").text(parentiframeNum)
+				$(".totalPageNum").text(parent.totalPageNum)
+
+				donutChart2('#donutChart1','#00aced','#804095',['고수익','추구형'],50,20);
+				donutChart2('#donutChart2','#00aced','#804095',['중수익','추구형'],40,20);
+				donutChart2('#donutChart3','#00aced','#804095',['안정','추구형'],60,20);
+		});
+		$(window).on('load',function(){
+			horizonBarAnimate2(".highrisk")
+			horizonBarAnimate2(".middlerisk")
+			horizonBarAnimate2(".lowrisk")
+		});
+
+	</script>
+</body>
+</html>
