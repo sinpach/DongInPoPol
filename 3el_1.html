@@ -51,7 +51,7 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">KIM TAE HYUN</a></h1>
+        <h1 class="text-light"><a href="index.html">이동인</a></h1>
 
       </div>
 
@@ -95,12 +95,21 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/el1_1.png" alt="">
+                  <img src="assets/img/portfolio/suru_1.PNG" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/el1_2.png" alt="">
+                  <img src="assets/img/portfolio/suru_2.PNG" alt="">
                 </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/suru_3.PNG" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/suru_4.PNG" alt="">
+                </div>
+                
 
                 
 
@@ -112,189 +121,29 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: e-learning</li>
-                <li><strong>Project detail view</strong>: <a href="./pfpage/el_1/index.html" target="_blank">view</a></li>
+                <li><strong>Category</strong>: 서류작업</li>
+                <li><strong>대상업체</strong>: CS컴퍼니,YKtech,논산물류,중앙알텍</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Project detail</h2>
               <p>
-                e-learning 콘텐츠 제작 <br>
-                HTML5, css, javascript 이용한 동영상제어 및 퀴즈, <br> 동적 기능 작업
+                사업 시작부터 끝까지 전체 서류작업 <br>
+                현행업무분석서,요구사항 정의, 기능대비표, 디비설계서 등 <br> 중간 점검 부터 최종까지 서류작업 총괄 
                 
               </p>
             </div>
           </div>
-          <div class="col-lg-12">
+        <!--  <div class="col-lg-12">
             <pre>
               <code>
-$(document).ready(function(){
-	var aod = $('audio');
-	if(aod.length > 0){
-		aod[0].load();
-		aod[0].removeAttribute('controls');
-
-		aod.on('loadedmetadata', function() {
-            $('.aod-progress-bar').css('width',0);  
-            $('.aodpause').hide();
-            $('.aodplay').css('display','block');
-            $('.ttime').text(timeFormat(aod[0].duration));
-            updateVolume(0, 1);
-        });
-
-		aod[0].onplay = function () {
-            $('.aodplay').hide();
-            $('.aodpause').css('display','block');
-        };
-
-        aod.on('ended',function(){
-            $('.aodpause').hide();
-            $('.aodplay').css('display','block');
-        });
-
-        //시간값 변경
-        var timeFormat = function(seconds){
-            var m = Math.floor(seconds/60)<10 ? "0"+Math.floor(seconds/60) : Math.floor(seconds/60);
-            var s = Math.floor(seconds-(m*60))<10 ? "0"+Math.floor(seconds-(m*60)) : Math.floor(seconds-(m*60));
-            return m+":"+s;
-        };
-
-        aod.on('timeupdate',function(){
-        	var currentPos = aod[0].currentTime;
-            var maxduration = aod[0].duration;
-            var perc = 100 * currentPos / maxduration;
-        	$('.aod-progress-bar').css('width',perc+'%');  
-            $('.ctime').text(timeFormat(currentPos));  
-        });
-
-        //프로그래스 바
-        var updatebar = function(x) {
-            var progress = $('.aodprogress');
-            
-            var maxduration = aod[0].duration;
-            var position = x - progress.offset().left;
-            var percentage = 100 * position / progress.width();
-            if(percentage > 100) {
-                percentage = 100;
-            }
-            if(percentage < 0) {
-                percentage = 0;
-            }
-            $('.aod-progress-bar').css('width',percentage+'%'); 
-            aod[0].currentTime = maxduration * percentage / 100;
-        };
-        
-        var timeDrag = false;
-        $('.aodprogress').on('mousedown', function(e) {
-            timeDrag = true;
-            updatebar(e.pageX);
-        });
-        $(document).on('mouseup', function(e) {
-            if(timeDrag) {
-                timeDrag = false;
-                updatebar(e.pageX);
-            }
-        });
-        $(document).on('mouseout', function(e) {
-            if(timeDrag) {
-                timeDrag = false;
-                updatebar(e.pageX);
-            }
-        });
-        $(document).on('mousemove', function(e) {
-            if(timeDrag) {
-                updatebar(e.pageX);
-            }
-        });
-
-        //볼륨 컨트롤
-        var volumeDrag = false;
-        $('.aodvolume').on('mousedown', function(e) {
-            volumeDrag = true;
-            aod[0].muted = false;
-            $('.aodsound').removeClass('muted');
-            updateVolume(e.pageX);
-        });
-        $(document).on('mouseup', function(e) {
-            if(volumeDrag) {
-                volumeDrag = false;
-                updateVolume(e.pageX);
-            }
-        });
-        $(document).on('mousemove', function(e) {
-            if(volumeDrag) {
-                updateVolume(e.pageX);
-            }
-        });
-
-        var updateVolume = function(x, vol) {
-            var volume = $('.aodvolume');
-            var percentage;
-            if(vol) {
-                percentage = vol * 100;
-            }
-            else {
-                var position = x - volume.offset().left;
-                percentage = 100 * position / volume.width();
-            }
-            
-            if(percentage > 100) {
-                percentage = 100;
-            }
-            if(percentage < 0) {
-                percentage = 0;
-            }
-            
-            $('.aodvolumeBar').css('width',percentage+'%');    
-            aod[0].volume = percentage / 100;
-            
-            if(aod[0].volume == 0){
-                $('.aodsound').addClass('muted');
-            }else{
-                $('.aodsound').removeClass('muted');
-            }
-            
-        };
-
-        $('.aodplay').click(function(){
-        	$('.aodplay').hide();
-            $('.aodpause').css('display','block');
-            aod[0].play();
-        });
-
-         $('.aodpause').click(function(){
-        	$('.aodpause').hide();
-            $('.aodplay').css('display','block');
-            aod[0].pause();
-        });
-
-         $('.aodstop').click(function(){
-
-         	$('.aodpause').hide();
-            $('.aodplay').css('display','block');
-            updatebar($('.aodprogress').offset().left);
-            aod[0].pause();
-	    });
-
-         $('.aodsound').click(function(e){
-            aod[0].muted = !aod[0].muted;
-         	if($(this).hasClass('muted')){
-         		$(this).removeClass('muted');
-         		$('.aodvolumeBar').css('width',aod[0].volume*100+'%');
-         	}else{
-         		$(this).addClass('muted');
-         		$('.aodvolumeBar').css('width',0);
-         	}
-        });
-	}
-});
 
 
 
               </code>
             </pre>
           </div>
-
+-->
 
 
         </div>
